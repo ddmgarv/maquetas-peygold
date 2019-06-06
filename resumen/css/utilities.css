@@ -197,6 +197,7 @@ input[type="reset"] {
   flex-shrink: 0;
   min-width: 1rem;
 }
+
 .collapsed-wallet-details::after {
   content: "";
   flex: 0 0 12px;
