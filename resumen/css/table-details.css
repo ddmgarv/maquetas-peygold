@@ -36,7 +36,8 @@
 }
 
 table {
-  width: 100%;
+  width: 100% !important;
+  margin-left: 1% !important;
 }
 table.fold-table > tbody > tr.fold {
   display: none;
@@ -50,7 +51,7 @@ table.fold-table > tbody > tr.fold.open {
 }
 #transferTable .bg-white td {
   margin: 0;
-  padding: 8px 0 8px 40px;
+  padding: 8px 0 8px 26px;
   height: 39px;
   line-height: 35px;
 }
@@ -68,7 +69,7 @@ table.fold-table > tbody > tr.fold.open {
   font-weight: 400;
   color: #43425d;
   width: 40%;
-  min-width: 275px;
+  min-width: 290px;
 }
 
 #transferTable .detailTransfer {
@@ -137,7 +138,7 @@ table.fold-table > tbody > tr.fold.open {
 }
 
 .tableDesc td {
-  padding: 8px 0 8px 10px !important;
+  padding: 8px 53px 8px 0 !important;
 }
 
 .amountInfo {
@@ -175,6 +176,7 @@ table.fold-table > tbody > tr.fold.open {
 .borderDown {
   border-bottom: 1px solid #929292;
 }
+
 .table > tbody > tr > td {
   border: none;
 }
@@ -191,28 +193,26 @@ tr.fold.open td {
 tr.fold.open td p {
   margin: 0;
 }
-@media screen and (min-width: 1010.98px) {
-  .restInfo {
-    width: 90%;
-  }
-}
 @media screen and (min-width: 1250.98px) {
-  .restInfo {
-    width: 98%;
+  .tableDesc td {
+    padding: 8px 33px 8px 0px !important;
   }
 }
-@media screen and (min-width: 1300.98px) {
-  .restInfo {
-    width: 90%;
+@media screen and (min-width: 1350.98px) {
+  tr.fold.open td {
+    padding: 8px 0 0 10px;
+  }
+  .tableDesc td {
+    padding: 8px 53px 8px 0 !important;
   }
 }
 @media screen and (min-width: 1520.98px) {
-  .restInfo {
-    width: 75%;
+  .tableDesc td {
+    padding: 8px 160px 8px 5px !important;
   }
   .blue-line::before {
     position: absolute;
-    right: -50px !important;
+    right: -40px !important;
     width: 100%;
   }
 }
@@ -224,5 +224,9 @@ tr.fold.open td p {
   .search form {
     position: rlative;
     width: 100%;
+  }
+  .blue-line::before {
+    right: -30px;
+    width: 95%;
   }
 }
