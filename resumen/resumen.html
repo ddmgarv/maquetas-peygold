@@ -97,11 +97,11 @@
     <!-- Begin secondary nav -->
     <!-- IMPORTANTE: Añadir clase de show-secondary-nav y hide al div que contiene a la barra de 
       navegación, estas clases son para ocultar o mostrar la barra secundaria. -->
-    <div class="hide-secondary-nav" id="send-recieve-nav">
+    <div id="send-recieve-nav">
       <!-- IMPORTANTE: La clase de top-navbar-collapse y extended son para que el nav
       se mueva con respecto al side bar. El id es para que cada link de la barra de navegacion
       principal solo muestre una barra de navegacion secundaria -->
-      <nav class="top-navbar-collapse" id="secondary-nav">
+      <nav class="top-navbar-collapse hide-secondary-nav" id="secondary-nav">
         <!-- IMPORTANTE: Añadir clase active al anchor tag y eliminar secondary-nav-link en barra secundaria -->
         <ul class="nav d-flex flex-nowrap" id="secondary-top-nav">
           <li class="nav-item mr-4">
@@ -321,7 +321,7 @@
           <div class="col-lg-5 border-top-blue bg-white wallet">
             <!-- Div billetera peygold -->
             <div class="d-flex justify-content-between table-bottom-border">
-              <div class="mt-2">
+              <div>
                 <p class="text-blue">
                   <span class="fs-14 font-weight-bold"
                     >BILLETERA PEYGOLD</span><br />
@@ -391,13 +391,14 @@
             </div>
             <!-- Div de botones a la derecha de la billetera -->
           </div>
+
         </div>
         <!-- row de la billetera e iconos -->
         <div class="row" style="position: relative;bottom:1.8rem;">
           <div class="col-lg-5 border-top-blue bg-white wallet">
             <!-- Div billetera peygold -->
             <div class="d-flex justify-content-between table-bottom-border">
-              <div class="mt-2">
+              <div>
                 <p class="text-blue">
                   <span class="fs-14 font-weight-bold">BILLETERA PESOS<br /></span>
                   <span class="fs-28">$</span><span class="fs-41"> 19.580</span>
@@ -416,12 +417,13 @@
                 >
               </div>
             </div>
+
           </div>
           <!-- Final div billetera peygold -->
   
           <!-- inicio tarjetas y cuentas bancarias -->
           <div class="col-lg-5 bg-white" id="bank-account-div">
-            <h6 class="fs-14 text-blue">
+            <h6 class="fs-14 text-blue font-weight-bold">
               TARJETAS Y CUENTAS BANCARIAS
             </h6>
             <div class="d-flex justify-content-between" style="margin-top:12px;">
@@ -452,19 +454,17 @@
             </div>
             <!-- Final tarjetas y cuentas bancarias -->
           </div>
+
         </div>
 
         <h3 class="pb-2 fs-22">Movimientos recientes</h3>
         <div class="row">
             <!-- Div de las opciones -->
-            <div class="col-md-3 w-100 form-group has-search">
-              <span class="fa fa-search form-control-feedback"></span>
-  
-              <input
-                type="text"
-                class="form-control rounded-border form-border w-100"
-                placeholder="Buscar"
-              />
+            <div class="col-md-3 search">
+                <form action="">
+                  <input type="text" placeholder="Buscar" name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </div>
   
             <div class="col-4"></div>
@@ -480,89 +480,238 @@
             </div>
           </div>
           <!-- Fin del div de las opciones -->
-
+          <br>
 
         <!-- Inicio Div de los movimientos recientes -->
-        <div class="row">
-          <div class="col-lg-10">
-            <div class="table-responsive-sm">
-              <table class="table fold-table" id="transferTable">
+        <div class="row"> <!-- Row div -->
+          <div class="col-lg-10"><!-- col-div -->
+            <div class="table-responsive-sm"><!-- Table responsive div -->
+
+              <table class="table fold-table" id="transferTable"><!-- First table div-->
         
-                <tbody>
+                <tbody><!-- first tbody table -->
                   <tr class="bg-white">
                     <td class="transferProfile"><img alt="" src="assets/user1.png" class="user-img-details"></td>
-                    <td class="transferDate">15-12-2018</td>
+                    <td class="transferDate">16-02-2019</td>
                     <td class="transferTo">Transferiste a martin@peygold.com</td>
-                    <td class="detailTransfer"><i class="fa fa-chevron-down"></i> Ver detalle</td>
+                    <td class="detailTransfer" id="toggle-1"><i class="fa fa-chevron-down"></i> Ver detalle</td>
                     <td class="amountTransfer">P$G 3.000</td>
                   </tr>
-        
                   <tr class="fold" id="fold-1">
                     <td colspan="7" class="borderDown">
-                      <p class="codeInfo">Codigo de Operación HYGF545</p>
-        
                       <table>
                         <tbody>
                           <tr class="tableDesc">
                             <td>
-                              <div class="center blue-line">
-                                <img alt="" src="assets/user1.png" class="avatarLine user-img-details">
-                                <h2>Envío</h2>
-                                <p class="dateTableDesc">15-12-2018</p>
-                                <p class="hourTableDesc">14:05hs</p>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="center blue-line">
-                                <button style="cursor: context-menu;">
-                                  <div class="circle small">
-                                    <i class="fas fa-check check-icon"></i>
-                                  </div>
-                                </button>
-                                <h2>Aprobación</h2>
-                                <p class="dateTableDesc">15-12-2018</p>
-                                <p class="hourTableDesc">14:05hs</p>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="center">
-                                <img alt="" src="assets/user1.png" class="user-img-details">
-                                <h2>Recibido</h2>
-                                <p class="dateTableDesc">15-12-2018</p>
-                                <p class="hourTableDesc">14:05hs</p>
-                              </div>
-                            </td>
-                            <td class="rightInfo">
-                              <div class="restInfo">
-                                <p class="amountInfo">P$G 3.000</p>
-                                <p class="destInfo">Mail de destino a martin@goldberg.com </p>
-                              </div>
-                            </td>
-                          </tr>
-        
-                        </tbody>
-                      </table>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-        
-        
-          </div>
-        </div>
+                                <div class="center blue-line">
+                                  <img alt="" src="assets/user1.png" class="avatarLine user-img-details">
+                                  <h2 class="font-weight-bold fs-12">Envío</h2>
+                                  <p class="dateTableDesc">16-02-2019</p>
+                                  <p class="hourTableDesc">15:25hs</p>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="center blue-line">
+                                  <button style="cursor: context-menu;">
+                                    <div class="circle small">
+                                      <i class="fas fa-check check-icon"></i>
+                                    </div>
+                                  </button>
+                                  <h2 class="font-weight-bold fs-12">Aprobación</h2>
+                                  <p class="dateTableDesc">16-02-2019</p>
+                                  <p class="hourTableDesc">15:25hs</p>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="center">
+                                  <img alt="" src="assets/user5.png" class="user-img-details">
+                                  <h2 class="font-weight-bold fs-12">Recibido</h2>
+                                  <p class="dateTableDesc">16-02-2019</p>
+                                  <p class="hourTableDesc">15:25hs</p>
+                                </div>
+                              </td>
+                              <td class="rightInfo">
+                                <div class="restInfo">
+                                  <p class="amountInfo">P$G 3.000</p>
+                                  <p class="destInfo">Mail de destino a martin@goldberg.com </p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
 
-        <br><br><br><br><br><br><br>
+                    <tr class="bg-white">
+                      <td class="transferProfile"><img alt="" src="assets/user1.png" class="user-img-details"></td>
+                      <td class="transferDate">14-04-1019</td>
+                      <td class="transferTo">Transferiste a gustavoconfort@gmail.com</td>
+                      <td class="detailTransfer" id="toggle-2"><i class="fa fa-chevron-down"></i> Ver detalle</td>
+                      <td class="amountTransfer">P$G 3.000</td>
+                    </tr>
+                    <tr class="fold" id="fold-2">
+                      <td colspan="7" class="borderDown">
+                        <table>
+                          <tbody>
+                            <tr class="tableDesc">
+                              <td>
+                                <div class="center blue-line">
+                                  <img alt="" src="assets/user1.png" class="avatarLine user-img-details">
+                                  <h2 class="font-weight-bold fs-12">Envío</h2>
+                                  <p class="dateTableDesc">14-04-1019</p>
+                                  <p class="hourTableDesc">11:00hs</p>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="center blue-line">
+                                  <button style="cursor: context-menu;">
+                                    <div class="circle small">
+                                      <i class="fas fa-check check-icon"></i>
+                                    </div>
+                                  </button>
+                                  <h2 class="font-weight-bold fs-12">Aprobación</h2>
+                                  <p class="dateTableDesc">14-04-1019</p>
+                                  <p class="hourTableDesc">11:00hs</p>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="center">
+                                  <img alt="" src="assets/user4.png" class="user-img-details">
+                                  <h2 class="font-weight-bold fs-12">Recibido</h2>
+                                  <p class="dateTableDesc">14-04-1019</p>
+                                  <p class="hourTableDesc">11:00hs</p>
+                                </div>
+                              </td>
+                              <td class="rightInfo">
+                                <div class="restInfo">
+                                  <p class="amountInfo">P$G 3.000</p>
+                                  <p class="destInfo">Mail de destino a gustavoconfort@gmail.com</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <tr class="bg-white">
+                      <td class="transferProfile"><img alt="" src="assets/user1.png" class="user-img-details"></td>
+                      <td class="transferDate">12-04-2019</td>
+                      <td class="transferTo">Transferiste a pedroconfortsur@gmail.com</td>
+                      <td class="detailTransfer" id="toggle-3"><i class="fa fa-chevron-down"></i> Ver detalle</td>
+                      <td class="amountTransfer">P$G 3.000</td>
+                    </tr>
+                    <tr class="fold" id="fold-3">
+                      <td colspan="7" class="borderDown">
+                        <table>
+                          <tbody>
+                            <tr class="tableDesc">
+                              <td>
+                                <div class="center blue-line">
+                                  <img alt="" src="assets/user1.png" class="avatarLine user-img-details">
+                                  <h2 class="font-weight-bold fs-12">Envío</h2>
+                                  <p class="dateTableDesc">12-04-2019</p>
+                                  <p class="hourTableDesc">16:58hs</p>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="center blue-line">
+                                  <button style="cursor: context-menu;">
+                                    <div class="circle small">
+                                      <i class="fas fa-check check-icon"></i>
+                                    </div>
+                                  </button>
+                                  <h2 class="font-weight-bold fs-12">Aprobación</h2>
+                                  <p class="dateTableDesc">12-04-2019</p>
+                                  <p class="hourTableDesc">16:58hs</p>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="center">
+                                  <img alt="" src="assets/user3.png" class="user-img-details">
+                                  <h2 class="font-weight-bold fs-12">Recibido</h2>
+                                  <p class="dateTableDesc">12-04-2019</p>
+                                  <p class="hourTableDesc">16:58hs</p>
+                                </div>
+                              </td>
+                              <td class="rightInfo">
+                                <div class="restInfo">
+                                  <p class="amountInfo">P$G 3.000</p>
+                                  <p class="destInfo">Mail de destino a pedroconfortsur@gmail.com</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <tr class="bg-white">
+                      <td class="transferProfile"><img alt="" src="assets/user1.png" class="user-img-details"></td>
+                      <td class="transferDate">08-03-2019</td>
+                      <td class="transferTo">Transferiste a migueljurado@gmail.com</td>
+                      <td class="detailTransfer" id="toggle-4"><i class="fa fa-chevron-down"></i> Ver detalle</td>
+                      <td class="amountTransfer">P$G 3.000</td>
+                    </tr>
+                    <tr class="fold" id="fold-4">
+                      <td colspan="7" class="borderDown">
+                        <table>
+                          <tbody>
+                            <tr class="tableDesc">
+                              <td>
+                                <div class="center blue-line">
+                                  <img alt="" src="assets/user1.png" class="avatarLine user-img-details">
+                                  <h2 class="font-weight-bold fs-12">Envío</h2>
+                                  <p class="dateTableDesc">08-03-2019</p>
+                                  <p class="hourTableDesc">8:00hs</p>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="center blue-line">
+                                  <button style="cursor: context-menu;">
+                                    <div class="circle small">
+                                      <i class="fas fa-check check-icon"></i>
+                                    </div>
+                                  </button>
+                                  <h2 class="font-weight-bold fs-12">Aprobación</h2>
+                                  <p class="dateTableDesc">08-03-2019</p>
+                                  <p class="hourTableDesc">8:00hs</p>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="center">
+                                  <img alt="" src="assets/user2.png" class="user-img-details">
+                                  <h2 class="font-weight-bold fs-12">Recibido</h2>
+                                  <p class="dateTableDesc">08-03-2019</p>
+                                  <p class="hourTableDesc">8:00hs</p>
+                                </div>
+                              </td>
+                              <td class="rightInfo">
+                                <div class="restInfo">
+                                  <p class="amountInfo">P$G 3.000</p>
+                                  <p class="destInfo">Mail de destino a migueljurado@gmail.com</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+
+
+                </tbody><!-- first tbody table -->
+              </table><!-- First table div-->
+            </div><!-- Table responsive div -->
+          </div><!-- col-div -->
+          
+        </div> <!-- Row div -->
+
+        <br><br>
 
     </div>
     <!-- body-row END -->
 
-    <!-- Inicio Banner de publicidad -->
-    <div class="d-none d-xl-block advertising-side">
-      <img src="assets/banner.png" style="z-index: inherit;" />
-    </div>
-    <!-- Final Banner de publicidad -->
-
+    
 
 
     <!-- jQuery library -->
@@ -574,4 +723,7 @@
 
     <script type="text/javascript" src="js/app.js"></script>
   </body>
+  <!-- Inicio Banner de publicidad -->
+  <img src="assets/banner.png" class="advertising-side" />
+  <!-- Final Banner de publicidad -->
 </html>

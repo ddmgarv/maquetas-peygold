@@ -18,14 +18,25 @@ $(function() {
     $(".title").toggleClass("title-collapse");
     $("#user-text").toggleClass("user-collapse");
   });
-
   $("#demo1").click(function() {
     $("#send-recieve-nav").toggleClass("show-secondary-nav");
+    $("#secondary-nav").toggleClass("show-secondary-nav");
+    $("body").toggleClass("pad-body");
+    $(".advertising-side").toggleClass("adver-down");
   });
   $("#hide").click(function() {
     $("#carousel-container").toggleClass("carousel-hide");
   });
-  $(".detailTransfer").click(function() {
+  $("#toggle-1").click(function() {
     $("#fold-1").toggleClass("open");
+  });
+  $("#toggle-2").click(function() {
+    $("#fold-2").toggleClass("open");
+  });
+  $("#toggle-3").click(function() {
+    $("#fold-3").toggleClass("open");
+  });
+  $("#toggle-4").click(function() {
+    $("#fold-4").toggleClass("open");
   });
 });

@@ -1,87 +1,20 @@
-@charset "UTF-8";
-/* Maquetador: Giacché, Lucas N. */
-.btn-peygold,
-.btn-peygold:active,
-.btn-peygold:focus {
-  background: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.boxes {
-  background: white;
-  border: none;
-  padding: 15px 20px;
-  height: 315px;
-}
-
-.information {
-  position: relative;
-  border-bottom: 1px dashed #033f4e;
-  margin-bottom: 15px;
-}
-.information p {
-  font-family: Rubik, sans-serif;
-  font-size: 11px;
-  font-weight: 400;
-  color: #43425d;
-  text-transform: uppercase;
-}
-.information h2 {
-  font-family: Rubik, sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: #43425d;
-}
-.information h2 span {
-  font-size: 32px;
-}
-.information img {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  color: #007373;
-  font-size: 25px;
-}
-
-.verMas {
-  padding: 20px 0 15px;
-}
-.verMas a {
-  font-family: Rubik, sans-serif;
-  font-size: 11px;
-  font-weight: 400;
-  color: #43425d;
-  text-transform: uppercase;
-  float: right;
-}
-
-.paddingB {
-  padding-bottom: 30px;
-}
-
 .search input {
-  border-radius: 100px;
-  border: 1px solid #707070;
-  width: 250px;
-  padding: 10px 0;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+  width: 100%;
+  height: 40px;
   font-family: Rubik, sans-serif;
   font-size: 11px;
   font-weight: 400;
   color: #43425d;
-  text-transform: uppercase;
   padding-left: 30px;
   outline: none;
 }
 .search input:placeholder-shown {
   font-family: Rubik, sans-serif;
-  font-size: 11px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 600;
   color: #43425d;
-  text-transform: uppercase;
   padding-left: 30px;
 }
 
@@ -94,57 +27,12 @@
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 10px;
+  top: 8px;
   right: 15px;
   background: transparent;
   border: none;
   color: #0a5de2;
   cursor: pointer;
-}
-
-.addRe {
-  position: relative;
-}
-
-.filters {
-  position: absolute;
-  top: 0;
-  right: 85px;
-}
-.filters a {
-  font-family: Rubik, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #43425d;
-  padding-right: 20px;
-}
-.filters .fa-filter {
-  color: #707070;
-  font-size: 20px;
-}
-.filters .fa-chevron-down {
-  color: #2699fb;
-  font-size: 15px;
-  margin-left: 3px;
-}
-.filters .dropdown-toggle::after {
-  display: none;
-}
-
-.btn-peygold {
-  font-family: Rubik, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #43425d;
-}
-
-.dropdown-toggle::after {
-  position: absolute;
-  right: 25px;
-  top: 2px;
-  border: 0;
-  content: "\f078";
-  font-family: FontAwesome;
 }
 
 table {
@@ -156,18 +44,16 @@ table.fold-table > tbody > tr.fold {
 table.fold-table > tbody > tr.fold.open {
   display: table-row;
 }
-
 #transferTable .bg-white {
   background: white;
   border-bottom: 1px solid #929292;
 }
 #transferTable .bg-white td {
   margin: 0;
-  padding: 8px 0 8px 25px;
+  padding: 8px 0 8px 40px;
   height: 39px;
   line-height: 35px;
 }
-
 #transferTable .transferDate {
   font-family: Rubik, sans-serif;
   font-size: 15px;
@@ -203,17 +89,11 @@ table.fold-table > tbody > tr.fold.open {
 #transferTable .amountTransfer {
   font-family: Rubik, sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: #43425d;
   width: 30%;
   min-width: 200px;
 }
-
-.hiddenRow,
-.table-responsive {
-  padding: 0 !important;
-}
-
 .collapse {
   display: none;
   visibility: hidden;
@@ -233,14 +113,6 @@ table.fold-table > tbody > tr.fold.open {
   width: 35%;
 }
 
-.codeInfo {
-  font-family: Rubik, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #43425d;
-  padding: 17px 0;
-}
-
 .tableDesc h2 {
   font-family: Rubik, sans-serif;
   font-size: 14px;
@@ -249,7 +121,6 @@ table.fold-table > tbody > tr.fold.open {
   padding: 10px 0 5px;
   margin: 0;
 }
-
 .tableDesc .dateTableDesc {
   font-family: Rubik, sans-serif;
   font-size: 12px;
@@ -273,7 +144,7 @@ table.fold-table > tbody > tr.fold.open {
 .amountInfo {
   font-family: Rubik, sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: #43425d;
   text-align: right;
   padding-bottom: 25px;
@@ -309,75 +180,6 @@ table.fold-table > tbody > tr.fold.open {
 .borderDown {
   border-bottom: 1px solid #929292;
 }
-
-.textView p {
-  font-family: Rubik, sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  color: #43425d;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  line-height: 35px;
-  display: inline-block;
-}
-
-.textView .retirePeygold {
-  font-size: 10px;
-  color: #1473e6;
-  margin-left: 25px;
-}
-
-.textView a {
-  background: none;
-  border: none;
-  outline: none;
-  margin-left: 40px;
-  text-decoration: none;
-  -webkit-appearance: none;
-  cursor: pointer;
-}
-.textView a i {
-  color: #43425d;
-}
-
-.amountView p {
-  font-family: Rubik, sans-serif;
-  font-size: 21px;
-  font-weight: 400;
-  color: #43425d;
-  margin-bottom: 3px;
-}
-.amountView p span {
-  font-family: Rubik, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #43425d;
-}
-
-.amountView a {
-  font-family: Rubik, sans-serif;
-  font-size: 11px;
-  font-weight: 400;
-  color: #43425d;
-  text-transform: uppercase;
-  line-height: 22px;
-}
-
-.masPadding {
-  padding-top: 55px;
-}
-
-.especialView {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-}
-
-.btn-group.open .dropdown-toggle {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
 .table > tbody > tr > td {
   border: none;
 }
@@ -386,7 +188,7 @@ tr.fold.open {
   background: white;
 }
 tr.fold.open td {
-  padding: 8px 0 8px 10px;
+  padding: 8px 0 0 10px;
   position: relative;
   border: none;
   min-width: 200px;
@@ -395,6 +197,13 @@ tr.fold.open td p {
   margin: 0;
 }
 
+@media screen and (min-width: 1520.98px) {
+  .blue-line::before {
+    position: absolute;
+    right: -5px !important;
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   .search input {
     width: 100%;
