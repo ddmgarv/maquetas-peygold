@@ -60,16 +60,15 @@ table.fold-table > tbody > tr.fold.open {
   font-weight: 600;
   color: #43425d;
   width: 20%;
-  min-width: 150px;
+  min-width: 50px;
 }
-
 #transferTable .transferTo {
   font-family: Rubik, sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #43425d;
   width: 40%;
-  min-width: 350px;
+  min-width: 275px;
 }
 
 #transferTable .detailTransfer {
@@ -78,7 +77,7 @@ table.fold-table > tbody > tr.fold.open {
   font-weight: 400;
   color: #43425d;
   cursor: pointer;
-  min-width: 150px;
+  min-width: 140px;
   width: 20%;
 }
 #transferTable .detailTransfer i {
@@ -92,7 +91,7 @@ table.fold-table > tbody > tr.fold.open {
   font-weight: 600;
   color: #43425d;
   width: 30%;
-  min-width: 200px;
+  min-width: 120px;
 }
 .collapse {
   display: none;
@@ -158,10 +157,6 @@ table.fold-table > tbody > tr.fold.open {
   text-align: right;
 }
 
-.restInfo {
-  width: 76%;
-}
-
 .center {
   text-align: center;
   width: 40%;
@@ -191,19 +186,37 @@ tr.fold.open td {
   padding: 8px 0 0 10px;
   position: relative;
   border: none;
-  min-width: 200px;
+  min-width: 100px;
 }
 tr.fold.open td p {
   margin: 0;
 }
-
+@media screen and (min-width: 1010.98px) {
+  .restInfo {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1250.98px) {
+  .restInfo {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 1300.98px) {
+  .restInfo {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 1520.98px) {
+  .restInfo {
+    width: 75%;
+  }
   .blue-line::before {
     position: absolute;
-    right: -5px !important;
+    right: -50px !important;
     width: 100%;
   }
 }
+
 @media (max-width: 767px) {
   .search input {
     width: 100%;
@@ -211,13 +224,5 @@ tr.fold.open td p {
   .search form {
     position: rlative;
     width: 100%;
-  }
-  .filters {
-    position: relative;
-    top: 0;
-    right: 0;
-  }
-  .boxes {
-    margin-bottom: 15px;
   }
 }

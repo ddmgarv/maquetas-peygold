@@ -1,13 +1,14 @@
 #icons-resume-container {
   padding: 86px 66px 61px 60px;
   height: 240px;
-  margin-top: 27px;
+  margin: 27px 10px 14px 14px;
 }
 #bank-account-div {
   padding: 18px 44px 21px 28px;
   height: 240px;
-  margin-top: 27px;
+  margin: 27px 10px 14px 14px;
 }
+
 .wallet {
   padding: 10px 24px 22px 23px;
   margin: 27px 10px 14px 14px;
@@ -46,6 +47,8 @@
   background-color: #fff;
   width: 70.48px;
   height: 70.48px;
+}
+@media screen and (max-width: 576.98px) {
 }
 @media screen and (max-width: 576.98px) {
   #bank-account-div {

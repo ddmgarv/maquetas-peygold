@@ -5,7 +5,7 @@ $(function() {
     $("#blue-sticky-box").toggleClass("blue-box-extended");
     $("#top-navbar").toggleClass("top-navbar-extended");
     $("#secondary-nav").toggleClass("top-navbar-extended");
-    $(".title").toggleClass("title-collapse");
+    $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
   });
 
@@ -15,7 +15,7 @@ $(function() {
     $("#blue-sticky-box").toggleClass("blue-box-extended");
     $("#top-navbar").toggleClass("top-navbar-extended");
     $("#secondary-nav").toggleClass("top-navbar-extended");
-    $(".title").toggleClass("title-collapse");
+    $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
   });
   $("#demo1").click(function() {

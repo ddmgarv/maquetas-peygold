@@ -146,13 +146,7 @@
 }
 .title {
   cursor: pointer;
-  font-size: 29px;
-}
-.title-extended::before {
-  content: "peyGOLD";
-}
-.title-collapse::before {
-  content: "PG";
+  height: 2.3rem;
 }
 .user-collapse {
   display: none;
@@ -298,7 +292,7 @@
 /* Final media queries para la topbar en distintos tamaños de pantalla */
 
 /* Para telefonos en modo portrait (portrait phones, less than 576px)*/
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 1000px) {
   #secondary-top-nav {
     left: -0.2rem;
   }
@@ -333,7 +327,7 @@
   .title-extended {
     display: none;
   }
-  .title-collapse::before {
+  .title-collapse {
     content: none;
   }
   #quit-sm-btn {
