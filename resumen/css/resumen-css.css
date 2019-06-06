@@ -1,0 +1,57 @@
+#icons-resume-container {
+  padding: 86px 66px 61px 60px;
+  height: 240px;
+  margin-top: 27px;
+}
+#bank-account-div {
+  padding: 18px 44px 21px 28px;
+  height: 240px;
+  margin-top: 27px;
+}
+.wallet {
+  padding: 10px 24px 22px 23px;
+  margin: 27px 10px 14px 14px;
+  height: 240px;
+}
+.wallet-icon {
+  position: relative;
+  top: 1.75rem;
+  width: 38px;
+  height: 38px;
+}
+.wallet-links {
+  margin-top: 20px;
+}
+.resume-icon {
+  width: 45.48px;
+  height: 45.48px;
+}
+.resume-icon:hover {
+  width: 45.48px;
+  height: 45.48px;
+}
+
+.resume-icon-points {
+  width: 70.48px;
+  height: 70.48px;
+}
+.circle-blue {
+  border-radius: 50%;
+  background-color: #0070ba;
+  width: 70.48px;
+  height: 70.48px;
+}
+.circle-white {
+  border-radius: 50%;
+  background-color: #fff;
+  width: 70.48px;
+  height: 70.48px;
+}
+@media screen and (max-width: 576.98px) {
+  #bank-account-div {
+    margin-top: 2rem;
+  }
+  #bank-account-div-btn {
+    margin-right: 0.6rem;
+  }
+}

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resumen</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/nav-bar.css" />
+    <link rel="stylesheet" type="text/css" href="css/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="css/resumen-css.css" />
+    <link rel="stylesheet" type="text/css" href="css/table-details.css">
+  </head>
+
+  <body>
+    <!--Begin NavBar -->
+    <nav class="top-navbar-collapse" id="top-navbar">
+      <!-- IMPORTANTE: Añadir clase active al span en el top bar -->
+      <div id="top-list-wrapper">
+        <!-- Barra de navegacion superior -->
+        <ul class="nav top-nav flex-nowrap">
+          <li class="nav-item ml-1">
+            <button class="nav-link" id="sidebar-switch">
+              <i class="fas fa-bars icon-blue"></i>
+            </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-clipboard-list icon-blue"></i
+              ><span class="nav-text ml-1 active">Resumen</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-file-invoice icon-blue"></i
+              ><span class="nav-text ml-1">Movimientos</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="demo1"
+              ><i class="fas fa-mail-bulk icon-blue"></i
+              ><span class="nav-text ml-1">Enviar y solicitar</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-cart-arrow-down icon-blue"></i
+              ><span class="nav-text ml-1">Mercado peygold</span></a
+            >
+          </li>
+        </ul>
+
+        <ul class="nav top-nav pr-2 flex-nowrap">
+          <li class="nav-item nav-right-link">
+            <a class="nav-link" href="#"
+              ><i class="far fa-life-ring text-white"></i
+            ></a>
+          </li>
+          <li class="nav-item nav-right-link">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-comments text-white"></i
+            ></a>
+          </li>
+          <li class="nav-item nav-right-link">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-bell text-white"></i
+            ></a>
+          </li>
+        </ul>
+        <!-- Final Barra de navegacion superior -->
+      </div>
+    </nav>
+    <!-- Navbar END -->
+
+    <!-- Inicio Saludo box -->
+    <div id="blue-sticky-box" class="blue-box-collapse">
+      <h6 class="text-right text-white" id="saludo">Hola Martín!</h6>
+    </div>
+    <!-- Fin saludo box -->
+
+    <!-- Begin secondary nav -->
+    <!-- IMPORTANTE: Añadir clase de show-secondary-nav y hide al div que contiene a la barra de 
+      navegación, estas clases son para ocultar o mostrar la barra secundaria. -->
+    <div class="hide-secondary-nav" id="send-recieve-nav">
+      <!-- IMPORTANTE: La clase de top-navbar-collapse y extended son para que el nav
+      se mueva con respecto al side bar. El id es para que cada link de la barra de navegacion
+      principal solo muestre una barra de navegacion secundaria -->
+      <nav class="top-navbar-collapse" id="secondary-nav">
+        <!-- IMPORTANTE: Añadir clase active al anchor tag y eliminar secondary-nav-link en barra secundaria -->
+        <ul class="nav d-flex flex-nowrap" id="secondary-top-nav">
+          <li class="nav-item mr-4">
+            <a href="" class="nav-link secondary-nav-link">Enviar</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a href="" class="nav-link secondary-nav-link">Solicitar</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a href="" class="nav-link secondary-nav-link">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link secondary-nav-link"
+              >Mas <span id="actions-secondary-nav">acciones</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End secondary nav -->
+
+    <div class="row" id="body-row">
+      <!-- Sidebar -->
+      <div class="sidebar-extended" id="sidebar-wrapper">
+        <div class="sidebar-extended" id="sidebar-container">
+          <ul class="list-group overflow-auto">
+            <!-- IMPORTANTE: Añadir clase active al anchor tag en el side-bar -->
+
+            <!-- Titulo peygold -->
+            <li style="background-color: #323232">
+              <p
+                class="font-weight-bold text-white text-center my-auto center-sidebar-title"
+              >
+                <span class="title-extended title"></span>
+                <span
+                  ><i class="fas fa-bars title text-info" id="quit-sm-btn"></i
+                ></span>
+              </p>
+            </li>
+            <!-- Titulo peygold -->
+
+            <!-- Usuario logeado -->
+            <li>
+              <p class="text-white text-center center-sidebar-user">
+                <i class="fas fa-user"></i>
+                <span class="" id="user-text">marting@golbeg.com</span>
+              </p>
+            </li>
+            <!-- Usuario logeado -->
+
+            <!-- Subtitulo sidebar -->
+            <li class="nav-subtitles">
+              <div class="nav-rounded h-100">
+                <h6 class="nav-link">
+                  <i class="fas fa-wallet sidebar-icon"></i
+                  ><span class="ml-4">Mi Billetera</span>
+                </h6>
+              </div>
+            </li>
+            <!-- Subtitulo sidebar -->
+
+            <!-- Elementos de la sidebar -->
+            <div>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-chart-pie sidebar-icon icon-blue"></i
+                  ><span class="ml-4">Transacciones</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-file ml-1 sidebar-icon icon-blue"></i
+                  ><span class="ml-4"> Movimientos</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-cart-arrow-down sidebar-icon icon-blue"></i
+                  ><span class="ml-4">Cargar Peygold</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-credit-card sidebar-icon icon-blue"></i
+                  ><span class="ml-4">Creditos</span></a
+                >
+              </li>
+            </div>
+            <!-- Elementos de la sidebar -->
+
+            <!-- Subtitulo sidebar -->
+            <li class="nav-subtitles">
+              <div class="nav-rounded h-100">
+                <h6 class="nav-link">
+                  <i class="fas fa-hand-holding-usd sidebar-icon"></i
+                  ><span class="ml-4">Cobrar</span>
+                </h6>
+              </div>
+            </li>
+            <!-- Subtitulo sidebar -->
+
+            <!-- Elementos de la sidebar -->
+            <div>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-qrcode sidebar-icon icon-blue"></i
+                  ><span class="ml-4">Código QR</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-link sidebar-icon icon-blue"></i
+                  ><span class="ml-3"> Link de pago</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-arrows-alt-v sidebar-icon icon-blue"></i
+                  ><span class="ml-4"> Solicitar</span></a
+                >
+              </li>
+            </div>
+            <!-- Elementos de la sidebar -->
+
+            <!-- Subtitulo sidebar -->
+            <li class="nav-subtitles">
+              <div class="nav-rounded h-100">
+                <h6 class="nav-link">
+                  <i class="fas fa-file-invoice-dollar sidebar-icon"></i
+                  ><span class="ml-4">Pagar</span>
+                </h6>
+              </div>
+            </li>
+            <!-- Subtitulo sidebar -->
+
+            <!-- Elementos de la sidebar -->
+            <div>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-paper-plane sidebar-icon icon-blue"></i
+                  ><span class="ml-3"> Enviar dinero</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-file-invoice sidebar-icon icon-blue"></i
+                  ><span class="ml-4">Pagar servicios</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-mobile sidebar-icon icon-blue"></i
+                  ><span class="ml-4">Cargar celular</span></a
+                >
+              </li>
+            </div>
+            <!-- Elementos de la sidebar -->
+
+            <li class="nav-subtitles" style="height: 4px;"></li>
+
+            <br />
+            <!-- Elemento de la sidebar -->
+            <li class="nav-item">
+              <a class="nav-link side-bar-link" href="#"
+                ><i class="fas fa-heart sidebar-icon icon-blue"></i
+                ><span class="ml-4">Peygold solidario</span></a
+              >
+            </li>
+            <!-- Elemento de la sidebar -->
+
+            <br /><br /><br />
+
+            <!-- Elementos de la sidebar -->
+            <li class="nav-item">
+              <a class="nav-link side-bar-link" href="#"
+                ><i class="far fa-life-ring sidebar-icon icon-blue"></i
+                ><span class="ml-4">Ayuda</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link side-bar-link" href="#"
+                ><i class="fas fa-cogs sidebar-icon icon-blue"></i
+                ><span class="ml-3"> Configuración</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link side-bar-link" href="#"
+                ><i class="fas fa-sign-out-alt sidebar-icon icon-blue"></i
+                ><span class="ml-4">Cerrar sesión</span></a
+              >
+            </li>
+            <!-- Elementos de la sidebar -->
+
+            <!--<li class="nav-item"><a class="nav-link side-bar-link" href="#"><i class="fas fa-sign-out-alt sidebar-icon icon-blue"></i><span class="ml-4">Cerrar sesión</span></a></li>-->
+          </ul>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <!-- sidebar-container END -->
+
+      <!-- MAIN -->
+      <div class="col" id="main-div">
+        <!-- Titulo -->
+        <div class="row">
+          <div class="pl-1 bg-title col-10">
+            <h1 class="main-title-text">
+              <img src="assets/user1.png" class="main-title-img" />
+              Resumen
+            </h1>
+          </div>
+        </div>
+        <!-- Final titulo -->
+
+        <!-- row de la billetera e iconos -->
+        <div class="row">
+          <div class="col-lg-5 border-top-blue bg-white wallet">
+            <!-- Div billetera peygold -->
+            <div class="d-flex justify-content-between table-bottom-border">
+              <div class="mt-2">
+                <p class="text-blue">
+                  <span class="fs-14 font-weight-bold"
+                    >BILLETERA PEYGOLD</span><br />
+                    <span class="fs-28">P$G</span><span class="fs-41"> 20.000</span>
+                </p>
+              </div>
+              <div><img src="assets/wallet.png" class="wallet-icon" alt=""></div>
+            </div>
+            <br />
+            <div class="d-flex justify-content-between wallet-links">
+              <div class="mt-1">
+                <a href="" class="pt-2 wallet-small-text">Canjear Peygold</a>
+              </div>
+              <div>
+                <a href=""
+                  ><button class="btn-outline-custom">Ver Detalle</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Final div billetera peygold -->
+
+          <!-- Div de botones a la derecha de la billetera -->
+          <div class="col-lg-5 bg-white" id="icons-resume-container">
+            <div class="d-flex justify-content-around">
+              <div>
+                <a href="" class="text-dark no-underline">
+                  <div class="circle-blue">
+                    <img
+                      src="assets/send.svg"
+                      alt="send icon"
+                      class="resume-icon"
+                      style="margin-top: .6rem;margin-left: .6rem;"
+                    />
+                  </div>
+                  
+                <p class="mt-1 wallet-med-text text-center">Enviar</p>
+                </a>
+                
+              </div>
+              <div>
+                <a href="" class="text-dark no-underline">
+                  <div class="circle-blue">
+                      <img
+                      src="assets/request.svg"
+                      alt="request icon"
+                      class="resume-icon"
+                      style="margin-top:.8rem;margin-left:.9rem;"
+                    />
+                    </div>
+                  <p class="mt-1 wallet-med-text text-center">Solicitar</p>
+                  
+                </a>
+              </div>
+
+              <div class="circle-white">
+                <a href="" class="text-dark no-underline">
+                  <img
+                    src="assets/points.svg"
+                    alt="points icon"
+                    class="resume-icon-points"
+                  />
+                <p class="mt-1 wallet-med-text text-center">Mas acciones</p>
+                </a>
+
+              </div>
+            </div>
+            <!-- Div de botones a la derecha de la billetera -->
+          </div>
+        </div>
+        <!-- row de la billetera e iconos -->
+        <div class="row" style="position: relative;bottom:1.8rem;">
+          <div class="col-lg-5 border-top-blue bg-white wallet">
+            <!-- Div billetera peygold -->
+            <div class="d-flex justify-content-between table-bottom-border">
+              <div class="mt-2">
+                <p class="text-blue">
+                  <span class="fs-14 font-weight-bold">BILLETERA PESOS<br /></span>
+                  <span class="fs-28">$</span><span class="fs-41"> 19.580</span>
+                </p>
+              </div>
+              <div><img src="assets/wallet.png" class="wallet-icon" alt=""></div>
+            </div>
+            <br />
+            <div class="d-flex justify-content-between wallet-links">
+              <div class="mt-1">
+                <a href="" class="pt-2 wallet-small-text">Retirar Dinero</a>
+              </div>
+              <div>
+                <a href=""
+                  ><button class="btn-outline-custom">Ver Detalle</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Final div billetera peygold -->
+  
+          <!-- inicio tarjetas y cuentas bancarias -->
+          <div class="col-lg-5 bg-white" id="bank-account-div">
+            <h6 class="fs-14 text-blue">
+              TARJETAS Y CUENTAS BANCARIAS
+            </h6>
+            <div class="d-flex justify-content-between" style="margin-top:12px;">
+              <div class="ml-3">
+                <img src="assets/Imagen 74.png" alt="VISA" />
+              </div>
+              <div class="mt-1">
+                <p class="wallet-med-text">Terminada en <span>8424</span></p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <div class="ml-2">
+                <img src="assets/Imagen 76.png" alt="BANCO COMAFI" />
+              </div>
+              <div class="mt-4">
+                <p class="wallet-med-text">
+                  <span>5456545121232131</span>
+                </p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end">
+              <div id="bank-account-div-btn">
+                <a href=""
+                  ><button class="btn-outline-custom">Ver Detalle</button></a
+                >
+              </div>
+            </div>
+            <!-- Final tarjetas y cuentas bancarias -->
+          </div>
+        </div>
+
+        <h3 class="pb-2 fs-22">Movimientos recientes</h3>
+        <div class="row">
+            <!-- Div de las opciones -->
+            <div class="col-md-3 w-100 form-group has-search">
+              <span class="fa fa-search form-control-feedback"></span>
+  
+              <input
+                type="text"
+                class="form-control rounded-border form-border w-100"
+                placeholder="Buscar"
+              />
+            </div>
+  
+            <div class="col-4"></div>
+  
+            <div class="col-md-4 w-100">
+              <button class="btn">
+                <i class="fas fa-toggle-on mr-1"></i>Filtrar
+              </button>
+              <button class="btn">
+                Ordenar por<i class="fas fa-angle-down ml-1"></i>
+              </button>
+              <button class="btn"><i class="fas fa-list-ul"></i></button>
+            </div>
+          </div>
+          <!-- Fin del div de las opciones -->
+
+
+        <!-- Inicio Div de los movimientos recientes -->
+        <div class="row">
+          <div class="col-lg-10">
+            <div class="table-responsive-sm">
+              <table class="table fold-table" id="transferTable">
+        
+                <tbody>
+                  <tr class="bg-white">
+                    <td class="transferProfile"><img alt="" src="assets/user1.png" class="user-img-details"></td>
+                    <td class="transferDate">15-12-2018</td>
+                    <td class="transferTo">Transferiste a martin@peygold.com</td>
+                    <td class="detailTransfer"><i class="fa fa-chevron-down"></i> Ver detalle</td>
+                    <td class="amountTransfer">P$G 3.000</td>
+                  </tr>
+        
+                  <tr class="fold" id="fold-1">
+                    <td colspan="7" class="borderDown">
+                      <p class="codeInfo">Codigo de Operación HYGF545</p>
+        
+                      <table>
+                        <tbody>
+                          <tr class="tableDesc">
+                            <td>
+                              <div class="center blue-line">
+                                <img alt="" src="assets/user1.png" class="avatarLine user-img-details">
+                                <h2>Envío</h2>
+                                <p class="dateTableDesc">15-12-2018</p>
+                                <p class="hourTableDesc">14:05hs</p>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="center blue-line">
+                                <button style="cursor: context-menu;">
+                                  <div class="circle small">
+                                    <i class="fas fa-check check-icon"></i>
+                                  </div>
+                                </button>
+                                <h2>Aprobación</h2>
+                                <p class="dateTableDesc">15-12-2018</p>
+                                <p class="hourTableDesc">14:05hs</p>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="center">
+                                <img alt="" src="assets/user1.png" class="user-img-details">
+                                <h2>Recibido</h2>
+                                <p class="dateTableDesc">15-12-2018</p>
+                                <p class="hourTableDesc">14:05hs</p>
+                              </div>
+                            </td>
+                            <td class="rightInfo">
+                              <div class="restInfo">
+                                <p class="amountInfo">P$G 3.000</p>
+                                <p class="destInfo">Mail de destino a martin@goldberg.com </p>
+                              </div>
+                            </td>
+                          </tr>
+        
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        
+        
+          </div>
+        </div>
+
+        <br><br><br><br><br><br><br>
+
+    </div>
+    <!-- body-row END -->
+
+    <!-- Inicio Banner de publicidad -->
+    <div class="d-none d-xl-block advertising-side">
+      <img src="assets/banner.png" style="z-index: inherit;" />
+    </div>
+    <!-- Final Banner de publicidad -->
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

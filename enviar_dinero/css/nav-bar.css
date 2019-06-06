@@ -1,0 +1,351 @@
+/* Top bar css */
+#top-navbar {
+  font-family: "Rubik", sans-serif;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  background-color: #393939;
+}
+#top-navbar .nav-link {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+#top-navbar .nav-link .nav-text:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+}
+#top-navbar .nav-link .active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+}
+#top-list-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.top-nav {
+  height: 3.5rem;
+  font-size: 0.9rem;
+  padding-top: 0.3rem;
+}
+.top-nav li .icon-blue {
+  color: #31b8a7;
+}
+.top-navbar-collapse {
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+  left: 14rem;
+  width: 80%;
+}
+.top-navbar-extended {
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+  left: 4.5rem;
+  width: 87.5%;
+}
+/* Final Top bar css */
+
+/* Inicio estilos para la barra azul del topbar */
+#blue-sticky-box {
+  position: fixed;
+  top: 0;
+  height: 3.5rem;
+  z-index: 4;
+  background-color: #31b8a7;
+  width: 100%;
+}
+.blue-box-collapse {
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+.blue-box-extended {
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+#saludo {
+  margin-top: 0.7rem;
+  margin-right: 1.5rem;
+  font-size: 20px;
+}
+/* Final estilos para la barra azul del topbar */
+
+/* Inicio estilos para la navbar secundaria. */
+#secondary-nav {
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top: 3.5rem;
+  z-index: 6;
+  background-color: #fff !important;
+}
+.hide-secondary-nav {
+  display: none;
+}
+.show-secondary-nav {
+  display: block;
+}
+#secondary-top-nav {
+  margin-top: 0.3rem;
+  position: relative;
+  left: 9rem;
+}
+#secondary-top-nav .secondary-nav-link {
+  color: #000;
+}
+#secondary-top-nav .secondary-nav-link:hover {
+  color: #0490ce;
+  border-bottom: 2px solid #0490ce;
+}
+#secondary-top-nav .active {
+  color: #0490ce;
+  border-bottom: 2px solid #0490ce;
+}
+/* Final estilos para la navbar secundaria. */
+
+/* Estilos generales de la sidebar*/
+#sidebar-container {
+  font-family: "Rubik", sans-serif;
+  position: fixed;
+  top: -0.5rem;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 10;
+  background-color: #393939;
+}
+#sidebar-container .list-group a {
+  height: 50px;
+  color: #fff;
+}
+#sidebar-container .list-group .icon-blue {
+  color: #31b8a7;
+  font-size: 17px;
+}
+#sidebar-container .sidebar-icon {
+  margin: 0.1rem;
+  margin-top: 0.5rem;
+}
+.center-sidebar-title {
+  padding: 0.6rem !important;
+}
+.center-sidebar-user {
+  padding: 1rem !important;
+  padding-top: 2rem !important;
+}
+.title {
+  cursor: pointer;
+  font-size: 29px;
+}
+.title-extended::before {
+  content: "peyGOLD";
+}
+.title-collapse::before {
+  content: "PG";
+}
+.user-collapse {
+  display: none;
+}
+#quit-sm-btn {
+  display: none;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+/* Final estilos generales para sidebar */
+
+/* CSS para cuando la sidebar esta extendida */
+.sidebar-extended {
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  width: 14rem;
+  background-color: #4d4d4d;
+  padding: 0;
+  font-size: 0.8rem;
+}
+.sidebar-extended .nav-subtitles {
+  border-top: 3px solid #fff;
+  color: #fff;
+}
+.sidebar-extended .nav-rounded {
+  background-color: #31b8a7;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.sidebar-extended .side-bar-link {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  -webkit-transition: border-left 0.5s;
+  transition: border-left 0.5s;
+}
+.sidebar-extended .side-bar-link:hover {
+  border-left: 5px solid #cb1f54 !important;
+  border-right: 5px solid #cb1f54;
+  background-color: rgba(77, 77, 77, 0.5) !important;
+}
+.sidebar-extended .active {
+  border-left: 5px solid #cb1f54 !important;
+  border-right: 5px solid #cb1f54;
+  background-color: rgba(77, 77, 77, 0.5) !important;
+}
+/* final de css para sidebar extendida */
+
+/* Inicio css para sidebar colapsada */
+.sidebar-collapse {
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  width: 4.5rem;
+}
+.sidebar-collapse .nav-subtitles {
+  background-color: #393939;
+  cursor: pointer;
+}
+.sidebar-collapse .side-bar-link {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  -webkit-transition: border-left 0.5s;
+  transition: border-left 0.5s;
+}
+.sidebar-collapse .side-bar-link:hover {
+  border-left: 3px solid #cb1f54;
+  border-right: 3px solid #cb1f54;
+  color: #31b8a7;
+  background-color: #4d4d4d;
+}
+.sidebar-collapse .active {
+  border-left: 3px solid #cb1f54;
+  border-right: 3px solid #cb1f54;
+  background-color: rgba(77, 77, 77, 0.5) !important;
+}
+.sidebar-collapse > ul > li > div > h6 > span {
+  display: none;
+} /* Para ocultar texto en el sidebar colapsado */
+.sidebar-collapse > ul > div > li > a > span {
+  display: none;
+} /* Para ocultar texto en el sidebar colapsado */
+.sidebar-collapse > ul > li > a > span {
+  display: none;
+} /* Para ocultar texto en el sidebar colapsado */
+
+/* Final css para sidebar colapsada */
+
+/* media queries para la topbar en distintos tamaños de pantalla */
+@media screen and (max-width: 1366.98px) {
+  .top-navbar-collapse {
+    left: 14rem;
+    width: 70%;
+  }
+  .top-navbar-extended {
+    left: 4.5rem;
+    width: 82.5%;
+  }
+}
+@media screen and (max-width: 1152.98px) {
+  .top-navbar-collapse {
+    left: 14rem;
+    width: 75%;
+  }
+  .top-navbar-extended {
+    left: 4.5rem;
+    width: 85%;
+  }
+  #saludo {
+    display: none;
+  }
+}
+@media screen and (max-width: 1075px) {
+  .top-navbar-collapse {
+    left: 14rem;
+    width: 77.5%;
+  }
+  .top-navbar-collapse .nav-text {
+    display: none;
+  }
+  .top-navbar-extended {
+    left: 4.5rem;
+    width: 90%;
+  }
+  .top-navbar-extended .nav-text {
+    display: inline;
+  }
+  #top-list-wrapper {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 950.98px) {
+  #top-list-wrapper {
+    justify-content: flex-start;
+  }
+  .top-navbar-extended .nav-text {
+    display: none;
+  }
+  #secondary-top-nav {
+    left: 2rem;
+  }
+}
+/* Final media queries para la topbar en distintos tamaños de pantalla */
+
+/* Para telefonos en modo portrait (portrait phones, less than 576px)*/
+@media screen and (max-width: 815px) {
+  #secondary-top-nav {
+    left: -0.2rem;
+  }
+  #secondary-nav {
+    overflow-x: auto;
+  }
+  #actions-secondary-nav {
+    display: none;
+  }
+  .sidebar-extended {
+    width: 100%;
+    z-index: 500;
+    height: 100vh;
+  }
+  .sidebar-collapse {
+    width: 0;
+    z-index: 500;
+  }
+  .blue-box-extended {
+    display: none;
+  }
+  .top-navbar-extended {
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s;
+    left: 0rem;
+    width: 100%;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .title-extended {
+    display: none;
+  }
+  .title-collapse::before {
+    content: none;
+  }
+  #quit-sm-btn {
+    display: block;
+    padding-top: 0.8rem;
+  }
+  #top-list-wrapper {
+    justify-content: space-around;
+  }
+  .title {
+    margin-top: 0.4rem;
+    font-size: 20px;
+  }
+}
+
+/* Final telefonos en modo portrait (portrait phones, less than 576px)*/

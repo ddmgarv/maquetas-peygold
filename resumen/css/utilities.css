@@ -1,0 +1,326 @@
+/* Global CSS */
+body {
+  font-family: "Rubik", sans-serif;
+  padding-top: 5.6rem;
+  background-color: #f6f6f6 !important;
+}
+#body-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+#main-div {
+}
+/* Global CSS */
+
+/* Circulos */
+.circle.small {
+  background-color: #fff;
+  border: 3px solid #17a2b8;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  z-index: 86;
+  position: relative;
+}
+/* Circulos  */
+
+/* Inicio Formateo inputs */
+.rounded-border {
+  border-radius: 50px;
+}
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.form-border {
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+}
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #0070ba;
+}
+.btn-outline-custom {
+  background-color: transparent;
+  border: 2px solid #0070ba;
+  border-radius: 50px;
+  color: #0070ba;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  width: 122px;
+  height: 39px;
+  font-size: 15px;
+}
+.btn-outline-custom:hover {
+  background-color: #0070ba;
+  color: #fff;
+}
+
+/* Final formateo inputs */
+
+/* Formateo de texto */
+.no-underline:hover {
+  text-decoration: none;
+}
+.main-title-text {
+  font-size: 37px;
+  position: relative;
+  top: 1.5rem;
+  left: 0.6rem;
+}
+.text-opaque {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+.text-blue {
+  color: #0070ba !important;
+}
+.wallet-font-color {
+  color: #393939;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-26 {
+  font-size: 26px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.fs-41 {
+  font-size: 41px;
+}
+
+/* Final formateo de texto */
+
+/* Formateo de iconos */
+.icon-hover-info {
+  -webkit-transition: color 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.icon-hover-info:hover {
+  color: #17a2b8;
+}
+.icon-big {
+  font-size: 1.7rem;
+}
+.main-title-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+/* Formateo de iconos */
+
+/* formateo de cajas */
+.table-bottom-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.border-top-blue {
+  border-top: 5px solid #0070ba;
+}
+.border-bottom-blue {
+  border-bottom: 5px solid #0070ba;
+}
+.bottom-dashed-border {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+}
+/* formateo de cajas */
+
+/*Formateo para el Div de movimientos recientes en todas las pantallas*/
+.details-row {
+  padding: 14px 43px 10px 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  overflow: auto;
+}
+.details-row div {
+  flex-shrink: 0;
+  /* min-width: 8rem; */
+}
+.details-row::after {
+  content: "";
+  flex: 0 0 12px;
+}
+
+.collapsed-wallet-details {
+  padding: 15px 43px 19px 5px;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.collapsed-wallet-details > div {
+  flex-shrink: 0;
+  min-width: 1rem;
+}
+.collapsed-wallet-details::after {
+  content: "";
+  flex: 0 0 12px;
+}
+.margins-fix-wallet-details {
+  margin-left: 18%;
+}
+.pad-text-details {
+  margin-top: 6px;
+  margin-left: 15px;
+}
+.user-img-details {
+  width: 38px;
+  height: 38px;
+  z-index: 20;
+  border-radius: 50%;
+  position: relative;
+}
+.blue-line::before {
+  content: "";
+  border-top: 3px solid #2699fb;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 105px;
+  left: 48px;
+  width: 48%;
+  z-index: 1;
+}
+.check-icon {
+  margin-top: 0.5rem;
+  color: #2699fb;
+  font-size: 17.5px;
+  cursor: context-menu;
+  z-index: 20;
+}
+.line-height-fix {
+  line-height: 0.5rem;
+}
+
+.advertising-side {
+  position: fixed;
+  top: 3.5rem;
+  right: 0rem;
+  z-index: 500;
+}
+.details-med-text {
+  font-size: 15px;
+}
+.align-small-text {
+  line-height: 40px;
+  vertical-align: bottom;
+}
+/*Formateo para el Div de movimientos recientes en todas las pantallas*/
+@media screen and (min-width: 1520.98px) {
+  .blue-line::before {
+    width: 45%;
+  }
+}
+/* Padding fix */
+@media screen and (max-width: 576.98px) {
+  .blue-line::before {
+    display: none;
+  }
+  body {
+    padding-top: 5.2rem !important;
+  }
+  .collapsed-wallet-details > div {
+    flex-shrink: 0;
+    min-width: 8rem;
+  }
+  .margins-fix-wallet-details {
+    margin-left: 3rem;
+  }
+}
+/* Scroll styles */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-moz-scrollbar {
+  width: 8px;
+}
+
+::-o-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-moz-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-o-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #31b8a7;
+  border-radius: 10px;
+}
+::-moz-scrollbar-thumb {
+  background: #31b8a7;
+  border-radius: 10px;
+}
+::-o-scrollbar-thumb {
+  background: #31b8a7;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3ca0c4;
+}
+::-moz-scrollbar-thumb:hover {
+  background: #3ca0c4;
+}
+::-o-scrollbar-thumb:hover {
+  background: #3ca0c4;
+}
