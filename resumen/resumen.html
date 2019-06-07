@@ -22,8 +22,8 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/nav-bar.css" />
-    <link rel="stylesheet" type="text/css" href="css/utilities.css" />
+  <link rel="stylesheet" type="text/css" href="../css-global/nav-bar.css" />
+  <link rel="stylesheet" type="text/css" href="../css-global/utilities.css" />
     <link rel="stylesheet" type="text/css" href="css/resumen-css.css" />
     <link rel="stylesheet" type="text/css" href="css/table-details.css">
   </head>
@@ -97,10 +97,10 @@
     <!-- Begin secondary nav -->
     <!-- IMPORTANTE: Añadir clase de show-secondary-nav y hide al div que contiene a la barra de 
       navegación, estas clases son para ocultar o mostrar la barra secundaria. -->
-    <div id="send-recieve-nav">
-      <!-- IMPORTANTE: La clase de top-navbar-collapse y extended son para que el nav
-      se mueva con respecto al side bar. El id es para que cada link de la barra de navegacion
-      principal solo muestre una barra de navegacion secundaria -->
+
+    <!-- IMPORTANTE: La clase de top-navbar-collapse y extended son para que el nav
+    se mueva con respecto al side bar. El id es para que cada link de la barra de navegacion
+    principal solo muestre una barra de navegacion secundaria -->
       <nav class="top-navbar-collapse hide-secondary-nav" id="secondary-nav">
         <!-- IMPORTANTE: Añadir clase active al anchor tag y eliminar secondary-nav-link en barra secundaria -->
         <ul class="nav d-flex flex-nowrap" id="secondary-top-nav">
@@ -114,14 +114,11 @@
             <a href="" class="nav-link secondary-nav-link">Contactos</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link secondary-nav-link"
-              >Mas <span id="actions-secondary-nav">acciones</span></a
-            >
+            <a href="" class="nav-link secondary-nav-link">Mas <span id="actions-secondary-nav">acciones</span></a>
           </li>
         </ul>
       </nav>
-    </div>
-    <!-- End secondary nav -->
+      <!-- End secondary nav -->
 
     <div class="row" id="body-row">
       <!-- Sidebar -->
@@ -148,7 +145,7 @@
             <li>
               <p class="text-white text-center center-sidebar-user">
                 <i class="fas fa-user"></i>
-                <span class="" id="user-text">marting@golbeg.com</span>
+                <span id="user-text">marting@golbeg.com</span>
               </p>
             </li>
             <!-- Usuario logeado -->

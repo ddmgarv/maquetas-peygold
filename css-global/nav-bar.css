@@ -88,14 +88,14 @@
   position: fixed;
   z-index: 5;
   background-color: #fff !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .hide-secondary-nav {
   top: 0;
-  transition: top 0.5s;
 }
 .show-secondary-nav {
   top: 3.5rem;
-  transition: top 0.5s;
 }
 #secondary-top-nav {
   margin-top: 0.3rem;
@@ -205,6 +205,11 @@
 .sidebar-collapse .nav-subtitles {
   background-color: #393939;
   cursor: pointer;
+}
+.sidebar-collapse .nav-rounded {
+  background-color: #31b8a7;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 .sidebar-collapse .side-bar-link {
   -webkit-transition: color 0.5s;

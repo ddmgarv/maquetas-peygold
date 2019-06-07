@@ -22,8 +22,8 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/nav-bar.css" />
-    <link rel="stylesheet" type="text/css" href="css/utilities.css" />
+  <link rel="stylesheet" type="text/css" href="../css-global/nav-bar.css" />
+  <link rel="stylesheet" type="text/css" href="../css-global/utilities.css" />
     <link rel="stylesheet" type="text/css" href="css/enviar_dinero-css.css" />
   </head>
 
@@ -94,17 +94,14 @@
     <!-- Fin saludo box -->
 
     <!-- Begin secondary nav -->
-    <!-- IMPORTANTE: Añadir clase de show-secondary-nav y hide al div que contiene a la barra de 
-      navegación, estas clases son para ocultar o mostrar la barra secundaria. -->
-    <div class="show-secondary-nav" id="send-recieve-nav">
       <!-- IMPORTANTE: La clase de top-navbar-collapse y extended son para que el nav
-      se mueva con respecto al side bar. El id es para que cada link de la barra de navegacion
-      principal solo muestre una barra de navegacion secundaria -->
-      <nav class="top-navbar-collapse" id="secondary-nav">
+            se mueva con respecto al side bar. El id es para que cada link de la barra de navegacion
+            principal solo muestre una barra de navegacion secundaria -->
+      <nav class="top-navbar-collapse hide-secondary-nav" id="secondary-nav">
         <!-- IMPORTANTE: Añadir clase active al anchor tag y eliminar secondary-nav-link en barra secundaria -->
         <ul class="nav d-flex flex-nowrap" id="secondary-top-nav">
           <li class="nav-item mr-4">
-            <a href="" class="nav-link active">Enviar</a>
+            <a href="" class="nav-link secondary-nav-link">Enviar</a>
           </li>
           <li class="nav-item mr-4">
             <a href="" class="nav-link secondary-nav-link">Solicitar</a>
@@ -113,13 +110,10 @@
             <a href="" class="nav-link secondary-nav-link">Contactos</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link secondary-nav-link"
-              >Mas <span id="actions-secondary-nav">acciones</span></a
-            >
+            <a href="" class="nav-link secondary-nav-link">Mas <span id="actions-secondary-nav">acciones</span></a>
           </li>
         </ul>
       </nav>
-    </div>
     <!-- End secondary nav -->
 
     <div class="row" id="body-row">
@@ -131,13 +125,10 @@
 
             <!-- Titulo peygold -->
             <li style="background-color: #323232">
-              <p
-                class="font-weight-bold text-white text-center my-auto center-sidebar-title"
-              >
-                <span class="title-extended title"></span>
-                <span
-                  ><i class="fas fa-bars title text-info" id="quit-sm-btn"></i
-                ></span>
+              <p class="font-weight-bold text-white text-center my-auto center-sidebar-title">
+                <img src="assets/Isologotipo.svg" class="title-extended title mt-2" alt="" />
+                <img src="assets/Isotipo.svg" alt="" class="title-collapse title mt-2 d-none" />
+                <span><i class="fas fa-bars title text-info" id="quit-sm-btn"></i></span>
               </p>
             </li>
             <!-- Titulo peygold -->
@@ -304,17 +295,28 @@
 
       <!-- MAIN -->
       <div class="col" id="main-div">
+        <!-- Titulo -->
+        <div class="row">
+          <div class="pl-1 bg-title col-10">
+            <h1 class="main-title-text">
+              <img src="assets/user1.png" class="main-title-img" />
+              Enviar
+            </h1>
+          </div>
+        </div>
+        <!-- Final titulo -->
         <!-- Inicio row div -->
         <div class="row">
-          <div class="col-lg-10 p-2 pb-5 border-top-blue bg-white" id="resume-container">
-            <div class="d-flex justify-content-center flex-column">
-              <div class="mx-auto m-1">
-                <img src="assets/user.png" alt="Usuario" class="user-img" />
+          <!-- Col div -->
+          <div class="col-xl-10 p-2" id="resume-container"> 
+            <!-- Main Flex container -->
+            <div class="d-flex justify-content-center flex-column bg-white border-top-blue">
+              <div class="mx-auto m-3">
+                <img src="assets/user1.png" alt="Usuario" class="user-img" />
               </div>
-              <div class="mx-auto m-1 wallet-med-text">Enviar pago a:</div>
-
+              <div class="mx-auto m-1 fs-22 font-weight-bold">Enviar pago a:</div>
+              <form action="">
               <div class="mx-auto m-1">
-                <form action="">
                   <div>
                     <input
                       type="text"
@@ -350,7 +352,7 @@
                       <p class="wallet-small-text">
                         <a
                         href="#"
-                        class="text-blue no-underline wallet-small-text"
+                        class="text-blue no-underline fs-15 font-weight-bold"
                         id="hide"
                         >Como funciona</a>
                       </p> 
@@ -417,30 +419,30 @@
                     </div>
                   </div>
                   <!-- Final de carousel -->
+                  <br>
                   <div class="d-flex justify-content-center mt-3">
-                    <a href="#" class="text-blue no-underline wallet-med-text">
+                    <a href="#" class="text-blue no-underline font-weight-bold fs-18">
                       Administrar contactos
                     </a>
                   </div>
-                  <div class="d-flex justify-content-center mt-5">
+                  <br>
+              </div><!-- Main Flex container -->
+                <div class="d-flex justify-content-center mt-5">
                     <button class="btn-outline-custom">Siguiente</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div> 
-        <!-- Final row div -->
-      </div>
-      <!-- Main Col END -->
+                </div>
+              </form>
+            </div><!-- Col div -->
+
+          </div><!-- Final row div -->
+          
+        </div><!-- Main Col END --> 
+        
+      </div><!-- Main row End -->
+      <!-- Inicio Banner de publicidad -->
+      <img src="assets/banner.png" class="d-none d-xl-block advertising-side" />
+      <!-- Final Banner de publicidad -->
     </div>
     <!-- body-row END -->
-
-    <!-- Inicio Banner de publicidad -->
-    <div class="d-none d-xl-block advertising-side">
-      <img src="assets/banner.png" style="z-index: inherit;" />
-    </div>
-    <!-- Final Banner de publicidad -->
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

@@ -18,10 +18,10 @@ $(function() {
     $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
   });
+
   $("#demo1").click(function() {
-    $("#send-recieve-nav").toggleClass("show-secondary-nav");
     $("#secondary-nav").toggleClass("show-secondary-nav");
-    $("body").toggleClass("pad-body");
+    $("#body-row").toggleClass("pad-body");
     $(".advertising-side").toggleClass("adver-down");
   });
   $("#hide").click(function() {

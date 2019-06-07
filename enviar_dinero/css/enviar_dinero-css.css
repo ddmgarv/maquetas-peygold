@@ -7,8 +7,8 @@
   text-align: center;
 }
 #resume-container {
-  margin-top: 2rem;
-  margin-left: 1rem;
+  margin-top: 1.3rem;
+  margin-left: 4px;
 }
 .user-img {
   widows: 73.78px;
@@ -19,12 +19,12 @@
 }
 .btn-slider {
   color: #565574;
-  font-size: 27.5px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  font-size: 30px;
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
 }
 #link-how-cont {
-  margin-left: 10rem;
+  margin-left: 17rem;
   margin-top: 1em;
 }
 #carousel-container {
@@ -59,11 +59,13 @@
   transition: opacity 0.5s ease-out;
   -webkit-transition: opacity 0.5s ease-out;
 }
+.user-img {
+  width: 56px;
+  height: 56px;
+}
 @media screen and (max-width: 576.98px) {
   #resume-container {
     margin-top: 1.2rem;
-    margin-left: 0.4rem;
-    margin-right: 0.4rem;
   }
   .input-resume {
     width: 15rem;

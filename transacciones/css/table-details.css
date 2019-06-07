@@ -1,0 +1,232 @@
+.search input {
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+  width: 100%;
+  height: 40px;
+  font-family: Rubik, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #43425d;
+  padding-left: 30px;
+  outline: none;
+}
+.search input:placeholder-shown {
+  font-family: Rubik, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #43425d;
+  padding-left: 30px;
+}
+
+.search form {
+  position: relative;
+  width: 250px;
+}
+
+.search button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 8px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: #0a5de2;
+  cursor: pointer;
+}
+
+table {
+  width: 100% !important;
+  margin-left: 1% !important;
+}
+table.fold-table > tbody > tr.fold {
+  display: none;
+}
+table.fold-table > tbody > tr.fold.open {
+  display: table-row;
+}
+#transferTable .bg-white {
+  background: white;
+  border-bottom: 1px solid #929292;
+}
+#transferTable .bg-white td {
+  margin: 0;
+  padding: 8px 0 8px 26px;
+  height: 39px;
+  line-height: 35px;
+}
+#transferTable .transferDate {
+  font-family: Rubik, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #43425d;
+  width: 20%;
+  min-width: 50px;
+}
+#transferTable .transferTo {
+  font-family: Rubik, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #43425d;
+  width: 40%;
+  min-width: 290px;
+}
+
+#transferTable .detailTransfer {
+  font-family: Rubik, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #43425d;
+  cursor: pointer;
+  min-width: 140px;
+  width: 20%;
+}
+#transferTable .detailTransfer i {
+  font-size: 12px;
+  color: #2699fb;
+}
+
+#transferTable .amountTransfer {
+  font-family: Rubik, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #43425d;
+  width: 30%;
+  min-width: 120px;
+}
+.collapse {
+  display: none;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.collapse.in {
+  display: inherit;
+  visibility: visible;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.rightInfo {
+  width: 35%;
+}
+
+.tableDesc h2 {
+  font-family: Rubik, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4d4f5c;
+  padding: 10px 0 5px;
+  margin: 0;
+}
+.tableDesc .dateTableDesc {
+  font-family: Rubik, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #4d4f5c;
+  padding-bottom: 5px;
+}
+
+.tableDesc .hourTableDesc {
+  font-family: Rubik, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #4d4f5c;
+  padding-bottom: 15px;
+}
+
+.tableDesc td {
+  padding: 8px 53px 8px 0 !important;
+}
+
+.amountInfo {
+  font-family: Rubik, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #43425d;
+  text-align: right;
+  padding-bottom: 25px;
+}
+
+.destInfo {
+  font-family: Rubik, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #4d4f5c;
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  width: 40%;
+}
+.blue-line::before {
+  content: "";
+  border-top: 3px solid #2699fb;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 25px;
+  right: -34px;
+  width: 95%;
+}
+
+.borderDown {
+  border-bottom: 1px solid #929292;
+}
+
+.table > tbody > tr > td {
+  border: none;
+}
+
+tr.fold.open {
+  background: white;
+}
+tr.fold.open td {
+  padding: 8px 0 0 10px;
+  position: relative;
+  border: none;
+  min-width: 100px;
+}
+tr.fold.open td p {
+  margin: 0;
+}
+@media screen and (min-width: 1250.98px) {
+  .tableDesc td {
+    padding: 8px 33px 8px 0px !important;
+  }
+}
+@media screen and (min-width: 1350.98px) {
+  tr.fold.open td {
+    padding: 8px 0 0 10px;
+  }
+  .tableDesc td {
+    padding: 8px 53px 8px 0 !important;
+  }
+}
+@media screen and (min-width: 1520.98px) {
+  .tableDesc td {
+    padding: 8px 160px 8px 5px !important;
+  }
+  .blue-line::before {
+    position: absolute;
+    right: -40px !important;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .search input {
+    width: 100%;
+  }
+  .search form {
+    position: rlative;
+    width: 100%;
+  }
+  .blue-line::before {
+    right: -30px;
+    width: 95%;
+  }
+}

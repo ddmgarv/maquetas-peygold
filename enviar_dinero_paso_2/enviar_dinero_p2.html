@@ -22,8 +22,8 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/nav-bar.css" />
-    <link rel="stylesheet" type="text/css" href="css/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="../css-global/nav-bar.css" />
+    <link rel="stylesheet" type="text/css" href="../css-global/utilities.css" />
     <link rel="stylesheet" type="text/css" href="css/enviar_dinero_p2.css" />
   </head>
 
@@ -96,30 +96,25 @@
     <!-- Begin secondary nav -->
     <!-- IMPORTANTE: Añadir clase de show-secondary-nav y hide al div que contiene a la barra de 
       navegación, estas clases son para ocultar o mostrar la barra secundaria. -->
-    <div class="hide-secondary-nav" id="send-recieve-nav">
-      <!-- IMPORTANTE: La clase de top-navbar-collapse y extended son para que el nav
-      se mueva con respecto al side bar. El id es para que cada link de la barra de navegacion
-      principal solo muestre una barra de navegacion secundaria -->
-      <nav class="top-navbar-collapse" id="secondary-nav">
-        <!-- IMPORTANTE: Añadir clase active al anchor tag y eliminar secondary-nav-link en barra secundaria -->
-        <ul class="nav d-flex flex-nowrap" id="secondary-top-nav">
-          <li class="nav-item mr-4">
-            <a href="" class="nav-link secondary-nav-link">Enviar</a>
-          </li>
-          <li class="nav-item mr-4">
-            <a href="" class="nav-link secondary-nav-link">Solicitar</a>
-          </li>
-          <li class="nav-item mr-4">
-            <a href="" class="nav-link secondary-nav-link">Contactos</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link secondary-nav-link"
-              >Mas <span id="actions-secondary-nav">acciones</span></a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="top-navbar-collapse hide-secondary-nav" id="secondary-nav">
+      <!-- IMPORTANTE: Añadir clase active al anchor tag y eliminar secondary-nav-link en barra secundaria -->
+      <ul class="nav d-flex flex-nowrap" id="secondary-top-nav">
+        <li class="nav-item mr-4">
+          <a href="" class="nav-link secondary-nav-link">Enviar</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a href="" class="nav-link secondary-nav-link">Solicitar</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a href="" class="nav-link secondary-nav-link">Contactos</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link secondary-nav-link"
+            >Mas <span id="actions-secondary-nav">acciones</span></a
+          >
+        </li>
+      </ul>
+    </nav>
     <!-- End secondary nav -->
 
     <div class="row" id="body-row">
@@ -134,7 +129,16 @@
               <p
                 class="font-weight-bold text-white text-center my-auto center-sidebar-title"
               >
-                <span class="title-extended title"></span>
+                <img
+                  src="assets/Isologotipo.svg"
+                  class="title-extended title mt-2"
+                  alt=""
+                />
+                <img
+                  src="assets/Isotipo.svg"
+                  alt=""
+                  class="title-collapse title mt-2 d-none"
+                />
                 <span
                   ><i class="fas fa-bars title text-info" id="quit-sm-btn"></i
                 ></span>
@@ -304,109 +308,195 @@
 
       <!-- MAIN -->
       <div class="col" id="main-div">
-        <div class="row" id="main-content-send-money-p2">
-          <div class="col-lg-10 border-top-blue bg-white p-5">
-            <div class="main-user-containers">
-              <div class="m-sm-center">
-                <img src="assets/user1.png" alt="User img" id="main-user-img" />
-              </div>
-              <div id="main-user-txt" class="m-sm-center">
-                <p id="user-text">
-                  <span class="font-weight-bold" style="font-size: 19px"
-                    >Miguel Jurado</span
-                  ><br />
-                  <span style="font-size: 17px"
-                    >angelmigueljurado@gmail.com</span
-                  >
-                </p>
-              </div>
-            </div>
-            <br />
-            <br />
-            <div class="main-user-containers">
-              <div class="mr-5 m-sm-center">
-                <img src="assets/Imagen 74.png" alt="" />
-              </div>
-              <div class="m-sm-center">
-                Terminada en ***** <span>2525</span> <br /><br />
-                <a href="">Cambiar tu tarjeta</a>
-              </div>
-              <div class=" m-sm-center">
-                <input
-                  type="number"
-                  class="input-custom-send-money margin-visa-input"
-                  placeholder="0.00"
-                  step="0.01"
-                  name=""
-                  value=""
-                />
-                <br />
-                <p class="text-center">
-                  <button class="btn-custom-send-money margin-visa-input">
-                    USD
-                  </button>
-                </p>
-              </div>
-            </div>
-            <!-- Table begin div billetera pesos -->
-            <div class="table-responsive mt-2">
-              <table class="table table-width">
-                <tr>
-                  <td>
-                    <span class="wallet-med-text"> Ver saldo</span>
-                    <i class="fas fa-chevron-down"></i>
-                  </td>
-                  <td>
-                    <img src="assets/Imagen 72@2x.png" class="wallet-img" />
-                    <span>Billetera en Pesos</span>
-                  </td>
-                  <td>
-                    <input
-                      type="number"
-                      class="input-custom-send-money"
-                      name=""
-                      value=""
-                      placeholder="0.00"
-                      step="0.01"
-                    />
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <!-- Table begin div -->
-
-            <!-- Table begin div billetera peygold-->
-            <div class="table-responsive">
-              <table class="table table-width">
-                <tr>
-                  <td>
-                    <span class="wallet-med-text"> Ver saldo</span>
-                    <i class="fas fa-chevron-down"></i>
-                  </td>
-                  <td>
-                    <div id="peygold-wallet-content-table">
-                      <img src="assets/Imagen 72@2x.png" class="wallet-img" />
-                      <span>Billetera en Peygold</span>
-                    </div>
-                  </td>
-                  <td>
-                    <input
-                      type="number"
-                      class="input-custom-send-money margin-right-wallet-input"
-                      name=""
-                      value=""
-                      placeholder="0.00"
-                      step="0.01"
-                    />
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <!-- Table final div -->
+        <!-- Titulo -->
+        <div class="row">
+          <div class="pl-1 bg-title col-10 margin-bottom-title">
+            <h1 class="main-title-text">
+              <img src="assets/user1.png" class="main-title-img" />
+              Enviar
+            </h1>
           </div>
         </div>
+        <form action="">
+          <!-- Final titulo -->
+          <div class="row" id="main-content-send-money-p2">
+            <div class="col-xl-10 border-top-blue bg-white p-5">
+              
+              <div class="main-user-containers">
+                <div class="m-sm-center">
+                  <img src="assets/user1.png" alt="User img" id="main-user-img" />
+                </div>
+                <div id="main-user-txt" class="m-sm-center">
+                  <p id="user-text">
+                    <span class="font-weight-bold" style="font-size: 19px"
+                      >Miguel Jurado</span
+                    ><br />
+                    <span style="font-size: 17px"
+                      >angelmigueljurado@gmail.com</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <br />
+              <br />
+              <div class="table-responsive mt-2" id="visa-table">
+                <table class="table table-width table-borderless">
+                  <tr>
+                    <td class="td-1 text-right">
+                      <img src="assets/Imagen 74.png" alt="" />
+                    </td>
+                    <td class="td-2">
+                      <p class="ml-4">
+                        Terminada en ***** <span>2525</span> <br /><br />
+                        <a href="" class="fs-15 font-weight-bold"
+                          >Cambiar tu tarjeta</a
+                        >
+                      </p>
+                    </td>
+                    <td class="td-3">
+                      <input
+                        type="number"
+                        class="input-custom-send-money"
+                        placeholder="0.00"
+                        step="0.01"
+                        name=""
+                        value=""
+                      />
+                      <br />
+                      <p class="text-right" style="margin-right: 1.8rem;">
+                        <button class="btn-custom-send-money">
+                          USD
+                        </button>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Table begin div billetera pesos -->
+              <div class="table-responsive mt-2">
+                <table class="table table-width table-top-border">
+                  <tr>
+                    <td class="td-1">
+                      <span> Ver saldo</span>
+                      <i class="fas fa-chevron-down"></i>
+                    </td>
+                    <td class="td-2">
+                      <img src="assets/Imagen 72@2x.png" class="wallet-img" />
+                      <span class="text-blue fs-19 font-weight-bold"
+                        >Billetera en Pesos</span
+                      >
+                    </td>
+                    <td class="td-3">
+                      <span class="fs-20">$</span><input
+                        type="number"
+                        class="input-custom-send-money"
+                        name=""
+                        value=""
+                        placeholder="0.00"
+                        step="0.01"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Table begin div -->
+
+              <!-- Table begin div billetera peygold-->
+              <div class="table-responsive">
+                <table class="table table-width table-top-border">
+                  <tr>
+                    <td class="td-1">
+                      <span class="wallet-med-text"> Ver saldo</span>
+                      <i class="fas fa-chevron-down"></i>
+                    </td>
+                    <td class="td-2">
+                      <img src="assets/Imagen 72@2x.png" class="wallet-img" />
+                      <span class="text-blue fs-19 font-weight-bold"
+                        >Billetera en Peygold</span
+                      >
+                    </td>
+                    <td class="td-3">
+                      <span class="fs-20">P$G
+                      </span><input
+                        type="number"
+                        class="input-custom-send-money"
+                        name=""
+                        value=""
+                        placeholder="0.00"
+                        step="0.01"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Table final div -->
+
+              <!-- Table begin div billetera peygold-->
+              <div class="table-responsive">
+                <table class="table table-width table-top-border">
+                  <tr>
+                    <td class="td-1">
+                      <span class="wallet-med-text"> Ver saldo</span>
+                      <i class="fas fa-chevron-down"></i>
+                    </td>
+                    <td class="td-2">
+                      <img src="assets/Imagen 72@2x.png" class="wallet-img" />
+                      <span class="text-blue fs-19 font-weight-bold"
+                        >Billetera en Peygold Credito</span
+                      >
+                    </td>
+                    <td class="td-3">
+                      <span class="fs-20">P$G
+                      </span><input
+                        type="number"
+                        class="input-custom-send-money"
+                        name=""
+                        value=""
+                        placeholder="0.00"
+                        step="0.01"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Table final div -->
+            </div>
+          </div>
+          <div class="row" id="add-note-container"><!-- Div de agregar nota -->
+            <div class="col-xl-10 bg-white" id="pad-add-note">
+              <div class="d-flex justify-content-center">
+                <div id="circle" style="background-color: #0070BA">
+                  <i class="fas fa-pencil-alt edit-icon"></i>
+                  
+                </div>
+                <div class="align-self-center ml-4">
+                  <span class="fs-17">Agregar una nota</span>
+                </div>
+              </div>
+              <br>
+              <div class="d-flex justify-content-center">
+                <input type="text" class="only-bottom-border"/>
+              </div>
+              <br><br>
+              <div class="d-flex justify-content-center">
+                <input type="submit" class="btn-outline-custom" value="Enviar" />
+              </div>
+            </div>
+          </div><!-- Final Div de agregar nota -->
+          <br>
+          <div class="row">
+            <div class="col-xl-10">
+              <p class="text-center fs-14">
+                Para obtener más información, lea nuestras <a href="" style="color: #0070BA">Condiciones de uso.</a>
+              </p>
+            </div>
+          </div>
+        </form>
       </div>
       <!-- Main Col END -->
+      <!-- Inicio Banner de publicidad -->
+      <img src="assets/banner.png" class="d-none d-xl-block advertising-side" />
+      <!-- Final Banner de publicidad -->
     </div>
     <!-- body-row END -->
 
