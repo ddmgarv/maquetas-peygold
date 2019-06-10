@@ -180,7 +180,9 @@ table.fold-table > tbody > tr.fold.open {
 .table > tbody > tr > td {
   border: none;
 }
-
+.fold {
+  border-bottom: 1px solid #929292;
+}
 tr.fold.open {
   background: white;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Enviar Dinero</title>
+    <title>Solicitar Dinero</title>
     <meta charset="utf-8" />
     <link
       rel="stylesheet"
@@ -22,9 +22,9 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="../global/css/nav-bar.css" />
-  <link rel="stylesheet" type="text/css" href="../global/css/utilities.css" />
-    <link rel="stylesheet" type="text/css" href="css/enviar_dinero-css.css" />
+    <link rel="stylesheet" type="text/css" href="../global/css/nav-bar.css" />
+    <link rel="stylesheet" type="text/css" href="../global/css/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="css/solicitar_dinero_p2.css" />
   </head>
 
   <body>
@@ -94,26 +94,27 @@
     <!-- Fin saludo box -->
 
     <!-- Begin secondary nav -->
-      <!-- IMPORTANTE: La clase de top-navbar-collapse y extended son para que el nav
-            se mueva con respecto al side bar. El id es para que cada link de la barra de navegacion
-            principal solo muestre una barra de navegacion secundaria -->
-      <nav class="top-navbar-collapse hide-secondary-nav" id="secondary-nav">
-        <!-- IMPORTANTE: Añadir clase active al anchor tag y eliminar secondary-nav-link en barra secundaria -->
-        <ul class="nav d-flex flex-nowrap" id="secondary-top-nav">
-          <li class="nav-item mr-4">
-            <a href="" class="nav-link secondary-nav-link">Enviar</a>
-          </li>
-          <li class="nav-item mr-4">
-            <a href="" class="nav-link secondary-nav-link">Solicitar</a>
-          </li>
-          <li class="nav-item mr-4">
-            <a href="" class="nav-link secondary-nav-link">Contactos</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link secondary-nav-link">Mas <span id="actions-secondary-nav">acciones</span></a>
-          </li>
-        </ul>
-      </nav>
+    <!-- IMPORTANTE: Añadir clase de show-secondary-nav y hide al div que contiene a la barra de 
+      navegación, estas clases son para ocultar o mostrar la barra secundaria. -->
+    <nav class="top-navbar-collapse hide-secondary-nav" id="secondary-nav">
+      <!-- IMPORTANTE: Añadir clase active al anchor tag y eliminar secondary-nav-link en barra secundaria -->
+      <ul class="nav d-flex flex-nowrap" id="secondary-top-nav">
+        <li class="nav-item mr-4">
+          <a href="" class="nav-link secondary-nav-link">Enviar</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a href="" class="nav-link secondary-nav-link">Solicitar</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a href="" class="nav-link secondary-nav-link">Contactos</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link secondary-nav-link"
+            >Mas <span id="actions-secondary-nav">acciones</span></a
+          >
+        </li>
+      </ul>
+    </nav>
     <!-- End secondary nav -->
 
     <div class="row" id="body-row">
@@ -125,10 +126,22 @@
 
             <!-- Titulo peygold -->
             <li style="background-color: #323232">
-              <p class="font-weight-bold text-white text-center my-auto center-sidebar-title">
-                <img src="../global/assets/Isologotipo.svg" class="title-extended title mt-2" alt="" />
-                <img src="../global/assets/Isotipo.svg" alt="" class="title-collapse title mt-2 d-none" />
-                <span><i class="fas fa-bars title text-info" id="quit-sm-btn"></i></span>
+              <p
+                class="font-weight-bold text-white text-center my-auto center-sidebar-title"
+              >
+                <img
+                  src="../global/assets/Isologotipo.svg"
+                  class="title-extended title mt-2"
+                  alt=""
+                />
+                <img
+                  src="../global/assets/Isotipo.svg"
+                  alt=""
+                  class="title-collapse title mt-2 d-none"
+                />
+                <span
+                  ><i class="fas fa-bars title text-info" id="quit-sm-btn"></i
+                ></span>
               </p>
             </li>
             <!-- Titulo peygold -->
@@ -297,147 +310,162 @@
       <div class="col" id="main-div">
         <!-- Titulo -->
         <div class="row">
-          <div class="pl-1 bg-title col-10">
-            <h1 class="main-title-text">
-              <img src="../global/assets/user1.png" class="main-title-img" />
-              Enviar
+          <div class="pl-1 bg-title col-10 margin-bottom-title quick-fix">
+            <h1 class="main-title-text ml-2">
+              <img src="../global/assets/user1.png" class="main-title-img d-none" />
+              Solicitar
             </h1>
           </div>
         </div>
-        <!-- Final titulo -->
-        <!-- Inicio row div -->
-        <div class="row">
-          <!-- Col div -->
-          <div class="col-xl-10 p-2" id="resume-container"> 
-            <!-- Main Flex container -->
-            <div class="d-flex justify-content-center flex-column bg-white border-top-blue">
-              <div class="mx-auto m-3">
-                <img src="../global/assets/user1.png" alt="Usuario" class="user-img" />
-              </div>
-              <div class="mx-auto m-1 fs-22 font-weight-bold">Enviar pago a:</div>
-              <form action="">
-              <div class="mx-auto m-1">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Nombre o correo electrónico"
-                      class="form-control input-resume rounded-border mx-auto"
-                      id="search-user"
-                    />
-                  </div>
-                  <div id="container-dropdown-input" class="p-1 input-dropdown-hide">
-                    <div class="m-1" >
-                      <button>
-                        <img src="../global/assets/user1.png" class="user-img" alt="">
-                        angelmigueljurado@gmail.com
-                      </button>
-                    </div>    
-                    <div class="m-1" >
-                      <button>
-                        <img src="../global/assets/user2.png" class="user-img" alt="">
-                        gustavoconfortsur@gmail.com
-                      </button>
-                    </div>
-                    <div class="m-1">
-                      <button>
-                        <img src="../global/assets/user2.png" class="user-img" alt="">
-                        pedroconfortsur@gmail.com
-                      </button>
-                    </div>
-
-                  </div>            
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <div id="link-how-cont">
-                      <p class="wallet-small-text">
-                        <a
-                        href="#"
-                        class="text-blue no-underline fs-15 font-weight-bold"
-                        id="hide"
-                        >Como funciona</a>
-                      </p> 
-                    </div>
-                  </div>
-                  <!-- Inicio de carousel -->
-                  <div class="d-flex justify-content-center mt-2" id="carousel-container">
-                    <div class="my-auto">
-                      <button id="back-btn">
-                        <i class="fas fa-chevron-left btn-slider"></i>
-                      </button>
-                    </div>
-                    <div class="d-flex" id="user-img-container">
-                      <div>
-                        <button>
-                          <img
-                            src="../global/assets/user1.png"
-                            alt="usuario"
-                            class="user-img"
-                          />
-                        </button>
-                      </div>
-                      <div>
-                        <button>
-                          <img
-                            src="../global/assets/user2.png"
-                            alt="usuario"
-                            class="user-img"
-                          />
-                        </button>
-                      </div>
-                      <div>
-                        <button>
-                          <img
-                            src="../global/assets/user3.png"
-                            alt="usuario"
-                            class="user-img"
-                          />
-                        </button>
-                      </div>
-                      <div>
-                        <button>
-                          <img
-                            src="../global/assets/user4.png"
-                            alt="usuario"
-                            class="user-img"
-                          />
-                        </button>
-                      </div>
-                      <div>
-                        <button>
-                          <img
-                            src="../global/assets/user5.png"
-                            alt="usuario"
-                            class="user-img"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                    <div class="my-auto">
-                      <button id="next-btn" type="button">
-                        <i class="fas fa-chevron-right btn-slider"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <!-- Final de carousel -->
-                  <br>
-                  <div class="d-flex justify-content-center mt-3">
-                    <a href="#" class="text-blue no-underline font-weight-bold fs-18">
-                      Administrar contactos
-                    </a>
-                  </div>
-                  <br>
-              </div><!-- Main Flex container -->
-                <div class="d-flex justify-content-center mt-5">
-                    <button class="btn-outline-custom">Siguiente</button>
+        <form action="">
+          <!-- Final titulo -->
+          <div class="row" id="main-content-send-money-p2">
+            <div class="col-xl-10 border-top-blue bg-white p-5">
+              
+              <div class="main-user-containers">
+                <div class="m-sm-center">
+                  <img src="../global/assets/user3.png" alt="User img" id="main-user-img" />
                 </div>
-              </form>
-            </div><!-- Col div -->
+                <div id="main-user-txt" class="m-sm-center">
+                  <p id="user-text">
+                    <span class="font-weight-bold fs-19"
+                      >Martin Goldberg</span
+                    ><br />
+                    <span class="fs-17"
+                      >comprasconfortsur@hotmail.com</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <br />
+              <br />
+              <!-- Table begin div billetera pesos -->
+              <div class="table-responsive mt-2">
+                <table class="table table-width table-top-border">
+                  <tr>
+                    <td class="td-1">
+                      <button class="mt-table-td1">
+                        <span> Ver saldo</span>
+                        <i class="fas fa-chevron-down"></i>
+                      </button>
+                    </td>
+                    <td class="td-2">
+                      <div class="mt-table-td2">
+                        <img src="../global/assets/Imagen 72@2x.png" class="wallet-img" />
+                        <span class="text-blue fs-17 font-weight-bold">Billetera en Pesos</span>
+                      </div>
+                    </td>
+                    <td class="td-3">
+                      <div class="mb-table-td3">
+                        <span class="sup-index">
+                          <span class="hidden-vis fs-16">P</span><span class="hidden-vis fs-16">G</span><span class="fs-16">$</span>
+                        </span>
+              
+                        <input type="number" class="input-custom-send-money" name="" value="" placeholder="0.00" step="0.01" />
+                      </div>
+              
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Table begin div -->
+              
+              <!-- Table begin div billetera peygold-->
+              <div class="table-responsive">
+                <table class="table table-width table-top-border">
+                  <tr>
+                    <td class="td-1">
+                      <button class="mt-table-td1">
+                        <span class="fs-17">Ver saldo</span>
+                        <i class="fas fa-chevron-down"></i>
+                      </button>
+              
+                    </td>
+                    <td class="td-2">
+                      <div class="mt-table-td2">
+                        <img src="../global/assets/Imagen 72@2x.png" class="wallet-img" />
+                        <span class="text-blue fs-17 font-weight-bold">Billetera en Peygold</span>
+                      </div>
+                    </td>
+                    <td class="td-3">
+                      <div class="mb-table-td3">
+                        <span class="fs-16 sup-index">P$G
+                        </span><input type="number" class="input-custom-send-money" name="" value="" placeholder="0.00" step="0.01" />
+                      </div>
+              
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Table final div -->
+              
+              <!-- Table begin div billetera peygold-->
+              <div class="table-responsive">
+                <table class="table table-width table-top-border">
+                  <tr>
+                    <td class="td-1">
+                      <button class="mt-table-td1">
+                        <span class="fs-17"> Ver saldo</span>
+                        <i class="fas fa-chevron-down"></i>
+                      </button>
+              
+                    </td>
+                    <td class="td-2">
+                      <div class="mt-table-td2">
+                        <img src="../global/assets/Imagen 72@2x.png" class="wallet-img" />
+                        <span class="text-blue fs-17 font-weight-bold">Billetera en Peygold Credito</span>
+                      </div>
+              
+                    </td>
+                    <td class="td-3">
+                      <div class="mb-table-td3">
+                        <span class="fs-16 sup-index">P$G
+                        </span><input type="number" class="input-custom-send-money" name="" value="" placeholder="0.00" step="0.01" />
+                      </div>
+              
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Table final div -->
+            </div>
+          </div>
+          <div class="row" id="add-note-container"><!-- Div de agregar nota -->
+            <div class="col-xl-10 bg-white" id="pad-add-note">
+              <div class="d-flex justify-content-center">
+                <div id="circle">
+                  <i class="fas fa-pencil-alt edit-icon"></i>
+                </div>
+                <div class="align-self-center ml-4 mr-5">
+                  <span class="fs-17">Agregar una nota</span>
+                </div>
+              </div>
+              <br>
+              <div class="d-flex justify-content-center">
+                <input type="text" class="only-bottom-border"/>
+              </div>
+              <br><br>
+              <div class="d-flex justify-content-center">
+                <input type="submit" class="btn-outline-custom input-custom-width" value="Solicitar pago" />
+              </div>
+              <br>
+              <div class="d-flex justify-content-center">
+                <a href="" class="no-underline fs-15 text-blue">Cancelar</a>
+              </div>
+            </div>
+          </div><!-- Final Div de agregar nota -->
 
-          </div><!-- Final row div -->
-          
-        </div><!-- Main Col END --> 
-        
-      </div><!-- Main row End -->
+          <div class="row">
+            <div class="col-xl-10">
+              <p class="text-center fs-14">
+                Para obtener más información, lea nuestras <a href="" class="text-blue">Condiciones de uso.</a>
+              </p>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <!-- Main Col END -->
       <!-- Inicio Banner de publicidad -->
       <img src="../global/assets/banner.png" class="d-none d-xl-block advertising-side" />
       <!-- Final Banner de publicidad -->

@@ -22,6 +22,14 @@
 .wallet-links {
   margin-top: 28px;
 }
+.solicitar-icon {
+  margin-top: 0.8rem;
+  margin-left: 0.9rem;
+}
+.enviar-icon {
+  margin-top: 0.6rem;
+  margin-left: 0.6rem;
+}
 .resume-icon {
   width: 45.48px;
   height: 45.48px;
