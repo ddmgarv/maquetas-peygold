@@ -1,7 +1,5 @@
-#body-row {
-  padding-top: 0 !important;
-}
 .login-wrapper {
+  top: -48px;
   max-width: 100%;
   height: 100vh;
   width: 100%;
@@ -16,7 +14,6 @@
 }
 .login-content {
   background: rgba(0, 0, 0, 0.5);
-  border: 1px solid white;
   border-radius: 25px;
   color: white;
   padding: 1rem;
@@ -32,7 +29,7 @@
 .redes-link a {
   margin: 0 25px;
 }
-.divide-line p {
+/* .divide-line p {
   color: white;
   font-size: 18px;
   font-weight: 500;
@@ -53,7 +50,7 @@
   right: 5%;
   border-bottom: 1px solid white;
   width: 40%;
-}
+} */
 .btn-outline-login {
   background-color: transparent !important;
   border: 2px solid #17a2b8 !important;
@@ -61,9 +58,9 @@
   color: #fff !important;
   -webkit-transition: all 0.5s !important;
   transition: all 0.5s !important;
-  width: 122px !important;
-  height: 39px !important;
-  font-size: 15px;
+  width: 174px !important;
+  height: 42px !important;
+  font-size: 14px;
 }
 .btn-outline-login:hover {
   background-color: #17a2b8 !important;
@@ -98,6 +95,7 @@
   position: absolute;
   top: 35%;
 }
+
 @media screen and (max-width: 576.98px) {
   .atention-img {
     display: none;

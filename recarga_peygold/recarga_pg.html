@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Barra de navegacion</title>
+    <title>Recarga de Peygold</title>
     <meta charset="utf-8" />
     <link
       rel="stylesheet"
@@ -22,8 +22,9 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../css-global/utilities.css" />
-    <link rel="stylesheet" type="text/css" href="../css-global/nav-bar.css" />
+    <link rel="stylesheet" type="text/css" href="../global/css/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="../global/css/nav-bar.css" />
+    <link rel="stylesheet" type="text/css" href="css/recarga_peygold.css" />
   </head>
 
   <body>
@@ -134,12 +135,12 @@
                 class="font-weight-bold text-white text-center my-auto center-sidebar-title"
               >
                 <img
-                  src="assets/Isologotipo.svg"
+                  src="../global/assets/Isologotipo.svg"
                   class="title-extended title mt-2"
                   alt=""
                 />
                 <img
-                  src="assets/Isotipo.svg"
+                  src="../global/assets/Isotipo.svg"
                   alt=""
                   class="title-collapse title mt-2 d-none"
                 />
@@ -312,9 +313,317 @@
 
       <!-- MAIN -->
       <div class="col" id="main-div">
-        <div class="row"></div>
+        <!-- Titulo -->
+        <div class="row">
+          <div class="pl-1 bg-title col-10 margin-bottom-title quick-fix">
+            <h1 class="main-title-text ml-2">
+              <img
+                src="../global/assets/user1.png"
+                class="main-title-img d-none"
+              />
+              CARGAR BILLETERA
+            </h1>
+          </div>
+        </div>
+        <!-- Final titulo -->
+
+        <!-- Init row for radios container -->
+        <div class="row">
+          <div class="col-xl-10 border-top-blue radios-container-1">
+            <form action="">
+              <div class="d-flex justify-content-center">
+                <div class="optiones-center-fix fs-22">PESOS</div>
+                <div>
+                  <label class="container">
+                    <input type="radio" name="radio" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="optiones-center-fix fs-22 ml-5">PEYGOLD</div>
+                <div>
+                  <label class="container">
+                    <input type="radio" name="radio" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Final row for radios container -->
+
+        <!-- Init row for radios container -->
+        <div class="row">
+          <div class="col-xl-10 radios-container-2">
+            <form action="">
+              <div class="d-flex justify-content-center">
+                <div class="optiones-center-fix-1 fs-18">
+                  Enviar a mi cuenta
+                </div>
+                <div class="position-checkmar-own-acc">
+                  <label class="container">
+                    <input type="radio" name="radio" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="optiones-center-fix-2 fs-18 ml-3">
+                  Enviar a otra cuenta
+                </div>
+                <div>
+                  <label class="container">
+                    <input type="radio" name="radio" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Final row for radios container -->
+
+
+        <!-- Inicio row user-search div -->
+        <div class="row">
+          <!-- Col div -->
+          <div class="col-xl-10 border-top-blue bg-white" id="user-search-container">
+            <!-- Main Flex container -->
+            <div class="d-flex justify-content-center flex-column   p-4">
+              <form action="">
+                <div class="mx-auto m-1">
+                  <div>
+                    <input type="text" placeholder="Nombre o correo electrónico"
+                      class="form-control input-resume rounded-border mx-auto" id="search-user" />
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="link-how-cont">
+                    <p>
+                      <a href="#" class="text-blue no-underline fs-12 font-weight-bold">Como funciona</a>
+                    </p>
+                  </div>
+                </div>
+                <!-- Inicio de carousel -->
+                <div class="d-flex justify-content-center mt-2" id="carousel-container">
+                  <div class="my-auto">
+                    <button id="back-btn">
+                      <i class="fas fa-chevron-left btn-slider"></i>
+                    </button>
+                  </div>
+                  <div class="d-flex" id="user-img-container">
+                    <div>
+                      <button>
+                        <img src="../global/assets/user1.png" alt="usuario" class="user-img" />
+                      </button>
+                    </div>
+                    <div>
+                      <button>
+                        <img src="../global/assets/user2.png" alt="usuario" class="user-img" />
+                      </button>
+                    </div>
+                    <div>
+                      <button>
+                        <img src="../global/assets/user3.png" alt="usuario" class="user-img" />
+                      </button>
+                    </div>
+                    <div>
+                      <button>
+                        <img src="../global/assets/user4.png" alt="usuario" class="user-img" />
+                      </button>
+                    </div>
+                    <div>
+                      <button>
+                        <img src="../global/assets/user5.png" alt="usuario" class="user-img" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="my-auto">
+                    <button id="next-btn" type="button">
+                      <i class="fas fa-chevron-right btn-slider"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- Final de carousel -->
+                <br>
+                <div class="d-flex justify-content-center mt-3">
+                  <a href="#" class="text-blue no-underline font-weight-bold fs-12">
+                    Administrar contactos
+                  </a>
+                </div>
+              </div>
+              <!-- Main Flex container -->
+            </form>
+          </div>
+          <!-- Col div -->
+        
+        </div>
+        <!-- Final row user-search div -->
+
+        <!-- Row div for option container  -->
+        <div class="row">
+          <!-- Div col option container -->
+          <div class="col-xl-10 option-container">
+            <!-- Link for the option -->
+            <a href="" class="no-underline option-link">
+              <div class="flex-container-option">
+                <div class="option-text-pos-fix font-weight-bold">
+                  <p class="fs-14">TRANSFERENCIA BANCARIA</p>
+                </div>
+                <div class="option-text-pos-fix option-text-hide option-text-1">
+                  <p class="fs-13">Se acredita en dos horas</p>
+                </div>
+                <div class="flex-cont-img-btn">
+                  <div>
+                    <img src="../global/assets/Imagen 55.png" class="transfers-options-img" alt="">
+                  </div>
+                  <div>
+                    <button id="next-btn" type="button">
+                      <i class="fas fa-chevron-right btn-slider text-blue"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Link for the option -->
+          </div>
+          <!-- Final Div col option container -->
+        </div>
+        <!-- Final Row div for option container  -->
+
+        <!-- Row div for option container  -->
+        <div class="row">
+          <!-- Div col option container -->
+          <div class="col-xl-10 option-container">
+            <!-- Link for the option -->
+            <a href="" class="no-underline option-link">
+              <div class="flex-container-option">
+                <div class="option-text-pos-fix font-weight-bold">
+                  <p class="fs-14">DEPOSITO BANCARIO</p>
+                </div>
+                <div class="option-text-pos-fix option-text-hide option-text-2">
+                  <p class="fs-13">Se acredita en dos horas</p>
+                </div>
+                <div class="flex-cont-img-btn">
+                  <div>
+                    <img src="../global/assets/Imagen 56.png" class="transfers-options-img" alt="">
+                  </div>
+                  <div>
+                    <button id="next-btn" type="button">
+                      <i class="fas fa-chevron-right btn-slider text-blue"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Link for the option -->
+          </div>
+          <!-- Final Div col option container -->
+        </div>
+        <!-- Final Row div for option container  -->
+
+        <!-- Row div for option container  -->
+        <div class="row">
+          <!-- Div col option container -->
+          <div class="col-xl-10 option-container">
+            <!-- Link for the option -->
+            <a href="" class="no-underline option-link">
+              <div class="flex-container-option">
+                <div class="option-text-pos-fix font-weight-bold">
+                  <p class="fs-14">MERCADO PAGO</p>
+                </div>
+                <div class="option-text-pos-fix option-text-hide option-text-3">
+                  <p class="fs-13">Acreditación instantánea</p>
+                </div>
+                <div class="flex-cont-img-btn">
+                  <div>
+                    <img src="../global/assets/isologoVertical.png" class="transfers-options-img" alt="">
+                  </div>
+                  <div>
+                    <button id="next-btn" type="button">
+                      <i class="fas fa-chevron-right btn-slider text-blue"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Link for the option -->
+          </div>
+          <!-- Final Div col option container -->
+        </div>
+        <!-- Final Row div for option container  -->
+
+        <!-- Row div for option container  -->
+        <div class="row">
+          <!-- Div col option container -->
+          <div class="col-xl-10 option-container">
+            <!-- Link for the option -->
+            <a href="" class="no-underline option-link">
+              <div class="flex-container-option">
+                <div class="option-text-pos-fix font-weight-bold">
+                  <p class="fs-14">PAGO FACIL</p>
+                </div>
+                <div class="option-text-pos-fix option-text-hide option-text-4">
+                  <p class="fs-13">Se acredita en 24hs</p>
+                </div>
+                <div class="flex-cont-img-btn">
+                  <div>
+                    <img src="../global/assets/pago-facil-icon.png" class="transfers-options-img" alt="">
+                  </div>
+                  <div>
+                    <button id="next-btn" type="button">
+                      <i class="fas fa-chevron-right btn-slider text-blue"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Link for the option -->
+          </div>
+          <!-- Final Div col option container -->
+        </div>
+        <!-- Final Row div for option container  -->
+
+        <!-- Row div for option container  -->
+        <div class="row">
+          <!-- Div col option container -->
+          <div class="col-xl-10 option-container">
+            <!-- Link for the option -->
+            <a href="" class="no-underline option-link">
+              <div class="flex-container-option">
+                <div class="option-text-pos-fix font-weight-bold">
+                  <p class="fs-14">CODIGO DE PROMOCION O REGALO</p>
+                </div>
+                <div class="option-text-pos-fix option-text-hide option-text-5">
+                  <p class="fs-13">Acreditación instantánea</p>
+                </div>
+                <div class="flex-cont-img-btn">
+                  <div>
+                    <img src="../global/assets/Imagen 57.png" class="transfers-options-img" alt="">
+                  </div>
+                  <div>
+                    <button id="next-btn" type="button">
+                      <i class="fas fa-chevron-right btn-slider text-blue"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Link for the option -->
+          </div>
+          <!-- Final Div col option container -->
+        </div>
+        <!-- Final Row div for option container  -->
+        
+        <br><br><br><br><br>
+
       </div>
+
       <!-- Main Col END -->
+      <!-- Inicio Banner de publicidad -->
+      <img
+        src="../global/assets/banner.png"
+        class="d-none d-xl-block advertising-side"
+      />
+      <!-- Final Banner de publicidad -->
     </div>
     <!-- body-row END -->
 
@@ -324,6 +633,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="../global/js/app.js"></script>
   </body>
 </html>
