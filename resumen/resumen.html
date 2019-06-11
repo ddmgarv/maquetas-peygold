@@ -316,7 +316,7 @@
 
         <!-- row de la billetera e iconos -->
         <div class="row">
-          <div class="col-xl-5 border-top-blue bg-white wallet">
+          <div class="col-lg-5 border-top-blue bg-white wallet">
             <!-- Div billetera peygold -->
             <div class="d-flex justify-content-between table-bottom-border">
               <div>
@@ -343,7 +343,7 @@
           <!-- Final div billetera peygold -->
 
           <!-- Div de botones a la derecha de la billetera -->
-          <div class="col-xl-5 bg-white" id="icons-resume-container">
+          <div class="col-lg-5 bg-white" id="icons-resume-container">
             <div class="d-flex justify-content-around">
               <div class="mr-1">
                 <a href="" class="text-dark no-underline">
@@ -391,7 +391,7 @@
         </div>
         <!-- row de la billetera e iconos -->
         <div class="row" style="position: relative;bottom:1.8rem;">
-          <div class="col-xl-5 border-top-blue bg-white wallet">
+          <div class="col-lg-5 border-top-blue bg-white wallet">
             <!-- Div billetera peygold -->
             <div class="d-flex justify-content-between table-bottom-border">
               <div>
@@ -418,7 +418,7 @@
           <!-- Final div billetera peygold -->
   
           <!-- inicio tarjetas y cuentas bancarias -->
-          <div class="col-xl-5 bg-white" id="bank-account-div">
+          <div class="col-lg-5 bg-white" id="bank-account-div">
             <h6 class="fs-14 text-blue font-weight-bold">
               CUENTAS BANCARIAS
             </h6>
@@ -465,10 +465,26 @@
   
             <div class="col-md-4"></div>
   
-            <div class="col-md-4 w-100">
-              <button class="btn">
+            <div class="col-md-5">
+              <button class="btn" id="filter-btn-resume">
                 <i class="fas fa-toggle-on mr-1"></i>Filtrar
               </button>
+              <div class="hide-filter-ops" id="filter-ops-container">
+                <form action="">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="pesos-op" name="filter-param" value="customEx">
+                    <label class="custom-control-label" for="pesos-op">Pesos</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="peygold-op" name="filter-param" value="customEx">
+                    <label class="custom-control-label" for="peygold-op">Peygold</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="credit-op" name="filter-param" value="customEx">
+                    <label class="custom-control-label" for="credit-op">Créditos PG</label>
+                  </div>
+                </form>
+              </div>
               <button class="btn">
                 Ordenar por<i class="fas fa-angle-down ml-1"></i>
               </button>
@@ -480,7 +496,7 @@
 
         <!-- Inicio Div de los movimientos recientes -->
         <div class="row"> <!-- Row div -->
-          <div class="col-xl-10"><!-- col-div -->
+          <div class="col-lg-10"><!-- col-div -->
             <div class="table-responsive-sm"><!-- Table responsive div -->
 
               <table class="table fold-table" id="transferTable"><!-- First table div-->

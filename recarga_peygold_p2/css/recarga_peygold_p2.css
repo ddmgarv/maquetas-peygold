@@ -1,0 +1,9 @@
+#reload-methods-wrapper {
+  margin-left: 14px;
+  margin-top: 27px;
+  background-color: #ffffff;
+}
+.options-container {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}

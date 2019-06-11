@@ -207,6 +207,7 @@ input[type="reset"] {
   top: 8.7rem;
   right: 0.4rem;
   transition: top 0.5s;
+  width: 8rem;
 }
 .adver-down {
   top: 11.3rem;
@@ -269,27 +270,27 @@ input[type="reset"] {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #31b8a7;
+  background: grey;
   border-radius: 10px;
 }
 ::-moz-scrollbar-thumb {
-  background: #31b8a7;
+  background: grey;
   border-radius: 10px;
 }
 ::-o-scrollbar-thumb {
-  background: #31b8a7;
+  background: grey;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #3ca0c4;
+  background: lightgrey;
 }
 ::-moz-scrollbar-thumb:hover {
-  background: #3ca0c4;
+  background: lightgrey;
 }
 ::-o-scrollbar-thumb:hover {
-  background: #3ca0c4;
+  background: lightgrey;
 }
 .quick-fix {
   margin-bottom: 0.8rem;

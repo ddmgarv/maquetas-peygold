@@ -29,6 +29,10 @@ $(function() {
     $("#recarga-saldo-modal").toggleClass("show-modal");
   });
 
+  $("#filter-btn-resume").click(function() {
+    $("#filter-ops-container").toggleClass("show-filter-ops");
+  });
+
   $("#next-btn").click(function() {
     $("#user-img-container").addClass("slide-carousel-hide");
     setTimeout(() => {
