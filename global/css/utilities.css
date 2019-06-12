@@ -133,11 +133,50 @@ input[type="reset"] {
 .fs-24 {
   font-size: 24px;
 }
+.fs-25 {
+  font-size: 25px;
+}
 .fs-26 {
+  font-size: 26px;
+}
+.fs-27 {
   font-size: 26px;
 }
 .fs-28 {
   font-size: 28px;
+}
+.fs-29 {
+  font-size: 29px;
+}
+.fs-30 {
+  font-size: 30px;
+}
+.fs-31 {
+  font-size: 31px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-33 {
+  font-size: 33px;
+}
+.fs-34 {
+  font-size: 34px;
+}
+.fs-35 {
+  font-size: 35px;
+}
+.fs-36 {
+  font-size: 36px;
+}
+.fs-37 {
+  font-size: 37px;
+}
+.fs-38 {
+  font-size: 38px;
+}
+.fs-39 {
+  font-size: 39px;
 }
 .fs-40 {
   font-size: 40px;
@@ -202,21 +241,35 @@ input[type="reset"] {
 }
 .advertising-side {
   height: 75%;
-  position: -webkit-sticky;
-  position: fixed;
-  top: 8.7rem;
+  position: absolute;
+  top: 5.65rem;
   right: 0.4rem;
   transition: top 0.5s;
-  width: 8rem;
+  width: 8.5rem;
 }
 .adver-down {
-  top: 11.3rem;
   transition: top 0.5s;
+}
+.rotate-90 {
+  transform: rotate(90deg);
 }
 /*Formateo para el Div de movimientos recientes en todas las pantallas*/
 @media screen and (min-width: 1520.98px) {
   .blue-line::before {
     width: 45%;
+  }
+  .advertising-side {
+    width: 11rem;
+  }
+}
+@media screen and (max-width: 1054.98px) {
+  .advertising-side {
+    width: 6.8rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .advertising-side {
+    display: none;
   }
 }
 /* Padding fix */
@@ -224,7 +277,6 @@ input[type="reset"] {
   .margin-bottom-title {
     margin-bottom: 1rem;
   }
-
   #body-row {
     padding-top: 3.5rem;
   }

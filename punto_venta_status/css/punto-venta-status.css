@@ -1,0 +1,33 @@
+.status-container {
+  background-image: url("../../global/assets/map.png");
+  padding: 1rem;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn-status-custom {
+  width: 500px;
+  border-radius: 50px;
+  color: #fff;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  font-size: 19px;
+  padding: 1rem 1.8rem;
+  text-align: center;
+}
+.btn-aprove {
+  background-color: #0070ba;
+}
+.btn-aprove:hover {
+  background-color: #fff;
+  color: #0070ba;
+}
+.btn-desaprove {
+  background-color: #ff0000;
+}
+.btn-desaprove:hover {
+  cursor: context-menu;
+  color: #fff;
+}

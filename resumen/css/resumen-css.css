@@ -1,17 +1,29 @@
 #icons-resume-container {
-  padding: 86px 66px 61px 60px;
+  padding: 86px 66px 61px 10px;
   height: 240px;
   margin: 27px 10px 14px 14px;
 }
-#bank-account-div {
-  padding: 18px 44px 21px 28px;
+#last-users-container {
+  padding: 5px 44px 21px 0;
   height: 240px;
-  margin: 27px 10px 14px 14px;
+  margin: 27px 15px 14px 0;
 }
 .wallet {
   padding: 10px 24px 22px 23px;
-  margin: 27px 10px 14px 14px;
+  margin: 27px 10px 0 14px;
   height: 240px;
+}
+.wallet-row-resume {
+  display: flex;
+}
+.wallet-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+.wallet-img-resume {
+  max-width: 120px;
 }
 .wallet-icon {
   position: relative;
@@ -22,26 +34,56 @@
 .wallet-links {
   margin-top: 28px;
 }
-.solicitar-icon {
-  margin-top: 0.8rem;
-  margin-left: 0.9rem;
+#last-users-container-btn {
+  position: absolute;
+  bottom: 32px;
+  right: 44px;
 }
-.enviar-icon {
-  margin-top: 0.6rem;
-  margin-left: 0.6rem;
+.icon-resume-container-individual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 2rem;
+}
+.icons-resume-text {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 0.2rem;
+}
+#head-last-users-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#head-last-users-container a,
+#head-last-users-container button {
+  margin: 0 4rem;
 }
 .resume-icon {
-  width: 45.48px;
-  height: 45.48px;
+  width: 3rem;
+  height: 3rem;
 }
-.resume-icon:hover {
-  width: 45.48px;
-  height: 45.48px;
+.resume-icon-2 {
+  width: 2.25rem;
+  height: 2.25rem;
 }
-
-.resume-icon-points {
-  width: 70.48px;
-  height: 70.48px;
+.resume-icon-user {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.user-resume-text {
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  font-size: 15px;
+  margin-top: 0.2rem;
+}
+.user-resume-container-individual {
+  position: relative;
+  top: 0.2rem;
+  text-align: center;
+  margin: 0 0.5rem;
 }
 .circle-blue {
   border-radius: 50%;
@@ -55,13 +97,45 @@
   width: 70.48px;
   height: 70.48px;
 }
-@media screen and (max-width: 576.98px) {
+@media screen and (max-width: 1290.98px) {
+  .icon-resume-container-individual {
+    margin: 0 1rem;
+  }
+  #head-last-users-container a {
+    margin-left: 0;
+    margin-right: 4rem;
+  }
+  #head-last-users-container button {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
 }
 @media screen and (max-width: 576.98px) {
-  #bank-account-div {
-    margin-top: 2rem;
+  #icons-resume-container,
+  #last-users-container,
+  .wallet {
+    margin: 1.5rem 0 1rem 0;
   }
-  #bank-account-div-btn {
-    margin-right: 0.6rem;
+  #icons-resume-container,
+  #last-users-container {
+    padding: 0;
+  }
+
+  #last-users-container {
+    height: 170px;
+  }
+  #icons-resume-container {
+    height: 80px;
+  }
+  .icon-resume-container-individual {
+    margin: 0 0.75rem;
+  }
+  #head-last-users-container button {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+  #head-last-users-container a {
+    margin-left: 0;
+    margin-right: 2rem;
   }
 }

@@ -137,6 +137,9 @@
   margin: 0.1rem;
   margin-top: 0.5rem;
 }
+#user-text {
+  font-size: 15px;
+}
 .center-sidebar-title {
   padding: 0.6rem !important;
 }

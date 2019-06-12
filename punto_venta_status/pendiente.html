@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Barra de navegacion</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../global/css/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="../global/css/nav-bar.css" />
+    <link rel="stylesheet" href="css/punto-venta-status.css">
+</head>
+
+<body>
+    <!--Begin NavBar -->
+    <nav class="top-navbar-collapse" id="top-navbar">
+        <!-- IMPORTANTE: Añadir clase active al span en el top bar -->
+        <div id="top-list-wrapper">
+            <!-- Barra de navegacion superior -->
+            <ul class="nav top-nav flex-nowrap">
+                <li class="nav-item ml-1">
+                    <button class="nav-link" id="sidebar-switch">
+                        <i class="fas fa-bars icon-blue"></i>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-clipboard-list icon-blue"></i><span
+                            class="nav-text ml-1">Resumen</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-file-invoice icon-blue"></i><span
+                            class="nav-text ml-1">Movimientos</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="demo1"><i class="fas fa-mail-bulk icon-blue"></i><span
+                            class="nav-text ml-1 active">Enviar y solicitar</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-cart-arrow-down icon-blue"></i><span
+                            class="nav-text ml-1">Mercado peygold</span></a>
+                </li>
+            </ul>
+
+            <ul class="nav top-nav pr-2 flex-nowrap">
+                <li class="nav-item nav-right-link">
+                    <a class="nav-link" href="#"><i class="far fa-life-ring text-white"></i></a>
+                </li>
+                <li class="nav-item nav-right-link">
+                    <a class="nav-link" href="#"><i class="fas fa-comments text-white"></i></a>
+                </li>
+                <li class="nav-item nav-right-link">
+                    <a class="nav-link" href="#"><i class="fas fa-bell text-white"></i></a>
+                </li>
+            </ul>
+            <!-- Final Barra de navegacion superior -->
+        </div>
+    </nav>
+    <!-- Navbar END -->
+
+    <!-- Inicio Saludo box -->
+    <div id="blue-sticky-box" class="blue-box-collapse">
+        <h6 class="text-right text-white" id="saludo">Hola Martín!</h6>
+    </div>
+    <!-- Fin saludo box -->
+
+    <!-- Begin secondary nav -->
+    <!-- IMPORTANTE: Añadir clase de show-secondary-nav y hide al div que contiene a la barra de 
+      navegación, estas clases son para ocultar o mostrar la barra secundaria. -->
+    <div id="send-recieve-nav">
+        <!-- IMPORTANTE: La clase de top-navbar-collapse y extended son para que el nav
+        se mueva con respecto al side bar. El id es para que cada link de la barra de navegacion
+        principal solo muestre una barra de navegacion secundaria -->
+        <nav class="top-navbar-collapse hide-secondary-nav" id="secondary-nav">
+            <!-- IMPORTANTE: Añadir clase active al anchor tag y eliminar secondary-nav-link en barra secundaria -->
+            <ul class="nav d-flex flex-nowrap" id="secondary-top-nav">
+                <li class="nav-item mr-4">
+                    <a href="" class="nav-link secondary-nav-link">Enviar</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a href="" class="nav-link secondary-nav-link">Solicitar</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a href="" class="nav-link secondary-nav-link">Contactos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link secondary-nav-link">Mas <span
+                            id="actions-secondary-nav">acciones</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End secondary nav -->
+
+    <div class="row" id="body-row">
+        <!-- Sidebar -->
+        <div class="sidebar-extended" id="sidebar-wrapper">
+            <div class="sidebar-extended" id="sidebar-container">
+                <ul class="list-group overflow-auto">
+                    <!-- IMPORTANTE: Añadir clase active al anchor tag en el side-bar -->
+
+                    <!-- Titulo peygold -->
+                    <li style="background-color: #323232">
+                        <p class="font-weight-bold text-white text-center my-auto center-sidebar-title">
+                            <img src="../global/assets/Isologotipo.svg" class="title-extended title mt-2" alt="" />
+                            <img src="../global/assets/Isotipo.svg" alt="" class="title-collapse title mt-2 d-none" />
+                            <span><i class="fas fa-bars title text-info" id="quit-sm-btn"></i></span>
+                        </p>
+                    </li>
+                    <!-- Titulo peygold -->
+
+                    <!-- Usuario logeado -->
+                    <li>
+                        <p class="text-white text-center center-sidebar-user">
+                            <i class="fas fa-user"></i>
+                            <span id="user-text">marting@golbeg.com</span>
+                        </p>
+                    </li>
+                    <!-- Usuario logeado -->
+
+                    <!-- Subtitulo sidebar -->
+                    <li class="nav-subtitles">
+                        <div class="nav-rounded h-100">
+                            <h6 class="nav-link">
+                                <i class="fas fa-wallet sidebar-icon"></i><span class="ml-4">Mi Billetera</span>
+                            </h6>
+                        </div>
+                    </li>
+                    <!-- Subtitulo sidebar -->
+
+                    <!-- Elementos de la sidebar -->
+                    <div>
+                        <li class="nav-item">
+                            <a class="nav-link side-bar-link active" href="#"><i
+                                    class="fas fa-chart-pie sidebar-icon icon-blue"></i><span
+                                    class="ml-4">Transacciones</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"><i
+                                    class="fas fa-file ml-1 sidebar-icon icon-blue"></i><span class="ml-4">
+                                    Movimientos</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"><i
+                                    class="fas fa-cart-arrow-down sidebar-icon icon-blue"></i><span class="ml-4">Cargar
+                                    Peygold</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"><i
+                                    class="fas fa-credit-card sidebar-icon icon-blue"></i><span
+                                    class="ml-4">Creditos</span></a>
+                        </li>
+                    </div>
+                    <!-- Elementos de la sidebar -->
+
+                    <!-- Subtitulo sidebar -->
+                    <li class="nav-subtitles">
+                        <div class="nav-rounded h-100">
+                            <h6 class="nav-link">
+                                <i class="fas fa-hand-holding-usd sidebar-icon"></i><span class="ml-4">Cobrar</span>
+                            </h6>
+                        </div>
+                    </li>
+                    <!-- Subtitulo sidebar -->
+
+                    <!-- Elementos de la sidebar -->
+                    <div>
+                        <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"><i
+                                    class="fas fa-qrcode sidebar-icon icon-blue"></i><span class="ml-4">Código
+                                    QR</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"><i
+                                    class="fas fa-link sidebar-icon icon-blue"></i><span class="ml-3"> Link de
+                                    pago</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"><i
+                                    class="fas fa-arrows-alt-v sidebar-icon icon-blue"></i><span class="ml-4">
+                                    Solicitar</span></a>
+                        </li>
+                    </div>
+                    <!-- Elementos de la sidebar -->
+
+                    <!-- Subtitulo sidebar -->
+                    <li class="nav-subtitles">
+                        <div class="nav-rounded h-100">
+                            <h6 class="nav-link">
+                                <i class="fas fa-file-invoice-dollar sidebar-icon"></i><span class="ml-4">Pagar</span>
+                            </h6>
+                        </div>
+                    </li>
+                    <!-- Subtitulo sidebar -->
+
+                    <!-- Elementos de la sidebar -->
+                    <div>
+                        <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"><i
+                                    class="fas fa-paper-plane sidebar-icon icon-blue"></i><span class="ml-3"> Enviar
+                                    dinero</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"><i
+                                    class="fas fa-file-invoice sidebar-icon icon-blue"></i><span class="ml-4">Pagar
+                                    servicios</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"><i
+                                    class="fas fa-mobile sidebar-icon icon-blue"></i><span class="ml-4">Cargar
+                                    celular</span></a>
+                        </li>
+                    </div>
+                    <!-- Elementos de la sidebar -->
+
+                    <li class="nav-subtitles" style="height: 4px;"></li>
+
+                    <br />
+                    <!-- Elemento de la sidebar -->
+                    <li class="nav-item">
+                        <a class="nav-link side-bar-link" href="#"><i
+                                class="fas fa-heart sidebar-icon icon-blue"></i><span class="ml-4">Peygold
+                                solidario</span></a>
+                    </li>
+                    <!-- Elemento de la sidebar -->
+
+                    <br /><br /><br />
+
+                    <!-- Elementos de la sidebar -->
+                    <li class="nav-item">
+                        <a class="nav-link side-bar-link" href="#"><i
+                                class="far fa-life-ring sidebar-icon icon-blue"></i><span class="ml-4">Ayuda</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link side-bar-link" href="#"><i
+                                class="fas fa-cogs sidebar-icon icon-blue"></i><span class="ml-3">
+                                Configuración</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link side-bar-link" href="#"><i
+                                class="fas fa-sign-out-alt sidebar-icon icon-blue"></i><span class="ml-4">Cerrar
+                                sesión</span></a>
+                    </li>
+                    <!-- Elementos de la sidebar -->
+
+                    <!--<li class="nav-item"><a class="nav-link side-bar-link" href="#"><i class="fas fa-sign-out-alt sidebar-icon icon-blue"></i><span class="ml-4">Cerrar sesión</span></a></li>-->
+                </ul>
+            </div>
+        </div>
+        <!-- Sidebar end -->
+
+        <!-- sidebar-container END -->
+
+        <!-- MAIN -->
+        <div class="col" id="main-div">
+            <!-- Titulo -->
+            <div class="row mt-4">
+                <div class="pl-1 bg-title col-12">
+                    <h1 class="fs-37 text-center">
+                        Punto de venta Peygold
+                    </h1>
+                </div>
+            </div>
+            <!-- Final titulo -->
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <div class="status-container">
+                        <a href="" class="btn-status-custom btn-desaprove no-underline">SOLICITUD PENDIENTE DE APROBACION &times;</a>
+                        <p class="fs-19 text-white text-center mt-3">
+                            Su solicitud no ha sido aprobada. <br> Porfavor comuniquese al 0800-PEYGOLD para obetener
+                            mayor información
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Main Col END -->
+    </div>
+    <!-- body-row END -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../global/js/app.js"></script>
+</body>
+
+</html>
