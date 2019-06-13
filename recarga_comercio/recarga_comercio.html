@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Solicitar Dinero</title>
+    <title>Barra de navegacion</title>
     <meta charset="utf-8" />
     <link
       rel="stylesheet"
@@ -22,10 +22,9 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../global/css/nav-bar.css" />
     <link rel="stylesheet" type="text/css" href="../global/css/utilities.css" />
-    <link rel="stylesheet" type="text/css" href="../global/css/search-user-container.css" />
-    <link rel="stylesheet" type="text/css" href="../global/css/send-recieve.css">
+    <link rel="stylesheet" type="text/css" href="../global/css/nav-bar.css" />
+    <link rel="stylesheet" href="css/recarga_comercio.css" />
   </head>
 
   <body>
@@ -95,9 +94,12 @@
     <!-- Fin saludo box -->
 
     <!-- Begin secondary nav -->
+    <!-- IMPORTANTE: Añadir clase de show-secondary-nav y hide al div que contiene a la barra de 
+      navegación, estas clases son para ocultar o mostrar la barra secundaria. -->
+    <div id="send-recieve-nav">
       <!-- IMPORTANTE: La clase de top-navbar-collapse y extended son para que el nav
-            se mueva con respecto al side bar. El id es para que cada link de la barra de navegacion
-            principal solo muestre una barra de navegacion secundaria -->
+        se mueva con respecto al side bar. El id es para que cada link de la barra de navegacion
+        principal solo muestre una barra de navegacion secundaria -->
       <nav class="top-navbar-collapse hide-secondary-nav" id="secondary-nav">
         <!-- IMPORTANTE: Añadir clase active al anchor tag y eliminar secondary-nav-link en barra secundaria -->
         <ul class="nav d-flex flex-nowrap" id="secondary-top-nav">
@@ -111,10 +113,13 @@
             <a href="" class="nav-link secondary-nav-link">Contactos</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link secondary-nav-link">Mas <span id="actions-secondary-nav">acciones</span></a>
+            <a href="" class="nav-link secondary-nav-link"
+              >Mas <span id="actions-secondary-nav">acciones</span></a
+            >
           </li>
         </ul>
       </nav>
+    </div>
     <!-- End secondary nav -->
 
     <div class="row" id="body-row">
@@ -126,10 +131,22 @@
 
             <!-- Titulo peygold -->
             <li style="background-color: #323232">
-              <p class="font-weight-bold text-white text-center my-auto center-sidebar-title">
-                <img src="../global/assets/Isologotipo.svg" class="title-extended title mt-2" alt="" />
-                <img src="../global/assets/Isotipo.svg" alt="" class="title-collapse title mt-2 d-none" />
-                <span><i class="fas fa-bars title text-info" id="quit-sm-btn"></i></span>
+              <p
+                class="font-weight-bold text-white text-center my-auto center-sidebar-title"
+              >
+                <img
+                  src="../global/assets/Isologotipo.svg"
+                  class="title-extended title mt-2"
+                  alt=""
+                />
+                <img
+                  src="../global/assets/Isotipo.svg"
+                  alt=""
+                  class="title-collapse title mt-2 d-none"
+                />
+                <span
+                  ><i class="fas fa-bars title text-info" id="quit-sm-btn"></i
+                ></span>
               </p>
             </li>
             <!-- Titulo peygold -->
@@ -298,165 +315,62 @@
       <div class="col" id="main-div">
         <!-- Titulo -->
         <div class="row">
-          <div class="pl-1 bg-title col-10">
-            <h1 class="main-title-text">
-              <img src="../global/assets/user1.png" class="main-title-img" />
-              Solicitar
+          <div class="pl-1 bg-title col-10 margin-bottom-title quick-fix">
+            <h1 class="main-title-text ml-2">
+              <img
+                src="../global/assets/user1.png"
+                class="main-title-img d-none"
+              />
+              RECARGA COMERCIO
             </h1>
           </div>
         </div>
         <!-- Final titulo -->
 
-        <!-- Inicio row div -->
         <div class="row">
-          <!-- Col div -->
-          <div class="col-xl-10 p-2" id="send-request-container"> 
-            <!-- Main Flex container -->
-            <form action="">
-              <div class="d-flex justify-content-center flex-column bg-white border-top-blue">
-                <div class="mx-auto m-3">
-                  <img src="../global/assets/user1.png" alt="Usuario" class="user-img" />
+          <div class="col-lg-10 bg-white">
+            <div id="recarga_container">
+              <p class="fs-22 text-center">Realizar Recarga</p>
+              <div class="d-flex justify-content-between">
+                <div><p>Cantidad de Peygold P$G</p></div>
+                <div>
+                  <input
+                    type="number"
+                    class="form-control rounded-border"
+                    placeholder="0000"
+                  />
                 </div>
-                <div class="mx-auto m-1 fs-22 font-weight-bold">Solicitar pago a:</div>
-                  <div class="mx-auto m-1">
-                      <div>
-                        <input
-                          type="text"
-                          placeholder="Nombre o correo electrónico"
-                          class="form-control input-search-user"
-                          id="search-user"
-                        />
-                      </div>
-                        <div class="input-dropdown-hide">
-                          <div id="container-dropdown-input">
-                            <div>
-                              <button type="button" class="user-send-btn-dd">
-                                <img src="../global/assets/user1.png" class="user-img" alt="">
-                                angelmigueljurado@gmail.com
-                              </button>
-                            </div>
-                            <div>
-                              <button type="button" class="user-send-btn-dd">
-                                <img src="../global/assets/user2.png" class="user-img" alt="">
-                                gustavoconfortsur@gmail.com
-                              </button>
-                            </div>
-                            <div>
-                              <button type="button" class="user-send-btn-dd">
-                                <img src="../global/assets/user2.png" class="user-img" alt="">
-                                pedroconfortsur@gmail.com
-                              </button>
-                            </div>
-                            <div>
-                              <button type="button" class="user-send-btn-dd">
-                                <img src="../global/assets/user2.png" class="user-img" alt="">
-                                joseconfortsur@gmail.com
-                              </button>
-                            </div>
-                            <div>
-                              <button type="button" class="user-send-btn-dd">
-                                <img src="../global/assets/user2.png" class="user-img" alt="">
-                                josueconfortsur@gmail.com
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="d-flex justify-content-center">
-                        <div id="link-how-cont">
-                          <p class="wallet-small-text">
-                            <a
-                            href="#"
-                            class="text-blue no-underline fs-15 font-weight-bold"
-                            id="hide"
-                            >Como funciona</a>
-                          </p> 
-                        </div>
-                      </div>
-                      <!-- Inicio de carousel -->
-                      <div class="d-flex justify-content-center mt-2" id="carousel-container">
-                        <div class="my-auto">
-                          <button id="back-btn">
-                            <i class="fas fa-chevron-left btn-slider"></i>
-                          </button>
-                        </div>
-                        <div class="d-flex" id="user-img-container">
-                          <div>
-                            <button>
-                              <img
-                                src="../global/assets/user1.png"
-                                alt="usuario"
-                                class="user-img"
-                              />
-                            </button>
-                          </div>
-                          <div>
-                            <button>
-                              <img
-                                src="../global/assets/user2.png"
-                                alt="usuario"
-                                class="user-img"
-                              />
-                            </button>
-                          </div>
-                          <div>
-                            <button>
-                              <img
-                                src="../global/assets/user3.png"
-                                alt="usuario"
-                                class="user-img"
-                              />
-                            </button>
-                          </div>
-                          <div>
-                            <button>
-                              <img
-                                src="../global/assets/user4.png"
-                                alt="usuario"
-                                class="user-img"
-                              />
-                            </button>
-                          </div>
-                          <div>
-                            <button>
-                              <img
-                                src="../global/assets/user5.png"
-                                alt="usuario"
-                                class="user-img"
-                              />
-                            </button>
-                          </div>
-                        </div>
-                        <div class="my-auto">
-                          <button id="next-btn" type="button">
-                            <i class="fas fa-chevron-right btn-slider"></i>
-                          </button>
-                        </div>
-                      </div>
-                    <!-- Final de carousel -->
-                    <br>
-                    <div class="d-flex justify-content-center mt-3">
-                      <a href="#" class="text-blue no-underline font-weight-bold fs-18">
-                        Administrar contactos
-                      </a>
-                    </div>
-                    <br>
-                </div><!-- Main Flex container -->
-                <div class="d-flex justify-content-center mt-5">
-                    <button class="btn-outline-custom">Siguiente</button>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p>Realizar recarga a:</p>
                 </div>
-              </form>
-            </div><!-- Col div -->
 
-          </div><!-- Final row div -->
-          
+                <div class="search">
+                  <input type="text" placeholder="Buscar" name="search" />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p>Realizar recarga a:</p>
+                </div>
 
-        </div><!-- Main Col END --> 
-              
-      </div><!-- Main row End -->
-      <!-- Inicio Banner de publicidad -->
-      <img src="../global/assets/banner.png" class="dvertising-side" />
-      <!-- Final Banner de publicidad -->
+                <div class="search ">
+                  <input
+                    type="text"
+                    class="form-control rounded-border"
+                    placeholder="Introducir correo"
+                  />
+                </div>
+              </div>
+              <div class="d-flex"></div>
+              <button></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Col END -->
     </div>
     <!-- body-row END -->
 
@@ -467,5 +381,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../global/js/app.js"></script>
+    
   </body>
+
 </html>

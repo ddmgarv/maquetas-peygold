@@ -31,3 +31,10 @@
   cursor: context-menu;
   color: #fff;
 }
+.btn-pending {
+  background-color: #fb9426;
+}
+.btn-pending:hover {
+  color: #fff;
+  cursor: context-menu;
+}

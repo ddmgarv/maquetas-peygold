@@ -127,8 +127,14 @@ input[type="reset"] {
 .fs-20 {
   font-size: 20px;
 }
+.fs-21 {
+  font-size: 21px;
+}
 .fs-22 {
   font-size: 22px;
+}
+.fs-23 {
+  font-size: 23px;
 }
 .fs-24 {
   font-size: 24px;
@@ -240,12 +246,12 @@ input[type="reset"] {
   z-index: 20;
 }
 .advertising-side {
-  height: 75%;
+  height: 600px !important;
   position: absolute;
-  top: 5.65rem;
+  top: 8.65rem;
   right: 0.4rem;
   transition: top 0.5s;
-  width: 8.5rem;
+  width: 9rem;
 }
 .adver-down {
   transition: top 0.5s;
@@ -322,27 +328,27 @@ input[type="reset"] {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: grey;
+  background: #2699fb;
   border-radius: 10px;
 }
 ::-moz-scrollbar-thumb {
-  background: grey;
+  background: #2699fb;
   border-radius: 10px;
 }
 ::-o-scrollbar-thumb {
-  background: grey;
+  background: #2699fb;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: lightgrey;
+  background: #17a2b8;
 }
 ::-moz-scrollbar-thumb:hover {
-  background: lightgrey;
+  background: #17a2b8;
 }
 ::-o-scrollbar-thumb:hover {
-  background: lightgrey;
+  background: #17a2b8;
 }
 .quick-fix {
   margin-bottom: 0.8rem;

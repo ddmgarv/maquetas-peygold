@@ -1,4 +1,4 @@
-.container {
+.recarga-checkbox-label {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -12,13 +12,13 @@
 }
 
 /* Hide the browser's default radio button */
-.container input {
+.recarga-checkbox-label input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 /* Create a custom radio button */
-.checkmark {
+.recarga-checkmark-span {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,28 +29,31 @@
   border: 3px solid #17a2b8;
 }
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.recarga-checkbox-label input:checked ~ .recarga-checkmark-span {
   background-color: #17a2b8;
 }
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
+.recarga-checkmark-span:after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+.recarga-checkbox-label input:checked ~ .recarga-checkmark-span:after {
   display: block;
 }
 /* Style the indicator (dot/circle) */
-.container .checkmark:after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00c";
-  font-size: 1rem;
-  top: 0.25rem;
-  left: 0.45rem;
+.recarga-checkbox-label .recarga-checkmark-span:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  content: "⅃";
+  font-size: 1.2rem;
+  font-weight: 500;
+  top: 0.1rem;
+  left: 0.6rem;
   background-color: #17a2b8;
   color: #fff;
 }
@@ -91,115 +94,12 @@
   margin-top: 20px;
   margin-left: 14px;
 }
-.option-container {
-  margin-top: 10px;
-  margin-left: 14px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 66px;
-  padding-right: 49px;
-  background-color: #fff;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-}
-.option-container .option-link {
-  color: #000;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-}
-.option-container:hover {
-  background-color: #e8e8e8;
-}
-.option-container:hover .option-link {
-  color: #0070ba;
-}
-.flex-container-option {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.flex-cont-img-btn {
-  display: flex;
-  align-items: center;
-}
-.option-text-pos-fix {
-  position: relative;
-  top: 0.5rem;
-}
-.user-img {
-  widows: 73.78px;
-  height: 73.78px;
-  border-radius: 50%;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.btn-slider {
-  color: #565574;
-  font-size: 30px;
-  margin-left: 2.2rem;
-  margin-right: 2.2rem;
-}
-.input-resume {
-  width: 25rem;
-  height: 50px;
-  border: 0.04rem solid rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-.link-how-cont {
-  margin-left: 17rem;
-  margin-top: 1em;
-}
-.option-text-1 {
-  margin-right: 2.5rem;
-}
-.option-text-2 {
-  margin-left: 0.25rem;
-}
-.option-text-3 {
-  margin-left: 2.25rem;
-}
-.option-text-4 {
-  margin-left: 3.5rem;
-}
-.option-text-5 {
-  margin-right: 5.2rem;
-}
-.transfers-options-img {
-  width: 66px;
-  height: 66px;
-}
 @media screen and (max-width: 576.98px) {
   .radios-container {
     margin-left: 0px;
   }
-  .option-container {
-    margin-left: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
   #user-search-container {
     margin-top: 1.2rem;
     margin-left: 0;
-  }
-  .input-resume {
-    width: 15rem;
-  }
-  .user-img {
-    widows: 45px;
-    height: 45px;
-    margin-left: 0.8px;
-    margin-right: 0.8px;
-  }
-  .btn-slider {
-    color: #565574;
-    font-size: 20px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  .link-how-cont {
-    margin-left: 3.2rem;
-  }
-  .option-text-hide {
-    display: none;
   }
 }
