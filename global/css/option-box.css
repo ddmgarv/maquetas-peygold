@@ -49,8 +49,14 @@
   margin-right: 5.2rem;
 }
 .recarga-option-img {
-  width: 66px;
-  height: 66px;
+  width: 58px;
+  height: 58px;
+}
+.btn-slider {
+  color: #565574;
+  font-size: 22px;
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
 }
 @media screen and (max-width: 576.98px) {
   .recarga-option-container {

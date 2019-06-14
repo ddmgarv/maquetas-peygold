@@ -1,46 +1,122 @@
+.recarga-comercio-wrapper {
+  margin-left: 14px;
+  margin-top: 27px;
+  background-color: #fff;
+}
 #recarga_container {
   width: 100%;
   padding: 1rem 8rem;
 }
-.search input {
+.flex-input-container {
+  height: 3.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-input-img-container {
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.recarga-comercio-input {
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.5) !important;
-
   height: 40px;
-  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #43425d;
-  padding-left: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: none;
+  width: 210px;
 }
-.search input:placeholder-shown {
-  font-family: Rubik, sans-serif;
+.recarga-comercio-input::placeholder {
   font-size: 15px;
   font-weight: 600;
   color: #43425d;
-  padding-left: 30px;
 }
-.search form {
+.recarga-comer-input-search div {
   position: relative;
 }
-.search button {
+.recarga-comer-input-search button {
   position: absolute;
   margin: 0;
   padding: 0;
   top: 8px;
   right: 15px;
-  background: transparent;
+  background: #fff;
   border: none;
   color: #0a5de2;
   cursor: pointer;
 }
-@media (max-width: 767px) {
-  .search input {
+.img-remove-container {
+  margin-right: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recarga-comercio-wallet {
+  margin-left: 14px;
+  margin-top: 10px;
+}
+.wallet-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+}
+.recarga-comercio-user-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.recargas-recientes-container {
+  background-color: #fff;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.recarga-comercio-wallet-icon {
+  margin-bottom: 1.5rem;
+}
+button[class="btn-remove"] {
+  outline: none;
+  border: none;
+  position: relative;
+  bottom: 2.5rem;
+  right: 0.3rem;
+  font-size: 15px;
+}
+@media (min-width: 1599.98px) {
+  #recarga_container {
     width: 100%;
+    padding: 1rem 15rem;
   }
-  .search form {
+}
+@media (max-width: 578.98px) {
+  .recarga-comercio-wrapper {
+    margin-left: 0;
+  }
+  .recarga-comer-input-search div {
     position: rlative;
     width: 100%;
   }
+  .flex-input-container {
+    flex-direction: column;
+    margin: 1rem 0;
+    height: 4.5rem;
+  }
+  #recarga_container {
+    width: 100%;
+    padding: 1rem;
+  }
+  .img-remove-container {
+    margin-right: 0;
+    margin-left: 1.2rem;
+  }
+  /* button[class="btn-remove"] {
+    visibility: visible;
+  } */
 }

@@ -1,48 +1,16 @@
-* {
-  box-sizing: border-box !important;
+#reloadp2-head-wrapper {
+  margin-left: 14px;
+  margin-top: 27px;
+  background-color: #fff;
 }
-#mp-img-recarga {
-  width: 110px;
-  height: 110px;
+#reloadp2-head-wrapper > .reloadp2-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 10rem;
 }
-.btn-slider {
-  color: #565574;
-  font-size: 22px;
-  margin-left: 2.2rem;
-  margin-right: 2.2rem;
-}
-@media screen and (max-width: 576.98px) {
-  .radios-container {
-    margin-left: 0px;
-  }
-  .option-container {
-    margin-left: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  #user-search-container {
-    margin-top: 1.2rem;
-    margin-left: 0;
-  }
-  .input-resume {
-    width: 15rem;
-  }
-  .user-img {
-    widows: 45px;
-    height: 45px;
-    margin-left: 0.8px;
-    margin-right: 0.8px;
-  }
-  .btn-slider {
-    color: #565574;
-    font-size: 20px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  .link-how-cont {
-    margin-left: 3.2rem;
-  }
-  .option-text-hide {
-    display: none;
-  }
+.reloadp2-flex-container #mp-img-recarga {
+  width: 95px;
+  height: 95px;
 }

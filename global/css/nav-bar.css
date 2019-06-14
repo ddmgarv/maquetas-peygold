@@ -56,6 +56,9 @@
 #blue-sticky-box {
   position: fixed;
   top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   height: 3.5rem;
   z-index: 30;
   background-color: #31b8a7;
@@ -74,9 +77,8 @@
   transition: left 0.5s;
 }
 #saludo {
-  margin-top: 0.7rem;
+  font-size: 21px;
   margin-right: 1.5rem;
-  font-size: 20px;
 }
 /* Final estilos para la barra azul del topbar */
 

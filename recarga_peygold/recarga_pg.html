@@ -91,7 +91,7 @@
 
     <!-- Inicio Saludo box -->
     <div id="blue-sticky-box" class="blue-box-collapse">
-      <h6 class="text-right text-white" id="saludo">Hola Martín!</h6>
+      <h6 class="text-white" id="saludo">Hola Martín!</h6>
     </div>
     <!-- Fin saludo box -->
 
@@ -371,7 +371,7 @@
                 <div class="optiones-center-fix-2 fs-22 ml-4">
                   Enviar a otra cuenta
                 </div>
-                <div>
+                <div id="check-2">
                   <label class="recarga-checkbox-label">
                     <input type="radio" name="radio" />
                     <span class="recarga-checkmark-span"></span>
@@ -387,9 +387,9 @@
         <!-- Inicio row user-search div -->
         <div class="row">
           <!-- Col div -->
-          <div class="col-xl-10 border-top-blue bg-white" id="user-search-container">
+          <div class="col-xl-10 border-top-blue bg-white user-search-container-hide" id="user-search-container">
             <!-- Main Flex container -->
-            <div class="d-flex justify-content-center flex-column p-4">
+            <div class="user-search-wrapper" id="recarga-search-wrapper">
               <form action="">
                 <div class="mx-auto m-1">
                   <div>
@@ -487,7 +487,7 @@
                     Administrar contactos
                   </a>
                 </div>
-                </form>
+              </form>
             </div>
             <!-- Main Flex container -->
             
@@ -657,13 +657,13 @@
         <!-- Final Row div for option container  -->
         <br><br><br><br><br>
 
-      </div>
         <!-- Inicio Banner de publicidad -->
-          <img
-            src="../global/assets/banner.png"
-            class="advertising-side"
-          />   
+        <img
+          src="../global/assets/banner.png"
+          class="advertising-side"
+        />   
         <!-- Final Banner de publicidad -->
+      </div>
       <!-- Main Col END -->
 
     </div>

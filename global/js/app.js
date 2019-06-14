@@ -8,7 +8,6 @@ $(function() {
     $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
   });
-
   $(".title").click(function() {
     $("#sidebar-container").toggleClass("sidebar-collapse");
     $("#sidebar-wrapper").toggleClass("sidebar-collapse");
@@ -18,21 +17,17 @@ $(function() {
     $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
   });
-
   $("#demo1").click(function() {
     $("#secondary-nav").toggleClass("show-secondary-nav");
     $("#body-row").toggleClass("pad-body");
     $(".advertising-side").toggleClass("adver-down");
   });
-
   $("#activate-modal").click(function() {
     $("#recarga-saldo-modal").toggleClass("show-modal");
   });
-
   $("#filter-btn-resume").click(function() {
     $("#filter-ops-container").toggleClass("show-filter-ops");
   });
-
   $("#next-btn").click(function() {
     $("#user-img-container").addClass("slide-carousel-hide");
     setTimeout(() => {
@@ -45,7 +40,6 @@ $(function() {
       $("#user-img-container").removeClass("slide-carousel-hide");
     }, 600);
   });
-
   $("#search-user").focus(function() {
     $("#carousel-container").addClass("carousel-show");
   });

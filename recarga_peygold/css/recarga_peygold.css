@@ -94,6 +94,12 @@
   margin-top: 20px;
   margin-left: 14px;
 }
+.user-search-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2.5rem;
+}
 @media screen and (max-width: 576.98px) {
   .radios-container {
     margin-left: 0px;
