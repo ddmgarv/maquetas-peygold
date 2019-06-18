@@ -3,7 +3,7 @@
   margin-top: 27px;
   background-color: #fff;
 }
-#recarga_container {
+#recarga-container {
   width: 100%;
   padding: 1rem 8rem;
 }
@@ -52,6 +52,13 @@
   color: #0a5de2;
   cursor: pointer;
 }
+.recarga-comercio-table-row td {
+  text-align: center;
+}
+.recarga-comercio-table-row td:first-child {
+  word-break: break-all;
+}
+
 .img-remove-container {
   margin-right: 3rem;
   display: flex;
@@ -77,9 +84,21 @@
   background-color: #fff;
   margin-top: 10px;
   margin-left: 15px;
+  padding: 1rem 0;
 }
 .recarga-comercio-wallet-icon {
   margin-bottom: 1.5rem;
+}
+.table-voucher-btn {
+  font-size: 25px;
+  position: relative;
+  bottom: 0.5rem;
+  color: #17a2b8;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+}
+.table-voucher-btn:hover {
+  color: #0a5de2;
 }
 button[class="btn-remove"] {
   outline: none;
@@ -90,7 +109,7 @@ button[class="btn-remove"] {
   font-size: 15px;
 }
 @media (min-width: 1599.98px) {
-  #recarga_container {
+  #recarga-container {
     width: 100%;
     padding: 1rem 15rem;
   }
@@ -108,7 +127,7 @@ button[class="btn-remove"] {
     margin: 1rem 0;
     height: 4.5rem;
   }
-  #recarga_container {
+  #recarga-container {
     width: 100%;
     padding: 1rem;
   }
@@ -116,7 +135,10 @@ button[class="btn-remove"] {
     margin-right: 0;
     margin-left: 1.2rem;
   }
-  /* button[class="btn-remove"] {
-    visibility: visible;
-  } */
+  .recargas-recientes-container {
+    margin-left: 0;
+  }
+  .recarga-comercio-wallet {
+    margin-left: 0;
+  }
 }

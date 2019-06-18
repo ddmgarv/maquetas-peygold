@@ -1,6 +1,6 @@
 /* Global CSS */
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif !important;
   background-color: #f6f6f6 !important;
 }
 #body-row {
@@ -70,7 +70,7 @@ input[type="reset"] {
   transition: background-color 0.5s !important;
   -webkit-transition: color 0.5s !important;
   transition: color 0.5s !important;
-  width: 122px !important;
+  width: 105px !important;
   height: 39px !important;
   font-size: 15px;
 }
@@ -282,6 +282,9 @@ input[type="reset"] {
 @media screen and (max-width: 576.98px) {
   .margin-bottom-title {
     margin-bottom: 1rem;
+  }
+  .main-title-text {
+    font-size: 30px;
   }
   #body-row {
     padding-top: 3.5rem;

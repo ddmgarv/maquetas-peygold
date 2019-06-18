@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Barra de navegacion</title>
+    <title>Recarga comercio</title>
     <meta charset="utf-8" />
     <link
       rel="stylesheet"
@@ -330,7 +330,7 @@
         <!-- Comienzo div row de  -->
         <div class="row">
           <div class="col-lg-10 border-top-blue recarga-comercio-wrapper">
-            <div id="recarga_container">
+            <div id="recarga-container">
               <p class="fs-22 text-center">Realizar Recarga</p>
               <div class="flex-input-container">
                 <p class="my-auto">Cantidad de Peygold P$G</p>
@@ -381,14 +381,48 @@
         <!-- Final row Div -->
 
         <div class="row">
-          <div class="col-lg-6 recargas-recientes-container"></div>
+          <div class="col-lg-6 border-top-blue recargas-recientes-container">
+            <p class="fs-22 text-center">Recargas recientes</p>
+            <div class="table-responsive">
+              <table class="table table-striped w-100" id="table-1">
+                <thead class="table-dark">
+                  <tr class="recarga-comercio-table-row">
+                    <th scope="col" class="text-center">Destinatario</th>
+                    <th scope="col" class="text-center">Monto</th>
+                    <th scope="col" class="text-center">Fecha</th>
+                    <th scope="col" class="text-center">Comprobante</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="recarga-comercio-table-row">
+                    <td>martin@gmail.com</td>
+                    <td>P$G <span>500</span></td>
+                    <td>18-04-2019</td>
+                    <td class="text-center"><button class="table-voucher-btn">&#128065;</button></td>
+                  </tr> 
+                  <tr class="recarga-comercio-table-row">
+                    <td>pedro@gmail.com</td>
+                    <td>P$G <span>500</span></td>
+                    <td>18-04-2019</td>
+                    <td class="text-center"><button class="table-voucher-btn">&#128065;</button></td>
+                  </tr>
+                  <tr class="recarga-comercio-table-row">
+                    <td>miguel@gmail.com</td>
+                    <td>P$G <span>500</span></td>
+                    <td>18-04-2019</td>
+                    <td class="text-center"><button class="table-voucher-btn">&#128065;</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
 
           <!-- Div billetera peygold -->
           <div class="col-lg-4 recarga-comercio-wallet">
-            <div class="border-top-blue bg-white p-2">
+            <div class="border-top-blue bg-white p-lg-2">
               <div class="wallet-content-wrapper">
                 <p class="text-blue">
-                  <span class="fs-12 font-weight-bold">BILLETERA PEYGOLD</span
+                  <span class="fs-14 font-weight-bold">Puntos para recarga</span
                   ><br />
                   <span class="fs-25">P$G</span
                   ><span class="fs-35"> 20.000</span>

@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="../global/css/utilities.css" />
     <link rel="stylesheet" href="../global/css/search-user-container.css">
     <link rel="stylesheet" href="../global/css/send-recieve.css">
+    <link rel="stylesheet" href="../global/css/modal.css">
   </head>
 
   <body>
@@ -328,7 +329,7 @@
                         id="search-user"
                       />
                     </div>
-                    <div class="input-dropdown-show">
+                    <div class="input-dropdown-hide">
                       <div id="container-dropdown-input">
                         <div>
                           <button type="button" class="user-send-btn-dd">
@@ -448,6 +449,32 @@
                   <button class="btn-outline-custom">Siguiente</button>
               </div>
             </form>
+
+            <!-- Modal -->
+            <!-- IMPORTANTE: Para activar modal, colocar clase 'show-modal' en el div con 
+            id:recarga-saldo-modal -->
+            <div class="modal-container show-modal" id="recarga-saldo-modal">
+              <div class="modal-dialog-container">
+                <div class="modal-content-container">
+                  <!-- Modal body -->
+                  <div class="modal-body-container">
+                    <div class="modal-circle m-2">
+                      <div class="circle-failed"></div>
+                    </div>
+                    <div class="m-3">
+                      <h3 class="fs-22 text-center">
+                        Tu envío fue realizado con éxito!
+                      </h3>
+                    </div>
+                    <div class="m-2">
+                      <a href=""><button class="btn btn-outline-custom">Home</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin modal -->
+
           </div>
           <!-- Col div -->
         </div>

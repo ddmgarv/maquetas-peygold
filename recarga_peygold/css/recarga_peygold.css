@@ -57,38 +57,12 @@
   background-color: #17a2b8;
   color: #fff;
 }
-.radios-container-1 {
+.radios-container {
+  border-top: 5px solid #0070ba;
   background-color: #fff;
-  padding-top: 24px;
-  padding-bottom: 20px;
   margin-top: 27px;
   margin-left: 14px;
-}
-.radios-container-2 {
-  background-color: #fff;
-  padding-top: 24px;
-  padding-bottom: 28px;
-  margin-top: 27px;
-  margin-left: 14px;
-}
-.optiones-center-fix {
-  position: relative;
-  top: 0.2rem;
-  right: 0.8rem;
-}
-.optiones-center-fix-1 {
-  position: relative;
-  top: 0.3rem;
-  right: 0.2rem;
-}
-.optiones-center-fix-2 {
-  position: relative;
-  top: 0.3rem;
-  right: 0.5rem;
-}
-.position-checkmar-own-acc {
-  position: relative;
-  left: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 #user-search-container {
   margin-top: 20px;

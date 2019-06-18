@@ -5,6 +5,14 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+.user-img-selected {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.remove-btn-search {
+  font-size: 15px;
+}
 .btn-slider {
   color: #565574;
   font-size: 22px;
@@ -71,6 +79,7 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 50px;
+  text-align: center;
 }
 .input-search-user::placeholder {
   text-align: center;

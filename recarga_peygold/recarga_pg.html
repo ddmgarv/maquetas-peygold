@@ -331,63 +331,57 @@
 
         <!-- Init row for radios container -->
         <div class="row">
-          <div class="col-xl-10 border-top-blue radios-container-1">
+          <div class="col-1"></div>
+          <div class="col-lg-4 radios-container">
             <form action="">
-              <div class="d-flex justify-content-center">
-                <div class="optiones-center-fix fs-22">Pesos</div>
-                <div>
+              <div class="d-flex justify-content-center flex-column">
+                <div class="d-flex m-1">
                   <label class="recarga-checkbox-label">
                     <input type="radio" name="radio" />
                     <span class="recarga-checkmark-span"></span>
                   </label>
+                  <div class="fs-22 m-1 ml-2">Pesos</div>
                 </div>
-                <div class="optiones-center-fix fs-22 ml-5">Peygold</div>
-                <div>
+                <div class="d-flex m-1">
                   <label class="recarga-checkbox-label">
                     <input type="radio" name="radio" />
                     <span class="recarga-checkmark-span"></span>
                   </label>
+                  <div class="fs-22 m-1 ml-2">Peygold</div>
                 </div>
               </div>
             </form>
           </div>
+          <div class="col-lg-4 radios-container">
+           <form action="">
+              <div class="d-flex flex-column justify-content-center">
+                <div class="d-flex m-1">
+                  <label class="recarga-checkbox-label">
+                    <input type="radio" name="radio" />
+                    <span class="recarga-checkmark-span"></span>
+                  </label>
+                  <div class="fs-22 m-1 ml-2">Enviar a mi cuenta</div>
+                </div>
+                <div class="d-flex m-1">
+                  <label class="recarga-checkbox-label">
+                    <input type="radio" name="radio" />
+                    <span class="recarga-checkmark-span"></span>
+                  </label>
+                  <div class="fs-22 m-1 ml-2">Enviar a otra cuenta</div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-1"></div>
         </div>
         <!-- Final row for radios container -->
 
-        <!-- Init row for radios container -->
-        <div class="row">
-          <div class="col-xl-10 radios-container-2">
-            <form action="">
-              <div class="d-flex justify-content-center">
-                <div class="optiones-center-fix-1 fs-22">
-                  Enviar a mi cuenta
-                </div>
-                <div class="position-checkmar-own-acc">
-                  <label class="recarga-checkbox-label">
-                    <input type="radio" name="radio" />
-                    <span class="recarga-checkmark-span"></span>
-                  </label>
-                </div>
-                <div class="optiones-center-fix-2 fs-22 ml-4">
-                  Enviar a otra cuenta
-                </div>
-                <div id="check-2">
-                  <label class="recarga-checkbox-label">
-                    <input type="radio" name="radio" />
-                    <span class="recarga-checkmark-span"></span>
-                  </label>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- Final row for radios container -->
 
 
         <!-- Inicio row user-search div -->
         <div class="row">
           <!-- Col div -->
-          <div class="col-xl-10 border-top-blue bg-white user-search-container-hide" id="user-search-container">
+          <div class="col-lg-10 border-top-blue bg-white user-search-container-hide" id="user-search-container">
             <!-- Main Flex container -->
             <div class="user-search-wrapper" id="recarga-search-wrapper">
               <form action="">
@@ -395,6 +389,10 @@
                   <div>
                     <input type="text" placeholder="Nombre o correo electrónico"
                       class="form-control input-search-user" id="search-user" />
+                    <div>
+                      <img src="../global/assets/user3.png" class="user-img-selected" alt="">
+                      <button class="remove-btn-search">❌</button>
+                    </div>
                   </div>
                   <!-- Comienzo user dropdown container -->
                   <div class="input-dropdown-hide">
@@ -436,7 +434,7 @@
                 <div class="d-flex justify-content-center">
                   <div class="link-how-cont">
                     <p>
-                      <a href="#" class="text-blue no-underline fs-12 font-weight-bold">Como funciona</a>
+                      <a href="#" class="text-blue no-underline fs-14 font-weight-bold">Cómo funciona?</a>
                     </p>
                   </div>
                 </div>
@@ -483,7 +481,7 @@
                 <!-- Final de carousel -->
                 <br>
                 <div class="d-flex justify-content-center mt-3">
-                  <a href="#" class="text-blue no-underline font-weight-bold fs-12">
+                  <a href="#" class="text-blue no-underline font-weight-bold fs-14">
                     Administrar contactos
                   </a>
                 </div>
@@ -496,11 +494,11 @@
         
         </div>
         <!-- Final row user-search div -->
-
+        
         <!-- Row div for option container  -->
         <div class="row">
           <!-- Div col option container -->
-          <div class="col-xl-10 recarga-option-container">
+          <div class="col-lg-10 recarga-option-container">
             <!-- Link for the option -->
             <a href="" class="no-underline option-link">
               <div class="recarga-flex-container-option">
@@ -528,12 +526,10 @@
         </div>
         <!-- Final Row div for option container  -->
 
-
-        
         <!-- Row div for option container  -->
         <div class="row">
           <!-- Div col option container -->
-          <div class="col-xl-10 recarga-option-container">
+          <div class="col-lg-10 recarga-option-container">
             <!-- Link for the option -->
             <a href="" class="no-underline option-link">
               <div class="recarga-flex-container-option">
@@ -541,11 +537,11 @@
                   <p class="fs-14">DEPOSITO BANCARIO</p>
                 </div>
                 <div class="option-text-pos-fix option-text-hide option-text-2">
-                  <p class="fs-13">Se acredita en dos horas</p>
+                  <p class="fs-13">Acreditación instantánea</p>
                 </div>
                 <div class="flex-cont-img-btn">
                   <div>
-                    <img src="../global/assets/Imagen 56.png" class="recarga-option-img" alt="">
+                    <img src="../global/assets/isologoVertical.png" class="recarga-option-img" alt="">
                   </div>
                   <div>
                     <button id="next-btn" type="button">
@@ -561,10 +557,12 @@
         </div>
         <!-- Final Row div for option container  -->
 
+
+
         <!-- Row div for option container  -->
         <div class="row">
           <!-- Div col option container -->
-          <div class="col-xl-10 recarga-option-container">
+          <div class="col-lg-10 recarga-option-container">
             <!-- Link for the option -->
             <a href="" class="no-underline option-link">
               <div class="recarga-flex-container-option">
@@ -595,7 +593,7 @@
         <!-- Row div for option container  -->
         <div class="row">
           <!-- Div col option container -->
-          <div class="col-xl-10 recarga-option-container">
+          <div class="col-lg-10 recarga-option-container">
             <!-- Link for the option -->
             <a href="" class="no-underline option-link">
               <div class="recarga-flex-container-option">
@@ -626,7 +624,7 @@
         <!-- Row div for option container  -->
         <div class="row">
           <!-- Div col option container -->
-          <div class="col-xl-10 recarga-option-container">
+          <div class="col-lg-10 recarga-option-container">
             <!-- Link for the option -->
             <a href="" class="no-underline option-link">
               <div class="recarga-flex-container-option">

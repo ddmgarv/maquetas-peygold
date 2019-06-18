@@ -40,7 +40,7 @@
   -webkit-transition: left 0.5s;
   transition: left 0.5s;
   left: 14rem;
-  width: 80%;
+  width: 90%;
 }
 .top-navbar-extended {
   -webkit-transition: width 0.5s;
@@ -48,7 +48,7 @@
   -webkit-transition: left 0.5s;
   transition: left 0.5s;
   left: 4.5rem;
-  width: 87.5%;
+  width: 95%;
 }
 /* Final Top bar css */
 
@@ -79,6 +79,8 @@
 #saludo {
   font-size: 21px;
   margin-right: 1.5rem;
+  color: #fff;
+  display: none;
 }
 /* Final estilos para la barra azul del topbar */
 
@@ -163,6 +165,9 @@
   margin-right: auto;
   margin-bottom: 1rem;
 }
+.nav-subtitles {
+  color: #fff;
+}
 /* Final estilos generales para sidebar */
 
 /* CSS para cuando la sidebar esta extendida */
@@ -173,10 +178,6 @@
   background-color: #4d4d4d;
   padding: 0;
   font-size: 16px;
-}
-.sidebar-extended .nav-subtitles {
-  border-top: 3px solid #fff;
-  color: #fff;
 }
 .sidebar-extended .nav-rounded {
   background-color: #31b8a7;
@@ -206,10 +207,6 @@
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
   width: 4.5rem;
-}
-.sidebar-collapse .nav-subtitles {
-  border-top: 3px solid #fff;
-  color: #fff;
 }
 .sidebar-collapse .nav-rounded {
   background-color: #31b8a7;
@@ -249,21 +246,21 @@
 @media screen and (max-width: 1366.98px) {
   .top-navbar-collapse {
     left: 14rem;
-    width: 70%;
+    width: 80%;
   }
   .top-navbar-extended {
     left: 4.5rem;
-    width: 82.5%;
+    width: 90%;
   }
 }
 @media screen and (max-width: 1152.98px) {
   .top-navbar-collapse {
     left: 14rem;
-    width: 75%;
+    width: 77.5%;
   }
   .top-navbar-extended {
     left: 4.5rem;
-    width: 85%;
+    width: 87.5%;
   }
   #saludo {
     display: none;
@@ -272,10 +269,7 @@
 @media screen and (max-width: 1075px) {
   .top-navbar-collapse {
     left: 14rem;
-    width: 77.5%;
-  }
-  .top-navbar-collapse .nav-text {
-    display: none;
+    width: 80%;
   }
   .top-navbar-extended {
     left: 4.5rem;
