@@ -310,145 +310,142 @@
         <!-- Inicio Main row div -->
         <div class="row">
           <!-- Col div -->
-          <div class="col-xl-10 p-2" id="send-request-container"> 
-            <form action="">
-              <!-- Main Flex container -->
-              <div class="d-flex justify-content-center flex-column bg-white border-top-blue">
-                <div class="mx-auto m-3">
-                  <img src="../global/assets/user1.png" alt="Usuario" class="user-img" />
+          <!-- IMPORTANTE: colocar clase user-sea -->
+          <div class="col-lg-10 border-top-blue bg-white" id="user-search-container">
+            <!-- Main Flex container -->
+            <div class="user-search-wrapper" id="recarga-search-wrapper">
+              <div class="m-1">
+                <!-- <div id="user-selector-container">
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="../global/assets/user3.png" class="user-img-selected" alt="">
+                    <p>Gustavo Rojas</p>
+                  </div>
+                  <button class="remove-btn-search">❌</button>
+                </div> -->
+                <div class="mt-2">
+                  <input type="text" placeholder="Nombre o correo electrónico" class="form-control input-search-user"
+                    id="search-user" />
                 </div>
-                <div class="mx-auto m-1 fs-22 font-weight-bold">Solicitar pago a:</div>
-                  <div class="mx-auto m-1">
-                      <div>
-                        <input
-                          type="text"
-                          placeholder="Nombre o correo electrónico"
-                          class="form-control input-search-user"
-                          id="search-user"
-                        />
-                      </div>
-                        <div class="input-dropdown-hide">
-                          <div id="container-dropdown-input">
-                            <div>
-                              <button type="button" class="user-send-btn-dd">
-                                <img src="../global/assets/user1.png" class="user-img" alt="">
-                                angelmigueljurado@gmail.com
-                              </button>
-                            </div>
-                            <div>
-                              <button type="button" class="user-send-btn-dd">
-                                <img src="../global/assets/user2.png" class="user-img" alt="">
-                                gustavoconfortsur@gmail.com
-                              </button>
-                            </div>
-                            <div>
-                              <button type="button" class="user-send-btn-dd">
-                                <img src="../global/assets/user2.png" class="user-img" alt="">
-                                pedroconfortsur@gmail.com
-                              </button>
-                            </div>
-                            <div>
-                              <button type="button" class="user-send-btn-dd">
-                                <img src="../global/assets/user2.png" class="user-img" alt="">
-                                joseconfortsur@gmail.com
-                              </button>
-                            </div>
-                            <div>
-                              <button type="button" class="user-send-btn-dd">
-                                <img src="../global/assets/user2.png" class="user-img" alt="">
-                                josueconfortsur@gmail.com
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="d-flex justify-content-center">
-                        <div id="link-how-cont">
-                          <p class="wallet-small-text">
-                            <a
-                            href="#"
-                            class="text-blue no-underline fs-15 font-weight-bold"
-                            id="hide"
-                            >Como funciona</a>
-                          </p> 
-                        </div>
-                      </div>
-                      <!-- Inicio de carousel -->
-                      <div class="d-flex justify-content-center mt-2" id="carousel-container">
-                        <div class="my-auto">
-                          <button id="back-btn">
-                            <i class="fas fa-chevron-left btn-slider"></i>
-                          </button>
-                        </div>
-                        <div class="d-flex" id="user-img-container">
-                          <div>
-                            <button>
-                              <img
-                                src="../global/assets/user1.png"
-                                alt="usuario"
-                                class="user-img"
-                              />
-                            </button>
-                          </div>
-                          <div>
-                            <button>
-                              <img
-                                src="../global/assets/user2.png"
-                                alt="usuario"
-                                class="user-img"
-                              />
-                            </button>
-                          </div>
-                          <div>
-                            <button>
-                              <img
-                                src="../global/assets/user3.png"
-                                alt="usuario"
-                                class="user-img"
-                              />
-                            </button>
-                          </div>
-                          <div>
-                            <button>
-                              <img
-                                src="../global/assets/user4.png"
-                                alt="usuario"
-                                class="user-img"
-                              />
-                            </button>
-                          </div>
-                          <div>
-                            <button>
-                              <img
-                                src="../global/assets/user5.png"
-                                alt="usuario"
-                                class="user-img"
-                              />
-                            </button>
-                          </div>
-                        </div>
-                        <div class="my-auto">
-                          <button id="next-btn" type="button">
-                            <i class="fas fa-chevron-right btn-slider"></i>
-                          </button>
-                        </div>
-                      </div>
-                    <!-- Final de carousel -->
-                    <br>
-                    <div class="d-flex justify-content-center mt-3">
-                      <a href="#" class="text-blue no-underline font-weight-bold fs-18">
-                        Administrar contactos
-                      </a>
+                <!-- Comienzo user dropdown container -->
+                <div class="input-dropdown-hide">
+                  <div id="container-dropdown-input">
+                    <div>
+                      <button type="button" class="user-send-btn-dd">
+                        <img src="../global/assets/user1.png" class="user-img" alt="">
+                        angelmigueljurado@gmail.com
+                      </button>
                     </div>
-                    <br>
+                    <div>
+                      <button type="button" class="user-send-btn-dd">
+                        <img src="../global/assets/user2.png" class="user-img" alt="">
+                        gustavoconfortsur@gmail.com
+                      </button>
+                    </div>
+                    <div>
+                      <button type="button" class="user-send-btn-dd">
+                        <img src="../global/assets/user4.png" class="user-img" alt="">
+                        pedroconfortsur@gmail.com
+                      </button>
+                    </div>
+                    <div>
+                      <button type="button" class="user-send-btn-dd">
+                        <img src="../global/assets/user5.png" class="user-img" alt="">
+                        joseconfortsur@gmail.com
+                      </button>
+                    </div>
+                    <div>
+                      <button type="button" class="user-send-btn-dd">
+                        <img src="../global/assets/user3.png" class="user-img" alt="">
+                        josueconfortsur@gmail.com
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Final user dropdown -->
               </div>
-              <!-- Main Flex container -->
-              <div class="d-flex justify-content-center mt-5">
-                  <button class="btn-outline-custom">Siguiente</button>
+              <div class="d-flex justify-content-center">
+                <div id="link-how-cont">
+                  <p>
+                    <a href="#" class="text-blue no-underline fs-14 font-weight-bold">Cómo funciona?</a>
+                  </p>
+                </div>
               </div>
-            </form>
+              <!-- Inicio de carousel -->
+              <div class="d-flex justify-content-center mt-2" id="carousel-container">
+                <!-- <div class="my-auto">
+                            <button id="back-btn">
+                              <i class="fas fa-chevron-left btn-slider"></i>
+                            </button>
+                          </div> -->
+                <div class="d-flex" id="user-img-container">
+                  <button>
+                    <div class="img-name-wrapper">
+                      <img src="../global/assets/user1.png" alt="usuario" class="user-img" />
+                      <span>Pedro</span>
+                      <span>Sánchez</span>
+                    </div>
+                  </button>
+          
+                  <button>
+                    <div class="img-name-wrapper">
+                      <img src="../global/assets/user2.png" alt="usuario" class="user-img" />
+                      <span>Gustavo</span>
+                      <span>Rojas</span>
+                    </div>
+                  </button>
+          
+                  <button>
+                    <div class="img-name-wrapper">
+                      <img src="../global/assets/user3.png" alt="usuario" class="user-img" />
+                      <span>Miguel</span>
+                      <span>Jurado</span>
+                    </div>
+                  </button>
+          
+                  <button>
+                    <div class="img-name-wrapper">
+                      <img src="../global/assets/user4.png" alt="usuario" class="user-img" />
+                      <span>Martín</span>
+                      <span>Goldberg</span>
+                    </div>
+                  </button>
+          
+                  <button>
+                    <div class="img-name-wrapper">
+                      <img src="../global/assets/user5.png" alt="usuario" class="user-img" />
+                      <span>Manuel</span>
+                      <span>Alvarado</span>
+                    </div>
+                  </button>
+                </div>
+                <!-- <div class="my-auto">
+                            <button class="next-btn" type="button">
+                              <i class="fas fa-chevron-right btn-slider"></i>
+                            </button>
+                          </div> -->
+              </div>
+              <!-- Final de carousel -->
+              <br>
+              <div class="d-flex justify-content-center mt-1">
+                <h3 href="#" class="text-blue font-weight-bold fs-14">
+                  Contactos recientes
+                </h3>
+              </div>
+              <div>
+          
+              </div>
+            </div>
+            <!-- Main Flex container -->
+          
+          
+            <div class="d-flex justify-content-center mb-3">
+              <button class="btn-outline-custom">
+                Siguiente
+              </button>
+            </div>
           </div>
           <!-- Col div -->
+
         </div>
         <!-- Final Main row div -->
           

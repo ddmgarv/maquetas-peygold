@@ -5,13 +5,22 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+#user-selector-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .user-img-selected {
-  width: 38px;
-  height: 38px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
 }
 .remove-btn-search {
   font-size: 15px;
+  position: absolute;
+  top: 1.5rem;
+  margin-left: 35px;
+  -moz-transform: translateX(18px);
 }
 .btn-slider {
   color: #565574;
@@ -21,12 +30,22 @@
 }
 #link-how-cont {
   margin-left: 17rem;
-  margin-top: 1em;
+  margin-top: 0.5rem;
 }
 #user-img-container {
   opacity: 1;
   transition: opacity 0.5s ease-in;
   -webkit-transition: opacity 0.5s ease-in;
+}
+#user-img-container button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.img-name-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .input-dropdown-hide {
   display: none;
@@ -46,7 +65,7 @@
   transition: border-radius 0.5s;
 }
 #container-dropdown-input div:hover {
-  border-radius: 50px;
+  /* border-radius: 50px; */
   background-color: #8f8c8c81;
 }
 .user-send-btn-dd {
@@ -73,17 +92,28 @@
   -webkit-transition: opacity 0.5s ease-out;
 }
 .input-search-user {
-  width: 25rem;
-  height: 50px;
-  border: 0.04rem solid rgba(0, 0, 0, 0.5);
-  margin-left: auto;
+  width: 25rem !important;
+  height: 50px !important;
+  border: 0.04rem solid rgba(0, 0, 0, 0.5) !important;
+  margin-left: auto !important;
   margin-right: auto;
-  border-radius: 50px;
-  text-align: center;
+  border-radius: 50px !important;
+  text-align: center !important;
 }
 .input-search-user::placeholder {
   text-align: center;
 }
+#user-search-container {
+  margin-top: 20px;
+  margin-left: 14px;
+}
+.user-search-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem 2.5rem;
+}
+
 @media screen and (max-width: 576.98px) {
   .input-search-user {
     width: 15rem;
@@ -105,5 +135,9 @@
   }
   #container-dropdown-input {
     width: 20rem;
+  }
+  #user-search-container {
+    margin-top: 1.2rem;
+    margin-left: 0;
   }
 }

@@ -319,8 +319,8 @@
         </div>
         <form action="">
           <!-- Final titulo -->
-          <div class="row" id="main-content-send-money-p2">
-            <div class="col-xl-10 border-top-blue bg-white p-5">
+          <div class="row" >
+            <div class="col-xl-10 border-top-blue bg-white" id="main-content-send-money-p2">
               
               <div class="main-user-containers">
                 <div class="m-sm-center">
@@ -337,133 +337,43 @@
                   </p>
                 </div>
               </div>
-              <br />
-              <br />
-              <!-- <div class="table-responsive mt-2" id="visa-table">
-                <table class="table table-width table-borderless">
-                  <tr>
-                    <td class="td-1 text-right">
-                      <img src="../global/assets/Imagen 74.png" alt="" />
-                    </td>
-                    <td class="td-2">
-                      <p class="ml-4">
-                        Terminada en ***** <span>2525</span> <br /><br />
-                        <a href="" class="fs-15 font-weight-bold"
-                          >Cambiar tu tarjeta</a
-                        >
-                      </p>
-                    </td>
-                    <td class="td-3">
-                      <input
-                        type="number"
-                        class="input-custom-send-money"
-                        placeholder="0.00"
-                        step="0.01"
-                        name=""
-                        value=""
-                      />
-                      <br />
-                      <p class="text-right usd-btn">
-                        <button class="btn-custom-send-money">
-                          USD
-                        </button>
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-              </div> -->
-              <!-- Table begin div billetera pesos -->
-              <div class="table-responsive mt-2">
-                <table class="table table-width table-top-border">
-                  <tr>
-                    <td class="td-1">
-                      <button class="mt-table-td1">
-                        <span> Ver saldo</span>
-                        <i class="fas fa-chevron-down"></i>
-                      </button>
-                    </td>
-                    <td class="td-2">
-                      <div class="mt-table-td2">
-                        <img src="../global/assets/Imagen 72@2x.png" class="wallet-img" />
-                        <span class="text-blue fs-17 font-weight-bold">Billetera en Pesos</span>
-                      </div>
-                    </td>
-                    <td class="td-3">
-                      <div class="mb-table-td3">
-                        <span class="sup-index">
-                          <span class="hidden-vis fs-16">P</span><span class="hidden-vis fs-16">G</span><span class="fs-16">$</span>
-                        </span>
-                        
-                        <input type="number" class="input-custom-send-money" name="" value="" placeholder="0.00" step="0.01" />
-                      </div>
-              
-                    </td>
-                  </tr>
-                </table>
+
+              <div class="wallet-container-send-recieve">
+
+                <div>
+                  <div>
+                    <img src="../global/assets/Imagen 72@2x.png" class="wallet-img" />
+                    <span class="text-blue fs-17 font-weight-bold">Billetera en Pesos</span>
+                  </div>
+                  <div>
+                    <span class="sup-index">
+                      <span class="invisible fs-16">P</span><span class="invisible fs-16">G</span><span class="fs-16">$</span>
+                    </span>
+                    <input type="number" class="input-custom-send-money" name="" value="255555.55" placeholder="0.00" step="0.01" disabled />
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <!-- La misma imagen para cuadrar el layuot y se vea parejo pero invisible -->
+                    <img src="../global/assets/Imagen 72@2x.png" class="wallet-img invisible" />
+                    <!-- La misma imagen para cuadrar el layuot y se vea parejo -->
+                    <span class="text-blue fs-17 font-weight-bold">Cantidad a enviar</span>
+                  </div>
+                  <div>
+                    <span class="sup-index">
+                    <span class="invisible fs-16">P</span><span class="invisible fs-16">G</span><span class="fs-16">$</span>
+                    </span>
+                    <input type="number" class="input-custom-send-money" name="" value="" placeholder="0.00" step="0.01" />
+                  </div>
+                </div>
+
               </div>
-              <!-- Table begin div -->
-              
-              <!-- Table begin div billetera peygold-->
-              <div class="table-responsive">
-                <table class="table table-width table-top-border">
-                  <tr>
-                    <td class="td-1">
-                      <button class="mt-table-td1">
-                        <span class="fs-17">Ver saldo</span>
-                        <i class="fas fa-chevron-down"></i>
-                      </button>
-              
-                    </td>
-                    <td class="td-2">
-                      <div class="mt-table-td2">
-                        <img src="../global/assets/Imagen 72@2x.png" class="wallet-img" />
-                        <span class="text-blue fs-17 font-weight-bold">Billetera en Peygold</span>
-                      </div>
-                    </td>
-                    <td class="td-3">
-                      <div class="mb-table-td3">
-                        <span class="fs-16 sup-index">P$G
-                        </span><input type="number" class="input-custom-send-money" name="" value="" placeholder="0.00" step="0.01" />
-                      </div>
-              
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <!-- Table final div -->
-              
-              <!-- Table begin div billetera peygold-->
-              <div class="table-responsive">
-                <table class="table table-width table-top-border">
-                  <tr>
-                    <td class="td-1">
-                      <button class="mt-table-td1">
-                        <span class="fs-17"> Ver saldo</span>
-                        <i class="fas fa-chevron-down"></i>
-                      </button>
-              
-                    </td>
-                    <td class="td-2">
-                      <div class="mt-table-td2">
-                        <img src="../global/assets/Imagen 72@2x.png" class="wallet-img" />
-                        <span class="text-blue fs-17 font-weight-bold">Billetera en Peygold Credito</span>
-                      </div>
-              
-                    </td>
-                    <td class="td-3">
-                      <div class="mb-table-td3">
-                        <span class="fs-16 sup-index">P$G
-                        </span><input type="number" class="input-custom-send-money" name="" value="" placeholder="0.00" step="0.01" />
-                      </div>
-              
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <!-- Table final div -->
+
             </div>
           </div>
-          <div class="row" id="add-note-container"><!-- Div de agregar nota -->
+
+          <div class="row"><!-- Div de agregar nota -->
             <div class="col-xl-10 bg-white" id="pad-add-note">
               <div class="d-flex justify-content-center">
                 <div id="circle">

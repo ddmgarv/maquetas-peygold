@@ -381,18 +381,22 @@
         <!-- Inicio row user-search div -->
         <div class="row">
           <!-- Col div -->
-          <div class="col-lg-10 border-top-blue bg-white user-search-container-hide" id="user-search-container">
+          <!-- IMPORTANTE: colocar clase user-sea -->
+          <div class="col-lg-10 border-top-blue bg-white" id="user-search-container">
             <!-- Main Flex container -->
             <div class="user-search-wrapper" id="recarga-search-wrapper">
               <form action="">
                 <div class="mx-auto m-1">
-                  <div>
+                  <div id="user-selector-container">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                      <img src="../global/assets/user3.png" class="user-img-selected" alt="">
+                      <p>Gustavo Rojas</p>
+                    </div>
+                    <button class="remove-btn-search">❌</button>
+                  </div>
+                  <div class="mt-2">
                     <input type="text" placeholder="Nombre o correo electrónico"
                       class="form-control input-search-user" id="search-user" />
-                    <div>
-                      <img src="../global/assets/user3.png" class="user-img-selected" alt="">
-                      <button class="remove-btn-search">❌</button>
-                    </div>
                   </div>
                   <!-- Comienzo user dropdown container -->
                   <div class="input-dropdown-hide">
@@ -411,19 +415,19 @@
                       </div>
                       <div>
                         <button type="button" class="user-send-btn-dd">
-                          <img src="../global/assets/user2.png" class="user-img" alt="">
+                          <img src="../global/assets/user4.png" class="user-img" alt="">
                           pedroconfortsur@gmail.com
                         </button>
                       </div>
                       <div>
                         <button type="button" class="user-send-btn-dd">
-                          <img src="../global/assets/user2.png" class="user-img" alt="">
+                          <img src="../global/assets/user5.png" class="user-img" alt="">
                           joseconfortsur@gmail.com
                         </button>
                       </div>
                       <div>
                         <button type="button" class="user-send-btn-dd">
-                          <img src="../global/assets/user2.png" class="user-img" alt="">
+                          <img src="../global/assets/user3.png" class="user-img" alt="">
                           josueconfortsur@gmail.com
                         </button>
                       </div>
@@ -432,7 +436,7 @@
                   <!-- Final user dropdown -->
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="link-how-cont">
+                  <div id="link-how-cont">
                     <p>
                       <a href="#" class="text-blue no-underline fs-14 font-weight-bold">Cómo funciona?</a>
                     </p>
@@ -440,50 +444,64 @@
                 </div>
                 <!-- Inicio de carousel -->
                 <div class="d-flex justify-content-center mt-2" id="carousel-container">
-                  <div class="my-auto">
+                  <!-- <div class="my-auto">
                     <button id="back-btn">
                       <i class="fas fa-chevron-left btn-slider"></i>
                     </button>
-                  </div>
+                  </div> -->
                   <div class="d-flex" id="user-img-container">
-                    <div>
-                      <button>
+                    <button>
+                      <div class="img-name-wrapper">
                         <img src="../global/assets/user1.png" alt="usuario" class="user-img" />
-                      </button>
-                    </div>
-                    <div>
-                      <button>
+                        <span>Pedro</span>
+                        <span>Sánchez</span>
+                      </div>
+                    </button>
+                      
+                    <button>
+                      <div class="img-name-wrapper">
                         <img src="../global/assets/user2.png" alt="usuario" class="user-img" />
-                      </button>
-                    </div>
-                    <div>
-                      <button>
+                        <span>Gustavo</span>
+                        <span>Rojas</span>
+                      </div>
+                    </button>
+
+                    <button>
+                      <div class="img-name-wrapper">
                         <img src="../global/assets/user3.png" alt="usuario" class="user-img" />
-                      </button>
-                    </div>
-                    <div>
-                      <button>
+                        <span>Miguel</span>
+                        <span>Jurado</span>
+                      </div>
+                    </button>
+
+                    <button>
+                      <div class="img-name-wrapper">
                         <img src="../global/assets/user4.png" alt="usuario" class="user-img" />
-                      </button>
-                    </div>
-                    <div>
-                      <button>
+                        <span>Martín</span>
+                        <span>Goldberg</span>
+                      </div>
+                    </button>
+
+                    <button>
+                      <div class="img-name-wrapper">
                         <img src="../global/assets/user5.png" alt="usuario" class="user-img" />
-                      </button>
-                    </div>
-                  </div>
-                  <div class="my-auto">
-                    <button id="next-btn" type="button">
-                      <i class="fas fa-chevron-right btn-slider"></i>
+                        <span>Manuel</span>
+                        <span>Alvarado</span>
+                      </div>
                     </button>
                   </div>
+                  <!-- <div class="my-auto">
+                    <button class="next-btn" type="button">
+                      <i class="fas fa-chevron-right btn-slider"></i>
+                    </button>
+                  </div> -->
                 </div>
                 <!-- Final de carousel -->
                 <br>
-                <div class="d-flex justify-content-center mt-3">
-                  <a href="#" class="text-blue no-underline font-weight-bold fs-14">
-                    Administrar contactos
-                  </a>
+                <div class="d-flex justify-content-center mt-1">
+                  <h3 href="#" class="text-blue font-weight-bold fs-14">
+                    Contactos recientes
+                  </h3>
                 </div>
               </form>
             </div>
@@ -495,8 +513,11 @@
         </div>
         <!-- Final row user-search div -->
         
+        <!-- Para desabilitar alguna de las rows, colocar la clase
+           box-disabled-option en el div con la clase row -->
+
         <!-- Row div for option container  -->
-        <div class="row">
+        <div class="row box-disabled-option">
           <!-- Div col option container -->
           <div class="col-lg-10 recarga-option-container">
             <!-- Link for the option -->
@@ -506,14 +527,14 @@
                   <p class="fs-14">TRANSFERENCIA BANCARIA</p>
                 </div>
                 <div class="option-text-pos-fix option-text-hide option-text-1">
-                  <p class="fs-13">Se acredita en dos horas</p>
+                  <p class="fs-13">Próximamente disponible</p>
                 </div>
                 <div class="flex-cont-img-btn">
                   <div>
                     <img src="../global/assets/Imagen 55.png" class="recarga-option-img" alt="">
                   </div>
                   <div>
-                    <button id="next-btn" type="button">
+                    <button class="next-btn" type="button">
                       <i class="fas fa-chevron-right btn-slider text-blue"></i>
                     </button>
                   </div>
@@ -527,7 +548,7 @@
         <!-- Final Row div for option container  -->
 
         <!-- Row div for option container  -->
-        <div class="row">
+        <div class="row box-disabled-option">
           <!-- Div col option container -->
           <div class="col-lg-10 recarga-option-container">
             <!-- Link for the option -->
@@ -537,15 +558,15 @@
                   <p class="fs-14">DEPOSITO BANCARIO</p>
                 </div>
                 <div class="option-text-pos-fix option-text-hide option-text-2">
-                  <p class="fs-13">Acreditación instantánea</p>
+                  <p class="fs-13">Próximamente disponible</p>
                 </div>
                 <div class="flex-cont-img-btn">
                   <div>
-                    <img src="../global/assets/isologoVertical.png" class="recarga-option-img" alt="">
+                    <img src="../global/assets/imagen 56.png" class="recarga-option-img" alt="">
                   </div>
                   <div>
-                    <button id="next-btn" type="button">
-                      <i class="fas fa-chevron-right btn-slider text-blue"></i>
+                    <button class="next-btn" type="button">
+                      <i class="fas fa-chevron-right btn-slider"></i>
                     </button>
                   </div>
                 </div>
@@ -577,7 +598,7 @@
                     <img src="../global/assets/isologoVertical.png" class="recarga-option-img" alt="">
                   </div>
                   <div>
-                    <button id="next-btn" type="button">
+                    <button class="next-btn" type="button">
                       <i class="fas fa-chevron-right btn-slider text-blue"></i>
                     </button>
                   </div>
@@ -591,7 +612,7 @@
         <!-- Final Row div for option container  -->
 
         <!-- Row div for option container  -->
-        <div class="row">
+        <div class="row box-disabled-option">
           <!-- Div col option container -->
           <div class="col-lg-10 recarga-option-container">
             <!-- Link for the option -->
@@ -601,14 +622,14 @@
                   <p class="fs-14">PAGO FACIL</p>
                 </div>
                 <div class="option-text-pos-fix option-text-hide option-text-4">
-                  <p class="fs-13">Se acredita en 24hs</p>
+                  <p class="fs-13">Próximamente disponible</p>
                 </div>
                 <div class="flex-cont-img-btn">
                   <div>
                     <img src="../global/assets/pago-facil-icon.png" class="recarga-option-img" alt="">
                   </div>
                   <div>
-                    <button id="next-btn" type="button">
+                    <button class="next-btn" type="button">
                       <i class="fas fa-chevron-right btn-slider text-blue"></i>
                     </button>
                   </div>
@@ -622,7 +643,7 @@
         <!-- Final Row div for option container  -->
 
         <!-- Row div for option container  -->
-        <div class="row">
+        <div class="row box-disabled-option">
           <!-- Div col option container -->
           <div class="col-lg-10 recarga-option-container">
             <!-- Link for the option -->
@@ -632,14 +653,14 @@
                   <p class="fs-14">CODIGO DE PROMOCION O REGALO</p>
                 </div>
                 <div class="option-text-pos-fix option-text-hide option-text-5">
-                  <p class="fs-13">Acreditación instantánea</p>
+                  <p class="fs-13">Próximamente disponible</p>
                 </div>
                 <div class="flex-cont-img-btn">
                   <div>
                     <img src="../global/assets/Imagen 57.png" class="recarga-option-img" alt="">
                   </div>
                   <div>
-                    <button id="next-btn" type="button">
+                    <button class="next-btn" type="button">
                       <i class="fas fa-chevron-right btn-slider text-blue"></i>
                     </button>
                   </div>
