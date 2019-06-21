@@ -1,0 +1,47 @@
+.user-acc-container-col {
+  margin-top: 27px;
+  border-top: 5px solid #0070ba;
+  background-color: #fff;
+  padding: 1.5rem;
+}
+.acc-data-p {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.ml-acc-text {
+  margin-left: 10px;
+}
+.input-file-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.input-file-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.btn-account-custom {
+  background-color: transparent !important;
+  border: 2px solid #0070ba !important;
+  border-radius: 50px !important;
+  color: #0070ba !important;
+  -webkit-transition: background-color 0.5s !important;
+  transition: background-color 0.5s !important;
+  -webkit-transition: color 0.5s !important;
+  transition: color 0.5s !important;
+  width: 150px !important;
+  height: 39px !important;
+  font-size: 15px;
+  margin-top: 2rem;
+}
+.btn-account-custom:hover {
+  background-color: #0070ba !important;
+  color: #fff !important;
+}
+.account-user-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

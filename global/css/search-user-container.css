@@ -1,3 +1,7 @@
+#user-search-container {
+  margin-top: 27px;
+  margin-left: 14px;
+}
 .user-img {
   width: 56px;
   height: 56px;
@@ -103,10 +107,7 @@
 .input-search-user::placeholder {
   text-align: center;
 }
-#user-search-container {
-  margin-top: 20px;
-  margin-left: 14px;
-}
+
 .user-search-wrapper {
   display: flex;
   justify-content: center;
@@ -115,14 +116,24 @@
 }
 
 @media screen and (max-width: 576.98px) {
+  #user-selector-container p {
+    font-size: 14px;
+  }
   .input-search-user {
-    width: 15rem;
+    font-size: 13px;
+    width: 15rem !important;
+  }
+  .input-search-user::placeholder {
+    font-size: 13px;
   }
   .user-img {
-    width: 45px;
-    height: 45px;
-    margin-left: 0.8px;
-    margin-right: 0.8px;
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .img-name-wrapper span {
+    font-size: 12px;
   }
   .btn-slider {
     color: #565574;

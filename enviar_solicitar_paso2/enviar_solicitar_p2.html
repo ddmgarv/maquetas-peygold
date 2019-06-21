@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Enviar Dinero</title>
+    <title>Peygold</title>
     <meta charset="utf-8" />
     <link
       rel="stylesheet"
@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../global/css/nav-bar.css" />
     <link rel="stylesheet" type="text/css" href="../global/css/utilities.css" />
-    <link rel="stylesheet" type="text/css" href="css/enviar_dinero_p2.css" />
+    <link rel="stylesheet" type="text/css" href="css/enviar_solicitar_p2.css" />
   </head>
 
   <body>
@@ -275,8 +275,6 @@
             </li>
             <!-- Elemento de la sidebar -->
 
-            <br /><br /><br />
-
             <!-- Elementos de la sidebar -->
             <li class="nav-item">
               <a class="nav-link side-bar-link" href="#"
@@ -308,17 +306,19 @@
 
       <!-- MAIN -->
       <div class="col" id="main-div">
+
         <!-- Titulo -->
         <div class="row">
           <div class="pl-1 bg-title col-10 margin-bottom-title quick-fix">
-            <h1 class="main-title-text ml-2">
+            <h1 class="main-title-text ml-2 send-text-p2">
               <img src="../global/assets/user1.png" class="main-title-img d-none" />
-              Enviar
+              Elegir monto
             </h1>
           </div>
         </div>
-        <form action="">
-          <!-- Final titulo -->
+        <!-- Final titulo -->
+
+        <form action="">  
           <div class="row" >
             <div class="col-xl-10 border-top-blue bg-white" id="main-content-send-money-p2">
               
@@ -339,11 +339,16 @@
               </div>
 
               <div class="wallet-container-send-recieve">
+                <!-- IMPORTANTE: Cuando se solicite dinero, colocar la clase "d-none" al div de la billetera
+                del usuario para que no se muestre la informacion. -->
 
-                <div>
+                <!-- IMPORTANTE: Cuando se vaya a enviar dinero, colocar la clase sr-text con la terminacion:
+                -pesos-p2, -pg-p2, -cpg-p2 para mostrar el texto de  pesos, peygold o creditos peygold 
+                respectivamente -->
+                <div><!-- Div de la billetera -->
                   <div>
                     <img src="../global/assets/Imagen 72@2x.png" class="wallet-img" />
-                    <span class="text-blue fs-17 font-weight-bold">Billetera en Pesos</span>
+                    <span class="text-blue fs-17 font-weight-bold sr-text-cpg-p2"></span>
                   </div>
                   <div>
                     <span class="sup-index">
@@ -351,22 +356,29 @@
                     </span>
                     <input type="number" class="input-custom-send-money" name="" value="255555.55" placeholder="0.00" step="0.01" disabled />
                   </div>
-                </div>
+                </div><!-- Final Div de la billetera -->
 
-                <div>
+                <div class="sr-input-container-p2"><!-- Div del input -->
                   <div>
+                    <!-- IMPORTANTE: Cuando se vaya a enviar dinero, colocar la clase sr-text con la terminacion:
+                        -send-p2, -request-p2 para mostrar el texto de enviar o solicitar
+                        respectivamente al span -->
+
                     <!-- La misma imagen para cuadrar el layuot y se vea parejo pero invisible -->
                     <img src="../global/assets/Imagen 72@2x.png" class="wallet-img invisible" />
-                    <!-- La misma imagen para cuadrar el layuot y se vea parejo -->
-                    <span class="text-blue fs-17 font-weight-bold">Cantidad a enviar</span>
+
+                    <span class="text-blue fs-17 font-weight-bold sr-text-send-p2"></span>
                   </div>
                   <div>
-                    <span class="sup-index">
-                    <span class="invisible fs-16">P</span><span class="invisible fs-16">G</span><span class="fs-16">$</span>
+                    <!-- Si se va a enviar pesos poner la clase "invisible" al span de P y G, si se va a enviar peygold quitarlas -->
+                    <span class="sup-index fs-16">
+                      <span class="invisible">P</span>
+                      <span>$</span>
+                      <span class="invisible">G</span>
                     </span>
                     <input type="number" class="input-custom-send-money" name="" value="" placeholder="0.00" step="0.01" />
                   </div>
-                </div>
+                </div><!-- Final Div del input -->
 
               </div>
 

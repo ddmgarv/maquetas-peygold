@@ -4,7 +4,6 @@
   margin-left: 14px;
   padding: 2.5rem;
 }
-
 .wallet-container-send-recieve {
   margin-top: 2.5rem;
   display: flex;
@@ -16,8 +15,8 @@
   flex-direction: column;
   justify-content: center;
 }
-.wallet-container-send-recieve > div:first-child > div:first-child {
-  margin-left: 2rem;
+ {
+  text-align: center;
 }
 .input-custom-send-money {
   background: none;
@@ -105,7 +104,7 @@ input[type="number"] {
 }
 #main-user-txt {
   margin-top: 0.5em;
-  margin-left: 2em;
+  margin-left: 1rem;
 }
 .edit-icon {
   color: #fff;
@@ -142,6 +141,24 @@ input[type="number"] {
   width: 162px !important;
   height: 39px !important;
 }
+.sr-input-container-p2 {
+  margin-left: 3.5rem;
+}
+.sr-text-pesos-p2::before {
+  content: "Billetera en pesos";
+}
+.sr-text-pg-p2::before {
+  content: "Billetera en peygold";
+}
+.sr-text-cpg-p2::before {
+  content: "Billetera en créditos peygold";
+}
+.sr-text-send-p2::before {
+  content: "Cantidad a enviar";
+}
+.sr-text-request-p2::before {
+  content: "Cantidad a solicitar";
+}
 @media screen and (max-width: 700px) {
   .wallet-container-send-recieve {
     flex-direction: column;
@@ -149,6 +166,10 @@ input[type="number"] {
     align-items: center;
     margin-top: 1rem;
   }
+  .input-custom-send-money {
+    text-align: center;
+  }
+
   .wallet-container-send-recieve > div {
     margin-top: 1rem;
   }
@@ -173,5 +194,8 @@ input[type="number"] {
   }
   .sup-index {
     display: none;
+  }
+  .sr-input-container-p2 {
+    margin-left: 1rem;
   }
 }

@@ -1,23 +1,28 @@
 <!-- Modal -->
 <!-- IMPORTANTE: Para activar modal, colocar clase 'show-modal' en el div con 
-id:recarga-saldo-modal -->
-<div class="modal-container" id="recarga-saldo-modal">
+        id:recarga-saldo-modal -->
+<div class="modal-container show-modal" id="recarga-saldo-modal">
+  <!-- IMPORTANTE: Cuando el modal esta en estado 
+            SUCCESS, colocar: modal-circle-success, modal-text-success y btn-text-success en el
+          span, h3 y button tags respectivamente -->
+  <!-- IMPORTANTE: Cuando el modal esta en estado 
+            SUCCESS, colocar: modal-circle-failed, modal-text-failed y btn-text-failed en el
+          span, h3 y button tags respectivamente -->
   <div class="modal-dialog-container">
     <div class="modal-content-container">
       <!-- Modal body -->
       <div class="modal-body-container">
         <div class="modal-circle m-2">
-          <i class="fas fa-times close-modal-btn fs-28"></i>
+          <span class="modal-circle-success"></span>
         </div>
         <div class="m-3">
-          <h3 class="fs-22 text-center">
-            No pudimos realizar <br />
-            tu solicitud.
-          </h3>
+          <h3 class="text-center fs-25">Texto para poner</h3>
         </div>
         <div class="m-2">
           <a href=""
-            ><button class="btn btn-outline-custom">Cargar saldo</button></a
+            ><button class="btn-outline-modal fs-25">
+              Botón
+            </button></a
           >
         </div>
       </div>

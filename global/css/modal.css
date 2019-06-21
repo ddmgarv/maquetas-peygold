@@ -1,3 +1,4 @@
+/* Main styles for modal */
 .modal-circle {
   background-color: #fff;
   border: 4px solid #17a2b8;
@@ -7,31 +8,6 @@
   z-index: 86;
   position: relative;
 }
-
-.circle-failed::before {
-  content: "\2716";
-  position: absolute;
-  bottom: -1px;
-  left: 7.5px;
-  font-size: 25px;
-  font-weight: bold;
-  color: #17a2b8;
-}
-
-.circle-success::before {
-  -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-  -o-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  content: "⅃";
-  position: absolute;
-  bottom: 1px;
-  left: 10px;
-  font-size: 25px;
-  font-weight: 600;
-  color: #17a2b8;
-}
-
 .modal-container {
   position: fixed;
   top: 0;
@@ -47,6 +23,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .modal-dialog-container {
   width: auto;
   pointer-events: none;
@@ -66,7 +43,6 @@
   outline: 0;
   padding: 0 5.5rem;
 }
-
 .modal-body-container {
   padding: 1rem;
   display: flex;
@@ -74,8 +50,52 @@
   align-items: center;
   flex-direction: column;
 }
+/**/
 
+/* Custom button for modal */
+.btn-outline-modal {
+  background-color: transparent;
+  border: 2px solid #0070ba;
+  border-radius: 50px;
+  color: #0070ba;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  min-width: 150px;
+  height: 39px;
+  font-size: 15px;
+}
+.btn-outline-modal:hover {
+  background-color: #0070ba !important;
+  color: #fff !important;
+}
+/* Custom button for modal */
+
+/* Para activar modal añadir esta clase */
 .show-modal {
   display: flex !important;
 }
-/**/
+/* activar modal */
+
+/* MODAL STATES CONTENT */
+.modal-circle-failed::before {
+  content: "\2713";
+  position: absolute;
+  bottom: -1px;
+  left: 9px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #17a2b8;
+}
+.modal-circle-success::before {
+  content: "\2714";
+  position: absolute;
+  left: 7.5px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #17a2b8;
+}
+/* FINAL MODAL STATES CONTENT */
+
+/* Final Main styles for modal */
