@@ -1,123 +1,33 @@
 /* Top bar css */
 #top-navbar {
   font-family: "Rubik", sans-serif;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
   z-index: 100;
   position: fixed;
   top: 0;
-  background-color: #393939;
-}
-#top-navbar .nav-link {
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-}
-#top-navbar .nav-link .nav-text:hover {
-  padding-bottom: 5px;
-  border-bottom: 2px solid #fff;
-}
-#top-navbar .nav-link .active {
-  padding-bottom: 5px;
-  border-bottom: 2px solid #fff;
-}
-#top-list-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
 }
 .top-nav {
   height: 3.5rem;
   font-size: 16px;
   padding-top: 0.3rem;
 }
-.top-nav li .icon-blue {
-  color: #31b8a7;
-}
 .top-navbar-collapse {
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
-  -webkit-transition: left 0.5s;
-  transition: left 0.5s;
-  left: 14rem;
-  width: 80%;
-}
-.top-navbar-extended {
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
-  -webkit-transition: left 0.5s;
-  transition: left 0.5s;
-  left: 4.5rem;
-  width: 90%;
-}
-/* Final Top bar css */
-
-/* Inicio estilos para la barra azul del topbar */
-#blue-sticky-box {
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 3.5rem;
-  z-index: 30;
-  background-color: #31b8a7;
-  width: 100%;
-}
-.blue-box-collapse {
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
-  -webkit-transition: left 0.5s;
-  transition: left 0.5s;
-}
-.blue-box-extended {
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
-  -webkit-transition: left 0.5s;
-  transition: left 0.5s;
-}
-#saludo {
-  font-size: 21px;
-  margin-right: 1.5rem;
-  color: #fff;
-  display: none;
-}
-/* Final estilos para la barra azul del topbar */
-
-/* Inicio estilos para la navbar secundaria. */
-#secondary-nav {
-  font-family: "Rubik", sans-serif;
-  width: 100%;
-  height: 3rem;
-  position: fixed;
-  z-index: 5;
-  background-color: #fff !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  left: 15rem;
 }
-.hide-secondary-nav {
-  top: 0;
+.top-navbar-extended {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  left: 5rem;
 }
-.show-secondary-nav {
-  top: 3.5rem;
+#sidebar-switch {
+  background-color: #31b8a7;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  color: #fff;
 }
-#secondary-top-nav {
-  margin-top: 0.3rem;
-  position: relative;
-  left: 9rem;
-}
-#secondary-top-nav .secondary-nav-link {
-  color: #000;
-}
-#secondary-top-nav .secondary-nav-link:hover {
-  color: #0490ce;
-  border-bottom: 2px solid #0490ce;
-}
-#secondary-top-nav .active {
-  color: #0490ce;
-  border-bottom: 2px solid #0490ce;
-}
-/* Final estilos para la navbar secundaria. */
+/* Final Top bar css */
 
 /* Estilos generales de la sidebar*/
 #sidebar-container {
@@ -147,13 +57,19 @@
 .center-sidebar-title {
   padding: 0.6rem !important;
 }
-.center-sidebar-user {
-  padding: 1rem !important;
-  padding-top: 2rem !important;
+.btn-logout-sidebar:hover {
+  color: #31b8a7;
 }
 .title {
   cursor: pointer;
   height: 2.3rem;
+}
+.title-extended {
+  margin-top: 0.5rem;
+}
+.title-collapse {
+  margin-top: 0.25rem;
+  margin-right: 0.5rem;
 }
 .user-collapse {
   display: none;
@@ -167,28 +83,61 @@
 }
 .nav-subtitles {
   color: #fff;
+  background-color: #323232;
+  cursor: pointer;
 }
+/* CSS Para desplegar y esconder panel */
+.hide-panel-sidebar {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.75s;
+}
+.show-panel-sidebar {
+  max-height: 250px;
+  overflow: hidden;
+  transition: all 0.75s;
+}
+.fa-chevron-right {
+  transition: all 0.5s;
+}
+.chevron-show-accordion {
+  transition: all 0.5s;
+  transform: rotate(90deg);
+}
+/* Final CSS Para desplegar y esconder panel */
+
 /* Final estilos generales para sidebar */
 
 /* CSS para cuando la sidebar esta extendida */
 .sidebar-extended {
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   width: 14rem;
   background-color: #4d4d4d;
   padding: 0;
   font-size: 16px;
 }
-.sidebar-extended .nav-rounded {
-  background-color: #31b8a7;
-  border-top-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-}
 .sidebar-extended .side-bar-link {
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-  -webkit-transition: border-left 0.5s;
-  transition: border-left 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.sidebar-extended #user-img-sidebar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.sidebar-extended #center-sidebar-user {
+  padding: 0.5rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.sidebar-extended #logout-img-sidebar {
+  display: none;
 }
 .sidebar-extended .side-bar-link:hover {
   border-left: 5px solid #cb1f54 !important;
@@ -204,30 +153,45 @@
 
 /* Inicio css para sidebar colapsada */
 .sidebar-collapse {
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   width: 4.5rem;
 }
-.sidebar-collapse .nav-rounded {
-  background-color: #31b8a7;
-  border-top-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-}
 .sidebar-collapse .side-bar-link {
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-  -webkit-transition: border-left 0.5s;
-  transition: border-left 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .sidebar-collapse .side-bar-link:hover {
   border-left: 3px solid #cb1f54;
-  border-right: 3px solid #cb1f54;
+  border-right: 5px solid #cb1f54;
   color: #31b8a7;
   background-color: #4d4d4d;
 }
+.sidebar-collapse #center-sidebar-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-collapse #user-img-sidebar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.sidebar-collapse #logout-img-sidebar {
+  width: 30px;
+  height: 30px;
+  display: block;
+  cursor: pointer;
+  margin-right: 17px;
+}
+.sidebar-collapse .nav-subtitles .sidebar-icon {
+  margin-left: 0.6rem !important;
+}
 .sidebar-collapse .active {
   border-left: 3px solid #cb1f54;
-  border-right: 3px solid #cb1f54;
+  border-right: 5px solid #cb1f54;
   background-color: rgba(77, 77, 77, 0.5) !important;
 }
 .sidebar-collapse > ul > li > div > h6 > span {
@@ -242,68 +206,8 @@
 
 /* Final css para sidebar colapsada */
 
-/* media queries para la topbar en distintos tamaños de pantalla */
-@media screen and (max-width: 1366.98px) {
-  .top-navbar-collapse {
-    left: 14rem;
-    width: 80%;
-  }
-  .top-navbar-extended {
-    left: 4.5rem;
-    width: 90%;
-  }
-}
-@media screen and (max-width: 1152.98px) {
-  .top-navbar-collapse {
-    left: 14rem;
-    width: 77.5%;
-  }
-  .top-navbar-extended {
-    left: 4.5rem;
-    width: 87.5%;
-  }
-  #saludo {
-    display: none;
-  }
-}
-@media screen and (max-width: 1075px) {
-  .top-navbar-collapse {
-    left: 14rem;
-    width: 80%;
-  }
-  .top-navbar-extended {
-    left: 4.5rem;
-    width: 90%;
-  }
-  .top-navbar-extended .nav-text {
-    display: inline;
-  }
-  #top-list-wrapper {
-    justify-content: space-between;
-  }
-}
-/* Final media queries para la topbar en distintos tamaños de pantalla */
-
 /* Para telefonos en modo portrait (portrait phones, less than 576px)*/
 @media screen and (max-width: 1000px) {
-  #top-list-wrapper {
-    justify-content: flex-start;
-  }
-  .top-navbar-extended .nav-text {
-    display: none;
-  }
-  #secondary-top-nav {
-    left: 2rem;
-  }
-  #secondary-top-nav {
-    left: -0.2rem;
-  }
-  #secondary-nav {
-    overflow-x: auto;
-  }
-  #actions-secondary-nav {
-    display: none;
-  }
   .sidebar-extended {
     width: 100%;
     z-index: 500;
@@ -313,18 +217,8 @@
     width: 0;
     z-index: 500;
   }
-  .blue-box-extended {
-    display: none;
-  }
   .top-navbar-extended {
-    -webkit-transition: width 0.5s;
-    transition: width 0.5s;
-    -webkit-transition: left 0.5s;
-    transition: left 0.5s;
-    left: 0rem;
-    width: 100%;
-    border-top-right-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
+    left: 0.5rem;
   }
   .title-extended {
     display: none;
@@ -336,13 +230,14 @@
     display: block;
     padding-top: 0.8rem;
   }
-  #top-list-wrapper {
-    justify-content: space-around;
-  }
   .title {
     margin-top: 0.4rem;
     font-size: 20px;
   }
+  .sidebar-extended #center-sidebar-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
 /* Final telefonos en modo portrait (portrait phones, less than 576px)*/

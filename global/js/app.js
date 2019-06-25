@@ -4,7 +4,6 @@ $(function() {
     $("#sidebar-wrapper").toggleClass("sidebar-collapse");
     $("#blue-sticky-box").toggleClass("blue-box-extended");
     $("#top-navbar").toggleClass("top-navbar-extended");
-    $("#secondary-nav").toggleClass("top-navbar-extended");
     $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
   });
@@ -13,14 +12,24 @@ $(function() {
     $("#sidebar-wrapper").toggleClass("sidebar-collapse");
     $("#blue-sticky-box").toggleClass("blue-box-extended");
     $("#top-navbar").toggleClass("top-navbar-extended");
-    $("#secondary-nav").toggleClass("top-navbar-extended");
     $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
   });
   $("#demo1").click(function() {
-    $("#secondary-nav").toggleClass("show-secondary-nav");
     $("#body-row").toggleClass("pad-body");
     $(".advertising-side").toggleClass("adver-down");
+  });
+  $("#wallet-li-sidebar").click(function() {
+    $("#wallet-panel-sidebar").toggleClass("show-panel-sidebar");
+    $("#wallet-chevron-sidebar").toggleClass("chevron-show-accordion");
+  });
+  $("#charge-li-sidebar").click(function() {
+    $("#charge-panel-sidebar").toggleClass("show-panel-sidebar");
+    $("#charge-chevron-sidebar").toggleClass("chevron-show-accordion");
+  });
+  $("#pay-li-sidebar").click(function() {
+    $("#pay-panel-sidebar").toggleClass("show-panel-sidebar");
+    $("#pay-chevron-sidebar").toggleClass("chevron-show-accordion");
   });
   $("#activate-modal").click(function() {
     $("#recarga-saldo-modal").toggleClass("show-modal");

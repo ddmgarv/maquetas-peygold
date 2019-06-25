@@ -52,7 +52,6 @@
 }
 table {
   width: 100% !important;
-  margin-left: -5px !important;
 }
 table.fold-table > tbody > tr.fold {
   display: none;
