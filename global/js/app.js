@@ -17,7 +17,6 @@ $(function() {
   });
   $("#demo1").click(function() {
     $("#body-row").toggleClass("pad-body");
-    $(".advertising-side").toggleClass("adver-down");
   });
   $("#wallet-li-sidebar").click(function() {
     $("#wallet-panel-sidebar").toggleClass("show-panel-sidebar");

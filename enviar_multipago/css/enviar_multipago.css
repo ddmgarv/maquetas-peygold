@@ -1,0 +1,177 @@
+#main-content-send-money-p2 {
+  color: #4d4f5c;
+  margin-top: 27px;
+  margin-left: 14px;
+  padding: 2.5rem;
+}
+.wallet-container-send-recieve {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wallet-container-send-recieve > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ {
+  text-align: center;
+}
+.input-custom-send-money {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 1rem;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  height: 3rem;
+  font-size: 40px;
+  font-weight: 500;
+  color: #4d4f5c;
+  width: 110px;
+  height: 47px;
+  position: relative;
+  top: 0.35rem;
+  width: 15rem;
+}
+.input-custom-send-money::placeholder {
+  font-size: 40px;
+  font-weight: 500;
+  color: #4d4f5c;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 40px;
+  font-weight: 500;
+  color: #4d4f5c;
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-size: 40px;
+  font-weight: 500;
+  color: #4d4f5c;
+  opacity: 1;
+}
+.only-bottom-border {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  width: 30rem;
+}
+#circle {
+  background-color: #0070ba;
+  border: 3px solid #0070ba;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  z-index: 86;
+  position: relative;
+}
+#pad-add-note {
+  margin-left: 14px;
+  margin-top: 27px;
+  padding: 3rem 0;
+}
+
+#peygold-wallet-content-table {
+  margin-left: 0.8rem;
+}
+
+.main-user-containers {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#main-user-img {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+}
+#main-user-txt {
+  margin-top: 0.5em;
+  margin-left: 1rem;
+}
+.edit-icon {
+  color: #fff;
+  font-size: 15px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+.btn-custom-send-money {
+  background-color: transparent;
+  border: 2px solid #0070ba;
+  border-radius: 50px;
+  color: #0070ba;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  width: 58px;
+  height: 29px;
+  font-size: 12px;
+}
+.sup-index {
+  position: relative;
+  left: 0.5rem;
+  bottom: 0.45rem;
+}
+.wallet-img {
+  width: 31px;
+  height: 36px;
+  position: relative;
+  bottom: 0.3rem;
+  right: 0.2rem;
+}
+.input-custom-width {
+  width: 162px !important;
+  height: 39px !important;
+}
+.sr-input-container-p2 {
+  margin-left: 3.5rem;
+}
+@media screen and (max-width: 700px) {
+  .wallet-container-send-recieve {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .input-custom-send-money {
+    text-align: center;
+  }
+
+  .wallet-container-send-recieve > div {
+    margin-top: 1rem;
+  }
+  .wallet-container-send-recieve > div:first-child > div:first-child {
+    margin-left: 0;
+  }
+  #main-content-send-money-p2 {
+    margin-left: 0;
+  }
+  .m-sm-center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  #main-user-txt {
+    margin-left: 0;
+  }
+  #user-text {
+    text-align: center;
+  }
+  .main-user-containers {
+    flex-direction: column;
+  }
+  .sup-index {
+    display: none;
+  }
+  .sr-input-container-p2 {
+    margin-left: 1rem;
+  }
+}

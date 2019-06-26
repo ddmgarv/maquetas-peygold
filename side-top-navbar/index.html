@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Recarga Peygold</title>
+    <title>Side-top bar</title>
     <meta charset="utf-8" />
     <link
       rel="stylesheet"
@@ -94,13 +94,27 @@
                   src="../global/assets/logout.svg"
                   id="logout-img-sidebar"
                   alt=""
+                  title="Cerrar sesión"
                 />
               </div>
             </li>
             <!-- Usuario logeado -->
 
             <!-- Subtitulo sidebar -->
-            <li class="nav-subtitles" id="wallet-li-sidebar">
+            <li class="nav-item">
+              <a class="nav-link side-bar-link" href="#"
+                ><i class="fas fa-home sidebar-icon ml-1"></i
+                ><span class="ml-3">Resumen</span></a
+              >
+            </li>
+            <!-- Subtitulo sidebar -->
+
+            <!-- Subtitulo sidebar -->
+            <li
+              class="nav-subtitles"
+              id="wallet-li-sidebar"
+              title="Mi Billetera"
+            >
               <div class="nav-rounded h-100">
                 <h6 class="nav-link">
                   <i
@@ -149,7 +163,7 @@
             <!-- Elementos de la sidebar -->
 
             <!-- Subtitulo sidebar -->
-            <li class="nav-subtitles" id="charge-li-sidebar">
+            <li class="nav-subtitles" id="charge-li-sidebar" title="Cobrar">
               <div class="nav-rounded h-100">
                 <h6 class="nav-link">
                   <i
@@ -186,7 +200,7 @@
             <!-- Elementos de la sidebar -->
 
             <!-- Subtitulo sidebar -->
-            <li class="nav-subtitles" id="pay-li-sidebar">
+            <li class="nav-subtitles" id="pay-li-sidebar" title="Pagar">
               <div class="nav-rounded h-100">
                 <h6 class="nav-link">
                   <i
@@ -253,8 +267,6 @@
         </div>
       </div>
       <!-- Sidebar end -->
-
-      <!-- sidebar-container END -->
 
       <!-- MAIN -->
       <div class="col" id="main-div"></div>
