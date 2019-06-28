@@ -34,13 +34,22 @@
       <!-- IMPORTANTE: Añadir clase active al span en el top bar -->
       <div>
         <!-- Barra de navegacion superior -->
-        <ul class="nav top-nav flex-nowrap">
+        <ul class="nav align-items-center top-nav flex-nowrap">
           <li class="nav-item">
-            <button class="nav-link" id="sidebar-switch">
-              <i class="fas fa-bars"></i>
-            </button>
+            <div class="btns-container-topnav">
+              <button class="nav-link" id="sidebar-switch">
+                <i class="fas fa-bars"></i>
+              </button>
+              <button class="nav-link" id="sidebar-bell">
+                <i class="fas fa-bell"></i>
+              </button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <img src="../global/assets/banner.png" class="advertising-banner" alt="" />
           </li>
         </ul>
+    
         <!-- Final Barra de navegacion superior -->
       </div>
     </nav>
@@ -200,7 +209,6 @@
         <div class="row">
           <div class="pl-1 bg-title col-10">
             <h1 class="main-title-text">
-              <img src="../global/assets/user1.png" class="main-title-img" />
               Resumen
             </h1>
           </div>
@@ -209,13 +217,13 @@
 
         <!-- row de la billetera e iconos -->
         <div class="row">
-          <div class="col-lg-3 margin-left-resume-wallets resume-wallet">
+          <div class="col-xl-3 margin-left-resume-wallets resume-wallet">
             <!-- Div billetera peygold -->
             <div class="d-flex justify-content-between table-bottom-border">
             <div>
               <p class="text-blue">
                 <span class="fs-14 font-weight-bold"
-                  >BILLETERA PEYGOLD</span><br />
+                  >PEYGOLD</span><br />
                   <span class="fs-22">P$G</span><span class="fs-30"> 23.854</span>
               </p>
             </div>
@@ -243,12 +251,12 @@
             </div>
             <!-- Final div billetera peygold -->
           </div>
-          <div class="col-lg-3 resume-wallet">
+          <div class="col-xl-3 resume-wallet">
             <!-- Div billetera peygold -->
             <div class="d-flex justify-content-between table-bottom-border">
               <div>
                 <p class="text-blue">
-                  <span class="fs-14 font-weight-bold">BILLETERA PESOS</span><br />
+                  <span class="fs-14 font-weight-bold">PESOS</span><br />
                   <span class="fs-22">$</span><span class="fs-30"> 11.225</span>
                 </p>
               </div>
@@ -276,7 +284,7 @@
             </div>
             <!-- Final div billetera peygold -->
           </div>
-          <div class="col-lg-3 resume-wallet">
+          <div class="col-xl-3 resume-wallet">
             <!-- Div billetera peygold -->
             <div class="d-flex justify-content-between table-bottom-border">
               <div>
@@ -316,48 +324,11 @@
         <br />
 
         <h3 class="pb-2 fs-22">Movimientos recientes</h3>
-        <!-- <div class="row"> -->
-          <!-- Div de las opciones -->
-          <!-- <div class="col-md-3 search">
-                <form action="">
-                  <input type="text" placeholder="Buscar" name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-  
-            <div class="col-md-4"></div>
-  
-            <div class="col-md-5">
-              <button class="btn" id="filter-btn-resume">
-                <i class="fas fa-toggle-on mr-1"></i>Filtrar
-              </button>
-              <div class="hide-filter-ops" id="filter-ops-container">
-                <form action="">
-                  <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="pesos-op" name="filter-param" value="customEx">
-                    <label class="custom-control-label" for="pesos-op">Pesos</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="peygold-op" name="filter-param" value="customEx">
-                    <label class="custom-control-label" for="peygold-op">Peygold</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="credit-op" name="filter-param" value="customEx">
-                    <label class="custom-control-label" for="credit-op">Créditos PG</label>
-                  </div>
-                </form>
-              </div>
-              <button class="btn">
-                Ordenar por<i class="fas fa-angle-down ml-1"></i>
-              </button>
-              <button class="btn"><i class="fas fa-list-ul"></i></button>
-            </div>
-          </div> -->
-        <!-- Fin del div de las opciones -->
+
 
         <!-- Inicio Div de los movimientos recientes -->
         <div class="row"> <!-- Row div -->
-          <div class="col-lg-10"><!-- col-div -->
+          <div class="col-xl-10"><!-- col-div -->
             <div class="table-responsive-sm"><!-- Table responsive div -->
 
               <table class="table fold-table" id="transferTable"><!-- First table div-->
@@ -580,9 +551,6 @@
           
         </div> <!-- Row div -->
 
-        <!-- Inicio Banner de publicidad -->
-        <img src="../global/assets/banner.png" class="advertising-side" />
-        <!-- Final Banner de publicidad -->
         
       </div><!-- Main col div end -->
 

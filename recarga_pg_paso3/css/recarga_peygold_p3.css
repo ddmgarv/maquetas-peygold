@@ -11,8 +11,10 @@
   border-top: 5px solid #0070ba;
   padding: 1rem 1rem 0 1rem;
   margin-top: 27px;
-  margin-left: 21px;
   height: 25rem;
+}
+.input-cont-ml {
+  margin-left: 35px;
 }
 .user-img-recarga-p3 {
   width: 70px;
@@ -36,8 +38,8 @@
   background-color: #0070ba !important;
   color: #fff !important;
 }
-@media screen and (max-width: 578.98px) {
-  .inputs-container-p3 {
+@media screen and (max-width: 1200px) {
+  .input-cont-ml {
     margin-left: 0;
   }
 }

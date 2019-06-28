@@ -34,13 +34,26 @@
       <!-- IMPORTANTE: Añadir clase active al span en el top bar -->
       <div>
         <!-- Barra de navegacion superior -->
-        <ul class="nav top-nav flex-nowrap">
+        <ul class="nav align-items-center top-nav flex-nowrap">
           <li class="nav-item">
-            <button class="nav-link" id="sidebar-switch">
-              <i class="fas fa-bars"></i>
-            </button>
+            <div class="btns-container-topnav">
+              <button class="nav-link" id="sidebar-switch">
+                <i class="fas fa-bars"></i>
+              </button>
+              <button class="nav-link" id="sidebar-bell">
+                <i class="fas fa-bell"></i>
+              </button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <img
+              src="../global/assets/banner.png"
+              class="advertising-banner"
+              alt=""
+            />
           </li>
         </ul>
+
         <!-- Final Barra de navegacion superior -->
       </div>
     </nav>
@@ -262,10 +275,6 @@
         <div class="row">
           <div class="pl-1 bg-title col-10 margin-bottom-title quick-fix">
             <h1 class="main-title-text ml-2">
-              <img
-                src="../global/assets/user1.png"
-                class="main-title-img d-none"
-              />
               CARGAR BILLETERA
             </h1>
           </div>
@@ -273,7 +282,7 @@
         <!-- Final titulo -->
 
         <div class="row">
-          <div class="col-lg-10" id="reloadp2-head-wrapper">
+          <div class="col-xl-10" id="reloadp2-head-wrapper">
             <div class="reloadp2-flex-container">
               <div>
                 <img
@@ -293,7 +302,7 @@
         <!-- Row div for option container  -->
         <div class="row">
           <!-- Div col option container -->
-          <div class="col-lg-10 recarga-option-container">
+          <div class="col-xl-10 recarga-option-container">
             <!-- Link for the option -->
             <a href="" class="no-underline option-link">
               <div class="recarga-flex-container-option">
@@ -325,7 +334,7 @@
         <!-- Row div for option container  -->
         <div class="row">
           <!-- Div col option container -->
-          <div class="col-lg-10 recarga-option-container">
+          <div class="col-xl-10 recarga-option-container">
             <!-- Link for the option -->
             <a href="" class="no-underline option-link">
               <div class="recarga-flex-container-option">
@@ -357,7 +366,7 @@
         <!-- Row div for option container  -->
         <div class="row">
           <!-- Div col option container -->
-          <div class="col-lg-10 recarga-option-container">
+          <div class="col-xl-10 recarga-option-container">
             <!-- Link for the option -->
             <a href="" class="no-underline option-link">
               <div class="recarga-flex-container-option">
@@ -385,10 +394,6 @@
           <!-- Final Div col option container -->
         </div>
         <!-- Final Row div for option container  -->
-
-        <!-- Inicio Banner de publicidad -->
-        <img src="../global/assets/banner.png" class="advertising-side" />
-        <!-- Final Banner de publicidad -->
       </div>
       <!-- Main Col END -->
     </div>

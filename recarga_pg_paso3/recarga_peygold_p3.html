@@ -33,13 +33,22 @@
       <!-- IMPORTANTE: Añadir clase active al span en el top bar -->
       <div>
         <!-- Barra de navegacion superior -->
-        <ul class="nav top-nav flex-nowrap">
+        <ul class="nav align-items-center top-nav flex-nowrap">
           <li class="nav-item">
-            <button class="nav-link" id="sidebar-switch">
-              <i class="fas fa-bars"></i>
-            </button>
+            <div class="btns-container-topnav">
+              <button class="nav-link" id="sidebar-switch">
+                <i class="fas fa-bars"></i>
+              </button>
+              <button class="nav-link" id="sidebar-bell">
+                <i class="fas fa-bell"></i>
+              </button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <img src="../global/assets/banner.png" class="advertising-banner" alt="" />
           </li>
         </ul>
+    
         <!-- Final Barra de navegacion superior -->
       </div>
     </nav>
@@ -212,7 +221,7 @@
         <!-- Comienzo de formulario -->
         <form action="">
           <div class="row">
-            <div class="col-lg-3 inputs-container-p3 h-100">
+            <div class="col-xl-3 inputs-container-p3 h-100">
               <h4>Enviando dinero a:</h4>
               <br />
               <div
@@ -228,7 +237,7 @@
               </div>
               <br />
             </div>
-            <div class="col-lg-3 inputs-container-p3">
+            <div class="col-xl-3 inputs-container-p3 input-cont-ml">
               <h4>Datos de la tarjeta</h4>
               <div class="form-group">
                 <label for="cvv" class="fs-15">Nombre*:</label>
@@ -299,7 +308,7 @@
                 </select>
               </div>
             </div>
-            <div class="col-lg-3 inputs-container-p3">
+            <div class="col-xl-3 inputs-container-p3  input-cont-ml">
               <h4>Datos personales</h4>
               <label for="doc-type" class="fs-15">Número de documento*:</label>
               <div class="input-group">
@@ -339,9 +348,6 @@
         </form>
         <!-- Final de formulario -->
 
-        <!-- Inicio Banner de publicidad -->
-        <img src="../global/assets/banner.png" class="advertising-side" />
-        <!-- Final Banner de publicidad -->
       </div>
       <!-- Main Col END -->
     </div>

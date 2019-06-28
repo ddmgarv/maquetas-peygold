@@ -10,6 +10,9 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
+#main-div {
+  margin-left: 5rem;
+}
 /* Global CSS */
 
 /* Circulos */
@@ -240,14 +243,6 @@ input[type="reset"] {
   cursor: context-menu;
   z-index: 20;
 }
-.advertising-side {
-  height: 600px !important;
-  position: absolute;
-  top: 5.7rem;
-  right: 0.4rem;
-  transition: top 0.5s;
-  width: 9rem;
-}
 .rotate-90 {
   transform: rotate(90deg);
 }
@@ -256,22 +251,20 @@ input[type="reset"] {
   .blue-line::before {
     width: 45%;
   }
-  .advertising-side {
-    width: 11rem;
-  }
-}
-@media screen and (max-width: 1054.98px) {
-  .advertising-side {
-    width: 6.8rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .advertising-side {
-    display: none;
-  }
 }
 /* Padding fix */
-@media screen and (max-width: 576.98px) {
+@media screen and (max-width: 1200px) {
+  #main-div {
+    margin-top: 3.3rem;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 900.98px) {
+  #main-div {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
   .margin-bottom-title {
     margin-bottom: 1rem;
   }
@@ -279,7 +272,7 @@ input[type="reset"] {
     font-size: 28px;
   }
   #body-row {
-    padding-top: 3.5rem;
+    padding-top: 1rem;
   }
   .collapsed-wallet-details > div {
     flex-shrink: 0;

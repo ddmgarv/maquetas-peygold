@@ -1,5 +1,5 @@
 .resume-wallet {
-  margin-left: 2.5vw;
+  margin-left: 2.25vw;
   margin-top: 27px;
   border-top: 5px solid #0070ba;
   background-color: #fff;
@@ -66,6 +66,14 @@
 .resume-icon {
   width: 2.5rem;
   height: 2.5rem;
+}
+@media screen and (max-width: 1100px) {
+  .margin-left-resume-wallets {
+    margin-left: 0;
+  }
+  .resume-wallet {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 576.98px) {
   .resume-wallet {
