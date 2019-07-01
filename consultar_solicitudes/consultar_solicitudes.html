@@ -1,7 +1,12 @@
+<!--  
+  Maquetador: Gustavo Rojas
+  Correo: garv1998131@gmail.com
+  Tlf: +541166281998
+-->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Panel de usuario</title>
+    <title>Side-top bar</title>
     <meta charset="utf-8" />
     <link
       rel="stylesheet"
@@ -24,7 +29,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../global/css/utilities.css" />
     <link rel="stylesheet" type="text/css" href="../global/css/nav-bar.css" />
-    <link rel="stylesheet" href="css/cuenta_usuario.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/consultar_solicitudes.css"
+    />
   </head>
 
   <body>
@@ -203,11 +212,11 @@
             <!-- Elementos de la sidebar -->
             <div class="hide-panel-sidebar" id="charge-panel-sidebar">
               <!-- <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"
-                              ><i class="fas fa-link sidebar-icon icon-blue"></i
-                              ><span class="ml-3">Link de pago</span></a
-                            >
-                          </li> -->
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-link sidebar-icon icon-blue"></i
+                  ><span class="ml-3">Link de pago</span></a
+                >
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link side-bar-link" href="#"
                   ><img
@@ -248,28 +257,28 @@
                 >
               </li>
               <!-- <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"
-                              ><i class="fas fa-file-invoice sidebar-icon icon-blue"></i
-                              ><span class="ml-3">Pagar servicios</span></a
-                            >
-                          </li> -->
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-file-invoice sidebar-icon icon-blue"></i
+                  ><span class="ml-3">Pagar servicios</span></a
+                >
+              </li> -->
               <!-- <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"
-                              ><i class="fas fa-mobile sidebar-icon icon-blue"></i
-                              ><span class="ml-3">Cargar celular</span></a
-                            >
-                          </li> -->
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-mobile sidebar-icon icon-blue"></i
+                  ><span class="ml-3">Cargar celular</span></a
+                >
+              </li> -->
             </div>
             <!-- Elementos de la sidebar -->
 
             <br />
             <!-- Elemento de la sidebar -->
             <!-- <li class="nav-item">
-                          <a class="nav-link side-bar-link" href="#"
-                            ><i class="fas fa-heart sidebar-icon icon-blue"></i
-                            ><span class="ml-3">Peygold solidario</span></a
-                          >
-                        </li> -->
+              <a class="nav-link side-bar-link" href="#"
+                ><i class="fas fa-heart sidebar-icon icon-blue"></i
+                ><span class="ml-3">Peygold solidario</span></a
+              >
+            </li> -->
             <!-- Elemento de la sidebar -->
 
             <!-- Elementos de la sidebar -->
@@ -297,80 +306,161 @@
       </div>
       <!-- Sidebar end -->
 
-      <!-- sidebar-container END -->
-
       <!-- MAIN -->
       <div class="col" id="main-div">
         <!-- Titulo -->
         <div class="row">
-          <div class="col-2"></div>
-          <div class="pl-1 bg-title col-4 margin-bottom-title quick-fix">
+          <div class="pl-1 bg-title col-10 margin-bottom-title quick-fix">
             <h1 class="main-title-text ml-2">
-              <img
-                src="../global/assets/user1.png"
-                class="main-title-img d-none"
-              />
-              Cuenta
+              Solicitudes
             </h1>
           </div>
         </div>
         <!-- Final titulo -->
 
-        <!-- Row for account content columns -->
+        <br />
+
+        <!-- Row div -->
         <div class="row">
-          <div class="col-lg-2"></div>
-          <!-- User account data container -->
-          <div class="col-lg-4 user-acc-container-col">
-            <h2>Datos del usuario</h2>
-            <p class="acc-data-p">
-              <span class="font-weight-bold">Nombre:</span> <br />
-              <span class="ml-acc-text">Gustavo Rojas</span>
-            </p>
-
-            <p class="acc-data-p">
-              <span class="font-weight-bold">Correo:</span> <br />
-              <span class="ml-acc-text">gustavoconfortsur@gmail.com</span>
-            </p>
-
-            <p class="acc-data-p">
-              <span class="font-weight-bold">Tipo de documento:</span> <br />
-              <span class="ml-acc-text">DNI</span>
-            </p>
-
-            <p class="acc-data-p">
-              <span class="font-weight-bold">Número de documento:</span> <br />
-              <span class="ml-acc-text">95.632.565</span>
-            </p>
-          </div>
-          <!-- User account data container -->
-
-          <!-- Col for photo of user -->
-          <div class="col-lg-2 user-acc-container-col">
-            <div
-              class="d-flex flex-column justify-content-center align-items-center"
-            >
-              <div>
-                <img
-                  src="../global/assets/user3.png"
-                  alt=""
-                  class="account-user-img"
-                />
-              </div>
-              <div class="input-file-wrapper">
-                <button class="btn-account-custom">Cambiar foto</button>
-                <input
-                  type="file"
-                  accept=".jpg,.jpeg,.png,.jpe,.jfif,.tif,.tiff"
-                />
-              </div>
-              <div>
-                <button class="btn-account-custom">Guardar</button>
-              </div>
+          <!-- Col div -->
+          <div class="col-xl-10">
+            <!-- Table resp div -->
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                    <th>Número</th>
+                    <th>Descripción</th>
+                    <th>Monto</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        src="../global/assets/user1.png"
+                        class="consult-requests-user-img"
+                        alt=""
+                      />
+                    </td>
+                    <td><p>Gustavo Rojas</p></td>
+                    <td class="consult-request-date"><p>13-02-2019</p></td>
+                    <td><p>145782</p></td>
+                    <td><p>Mesada</p></td>
+                    <td><p>10.000$</p></td>
+                    <td class="consult-request-btn-td">
+                      <button
+                        class="btn-consult-request btn-consult-requests-accept"
+                      >
+                        <img
+                          src="../global/assets/consult-request-accept.svg"
+                          alt=""
+                        />
+                        <span>Aceptar</span>
+                      </button>
+                      <button
+                        class="btn-consult-request btn-consult-requests-refuse"
+                      >
+                        <img
+                          src="../global/assets/consult-request-refuse.svg"
+                          alt=""
+                        />
+                        <span>Rechazar</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="../global/assets/user2.png"
+                        class="consult-requests-user-img"
+                        alt=""
+                      />
+                    </td>
+                    <td>
+                      <p>Jennifer González</p>
+                    </td>
+                    <td class="consult-request-date">
+                      <p>15-02-2019</p>
+                    </td>
+                    <td>
+                      <p>167782</p>
+                    </td>
+                    <td>
+                      <p>Pago</p>
+                    </td>
+                    <td>
+                      <p>15.000P$G</p>
+                    </td>
+                    <td class="consult-request-btn-td">
+                      Pagado
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="../global/assets/user3.png" class="consult-requests-user-img" alt="" />
+                    </td>
+                    <td>
+                      <p>Carlos Álvarez</p>
+                    </td>
+                    <td class="consult-request-date">
+                      <p>18-02-2019</p>
+                    </td>
+                    <td>
+                      <p>167795</p>
+                    </td>
+                    <td>
+                      <p>Cuota</p>
+                    </td>
+                    <td>
+                      <p>7.500$</p>
+                    </td>
+                    <td class="consult-request-btn-td">
+                      <button class="btn-consult-request btn-consult-requests-accept">
+                        <img src="../global/assets/consult-request-accept.svg" alt="" />
+                        <span>Aceptar</span>
+                      </button>
+                      <button class="btn-consult-request btn-consult-requests-refuse">
+                        <img src="../global/assets/consult-request-refuse.svg" alt="" />
+                        <span>Rechazar</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="../global/assets/user4.png" class="consult-requests-user-img" alt="" />
+                    </td>
+                    <td>
+                      <p>Ana Canario</p>
+                    </td>
+                    <td class="consult-request-date">
+                      <p>18-02-2019</p>
+                    </td>
+                    <td>
+                      <p>197438</p>
+                    </td>
+                    <td>
+                      <p>Ejemplo</p>
+                    </td>
+                    <td>
+                      <p>5.500P$G</p>
+                    </td>
+                    <td class="consult-request-btn-td">
+                      Rechazada
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+            <!-- Table resp div -->
           </div>
-          <!-- Col for photo of user -->
+          <!-- Final col div -->
         </div>
-        <!-- Final div for account content columns -->
+        <!-- Final row div -->
       </div>
       <!-- Main Col END -->
     </div>

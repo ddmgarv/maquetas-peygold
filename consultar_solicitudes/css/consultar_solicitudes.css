@@ -1,0 +1,61 @@
+.consult-requests-user-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 8px;
+}
+.consult-request-btn-td,
+.consult-request-date {
+  min-width: 125px;
+}
+.btn-consult-request {
+  position: relative;
+  bottom: 5px;
+  border-radius: 5px;
+}
+.btn-consult-request img {
+  position: relative;
+  bottom: 1px;
+  width: 20px;
+  height: 20px;
+}
+.btn-consult-request span {
+  display: none;
+}
+.btn-consult-request:hover {
+  position: relative;
+}
+.btn-consult-request:hover span {
+  background-color: #000;
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  display: block;
+  z-index: 100;
+  position: absolute;
+  left: 0px;
+  top: 2.1rem;
+  text-decoration: none;
+}
+.btn-consult-requests-accept {
+  transition: all 0.5s;
+  background-color: #28a745;
+  padding: 0.25rem 0.5rem;
+}
+.btn-consult-requests-accept:hover {
+  background-color: #24973f;
+}
+.btn-consult-requests-refuse {
+  transition: all 0.5s;
+  background-color: #dc3545;
+  padding: 0.25rem 0.5rem;
+}
+.btn-consult-requests-refuse:hover {
+  background-color: #b92d3b;
+}
+@media screen and (max-width: 578px) {
+  .consult-requests-user-img {
+    bottom: 0;
+  }
+}

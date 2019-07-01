@@ -51,7 +51,7 @@
             <div class="sidebar-extended" id="sidebar-container">
                 <ul class="list-group overflow-auto">
                     <!-- IMPORTANTE: Añadir clase active al anchor tag en el side-bar -->
-
+        
                     <!-- Titulo peygold -->
                     <li style="background-color: #323232">
                         <p class="font-weight-bold text-white text-center my-auto center-sidebar-title">
@@ -61,7 +61,7 @@
                         </p>
                     </li>
                     <!-- Titulo peygold -->
-
+        
                     <!-- Usuario logeado -->
                     <li>
                         <div id="center-sidebar-user">
@@ -70,137 +70,138 @@
                                 <span>Gustavo Rojas</span><br />
                                 <button class="btn-logout-sidebar">Cerrar sesión</button>
                             </p>
-                            <img src="../global/assets/logout.svg" id="logout-img-sidebar" alt=""
-                                title="Cerrar sesión" />
+                            <img src="../global/assets/off.svg" id="logout-img-sidebar" alt="" title="Cerrar sesión" />
                         </div>
                     </li>
                     <!-- Usuario logeado -->
-
+        
                     <!-- Subtitulo sidebar -->
-                    <li class="nav-subtitles" id="wallet-li-sidebar" title="Mi Billetera">
-                        <div class="nav-rounded h-100">
-                            <h6 class="nav-link">
-                                <i class="fas fa-chevron-right sidebar-icon" id="wallet-chevron-sidebar"></i>
-                                <span class="ml-4">Mi Billetera</span>
-                            </h6>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link side-bar-link" href="#">
+                            <img src="../global/assets/home.svg" class="sidebar-icon" alt="" />
+                            <span class="ml-3"> Resumen</span>
+                        </a>
                     </li>
                     <!-- Subtitulo sidebar -->
-
+        
+                    <!-- Subtitulo sidebar -->
+                    <li class="nav-subtitles" id="wallet-li-sidebar" title="Mi Billetera">
+                        <h6>
+                            <img src="../global/assets/sidebar-wallet.svg" class="sidebar-icon sidebar-collapsed-icon" />
+                            <img src="../global/assets/chevron-right.svg" class="sidebar-icon chevron-right"
+                                id="wallet-chevron-sidebar" />
+                            <span class="ml-3">Mi Billetera</span>
+                        </h6>
+                    </li>
+                    <!-- Subtitulo sidebar -->
+        
                     <!-- Elementos de la sidebar -->
                     <div class="hide-panel-sidebar" id="wallet-panel-sidebar">
                         <li class="nav-item">
-                            <a class="nav-link side-bar-link active" href="#"><i
-                                    class="fas fa-chart-pie sidebar-icon icon-blue"></i><span
-                                    class="ml-4">Transacciones</span></a>
+                            <a class="nav-link side-bar-link" href="#">
+                                <img src="../global/assets/sidebar-transfer.svg" class="sidebar-icon" />
+                                <span class="ml-3">Transacciones</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"><i
-                                    class="fas fa-file ml-1 sidebar-icon icon-blue"></i><span class="ml-4">
-                                    Movimientos</span></a>
+                            <a class="nav-link side-bar-link" href="#">
+                                <img src="../global/assets/sidebar-basket.svg" class="sidebar-icon" />
+                                <span class="ml-3">Cargar Peygold</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"><i
-                                    class="fas fa-cart-arrow-down sidebar-icon icon-blue"></i><span class="ml-4">Cargar
-                                    Peygold</span></a>
+                            <a class="nav-link side-bar-link" href="#">
+                                <img src="../global/assets/sidebar-multipey.svg" class="sidebar-icon" />
+                                <span class="ml-3">Multipey</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"><i
-                                    class="fas fa-money-check-alt sidebar-icon icon-blue"></i><span
-                                    class="ml-4">Multipey</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"><i
-                                    class="fas fa-credit-card sidebar-icon icon-blue"></i><span
-                                    class="ml-4">Créditos</span></a>
+                            <a class="nav-link side-bar-link" href="#"><img src="../global/assets/sidebar-credit.svg"
+                                    class="sidebar-icon" /><span class="ml-3">Créditos</span></a>
                         </li>
                     </div>
                     <!-- Elementos de la sidebar -->
-
+        
                     <!-- Subtitulo sidebar -->
                     <li class="nav-subtitles" id="charge-li-sidebar" title="Cobrar">
-                        <div class="nav-rounded h-100">
-                            <h6 class="nav-link">
-                                <i class="fas fa-chevron-right sidebar-icon" id="charge-chevron-sidebar"></i>
-                                <span class="ml-4">Cobrar</span>
-                            </h6>
-                        </div>
+                        <h6>
+                            <img src="../global/assets/sidebar-collect.svg" class="sidebar-icon sidebar-collapsed-icon" />
+                            <img src="../global/assets/chevron-right.svg" class="sidebar-icon chevron-right"
+                                id="charge-chevron-sidebar" />
+                            <span class="ml-3">Cobrar</span>
+                        </h6>
                     </li>
                     <!-- Subtitulo sidebar -->
-
+        
                     <!-- Elementos de la sidebar -->
                     <div class="hide-panel-sidebar" id="charge-panel-sidebar">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"
+                                ><i class="fas fa-link sidebar-icon icon-blue"></i
+                                ><span class="ml-3">Link de pago</span></a
+                            >
+                            </li> -->
                         <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"><i
-                                    class="fas fa-qrcode sidebar-icon icon-blue"></i><span class="ml-4">Código
-                                    QR</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"><i
-                                    class="fas fa-link sidebar-icon icon-blue"></i><span class="ml-3"> Link de
-                                    pago</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"><i
-                                    class="fas fa-arrows-alt-v sidebar-icon icon-blue"></i><span class="ml-4">
-                                    Solicitar</span></a>
+                            <a class="nav-link side-bar-link" href="#"><img src="../global/assets/sidebar-request.svg"
+                                    class="sidebar-icon" /><span class="ml-3">Solicitar Dinero</span></a>
                         </li>
                     </div>
                     <!-- Elementos de la sidebar -->
-
+        
                     <!-- Subtitulo sidebar -->
                     <li class="nav-subtitles" id="pay-li-sidebar" title="Pagar">
-                        <div class="nav-rounded h-100">
-                            <h6 class="nav-link">
-                                <i class="fas fa-chevron-right sidebar-icon" id="pay-chevron-sidebar"></i>
-                                <span class="ml-4">Pagar</span>
-                            </h6>
-                        </div>
+                        <h6>
+                            <img src="../global/assets/chevron-right.svg" class="sidebar-icon chevron-right"
+                                id="pay-chevron-sidebar" />
+                            <img src="../global/assets/sidebar-pay.svg" class="sidebar-icon sidebar-collapsed-icon" />
+                            <span class="ml-3">Pagar</span>
+                        </h6>
                     </li>
                     <!-- Subtitulo sidebar -->
-
+        
                     <!-- Elementos de la sidebar -->
                     <div class="hide-panel-sidebar" id="pay-panel-sidebar">
                         <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"><i
-                                    class="fas fa-paper-plane sidebar-icon icon-blue"></i><span class="ml-3"> Enviar
-                                    dinero</span></a>
+                            <a class="nav-link side-bar-link" href="#">
+                                <img src="../global/assets/sidebar-send.svg" class="sidebar-icon" />
+                                <span class="ml-3">Enviar dinero</span></a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"><i
-                                    class="fas fa-file-invoice sidebar-icon icon-blue"></i><span class="ml-4">Pagar
-                                    servicios</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link side-bar-link" href="#"><i
-                                    class="fas fa-mobile sidebar-icon icon-blue"></i><span class="ml-4">Cargar
-                                    celular</span></a>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"
+                                ><i class="fas fa-file-invoice sidebar-icon icon-blue"></i
+                                ><span class="ml-3">Pagar servicios</span></a
+                            >
+                            </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"
+                                ><i class="fas fa-mobile sidebar-icon icon-blue"></i
+                                ><span class="ml-3">Cargar celular</span></a
+                            >
+                            </li> -->
                     </div>
                     <!-- Elementos de la sidebar -->
-
+        
                     <br />
                     <!-- Elemento de la sidebar -->
-                    <li class="nav-item">
-                        <a class="nav-link side-bar-link" href="#"><i
-                                class="fas fa-heart sidebar-icon icon-blue"></i><span class="ml-4">Peygold
-                                solidario</span></a>
-                    </li>
+                    <!-- <li class="nav-item">
+                            <a class="nav-link side-bar-link" href="#"
+                            ><i class="fas fa-heart sidebar-icon icon-blue"></i
+                            ><span class="ml-3">Peygold solidario</span></a
+                            >
+                        </li> -->
                     <!-- Elemento de la sidebar -->
-
+        
                     <!-- Elementos de la sidebar -->
                     <li class="nav-item">
-                        <a class="nav-link side-bar-link" href="#"><i
-                                class="far fa-life-ring sidebar-icon icon-blue"></i><span class="ml-4">Ayuda</span></a>
+                        <a class="nav-link side-bar-link" href="#"><img src="../global/assets/sidebar-help.svg"
+                                class="sidebar-icon" /><span class="ml-3">Ayuda</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link side-bar-link" href="#"><i
-                                class="fas fa-cogs sidebar-icon icon-blue"></i><span class="ml-3">
-                                Configuración</span></a>
+                        <a class="nav-link side-bar-link" href="#"><img src="../global/assets/sidebar-config.svg"
+                                class="sidebar-icon" /><span class="ml-3">Configuración</span></a>
                     </li>
                     <!-- Elementos de la sidebar -->
-
+        
                     <!--<li class="nav-item"><a class="nav-link side-bar-link" href="#"><i class="fas fa-sign-out-alt sidebar-icon icon-blue"></i><span class="ml-4">Cerrar sesión</span></a></li>-->
                 </ul>
             </div>
