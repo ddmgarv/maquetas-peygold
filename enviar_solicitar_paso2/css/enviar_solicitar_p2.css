@@ -15,9 +15,6 @@
   flex-direction: column;
   justify-content: center;
 }
- {
-  text-align: center;
-}
 .input-custom-send-money {
   background: none;
   color: inherit;

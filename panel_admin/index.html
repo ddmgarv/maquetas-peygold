@@ -1,0 +1,169 @@
+<!--  
+  Maquetador: Gustavo Rojas
+  Correo: garv1998131@gmail.com
+  Tlf: +541166281998
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Side-top bar</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../global/css/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="../global/css/nav-bar.css" />
+  </head>
+
+  <body>
+    <!--Begin NavBar -->
+    <nav class="top-navbar-collapse" id="top-navbar">
+      <!-- IMPORTANTE: Añadir clase active al span en el top bar -->
+      <div>
+        <!-- Barra de navegacion superior -->
+        <ul class="nav align-items-center top-nav flex-nowrap">
+          <li class="nav-item">
+            <div class="btns-container-topnav">
+              <button class="nav-link" id="sidebar-switch">
+                <i class="fas fa-bars"></i>
+              </button>
+              <button class="nav-link" id="sidebar-bell">
+                <i class="fas fa-bell"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Final Barra de navegacion superior -->
+      </div>
+    </nav>
+    <!-- Navbar END -->
+
+    <div class="row" id="body-row">
+      <!-- Sidebar -->
+      <div class="sidebar-extended" id="sidebar-wrapper">
+        <div class="sidebar-extended" id="sidebar-container">
+          <ul class="list-group overflow-auto">
+            <!-- IMPORTANTE: Añadir clase active al anchor tag en el side-bar -->
+
+            <!-- Titulo peygold -->
+            <li style="background-color: #323232">
+              <p
+                class="font-weight-bold text-white text-center my-auto center-sidebar-title"
+              >
+                <img
+                  src="../global/assets/Isologotipo.svg"
+                  class="title-extended title"
+                  alt=""
+                />
+                <img
+                  src="../global/assets/Isotipo.svg"
+                  alt=""
+                  class="title-collapse title d-none"
+                />
+                <span
+                  ><i class="fas fa-bars title text-info" id="quit-sm-btn"></i
+                ></span>
+              </p>
+            </li>
+            <!-- Titulo peygold -->
+
+            <!-- Usuario logeado -->
+            <li>
+              <div id="center-sidebar-user">
+                <img
+                  src="../global/assets/user3.png"
+                  id="user-img-sidebar"
+                  alt="User image"
+                />
+                <p id="user-text">
+                  <span>Gustavo Rojas</span><br />
+                  <button class="btn-logout-sidebar">Cerrar sesión</button>
+                </p>
+                <img
+                  src="../global/assets/off.svg"
+                  id="logout-img-sidebar"
+                  alt=""
+                  title="Cerrar sesión"
+                />
+              </div>
+            </li>
+            <!-- Usuario logeado -->
+
+            <!-- Subtitulo sidebar -->
+            <li class="nav-item">
+              <a class="nav-link side-bar-link" href="#">
+                <img
+                  src="../global/assets/sidebar-register-admin.svg"
+                  class="sidebar-icon"
+                  alt=""
+                />
+                <span class="ml-3"> Puntos de venta</span>
+              </a>
+            </li>
+            <!-- Subtitulo sidebar -->
+          </ul>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <!-- MAIN -->
+      <div class="col" id="main-div">
+        <!-- Titulo -->
+        <div class="row">
+          <div class="pl-3 col-10">
+            <h1 class="fs-37">
+              Puntos de Venta
+            </h1>
+          </div>
+        </div>
+        <!-- Final titulo -->
+        <div class="row mt-3">
+          <div class="col-lg-10 mt-2">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Fecha de Registro</th>
+                    <th>Nombre del Local</th>
+                    <th>Contacto</th>
+                    <th>P$G Transado</th>
+                    <th>P$G Disponible</th>
+                    <th>Sucursales</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Col END -->
+    </div>
+    <!-- body-row END -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../global/js/app.js"></script>
+  </body>
+</html>

@@ -224,12 +224,12 @@ tr.fold.open td p {
 }
 @media screen and (min-width: 1520.98px) {
   .tableDesc td {
-    padding: 8px 160px 8px 5px !important;
+    padding: 8px 125px 8px 5px !important;
   }
   .blue-line::before {
     position: absolute;
     right: -40px !important;
-    width: 100%;
+    width: 100% !important;
   }
 }
 
