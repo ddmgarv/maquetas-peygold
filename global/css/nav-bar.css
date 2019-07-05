@@ -26,6 +26,7 @@
   height: 3rem;
   width: 3rem;
   color: #fff;
+  outline: none;
 }
 #sidebar-bell {
   margin-top: 0.5rem;

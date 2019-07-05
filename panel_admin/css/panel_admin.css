@@ -1,0 +1,19 @@
+.panel-admin-pdv tbody tr {
+  height: 50px;
+}
+.panel-admin-pdv td {
+  font-size: 14px;
+}
+.panel-admin-pdv th {
+  font-size: 17px;
+}
+.panel-admin-pdv td,
+.panel-admin-pdv th {
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .panel-admin-pdv td,
+  .panel-admin-pdv th {
+    min-width: 175px;
+  }
+}
