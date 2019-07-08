@@ -109,7 +109,7 @@
 
             <!-- Subtitulo sidebar -->
             <li class="nav-item">
-              <a class="nav-link side-bar-link" href="#">
+              <a class="nav-link side-bar-link active" href="#">
                 <img
                   src="../global/assets/sidebar-register-admin.svg"
                   class="sidebar-icon"
@@ -129,7 +129,17 @@
         <!-- Titulo -->
         <div class="row">
           <div class="pl-3 col-10">
-            <h1 class="fs-37 mt-2">
+            <h1 class="fs-37">
+              Panel de administrador
+            </h1>
+          </div>
+        </div>
+        <!-- Final titulo -->
+
+        <!-- Titulo -->
+        <div class="row">
+          <div class="pl-3 ml-3 col-10">
+            <h1 class="fs-30 mt-2">
               Puntos de Venta
             </h1>
           </div>
@@ -137,15 +147,61 @@
         <!-- Final titulo -->
 
         <div class="row">
-          <div class="col-xl-11">
-            <div></div>
+          <div class="mt-2 col-xl-12 panel-admin-total-container">
+            <div class="pad-total-info" id="pad-new-local-cont">
+              <img
+                src="../global/assets/pad-store.svg"
+                alt=""
+                class="pad-total-img"
+              />
+              <div class="text-right">
+                <div class="fs-21">13</div>
+                <div class="fs-14">Nuevos locales</div>
+              </div>
+            </div>
+            <div class="pad-total-info pad-left-info" id="pad-total-local-cont">
+              <img
+                src="../global/assets/pad-abaco.svg"
+                alt=""
+                class="pad-total-img"
+              />
+              <div class="text-right">
+                <div class="fs-21">89</div>
+                <div class="fs-14">Cantidad Locales</div>
+              </div>
+            </div>
+            <div class="pad-total-info pad-left-info" id="pad-pg-total-traded">
+              <img
+                src="../global/assets/pad-trade.svg"
+                alt=""
+                class="pad-total-img"
+              />
+              <div class="text-right">
+                <div class="fs-21">500.000</div>
+                <div class="fs-14">P$G Transado</div>
+              </div>
+            </div>
+            <div
+              class="pad-total-info pad-left-info"
+              id="pad-pg-total-available"
+            >
+              <img
+                src="../global/assets/pad-moneybag.svg"
+                alt=""
+                class="pad-total-img"
+              />
+              <div class="text-right">
+                <div class="fs-21">1.500.00</div>
+                <div class="fs-14">P$G Disp.</div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="row mt-3">
-          <div class="col-xl-11 mt-2">
+          <div class="col-xl-12 mt-2 ">
             <div class="table-responsive-lg">
-              <table class="table table-hover panel-admin-pdv">
+              <table class="table table-hover panel-admin-pdv border-top-blue">
                 <thead>
                   <tr>
                     <th>ID</th>

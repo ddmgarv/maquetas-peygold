@@ -30,6 +30,12 @@ $(function() {
     $("#pay-panel-sidebar").toggleClass("show-panel-sidebar");
     $("#pay-chevron-sidebar").toggleClass("chevron-show-accordion");
   });
+
+  $("#pad-requests-li-sidebar").click(function() {
+    $("#pad-requests-panel-sidebar").toggleClass("show-panel-sidebar");
+    $("#pad-requests-chevron-sidebar").toggleClass("chevron-show-accordion");
+  });
+
   $("#activate-modal").click(function() {
     $("#recarga-saldo-modal").toggleClass("show-modal");
   });

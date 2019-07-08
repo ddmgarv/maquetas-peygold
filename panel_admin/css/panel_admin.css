@@ -1,3 +1,38 @@
+#pad-new-local-cont {
+  background-color: #323232;
+}
+#pad-total-local-cont {
+  background-color: #323232;
+}
+#pad-pg-total-traded {
+  background-color: #0070ba;
+}
+#pad-pg-total-available {
+  background-color: #28a745;
+}
+.panel-admin-total-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.pad-total-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 1rem;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  border-radius: 5px;
+}
+.pad-left-info {
+  margin-left: 1.75rem;
+}
+.pad-total-img {
+  width: 40px;
+  height: 40px;
+}
 .panel-admin-pdv tbody tr {
   height: 50px;
 }
@@ -10,10 +45,27 @@
 .panel-admin-pdv td,
 .panel-admin-pdv th {
   text-align: center;
+  /* min-width: 145px; */
+}
+@media screen and (max-width: 1152px) {
+  .pad-total-info {
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.65rem;
+  }
 }
 @media screen and (max-width: 992px) {
   .panel-admin-pdv td,
   .panel-admin-pdv th {
-    min-width: 175px;
+    min-width: 165px;
+  }
+  .pad-total-info {
+    height: 75px;
+  }
+  .panel-admin-total-container {
+    flex-direction: column;
+  }
+  .pad-total-info {
+    margin-left: 0;
+    margin-top: 1rem;
   }
 }
