@@ -1,0 +1,506 @@
+<!--  
+  Maquetador: Gustavo Rojas
+  Correo: garv1998131@gmail.com
+  Tlf: +541166281998
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Side-top bar</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../global/css/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="../../global/css/nav-bar.css" />
+  </head>
+
+  <body>
+    <!--Begin NavBar -->
+    <nav class="top-navbar-collapse" id="top-navbar">
+      <!-- IMPORTANTE: Añadir clase active al span en el top bar -->
+      <div>
+        <!-- Barra de navegacion superior -->
+        <ul class="nav align-items-center top-nav flex-nowrap">
+          <li class="nav-item">
+            <div class="btns-container-topnav">
+              <button class="nav-link" id="sidebar-switch">
+                <i class="fas fa-bars"></i>
+              </button>
+              <button class="nav-link" id="sidebar-bell">
+                <i class="fas fa-bell"></i>
+              </button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <img
+              src="../../global/assets/banner.png"
+              class="advertising-banner"
+              alt=""
+            />
+          </li>
+        </ul>
+
+        <!-- Final Barra de navegacion superior -->
+      </div>
+    </nav>
+    <!-- Navbar END -->
+
+    <div class="row" id="body-row">
+      <!-- Sidebar -->
+      <div class="sidebar-extended" id="sidebar-wrapper">
+        <div class="sidebar-extended" id="sidebar-container">
+          <ul class="list-group overflow-auto">
+            <!-- IMPORTANTE: Añadir clase active al anchor tag en el side-bar -->
+
+            <!-- Titulo peygold -->
+            <li style="background-color: #323232">
+              <p
+                class="font-weight-bold text-white text-center my-auto center-sidebar-title"
+              >
+                <img
+                  src="../../global/assets/Isologotipo.svg"
+                  class="title-extended title"
+                  alt=""
+                />
+                <img
+                  src="../../global/assets/Isotipo.svg"
+                  alt=""
+                  class="title-collapse title d-none"
+                />
+                <span
+                  ><i class="fas fa-bars title text-info" id="quit-sm-btn"></i
+                ></span>
+              </p>
+            </li>
+            <!-- Titulo peygold -->
+
+            <!-- Usuario logeado -->
+            <li>
+              <div id="center-sidebar-user">
+                <img
+                  src="../../global/assets/user3.png"
+                  id="user-img-sidebar"
+                  alt="User image"
+                />
+                <p id="user-text">
+                  <span>Gustavo Rojas</span><br />
+                  <button class="btn-logout-sidebar">Cerrar sesión</button>
+                </p>
+                <img
+                  src="../../global/assets/off.svg"
+                  id="logout-img-sidebar"
+                  alt=""
+                  title="Cerrar sesión"
+                />
+              </div>
+            </li>
+            <!-- Usuario logeado -->
+
+            <!-- Subtitulo sidebar -->
+            <li class="nav-item">
+              <a class="nav-link side-bar-link" href="#">
+                <img
+                  src="../../global/assets/home.svg"
+                  class="sidebar-icon"
+                  alt=""
+                />
+                <span class="ml-3"> Resumen</span>
+              </a>
+            </li>
+            <!-- Subtitulo sidebar -->
+
+            <!-- Subtitulo sidebar -->
+            <li
+              class="nav-subtitles"
+              id="wallet-li-sidebar"
+              title="Mi Billetera"
+            >
+              <h6>
+                <img
+                  src="../../global/assets/sidebar-wallet.svg"
+                  class="sidebar-icon sidebar-collapsed-icon"
+                />
+                <img
+                  src="../../global/assets/chevron-right.svg"
+                  class="sidebar-icon chevron-right"
+                  id="wallet-chevron-sidebar"
+                />
+                <span class="ml-3">Mi Billetera</span>
+              </h6>
+            </li>
+            <!-- Subtitulo sidebar -->
+
+            <!-- Elementos de la sidebar -->
+            <div class="hide-panel-sidebar" id="wallet-panel-sidebar">
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#">
+                  <img
+                    src="../../global/assets/sidebar-transfer.svg"
+                    class="sidebar-icon"
+                  />
+                  <span class="ml-3">Transacciones</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#">
+                  <img
+                    src="../../global/assets/sidebar-basket.svg"
+                    class="sidebar-icon"
+                  />
+                  <span class="ml-3">Cargar Peygold</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#">
+                  <img
+                    src="../../global/assets/sidebar-multipey.svg"
+                    class="sidebar-icon"
+                  />
+                  <span class="ml-3">Multipey</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><img
+                    src="../../global/assets/sidebar-credit.svg"
+                    class="sidebar-icon"
+                  /><span class="ml-3">Créditos</span></a
+                >
+              </li>
+            </div>
+            <!-- Elementos de la sidebar -->
+
+            <!-- Subtitulo sidebar -->
+            <li class="nav-subtitles" id="charge-li-sidebar" title="Cobrar">
+              <h6>
+                <img
+                  src="../../global/assets/sidebar-collect.svg"
+                  class="sidebar-icon sidebar-collapsed-icon"
+                />
+                <img
+                  src="../../global/assets/chevron-right.svg"
+                  class="sidebar-icon chevron-right"
+                  id="charge-chevron-sidebar"
+                />
+                <span class="ml-3">Cobrar</span>
+              </h6>
+            </li>
+            <!-- Subtitulo sidebar -->
+
+            <!-- Elementos de la sidebar -->
+            <div class="hide-panel-sidebar" id="charge-panel-sidebar">
+              <!-- <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-link sidebar-icon icon-blue"></i
+                  ><span class="ml-3">Link de pago</span></a
+                >
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><img
+                    src="../../global/assets/sidebar-request.svg"
+                    class="sidebar-icon"
+                  /><span class="ml-3">Solicitar Dinero</span></a
+                >
+              </li>
+            </div>
+            <!-- Elementos de la sidebar -->
+
+            <!-- Subtitulo sidebar -->
+            <li class="nav-subtitles" id="pay-li-sidebar" title="Pagar">
+              <h6>
+                <img
+                  src="../../global/assets/chevron-right.svg"
+                  class="sidebar-icon chevron-right"
+                  id="pay-chevron-sidebar"
+                />
+                <img
+                  src="../../global/assets/sidebar-pay.svg"
+                  class="sidebar-icon sidebar-collapsed-icon"
+                />
+                <span class="ml-3">Pagar</span>
+              </h6>
+            </li>
+            <!-- Subtitulo sidebar -->
+
+            <!-- Elementos de la sidebar -->
+            <div class="hide-panel-sidebar" id="pay-panel-sidebar">
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#">
+                  <img
+                    src="../../global/assets/sidebar-send.svg"
+                    class="sidebar-icon"
+                  />
+                  <span class="ml-3">Enviar dinero</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#">
+                  <img
+                    src="../../global/assets/sidebar-payRequest.svg"
+                    class="sidebar-icon"
+                  />
+                  <span class="ml-3">Solicitudes</span></a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-file-invoice sidebar-icon icon-blue"></i
+                  ><span class="ml-3">Pagar servicios</span></a
+                >
+              </li> -->
+              <!-- <li class="nav-item">
+                <a class="nav-link side-bar-link" href="#"
+                  ><i class="fas fa-mobile sidebar-icon icon-blue"></i
+                  ><span class="ml-3">Cargar celular</span></a
+                >
+              </li> -->
+            </div>
+            <!-- Elementos de la sidebar -->
+
+            <br />
+            <!-- Elemento de la sidebar -->
+            <!-- <li class="nav-item">
+              <a class="nav-link side-bar-link" href="#"
+                ><i class="fas fa-heart sidebar-icon icon-blue"></i
+                ><span class="ml-3">Peygold solidario</span></a
+              >
+            </li> -->
+            <!-- Elemento de la sidebar -->
+
+            <!-- Elementos de la sidebar -->
+            <li class="nav-item">
+              <a class="nav-link side-bar-link" href="#"
+                ><img
+                  src="../../global/assets/sidebar-help.svg"
+                  class="sidebar-icon"
+                /><span class="ml-3">Ayuda</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link side-bar-link" href="#"
+                ><img
+                  src="../../global/assets/sidebar-config.svg"
+                  class="sidebar-icon"
+                /><span class="ml-3">Configuración</span></a
+              >
+            </li>
+            <!-- Elementos de la sidebar -->
+
+            <!--<li class="nav-item"><a class="nav-link side-bar-link" href="#"><i class="fas fa-sign-out-alt sidebar-icon icon-blue"></i><span class="ml-4">Cerrar sesión</span></a></li>-->
+          </ul>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <!-- MAIN -->
+      <div class="col" id="main-div">
+
+
+        Conversaciones
+        0.01 GB (0%) de 15 GB utilizados
+        Administrar
+        Condiciones · Privacidad · Políticas de programa
+        Última actividad de la cuenta: hace 1 hora
+        Detalles
+        
+        <div class="row margin-b-solPres">
+          <div class="col-12 titleText">
+            <p>
+              El monto solicitado esta sujeto a la cantidad de empleados y a las
+              condiciones crediticias a verificar del solicitante.
+              <br />
+              Este simulador es orientativo.
+            </p>
+          </div>
+        </div>
+        
+        <div class="row margin-b-solPres">
+          <div class="col-6 col-md-4">
+            <div class="oneStep-solPres">
+              <p class="oneStepNumber-solPres active">1</p>
+              <p class="oneSteptext-solPres">
+                Monto y forma
+                <br />
+                de pago
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-6 col-md-4">
+            <div class="oneStep-solPres">
+              <p class="oneStepNumber-solPres">2</p>
+              <p class="oneSteptext-solPres">Complete datos</p>
+            </div>
+          </div>
+        
+          <div class="col-6 col-md-4">
+            <div class="oneLastStep-solPres">
+              <p class="oneStepNumber-solPres">3</p>
+              <p class="oneSteptext-solPres">Aprobación</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row margin-b-solPres">
+          <div class="col-12 col-sm-6">
+            <form class="requestLoan-solPres" onSubmit={this.handleRequest}>
+              <p>Cantidad de personas</p>
+              <div class="form-group">
+                <input type="number" name="amountOfBeneficiary" min="0" max="1.000.000.000"
+                  onChange={this.handleChange} required />
+              </div>
+        
+              <div id="separador-solPres" />
+              <p>Cantidad a solicitar</p>
+              <div class="form-group">
+                <input type="number" name="requestedAmount" min="0"
+                  max="1.000.000.000" required />
+              </div>
+        
+              <button class="nextStep-solPres">
+                Consultar
+              </button>
+              <div><!-- Fragment -->
+                <br />
+                <p>Ha ocurrido un error, leer arriba para mas información.</p>
+              </div><!-- Final Fragment -->
+        
+              <div class="form-group text-center">
+                <label>
+                  <i class="fa fa-chevron-down" />
+                </label>
+        
+              </div>
+            </form>
+          </div>
+        
+          <div class="col-12 col-sm-6 text-left">
+            <div class="descInfoHelp">
+              <p>Ayuda:</p>
+              <p>
+                <span>Cantidad a solicitar:</span> Indique el monto por el cuál
+                desea solicitar su préstamo.
+              </p>
+              <p>
+                <span>Cantidad de destinatarios:</span> Indique el número de
+                destinatarios (empleados) a los cuáles les enviará el monto de
+                su préstamo.
+              </p>
+              <p>
+                <span>Forma de pago:</span> Deberá seleccionar de que manera
+                pagará su préstamos. Puede elegir entre: Cheque - Transferencia
+                a CBU - Tarjeta de crédito - Alianza comercial.
+              </p>
+              <p>
+                <span>Opciones de vencimientos:</span> Deberá seleccionar las
+                opciones de vencimientos mediante la cuál devolverá su préstamo.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div> <!-- Fragment -->
+            <div class="col-12">
+              <h3 class="titleTres-solPres">
+                Elija la opción que se adecue a sos vencimientos:
+              </h3>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="bg-white-solPres">
+                <h3 class="titleTres-solPres">
+                  Opciones de vencimientos #1
+                </h3>
+                <table class="table text-center">
+                  <tbody>
+                    <tr>
+                      <th scope="row">{i + 1}°</th>
+                      <td>{this.date(item.expirationDate)}</td>
+                      <td>${item.amountToPay}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- Colocar switch aqui -->
+              </div>
+            </div>
+          </div><!-- Final fragment -->
+          <div class="col-12 col-md-4">
+            <div class="bg-white-solPres">
+              <h3 class="titleTres-solPres">
+                Opciones de vencimientos #2
+              </h3>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">{i + 1}°</th>
+                    <td>{this.date(item.expirationDate)}</td>
+                    <td>${item.amountToPay}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Colocar switch aqui -->
+            </div>
+          </div>
+        
+          <div class="col-12 col-md-4">
+            <div class="bg-white-solPres">
+              <h3 class="titleTres-solPres">
+                Opciones de vencimientos #3
+              </h3>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">{i + 1}°</th>
+                    <td>{this.date(item.expirationDate)}</td>
+                    <td>${item.amountToPay}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Colocar switch aqui -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12 text-right">
+            <a class="nextStep-solPres"
+              >
+              Siguiente
+            </a>
+          </div>
+        </div>
+
+
+
+      </div>
+      <!-- Main Col END -->
+    </div>
+    <!-- body-row END -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../global/js/app.js"></script>
+  </body>
+</html>
