@@ -47,6 +47,15 @@
   text-align: center;
   /* min-width: 145px; */
 }
+.pad-request-success {
+  color: #28a745;
+}
+.pad-request-denied {
+  color: #dc3545;
+}
+.pad-request-pending {
+  color: #ffc107;
+}
 @media screen and (max-width: 1152px) {
   .pad-total-info {
     margin-left: 0.5rem;
