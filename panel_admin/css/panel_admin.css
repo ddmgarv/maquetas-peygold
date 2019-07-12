@@ -47,6 +47,9 @@
   text-align: center;
   /* min-width: 145px; */
 }
+.pad-cred-status {
+  text-align: right !important;
+}
 .pad-request-success {
   color: #28a745;
 }
