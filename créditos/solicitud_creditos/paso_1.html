@@ -27,8 +27,16 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../../global/css/utilities.css" />
-    <link rel="stylesheet" type="text/css" href="../../global/css/nav-bar.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../global/css/utilities.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../global/css/nav-bar.css"
+    />
   </head>
 
   <body>
@@ -68,7 +76,6 @@
         <div class="sidebar-extended" id="sidebar-container">
           <ul class="list-group overflow-auto">
             <!-- IMPORTANTE: Añadir clase active al anchor tag en el side-bar -->
-
             <!-- Titulo peygold -->
             <li style="background-color: #323232">
               <p
@@ -311,186 +318,7 @@
       <!-- Sidebar end -->
 
       <!-- MAIN -->
-      <div class="col" id="main-div">
-
-
-        Conversaciones
-        0.01 GB (0%) de 15 GB utilizados
-        Administrar
-        Condiciones · Privacidad · Políticas de programa
-        Última actividad de la cuenta: hace 1 hora
-        Detalles
-        
-        <div class="row margin-b-solPres">
-          <div class="col-12 titleText">
-            <p>
-              El monto solicitado esta sujeto a la cantidad de empleados y a las
-              condiciones crediticias a verificar del solicitante.
-              <br />
-              Este simulador es orientativo.
-            </p>
-          </div>
-        </div>
-        
-        <div class="row margin-b-solPres">
-          <div class="col-6 col-md-4">
-            <div class="oneStep-solPres">
-              <p class="oneStepNumber-solPres active">1</p>
-              <p class="oneSteptext-solPres">
-                Monto y forma
-                <br />
-                de pago
-              </p>
-            </div>
-          </div>
-        
-          <div class="col-6 col-md-4">
-            <div class="oneStep-solPres">
-              <p class="oneStepNumber-solPres">2</p>
-              <p class="oneSteptext-solPres">Complete datos</p>
-            </div>
-          </div>
-        
-          <div class="col-6 col-md-4">
-            <div class="oneLastStep-solPres">
-              <p class="oneStepNumber-solPres">3</p>
-              <p class="oneSteptext-solPres">Aprobación</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row margin-b-solPres">
-          <div class="col-12 col-sm-6">
-            <form class="requestLoan-solPres" onSubmit={this.handleRequest}>
-              <p>Cantidad de personas</p>
-              <div class="form-group">
-                <input type="number" name="amountOfBeneficiary" min="0" max="1.000.000.000"
-                  onChange={this.handleChange} required />
-              </div>
-        
-              <div id="separador-solPres" />
-              <p>Cantidad a solicitar</p>
-              <div class="form-group">
-                <input type="number" name="requestedAmount" min="0"
-                  max="1.000.000.000" required />
-              </div>
-        
-              <button class="nextStep-solPres">
-                Consultar
-              </button>
-              <div><!-- Fragment -->
-                <br />
-                <p>Ha ocurrido un error, leer arriba para mas información.</p>
-              </div><!-- Final Fragment -->
-        
-              <div class="form-group text-center">
-                <label>
-                  <i class="fa fa-chevron-down" />
-                </label>
-        
-              </div>
-            </form>
-          </div>
-        
-          <div class="col-12 col-sm-6 text-left">
-            <div class="descInfoHelp">
-              <p>Ayuda:</p>
-              <p>
-                <span>Cantidad a solicitar:</span> Indique el monto por el cuál
-                desea solicitar su préstamo.
-              </p>
-              <p>
-                <span>Cantidad de destinatarios:</span> Indique el número de
-                destinatarios (empleados) a los cuáles les enviará el monto de
-                su préstamo.
-              </p>
-              <p>
-                <span>Forma de pago:</span> Deberá seleccionar de que manera
-                pagará su préstamos. Puede elegir entre: Cheque - Transferencia
-                a CBU - Tarjeta de crédito - Alianza comercial.
-              </p>
-              <p>
-                <span>Opciones de vencimientos:</span> Deberá seleccionar las
-                opciones de vencimientos mediante la cuál devolverá su préstamo.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div> <!-- Fragment -->
-            <div class="col-12">
-              <h3 class="titleTres-solPres">
-                Elija la opción que se adecue a sos vencimientos:
-              </h3>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="bg-white-solPres">
-                <h3 class="titleTres-solPres">
-                  Opciones de vencimientos #1
-                </h3>
-                <table class="table text-center">
-                  <tbody>
-                    <tr>
-                      <th scope="row">{i + 1}°</th>
-                      <td>{this.date(item.expirationDate)}</td>
-                      <td>${item.amountToPay}</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <!-- Colocar switch aqui -->
-              </div>
-            </div>
-          </div><!-- Final fragment -->
-          <div class="col-12 col-md-4">
-            <div class="bg-white-solPres">
-              <h3 class="titleTres-solPres">
-                Opciones de vencimientos #2
-              </h3>
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <th scope="row">{i + 1}°</th>
-                    <td>{this.date(item.expirationDate)}</td>
-                    <td>${item.amountToPay}</td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- Colocar switch aqui -->
-            </div>
-          </div>
-        
-          <div class="col-12 col-md-4">
-            <div class="bg-white-solPres">
-              <h3 class="titleTres-solPres">
-                Opciones de vencimientos #3
-              </h3>
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <th scope="row">{i + 1}°</th>
-                    <td>{this.date(item.expirationDate)}</td>
-                    <td>${item.amountToPay}</td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- Colocar switch aqui -->
-            </div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-12 text-right">
-            <a class="nextStep-solPres"
-              >
-              Siguiente
-            </a>
-          </div>
-        </div>
-
-
-
-      </div>
+      <div class="col" id="main-div"></div>
       <!-- Main Col END -->
     </div>
     <!-- body-row END -->

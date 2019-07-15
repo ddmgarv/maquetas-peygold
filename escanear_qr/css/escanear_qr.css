@@ -1,0 +1,29 @@
+.qr-code-cont {
+  margin-top: 35px;
+  height: 400px;
+  background-color: #36b5a5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.qr-code-cont > div {
+  margin-top: 10px;
+  height: 250px;
+  width: 250px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.qr-apps-cont {
+  padding: 0.5rem;
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+}
+.qr-app-pg-img {
+  width: 50px;
+  height: 50px;
+}
