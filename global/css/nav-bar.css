@@ -19,13 +19,25 @@
   transition: left 0.5s;
   left: 5rem;
 }
+.btns-container-topnav {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btns-container-topnav svg {
+  position: relative;
+  bottom: 1px;
+}
 #sidebar-switch {
-  background-color: #0070ba;
+  background-color: #3b3e6b;
   border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
-  color: #fff;
+  height: 3.2rem;
+  width: 3.2rem;
   outline: none;
+}
+.burger-btn {
+  fill: #fff;
 }
 #sidebar-bell {
   margin-top: 0.5rem;
@@ -33,34 +45,12 @@
   border-radius: 50%;
   height: 2.5rem;
   width: 2.5rem;
-  color: #fff;
-  transition: all 0.5s;
 }
-.btns-container-topnav {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#sidebar-bell i {
-  transition: all 0.5s;
-  position: relative;
-  right: 0.2rem;
-}
-#sidebar-bell:hover {
-  transition: all 0.5s;
-  width: 3rem;
-  height: 3rem;
-}
-#sidebar-bell:hover i {
-  right: 0;
-}
-
 /* Final Top bar css */
 
 /* Estilos generales de la sidebar*/
 ul.list-group {
-  list-style-type: none !important;
+  list-style-type: none;
 }
 #sidebar-container {
   position: fixed;
@@ -113,7 +103,7 @@ ul.list-group {
   align-items: center;
   justify-content: center;
   padding-top: 1.5rem;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 .user-collapse {
   display: none;
@@ -160,6 +150,7 @@ ul.list-group {
 }
 ul.sidebar-sublist {
   list-style-image: url("../assets/punto-amarillo.png");
+  list-style-position: outside;
 }
 .sidebar-link:hover .sidebar-icon,
 .nav-subtitles:hover .sidebar-icon {
@@ -177,16 +168,7 @@ ul.sidebar-sublist {
 /* Final estilos generales para sidebar */
 
 /* CSS Para desplegar y esconder panel */
-.hide-panel-sidebar {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.75s;
-}
-.show-panel-sidebar {
-  max-height: 250px;
-  overflow: hidden;
-  transition: all 0.75s;
-}
+
 .chevron-right {
   transition: all 0.5s;
   width: 8px;
@@ -205,6 +187,16 @@ ul.sidebar-sublist {
   width: 16rem;
   background-color: #4d4d4d;
   padding: 0;
+}
+.sidebar-extended .hide-panel-sidebar {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.75s;
+}
+.sidebar-extended .show-panel-sidebar {
+  max-height: 250px;
+  overflow: hidden;
+  transition: all 0.75s;
 }
 .sidebar-extended #user-img-sidebar {
   width: 45px;
@@ -227,6 +219,9 @@ ul.sidebar-sublist {
 .sidebar-extended .nav-link * {
   margin-left: 10.5px;
 }
+.sidebar-extended ul.sidebar-sublist {
+  margin-left: 1.5em;
+}
 /* final de css para sidebar extendida */
 
 /* Inicio css para sidebar colapsada */
@@ -234,6 +229,9 @@ ul.sidebar-sublist {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   width: 4.5rem;
+}
+.sidebar-collapse .hide-panel-sidebar {
+  display: none;
 }
 .sidebar-collapse #user-img-sidebar {
   display: none;
@@ -254,11 +252,14 @@ ul.sidebar-sublist {
 .sidebar-collapse .navsub-content {
   justify-content: center;
 }
-.sidebar-extended .nav-subtitles * {
-  margin-left: 7.5px;
+.sidebar-collapse ul.sidebar-sublist {
+  margin-left: 0;
 }
-.sidebar-extended .nav-link * {
-  margin-left: 10.5px;
+.sidebar-collapse .nav-subtitles * {
+  margin-left: 0;
+}
+.sidebar-collapse .nav-link * {
+  margin-left: 0;
 }
 .sidebar-collapse > ul > li > div > div > span {
   display: none;
@@ -266,7 +267,7 @@ ul.sidebar-sublist {
 .sidebar-collapse > ul > div > li > a > span {
   display: none;
 } /* Para ocultar texto en el sidebar colapsado */
-.sidebar-collapse > ul > li > a > span {
+.sidebar-collapse > ul > li > a > div > span {
   display: none;
 } /* Para ocultar texto en el sidebar colapsado */
 
@@ -298,17 +299,7 @@ ul.sidebar-sublist {
     font-size: 20px;
   }
   .btns-container-topnav {
-    flex-direction: row;
-    align-items: center;
-    margin-top: 0.5rem;
-  }
-  #sidebar-bell:hover {
-    transition: none;
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  #sidebar-bell:hover i {
-    right: 0.15rem;
+    margin-top: 3rem;
   }
 }
 /* Final telefonos en modo portrait (portrait phones, less than 576px)*/

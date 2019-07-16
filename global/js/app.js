@@ -2,7 +2,6 @@ $(function() {
   $("#sidebar-switch").click(function() {
     $("#sidebar-container").toggleClass("sidebar-collapse");
     $("#sidebar-wrapper").toggleClass("sidebar-collapse");
-    $("#blue-sticky-box").toggleClass("blue-box-extended");
     $("#top-navbar").toggleClass("top-navbar-extended");
     $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
@@ -10,7 +9,6 @@ $(function() {
   $(".title").click(function() {
     $("#sidebar-container").toggleClass("sidebar-collapse");
     $("#sidebar-wrapper").toggleClass("sidebar-collapse");
-    $("#blue-sticky-box").toggleClass("blue-box-extended");
     $("#top-navbar").toggleClass("top-navbar-extended");
     $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
