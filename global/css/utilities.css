@@ -1,17 +1,17 @@
 /* Global CSS */
 body {
   font-family: "Montserrat", sans-serif !important;
-  background-color: #f6f6f6 !important;
+  background-color: #ffffff !important;
 }
 #body-row {
-  padding-top: 0.5rem;
+  padding-top: 4.75rem;
   -webkit-transition: padding-top 0.5s;
   transition: padding-top 0.5s;
   margin-left: 0;
   margin-right: 0;
 }
 #main-div {
-  margin-left: 5rem;
+  margin-left: 6rem;
 }
 /* Global CSS */
 
@@ -211,6 +211,10 @@ input[type="reset"] {
 /* Formateo de iconos */
 
 /* formateo de cajas */
+.border-box {
+  border: 3px solid #f1f1f3;
+}
+
 .table-bottom-border {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }

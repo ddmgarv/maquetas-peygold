@@ -1,85 +1,59 @@
-.resume-wallet {
-  margin-left: 2.25vw;
-  margin-top: 27px;
-  border-top: 5px solid #0070ba;
-  background-color: #fff;
-  padding: 0.8rem;
-  height: 10.5rem;
+.resume-title-cont {
+  background-color: #f1f1f3;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  padding: 0.5rem;
 }
-.margin-left-resume-wallets {
-  margin-left: 14px;
+.resume-wallets-cont {
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+  border: 3px solid #f1f1f3;
+  height: 100%;
 }
-.wallet-icon-container {
+.resume-wallets-flex-cont {
   display: flex;
   justify-content: space-around;
-  margin-top: 0.7rem;
+  align-items: center;
 }
-.resume-wallet-link {
-  color: #000;
+.resume-wallet-flex-item {
+  width: 30%;
+  height: 135px;
+  margin: 1rem 0.25rem;
+  border-radius: 15px;
+  background-color: #3b3e6b;
 }
-.resume-wallet-link span {
-  display: none;
-}
-.resume-wallet-link:hover {
-  position: relative;
-}
-.resume-wallet-link:hover span {
-  background-color: #000;
-  color: #fff;
-  padding: 0.4rem;
-  border-radius: 0.5rem;
-  display: block;
-  z-index: 100;
-  position: absolute;
-  left: 0px;
-  top: 2.1rem;
-  text-decoration: none;
-}
-.resume-wallet-link:hover {
-  text-decoration: none;
-}
-.wallet-flex-container {
+.resume-wallet-first-line,
+.resume-wallet-second-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 600px;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+  height: 25%;
 }
-.wallet-img-resume {
-  max-width: 120px;
-}
-.wallet-icon {
-  position: relative;
-  top: 0.8rem;
-  width: 38px;
-  height: 38px;
-}
-#last-users-container-btn {
-  position: absolute;
-  bottom: 32px;
-  right: 44px;
-}
-.icons-resume-text {
+.resume-wallet-name {
+  color: #fff;
   font-weight: bold;
-  font-size: 15px;
-  margin-top: 0.2rem;
 }
-.resume-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+.resume-wallet-symbol-cont {
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0.2rem 0.8rem;
+  height: 100%;
+  color: #36b5a5;
+  margin-right: 5px;
 }
-@media screen and (max-width: 1100px) {
-  .margin-left-resume-wallets {
-    margin-left: 0;
-  }
-  .resume-wallet {
-    margin-left: 0;
-  }
+.resume-wallet-amount-cont {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
 }
-@media screen and (max-width: 576.98px) {
-  .resume-wallet {
-    margin: 1.5rem 0 1rem 0;
+@media screen and (max-width: 900px) {
+  .resume-wallets-flex-cont {
+    flex-direction: column;
   }
-  .margin-left-resume-wallets {
-    margin-left: 0;
+  .resume-wallet-flex-item {
+    width: 90%;
   }
 }
