@@ -14,11 +14,9 @@
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-  position: relative;
-  top: 10px;
 }
 .resume-table-recent-transfers span {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.65);
   font-weight: lighter !important;
 }
 .resume-table-recent-transfers .progress {
@@ -65,12 +63,4 @@
 }
 .table-status-cell {
   min-width: 125px;
-}
-@media (max-width: 576.98px) {
-  .table-img-cell {
-    display: none;
-  }
-  .table-status-cell {
-    display: none;
-  }
 }

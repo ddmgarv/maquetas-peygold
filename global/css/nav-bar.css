@@ -30,7 +30,7 @@
   bottom: 1px;
 }
 #sidebar-switch {
-  background-color: #3b3e6b;
+  background-color: #3b3e66;
   border-radius: 50%;
   height: 3.2rem;
   width: 3.2rem;
@@ -58,7 +58,7 @@ ul.list-group {
   bottom: 0;
   overflow-y: auto;
   z-index: 50;
-  background-color: #3b3e6b;
+  background-color: #3b3e66;
 }
 #sidebar-container .nav-item a,
 #sidebar-container .nav-subtitles {
@@ -76,11 +76,9 @@ ul.list-group {
   color: rgba(255, 255, 255, 0.6);
 }
 .sidebar-user-text {
-  color: #31b8a7;
+  color: #15eeb7;
   font-weight: bold;
-}
-.btn-logout-sidebar:hover {
-  color: #31b8a7;
+  letter-spacing: 0.6px;
 }
 .border-top-white {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -126,7 +124,7 @@ ul.list-group {
   align-items: center;
 }
 .nav-subtitles:hover {
-  background-color: #34385d;
+  background-color: #35385c;
 }
 .nav-item a {
   display: flex !important;
@@ -145,8 +143,8 @@ ul.list-group {
   transition: all 0.5s;
 }
 .sidebar-link:hover {
-  border-right: 4px solid #17bda9;
-  background-color: #34385d;
+  border-right: 3px solid #15eeb7;
+  background-color: #35385c;
 }
 ul.sidebar-sublist {
   list-style-image: url("../assets/punto-amarillo.png");
@@ -161,10 +159,13 @@ ul.sidebar-sublist {
   color: #fff;
 }
 #sidebar-container .active {
-  border-right: 4px solid #17bda9;
-  background-color: #34385d;
+  color: #fff !important;
+  border-right: 3px solid #15eeb7;
+  background-color: #35385c;
 }
-
+#sidebar-container .active svg {
+  fill: #fff;
+}
 /* Final estilos generales para sidebar */
 
 /* CSS Para desplegar y esconder panel */
@@ -208,7 +209,7 @@ ul.sidebar-sublist {
 .sidebar-extended .sidebar-sublist .nav-item:hover .sidebar-sub-link {
   padding: 0.5rem;
   border-radius: 1rem;
-  background-color: #34385d;
+  background-color: #35385c;
 }
 .sidebar-extended #logout-img-sidebar {
   display: none;

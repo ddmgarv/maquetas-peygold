@@ -1,5 +1,0 @@
-Por integrar:
-
-1) punto_venta_status
-2) recarga_comercio
-3) cuenta_usuario

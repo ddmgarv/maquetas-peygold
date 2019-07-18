@@ -20,7 +20,7 @@
   height: 135px;
   margin: 1rem 0.25rem;
   border-radius: 15px;
-  background-color: #3b3e6b;
+  background-image: linear-gradient(to right, #0048aa, #203f77);
 }
 .resume-wallet-first-line,
 .resume-wallet-second-line {
@@ -35,17 +35,18 @@
   font-weight: bold;
 }
 .resume-wallet-symbol-cont {
-  background-color: #fff;
   border-radius: 50px;
   font-size: 19px;
   font-weight: bold;
   padding: 0.2rem 0.8rem;
   height: 100%;
-  color: #36b5a5;
+  color: #fff;
   margin-right: 5px;
+  border: 1px solid #fff;
+  letter-spacing: 1px;
 }
 .resume-wallet-amount-cont {
-  font-size: 20px;
+  font-size: 21px;
   color: #fff;
   font-weight: 600;
 }
