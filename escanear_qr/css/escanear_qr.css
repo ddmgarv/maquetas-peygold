@@ -1,3 +1,56 @@
+.qr-options-container {
+  height: 100%;
+  border: 3px solid #f1f1f3;
+  padding: 1.5rem;
+}
+.select-wallet-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.select-wallet-container > div {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-radius: 15px;
+  width: 25%;
+  cursor: pointer;
+  margin: 0.5rem;
+  border: 1px solid #dcdcdc;
+  -webkit-box-shadow: 0px 6px 5px 0px #dcdcdc;
+  -moz-box-shadow: 0px 6px 5px 0px #dcdcdc;
+  box-shadow: 0px 6px 5px 0px #dcdcdc;
+}
+.select-wallet-container > div > div {
+  display: flex;
+  height: 50px;
+  border-left: 4px solid #64b8ff;
+  line-height: 18px;
+  font-weight: bold;
+}
+.select-wallet-container > div > div p:first-child {
+  margin: auto;
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #64b8ff;
+  border-radius: 14px;
+  padding: 0.4rem 0.65rem;
+  color: #fff;
+}
+.select-wallet-container > div > div p:last-child {
+  margin: auto;
+  margin-left: 8px;
+}
+.select-wallet-container > div > div p:last-child span:first-child {
+  font-size: 14px;
+  color: #727177;
+}
+.select-wallet-container > div > div p:last-child span:last-child {
+  font-size: 15px;
+  color: #64b8ff;
+}
 .qr-code-cont {
   margin-top: 35px;
   height: 400px;
@@ -26,4 +79,16 @@
 .qr-app-pg-img {
   width: 50px;
   height: 50px;
+}
+.qr-text-opaque {
+  color: #89878c;
+  font-size: 14px;
+}
+@media screen and (max-width: 650.98px) {
+  .select-wallet-container {
+    flex-wrap: wrap;
+  }
+  .select-wallet-container > div {
+    min-width: 200px;
+  }
 }

@@ -28,7 +28,7 @@
   width: 20%;
   background-color: #28a745;
 }
-.progress-bar-recieved {
+.progress-bar-received {
   width: 100%;
   background-color: #07a8ec;
 }
@@ -41,13 +41,13 @@
 .progress-text-send span:first-child {
   color: #28a745;
 }
-.progress-text-recieved {
+.progress-text-received {
   font-size: 13px;
   margin-top: 8px;
   display: flex;
   justify-content: space-between;
 }
-.progress-text-recieved span {
+.progress-text-received span {
   color: #07a8ec;
 }
 .table-date-cell,

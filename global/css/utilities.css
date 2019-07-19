@@ -10,8 +10,8 @@ body {
   margin-right: 0;
 }
 #main-div {
-  margin-left: 6rem;
-  margin-top: 3.75rem;
+  margin-left: 4rem;
+  margin-top: 4.2rem;
 }
 /* Global CSS */
 
@@ -60,21 +60,14 @@ input[type="reset"] {
   color: #0070ba;
 }
 .btn-outline-custom {
-  background-color: transparent !important;
-  border: 2px solid #0070ba !important;
-  border-radius: 50px !important;
-  color: #0070ba !important;
-  -webkit-transition: background-color 0.5s !important;
-  transition: background-color 0.5s !important;
-  -webkit-transition: color 0.5s !important;
-  transition: color 0.5s !important;
-  width: 105px !important;
-  height: 39px !important;
-  font-size: 15px;
-}
-.btn-outline-custom:hover {
-  background-color: #0070ba !important;
-  color: #fff !important;
+  background-color: transparent;
+  border: 2px solid #3b3e66;
+  border-radius: 10px;
+  color: #3b3e66;
+  height: 100%;
+  padding: 0.5rem 1.8rem;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 /* Final formateo inputs */
@@ -214,7 +207,16 @@ input[type="reset"] {
 .border-box {
   border: 3px solid #f1f1f3;
 }
-
+.title-cont {
+  background-color: #f1f1f3;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  padding: 0 1.5rem;
+  padding-top: 0.65rem;
+}
+.title-cont h1 {
+  font-size: 17px;
+}
 .table-bottom-border {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
