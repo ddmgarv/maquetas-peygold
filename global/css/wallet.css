@@ -1,15 +1,11 @@
 .resume-wallets-cont {
-  border-bottom-left-radius: 7.5px;
-  border-bottom-right-radius: 7.5px;
-  border: 3px solid #f1f1f3;
-  height: 100%;
-}
-.resume-wallets-flex-cont {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
-.resume-wallet-flex-item {
+.resume-wallet-item {
   width: 30%;
   height: 135px;
   margin: 1rem 0.25rem;
@@ -61,10 +57,10 @@
   font-weight: 600;
 }
 @media screen and (max-width: 900px) {
-  .resume-wallets-flex-cont {
+  .resume-wallets-cont {
     flex-direction: column;
   }
-  .resume-wallet-flex-item {
+  .resume-wallet-item {
     width: 90%;
   }
 }

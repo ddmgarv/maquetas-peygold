@@ -56,15 +56,13 @@ ul.list-group {
   height: 50px;
 }
 #sidebar-container a,
-#sidebar-container .nav-subtitles {
+#sidebar-container .nav-subtitles,
+.sidebar-welcome-text {
   color: rgba(255, 255, 255, 0.6);
 }
 #user-text {
   font-size: 15px;
   text-align: left;
-}
-.sidebar-welcome-text {
-  color: rgba(255, 255, 255, 0.6);
 }
 .sidebar-user-text {
   color: #15eeb7;
@@ -171,10 +169,13 @@ ul.sublist-pay {
 #sidebar-container .active svg {
   fill: #fff;
 }
+
+.sub-content-collapse {
+  display: none;
+}
 /* Final estilos generales para sidebar */
 
 /* CSS Para desplegar y esconder panel */
-
 .chevron-right {
   transition: all 0.5s;
   width: 8px;
@@ -216,9 +217,6 @@ ul.sublist-pay {
   border-radius: 1rem;
   background-color: #35385c;
 }
-.sidebar-extended #logout-img-sidebar {
-  display: none;
-}
 .sidebar-extended .nav-subtitles * {
   margin-left: 7.5px;
 }
@@ -226,7 +224,7 @@ ul.sublist-pay {
   margin-left: 10.5px;
 }
 .sidebar-extended ul.sidebar-sublist {
-  margin-left: 1.5em;
+  margin-left: 1.5rem;
 }
 /* final de css para sidebar extendida */
 
@@ -236,47 +234,75 @@ ul.sublist-pay {
   transition: all 0.5s;
   width: 4.5rem;
 }
-.sidebar-collapse .hide-panel-sidebar {
-  display: none;
-}
-.sidebar-collapse #user-img-sidebar {
-  display: none;
-}
-.sidebar-collapse #logout-img-sidebar {
-  width: 30px;
-  height: 30px;
-  display: block;
-  cursor: pointer;
-  margin-right: 17px;
-}
-.sidebar-collapse .chevron-right {
-  display: none;
-}
-.sidebar-collapse .nav-item a {
-  justify-content: center;
-}
+.sidebar-collapse .nav-item a,
 .sidebar-collapse .navsub-content {
   justify-content: center;
 }
-.sidebar-collapse ul.sidebar-sublist {
-  margin-left: 0;
-}
-.sidebar-collapse .nav-subtitles * {
-  margin-left: 0;
-}
+
+.sidebar-collapse ul.sidebar-sublist,
+.sidebar-collapse .nav-subtitles *,
 .sidebar-collapse .nav-link * {
   margin-left: 0;
 }
-.sidebar-collapse > ul > li > div > div > span {
+.sidebar-collapse > ul > li > div > div > span,
+.sidebar-collapse > ul > div > li > a > span,
+.sidebar-collapse > ul > li > a > span,
+.sidebar-collapse .chevron-right,
+.sidebar-collapse #user-img-sidebar,
+.sidebar-collapse .hide-panel-sidebar {
   display: none;
 } /* Para ocultar texto en el sidebar colapsado */
-.sidebar-collapse > ul > div > li > a > span {
-  display: none;
-} /* Para ocultar texto en el sidebar colapsado */
-.sidebar-collapse > ul > li > a > div > span {
-  display: none;
-} /* Para ocultar texto en el sidebar colapsado */
+.sidebar-collapse .sidebar-sub-link {
+  font-size: 13px;
+  margin-left: 5px;
+}
+.sidebar-collapse .nav-item:hover .nav-link > span {
+  display: initial;
+  position: fixed;
+  left: 4.5rem;
+  height: 50px;
+  background-color: #3b3e66;
+  z-index: 500;
+  padding: 1rem;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+}
+.sidebar-collapse .nav-subtitles:hover .sub-content-collapse {
+  position: fixed;
+  left: 4.5rem;
+  z-index: 500;
+}
+.sidebar-collapse #sub-content-wallet {
+  padding-top: 9.5rem;
+}
+.sidebar-collapse #sub-content-request {
+  padding-top: 4.5rem;
+}
+.sidebar-collapse #sub-content-pay {
+  padding-top: 7rem;
+}
 
+.sidebar-collapse .nav-subtitles .sub-content-collapse div:first-child {
+  background-color: #35385c;
+  width: 100%;
+  height: 50px;
+  border-top-right-radius: 7.5px;
+  padding: 1rem;
+}
+.sidebar-collapse .nav-subtitles .sub-content-collapse div:last-child {
+  background-color: #3b3e66;
+  border-bottom-right-radius: 7.5px;
+  padding: 1rem;
+}
+.sidebar-collapse .nav-subtitles .sub-content-collapse div:last-child span {
+  background-color: #35385c;
+  padding: 0.5rem;
+  border-radius: 7.5px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.sidebar-collapse .nav-subtitles:hover .sub-content-collapse {
+  display: block;
+}
 /* Final css para sidebar colapsada */
 
 /* Para telefonos en modo portrait (portrait phones, less than 576px)*/
@@ -291,7 +317,7 @@ ul.sublist-pay {
     z-index: 500;
   }
   .top-navbar-extended {
-    left: 0.2rem;
+    left: 0;
   }
   .title-extended {
     display: none;
@@ -299,10 +325,11 @@ ul.sublist-pay {
   #quit-sm-btn {
     display: block;
     padding-top: 0.8rem;
+    font-size: 25px;
+    margin-top: 0.4rem;
   }
   .title {
-    margin-top: 0.4rem;
-    font-size: 20px;
+    display: none;
   }
 }
 /* Final telefonos en modo portrait (portrait phones, less than 576px)*/
