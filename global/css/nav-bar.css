@@ -161,7 +161,7 @@ ul.sublist-pay {
 .nav-subtitles:hover span {
   color: #fff;
 }
-#sidebar-container .active {
+#sidebar-container > ul > .nav-item > .active {
   color: #fff !important;
   border-right: 3px solid #15eeb7;
   background-color: #35385c;
@@ -213,6 +213,11 @@ ul.sublist-pay {
   margin-bottom: 15px;
 }
 .sidebar-extended .sidebar-sublist .nav-item:hover .sidebar-sub-link {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #35385c;
+}
+.sidebar-extended .sidebar-sublist .nav-item .active {
   padding: 0.5rem;
   border-radius: 1rem;
   background-color: #35385c;
@@ -307,6 +312,12 @@ ul.sublist-pay {
 
 /* Para telefonos en modo portrait (portrait phones, less than 576px)*/
 @media screen and (max-width: 1000px) {
+  .sidebar-collapse .nav-item:hover .nav-link > span {
+    display: none;
+  }
+  .sidebar-collapse .nav-subtitles:hover .sub-content-collapse {
+    display: none;
+  }
   .sidebar-extended {
     width: 100%;
     z-index: 500;

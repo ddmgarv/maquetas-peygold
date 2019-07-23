@@ -59,7 +59,7 @@ input[type="reset"] {
   pointer-events: none;
   color: #0070ba;
 }
-.btn-outline-custom {
+.btn-outline-custom-t1 {
   background-color: transparent;
   border: 2px solid #3b3e66;
   border-radius: 10px;
@@ -200,7 +200,6 @@ input[type="reset"] {
 
 /* formateo de cajas */
 .border-box {
-  margin-left: 4rem;
   border: 3px solid #f1f1f3;
   border-bottom-left-radius: 7.5px;
   border-bottom-right-radius: 7.5px;
@@ -209,9 +208,11 @@ input[type="reset"] {
   background-color: #f1f1f3;
   border-top-left-radius: 7.5px;
   border-top-right-radius: 7.5px;
-  margin-left: 4rem;
   padding: 0 1.5rem;
   padding-top: 0.65rem;
+}
+.ml-fix {
+  margin-left: 4rem;
 }
 .title-cont h1 {
   font-size: 17px;

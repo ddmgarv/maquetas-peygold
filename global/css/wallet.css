@@ -1,8 +1,26 @@
+.resume-wallets-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to bottom, #1a5f85, #373f6b);
+  border-bottom-left-radius: 17.5px;
+  border-bottom-right-radius: 17.5px;
+  padding: 2.5rem 2rem 1rem 2rem;
+  position: relative;
+  bottom: 30px;
+}
+.resume-wallets-wrapper > h4 {
+  color: #fff;
+  font-size: 17px;
+  margin-left: 0.55rem;
+}
+.resume-wallets-wrapper > p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 0.55rem;
+  padding-top: 0.3rem;
+}
 .resume-wallets-cont {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  height: 100%;
   width: 100%;
 }
 .resume-wallet-item {
@@ -10,7 +28,24 @@
   height: 135px;
   margin: 1rem 0.25rem;
   border-radius: 15px;
-  background-image: linear-gradient(to right, #0048aa, #203f77);
+  background-color: #fff;
+}
+#pg-wallet {
+  /* background-image: linear-gradient(to right, #f7cb6a, #fca780); */
+  padding-bottom: 5px;
+  background: linear-gradient(to right, #f7cb6a, #fca780) left bottom #fff
+    no-repeat;
+  /* background: linear-gradient(to right, #f7cb6a, #fca780) right top #fff
+    no-repeat; */
+  background-size: 100% 6px;
+}
+#pesos-wallet {
+  border-bottom: 2px solid linea;
+  /* background-image: linear-gradient(to right, #f9774f, #9d4857); */
+}
+#pgc-wallet {
+  border-bottom: 2px solid linea;
+  /* background-image: linear-gradient(to right, #39d6a6, #3860ab); */
 }
 .resume-wallet-first-line,
 .resume-wallet-second-line {
@@ -20,20 +55,20 @@
   margin: 1.5rem 1.5rem 0 1.5rem;
   height: 25%;
 }
+
 .resume-wallet-first-line > div a span {
   display: none;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   padding: 0.5rem;
-  color: #fff;
   margin-top: 5px;
+  color: #fff;
 }
 .resume-wallet-first-line > div a:hover span {
   display: block;
 }
 .resume-wallet-name {
-  color: #fff;
   font-weight: bold;
 }
 .resume-wallet-imgs {
@@ -44,16 +79,14 @@
   border-radius: 50px;
   font-size: 19px;
   font-weight: bold;
-  padding: 0.1rem 0.8rem;
+  padding: 0.12rem 0.8rem;
   height: 100%;
-  color: #fff;
   margin-right: 5px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   letter-spacing: 1px;
 }
 .resume-wallet-amount-cont {
   font-size: 21px;
-  color: #fff;
   font-weight: 600;
 }
 @media screen and (max-width: 900px) {

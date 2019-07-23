@@ -44,7 +44,7 @@
         <div class="sidebar-extended" id="sidebar-container">
             <ul class="list-group">
                 <!-- IMPORTANTE: Añadir clase active al anchor tag en el side-bar -->
-    
+                
                 <!-- Titulo peygold -->
                 <li>
                     <div class="center-sidebar-title">
@@ -162,7 +162,7 @@
                     </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <span class="sidebar-sub-link">Cargar Peygold</span>
+                                <span class="sidebar-sub-link active">Cargar Peygold</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -189,7 +189,6 @@
                                 <path class="cls-1"
                                     d="M14.63,3.78c-2.22,0-4,2.16-4,4.8s1.82,4.8,4,4.8,4-2.16,4-4.8S16.86,3.78,14.63,3.78ZM28.25,0H1A1,1,0,0,0,0,1V16.15a1,1,0,0,0,1,1H28.25a1,1,0,0,0,1-1V1A1,1,0,0,0,28.25,0ZM28,12.86h-.5A2.53,2.53,0,0,0,25,15.39v.5H4.3v-.5a2.54,2.54,0,0,0-2.53-2.53h-.5V4.3h.5A2.54,2.54,0,0,0,4.3,1.77v-.5H25v.5A2.53,2.53,0,0,0,27.5,4.3H28Z" />
                             </svg>
-    
                             <span>Cobrar</span>
                         </div>
                         <svg version="1.1" id="charge-chevron-sidebar" xmlns="http://www.w3.org/2000/svg"
@@ -354,6 +353,63 @@
                         <span>Configuración</span>
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="#">
+                        <div>
+                            <svg class="sidebar-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M255.15,468.625H63.787c-11.737,0-21.262-9.526-21.262-21.262V64.638c0-11.737,9.526-21.262,21.262-21.262H255.15
+                            			c11.758,0,21.262-9.504,21.262-21.262S266.908,0.85,255.15,0.85H63.787C28.619,0.85,0,29.47,0,64.638v382.724
+                            			c0,35.168,28.619,63.787,63.787,63.787H255.15c11.758,0,21.262-9.504,21.262-21.262
+                            			C276.412,478.129,266.908,468.625,255.15,468.625z" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M505.664,240.861L376.388,113.286c-8.335-8.25-21.815-8.143-30.065,0.213s-8.165,21.815,0.213,30.065l92.385,91.173
+                            			H191.362c-11.758,0-21.262,9.504-21.262,21.262c0,11.758,9.504,21.263,21.262,21.263h247.559l-92.385,91.173
+                            			c-8.377,8.25-8.441,21.709-0.213,30.065c4.167,4.21,9.653,6.336,15.139,6.336c5.401,0,10.801-2.041,14.926-6.124l129.276-127.575
+                            			c4.04-3.997,6.336-9.441,6.336-15.139C512,250.302,509.725,244.88,505.664,240.861z" />
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span>Cerrar Sesión</span>
+                    </a>
+                </li>
                 <!-- Elementos de la sidebar -->
             </ul>
         </div>
@@ -365,14 +421,13 @@
 
             <div class="row qr-title">
                 <!-- Title -->
-                <div class="col-xl-11">
+                <div class="col-xl-12">
                     <h1 class="fs-17">Crear código QR</h1>
                 </div>
                 <!-- Title -->
             </div>
-
             <div class="row">
-                <div class="col-xl-12 qr-wallets-cont">
+                <div class="col-12 qr-wallets-cont">
                     <span class="qr-text-opaque">Seleccionar el tipo de Código QR que desea</span>
                     <!-- Div billetera peygold -->
                     <div class="resume-wallets-cont">
@@ -424,11 +479,11 @@
                     </div>
                 </div> 
             </div>
-            <div class="row mt-5">
-                <div class="col-3"></div>
-                <div class="col-md-6 qr-code-cont">
-                    <h3 class="text-center text-white font-weight-bold">Escaneá y pagá</h3>
-                    <h3 class="text-center text-white">desde tu celular</h3>
+            <div class="row">
+                <div class="col-md-5 mx-auto qr-code-cont">
+                    <h3>Generador Código QR</h3>
+                    <p>Escaneá y pagá desde tu celular</p>
+                    <button class="btn-outline-custom-t1">Imprimir</button>
                     <div>
                         <div style="width:100%;height:100%;background-color:#000">
             
@@ -437,18 +492,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-3"></div>
-                <div class="col-md-6 qr-apps-cont">
-                    <h5>Con la App:</h5>
+                <div class="col-md-5 mx-auto qr-apps-cont">
+                    <h5>Con la página web y app</h5>
                     <div class="d-flex align-items-center justify-content-center">
-                        <img src="../global/assets/Isotipo.svg" class="qr-app-pg-img" alt="">
-                        <span> Peygold</span>
+                        <img src="../global/assets/isologotipo.svg" class="qr-app-pg-img" alt="">
                     </div>
                 </div>
             </div>
-
-
-
         </div><!-- Main col div end -->
 
 
