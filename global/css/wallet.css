@@ -1,29 +1,10 @@
-.resume-wallets-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to bottom, #1a5f85, #373f6b);
-  border-bottom-left-radius: 17.5px;
-  border-bottom-right-radius: 17.5px;
-  padding: 2.5rem 2rem 1rem 2rem;
-  position: relative;
-  bottom: 30px;
-}
-.resume-wallets-wrapper > h4 {
-  color: #fff;
-  font-size: 17px;
-  margin-left: 0.55rem;
-}
-.resume-wallets-wrapper > p {
-  color: rgba(255, 255, 255, 0.5);
-  margin-left: 0.55rem;
-  padding-top: 0.3rem;
-}
-.resume-wallets-cont {
+.wallets-cont {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
-.resume-wallet-item {
+.wallet-item {
   width: 30%;
   height: 135px;
   margin: 1rem 0.25rem;
@@ -31,24 +12,25 @@
   background-color: #fff;
 }
 #pg-wallet {
-  /* background-image: linear-gradient(to right, #f7cb6a, #fca780); */
   padding-bottom: 5px;
   background: linear-gradient(to right, #f7cb6a, #fca780) left bottom #fff
     no-repeat;
-  /* background: linear-gradient(to right, #f7cb6a, #fca780) right top #fff
-    no-repeat; */
-  background-size: 100% 6px;
+  background-size: 100% 5px;
 }
 #pesos-wallet {
-  border-bottom: 2px solid linea;
-  /* background-image: linear-gradient(to right, #f9774f, #9d4857); */
+  padding-bottom: 5px;
+  background: linear-gradient(to right, #39d6a6, #3860ab) left bottom #fff
+    no-repeat;
+  background-size: 100% 5px;
 }
 #pgc-wallet {
-  border-bottom: 2px solid linea;
-  /* background-image: linear-gradient(to right, #39d6a6, #3860ab); */
+  padding-bottom: 5px;
+  background: linear-gradient(to right, #f9774f, #9d4857) left bottom #fff
+    no-repeat;
+  background-size: 100% 5px;
 }
-.resume-wallet-first-line,
-.resume-wallet-second-line {
+.wallet-first-line,
+.wallet-second-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +38,7 @@
   height: 25%;
 }
 
-.resume-wallet-first-line > div a span {
+.wallet-first-line > div a span {
   display: none;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
@@ -65,35 +47,46 @@
   margin-top: 5px;
   color: #fff;
 }
-.resume-wallet-first-line > div a:hover span {
+.wallet-first-line > div a:hover span {
   display: block;
 }
-.resume-wallet-name {
+.wallet-name {
   font-weight: bold;
 }
-.resume-wallet-imgs {
+.wallet-imgs {
   width: 2.4rem;
   height: 2.4rem;
 }
-.resume-wallet-symbol-cont {
+.wallet-symbol-cont {
   border-radius: 50px;
   font-size: 19px;
   font-weight: bold;
   padding: 0.12rem 0.8rem;
   height: 100%;
   margin-right: 5px;
-  border: 1px solid #000;
   letter-spacing: 1px;
 }
-.resume-wallet-amount-cont {
+#pg-symbol {
+  color: #fca780;
+  border: 1px solid #fca780;
+}
+#pesos-symbol {
+  color: #3860ab;
+  border: 1px solid #3860ab;
+}
+#pgc-symbol {
+  color: #9d4857;
+  border: 1px solid #9d4857;
+}
+.wallet-amount-cont {
   font-size: 21px;
   font-weight: 600;
 }
 @media screen and (max-width: 900px) {
-  .resume-wallets-cont {
+  .wallets-cont {
     flex-direction: column;
   }
-  .resume-wallet-item {
+  .wallet-item {
     width: 90%;
   }
 }

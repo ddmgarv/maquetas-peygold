@@ -48,6 +48,7 @@ ul.list-group {
   top: 0;
   bottom: 0;
   overflow-y: auto;
+  overflow-x: hidden;
   z-index: 50;
   background-color: #3b3e66;
 }
@@ -231,6 +232,16 @@ ul.sublist-pay {
 .sidebar-extended ul.sidebar-sublist {
   margin-left: 1.5rem;
 }
+.sidebar-extended #logout-item {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #35385c;
+  width: 16rem;
+  transition: width 0.5s;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
 /* final de css para sidebar extendida */
 
 /* Inicio css para sidebar colapsada */
@@ -308,6 +319,12 @@ ul.sublist-pay {
 .sidebar-collapse .nav-subtitles:hover .sub-content-collapse {
   display: block;
 }
+.sidebar-collapse #logout-item {
+  transition: width 0.5s;
+  width: 4.5rem;
+  padding-top: 0;
+  padding-left: 0;
+}
 /* Final css para sidebar colapsada */
 
 /* Para telefonos en modo portrait (portrait phones, less than 576px)*/
@@ -341,6 +358,9 @@ ul.sublist-pay {
   }
   .title {
     display: none;
+  }
+  .sidebar-extended #logout-item {
+    width: 100%;
   }
 }
 /* Final telefonos en modo portrait (portrait phones, less than 576px)*/

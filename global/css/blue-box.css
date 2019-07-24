@@ -1,0 +1,24 @@
+.blue-box-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to bottom, #1a5f85, #373f6b);
+  border-bottom-left-radius: 17.5px;
+  border-bottom-right-radius: 17.5px;
+  padding: 1.25rem 2rem 1.75rem 2rem;
+  position: relative;
+  top: -1rem;
+}
+.blue-box-wrapper > h4 {
+  color: #fff;
+  font-size: 17px;
+  margin-left: 0.55rem;
+}
+.blue-box-wrapper > p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 0.55rem;
+  padding-top: 0.3rem;
+}
+.border-bottom-title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  padding-bottom: 1rem;
+}
