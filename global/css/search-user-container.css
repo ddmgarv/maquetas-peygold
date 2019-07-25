@@ -11,17 +11,7 @@
 .input-search-container div {
   width: calc(100% - 45%);
 }
-.input-search-container input {
-  width: 100%;
-  height: 42px;
-  border-radius: 7px;
-  outline: none;
-  border: none;
-  padding-left: 1rem;
-}
-.input-search-container input::placeholder {
-  font-size: 13px;
-}
+
 .input-search-container div:last-child {
   margin-top: 0.75rem;
   width: calc(100% - 45%);

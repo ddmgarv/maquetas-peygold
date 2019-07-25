@@ -13,149 +13,92 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../global/css/utilities.css" />
   </head>
   <body>
     <div class="row" id="body-row">
       <div class="col login-wrapper">
+        <!-- Login container -->
         <main class="row login-input-container">
           <!-- Login container -->
-          <div class="col-12">
+          <div class="col-10">
             <!-- container for elements -->
-            <div class="pt-5 pb-2">
-              <h2 class="text-center fs-40 text-white">
-                pey<span class="font-weight-bold">GOLD</span>
-              </h2>
-            </div>
-            <div class="pt-1 pb-3">
-              <h5 class="fs-25 text-white text-center">
-                La mejor forma de comprar
-              </h5>
-            </div>
             <div class="row">
-              <div class="col-12 col-sm-12 col-lg-4 offset-lg-4 text-center">
-                <div class="login-content">
-                  <h2 class="fs-19 p-3">Ingresar a tu cuenta</h2>
-                  <!-- <div class="redes-link pt-3">
-                    <a href=""
-                      ><img class="" src="../global/assets/facebook.png"
-                    /></a>
-                    <a href=""
-                      ><img class="" src="../global/assets/google.png"
-                    /></a>
-                  </div> -->
-                  <!-- <div class="divide-line">
-                    <p>ó</p>
-                  </div> -->
-                  <form action="">
-                    <div class="form-group pt-3">
-                      <input
-                        type="text"
-                        id="user-input"
-                        class="form-control rounded-border login-input"
-                        placeholder="Nombre o correo electrónico"
-                      />
-                    </div>
-                    <div class="form-group pt-3">
-                      <input
-                        type="text"
-                        id="pass-input"
-                        class="form-control rounded-border login-input"
-                        placeholder="Password"
-                      />
-                    </div>
-                    <div>
-                      <div class="form-group pt-4">
-                        <input
-                          type="submit"
-                          class="btn-outline-login"
-                          value="INGRESAR"
-                        />
-                      </div>
-                    </div>
-                  </form>
-                  <div class="pt-3">
-                    <a href="" class="text-white fs-14"
-                      >¿Olvidó su contraseña? Haga Click aquí</a
-                    >
+              <div class="col-12 col-sm-12 col-lg-4 offset-lg-4">
+                <div class="d-flex justify-content-between">
+                  <a href="" class="no-underline">
+                    <span class="text-opaque">Crear nueva cuenta</span>
+                  </a>
+                  <a href="" class="ml-2 no-underline">
+                    <span class="login-active-span"
+                      >Iniciar <span>Sesión</span>
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="d-flex justify-content-center flex-column align-items-center mb-5"
+                >
+                  <div>
+                    <img
+                      src="../global/assets/isologotipo.svg"
+                      class="login-pg-img"
+                      alt=""
+                    />
                   </div>
                   <div class="mt-2">
-                    <a href="" class="text-white fs-14">Crear cuenta</a>
+                    <p class="text-opaque">
+                      Ingresa a tu cuenta para continuar
+                    </p>
                   </div>
                 </div>
+                <form action="">
+                  <div class="mb-2">
+                    <span class="text-opaque fs-13">Correo Electrónico</span>
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      class="input-text"
+                      placeholder="Ejemplo@gmail.com"
+                    />
+                  </div>
+                  <div class="d-flex justify-content-between mb-2 mt-4">
+                    <span class="text-opaque fs-13">Contraseña</span>
+                    <a href="" class="no-underline"
+                      ><span class="text-blue fs-13"
+                        >¿Olvidó su contraseña?</span
+                      ></a
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="password"
+                      class="input-text"
+                      placeholder="Ingrese su contraseña"
+                    />
+                  </div>
+                  <div>
+                    <div>
+                      <input
+                        type="submit"
+                        class="btn-outline-status"
+                        value="Iniciar Sesión"
+                      />
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
           <!-- Container for elements end -->
         </main>
         <!-- Login container end -->
-        <section class="row" id="peygoldLine-container">
-          <div class="col-12 container">
-            <div class="row">
-              <div class="col-12 col-sm-8 text-center">
-                <p id="legend-atention">
-                  ¿Tenés dudas sobre tu<br />cuenta o tus compras?
-                </p>
-              </div>
-              <div class="col-12 col-sm-4 text-left">
-                <img
-                  class="atention-img img-fluid"
-                  src="../global/assets/atencion.png"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 text-center">
-                <p id="call-line">
-                  Llamá a la línea PeyGold para clientes: 0800-222-0000
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- <section class="row">
-          <div class="col-md-4">
-            <div class="d-flex flex-column justify-content-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="d-flex flex-column justify-content-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="d-flex flex-column justify-content-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="d-flex flex-column justify-content-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </section> -->
       </div>
     </div>
   </body>
