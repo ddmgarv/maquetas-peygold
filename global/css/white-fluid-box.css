@@ -6,11 +6,19 @@
   -moz-box-shadow: 0px 3px 7px 2px rgba(115, 111, 115, 0.5);
   box-shadow: 0px 3px 7px 2px rgba(115, 111, 115, 0.5);
   padding: 1rem 8rem 2rem 8rem;
+  z-index: 15;
 }
 .white-fluid-box .wallet-item {
   -webkit-box-shadow: 0px 0px 15px 3px rgba(156, 156, 156, 1);
   -moz-box-shadow: 0px 0px 15px 3px rgba(156, 156, 156, 1);
   box-shadow: 0px 0px 15px 3px rgba(156, 156, 156, 1);
+}
+.white-fluid-box-title {
+  padding: 0 7rem;
+}
+.white-fluid-box-title h1 {
+  color: #3b3e66;
+  font-weight: bold;
 }
 @media screen and (max-width: 1290.98px) {
   .white-fluid-box {
@@ -20,5 +28,11 @@
 @media screen and (max-width: 1170.98px) {
   .white-fluid-box {
     padding: 1rem 1.5rem 2rem 1.5rem;
+  }
+}
+@media screen and (max-width: 1170.98px) {
+  .white-fluid-box-title {
+    padding: 0 0.1rem;
+    margin-bottom: 0.5rem;
   }
 }

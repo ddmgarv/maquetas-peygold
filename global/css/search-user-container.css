@@ -65,10 +65,40 @@
   overflow: visible;
   word-wrap: break-word;
 }
-@media screen and (max-width: 576.98px) {
+@media screen and (max-width: 1090.98px) {
+  .recent-contacts {
+    margin: 0;
+    width: 100%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 800.98px) {
   .input-search-container div,
   .input-search-container p,
   .input-search-container div:last-child {
     width: 275px;
+  }
+  .recent-contacts > div span,
+  .recent-contacts > div p {
+    font-size: 11px;
+  }
+  .recent-contacts > div {
+    min-width: 90px;
+  }
+  .recent-contacts > div > img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .recent-contacts {
+    height: 80%;
+    background-color: #fff;
+    padding: 0.75rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .recent-contacts p.recent-contacts-mail {
+    text-overflow: unset;
+    overflow: visible;
+    word-wrap: break-word;
   }
 }

@@ -114,9 +114,6 @@
   font-size: 14px;
 }
 
-.qr-title {
-  padding: 0 7rem;
-}
 .qr-input-btn-cont {
   width: 100%;
 }
@@ -154,10 +151,6 @@
 @media screen and (max-width: 650.98px) {
   .qr-wallets-cont {
     padding: 1rem 0.25rem 2rem 0.25rem;
-  }
-  .qr-title {
-    padding: 0 0.1rem;
-    margin-bottom: 0.5rem;
   }
   .select-wallet-container {
     flex-wrap: wrap;

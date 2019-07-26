@@ -83,7 +83,7 @@ ul.list-group {
 .title-extended {
   width: 8rem;
   height: 8rem;
-  /* margin: -2rem 0 -2.5rem 0; */
+  margin: -2rem 0 -2.5rem 0;
 }
 .title-collapse {
   width: 1.45rem;

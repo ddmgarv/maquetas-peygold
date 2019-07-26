@@ -1,90 +1,65 @@
-.recarga-option-container {
-  margin-top: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 66px !important;
-  padding-right: 49px !important;
-  background-color: #fff;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
+.reload-options-container {
+  display: flex;
+  justify-content: space-between;
 }
-.recarga-option-container .option-link {
-  color: #000;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-}
-.recarga-option-container:hover {
-  background-color: #e8e8e8;
-}
-.recarga-option-container:hover .option-link {
-  color: #0070ba;
-}
-.recarga-flex-container-option {
+.reload-options-container > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
+  background-color: #fff;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 8px;
+  width: 50%;
+  margin: 0.5rem;
+  cursor: pointer;
 }
-.option-text-pos-fix {
-  position: relative;
-  top: 0.5rem;
-  word-break: break-all;
+.reload-options-container > div:hover {
+  background-color: #c8c8c8;
 }
-.flex-cont-img-btn {
-  display: flex;
-  align-items: center;
+.reload-options-container img {
+  width: 30px;
+  height: 30px;
 }
-.box-disabled-option .recarga-option-container {
-  background-color: rgba(0, 0, 0, 0.25) !important;
-  cursor: not-allowed !important;
+.reload-options-container > div > div {
+  margin-right: 3.5rem;
+  text-align: left;
 }
-.box-disabled-option .recarga-option-container .option-link {
-  color: rgba(0, 0, 0, 0.25) !important;
-  cursor: not-allowed !important;
+.reload-options-container > div span:first-child {
+  font-weight: bold;
 }
-.box-disabled-option
-  .recarga-option-container
-  .option-link
-  .recarga-option-img {
-  opacity: 0.25;
+.reload-options-container > .disabled {
+  background-color: #adb9c9 !important;
+  cursor: not-allowed;
 }
-.box-disabled-option .btn-slider,
-.box-disabled-option .next-btn {
-  color: rgba(0, 0, 0, 0.25) !important;
-  cursor: not-allowed !important;
+.reload-options-container > .disabled span:first-child {
+  color: #fff !important;
 }
-.option-text-1 {
-  margin-right: 2.6rem;
+.reload-options-container > .disabled span:last-child {
+  color: rgba(255, 255, 255, 0.4) !important;
 }
-.option-text-2 {
-  margin-left: 0;
+.reload-option-chevron {
+  width: 1rem;
+  height: 1rem;
+  fill: #0031d3;
 }
-.option-text-3 {
-  margin-left: 2rem;
+.reload-options-container > .disabled .reload-option-chevron {
+  visibility: hidden;
 }
-.option-text-4 {
-  margin-left: 3.75rem;
-}
-.option-text-5 {
-  margin-right: 5.65rem;
-}
-.recarga-option-img {
-  width: 58px;
-  height: 58px;
-}
-.btn-slider {
-  color: #565574;
-  font-size: 22px;
-  margin-left: 2.2rem;
-  margin-right: 2.2rem;
-  color: #0070ba;
-}
-@media screen and (max-width: 576.98px) {
-  .recarga-option-container {
-    margin-left: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+@media screen and (max-width: 900.98px) {
+  .reload-options-container > div > div {
+    margin-right: 1.25rem;
   }
-  .option-text-hide {
-    display: none;
+}
+@media screen and (max-width: 650.98px) {
+  .reload-options-container {
+    flex-wrap: wrap;
+  }
+  .reload-options-container > div {
+    width: 100%;
+  }
+  .reload-options-container > div > div {
+    margin-right: 0;
+    margin-left: 1rem;
   }
 }

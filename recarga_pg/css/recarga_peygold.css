@@ -1,0 +1,15 @@
+.reload-balance-input-cont {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.reload-balance-input-cont > div {
+  width: 50%;
+  margin: 1.25rem 0;
+}
+.reload-balance-input-cont > div:last-child {
+  margin-left: calc(100% - 95%);
+}
+.reload-balance-input-cont > div > input {
+  width: 100%;
+}
