@@ -1,7 +1,7 @@
 /* Global CSS */
 body {
   font-family: "Montserrat", sans-serif !important;
-  background-color: #ffffff !important;
+  background-color: #f5f5fd !important;
 }
 #body-row {
   -webkit-transition: padding-top 0.5s;
@@ -10,8 +10,8 @@ body {
   margin-right: 0;
 }
 #main-div {
-  /* margin-left: 4rem; */
   margin-top: 4.2rem;
+  margin-bottom: 1.5rem;
 }
 /* Global CSS */
 
@@ -25,18 +25,54 @@ body {
   z-index: 86;
   position: relative;
 }
+.user-letter-circle {
+  width: 55px;
+  height: 55px;
+  background-image: linear-gradient(to right, #39b0a6, #3860ab);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 27px;
+}
 /* Circulos  */
 
 /* Inicio Formateo inputs */
 .input-text {
   width: 100%;
   height: 42px;
-  border-radius: 7px;
+  border-radius: 10px;
   outline: none;
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding-left: 1rem;
+  font-size: 14px;
 }
 .input-text::placeholder {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+.input-custom-text {
+  margin-top: 1.5rem;
+}
+.input-custom-text span {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: #8f8f94;
+}
+.input-custom-text input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #8f8f94;
+  width: 100%;
+  padding-left: 2rem;
+  font-size: 14px;
+}
+.input-custom-text input::placeholder {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.3);
   font-weight: bold;
@@ -44,28 +80,29 @@ body {
 .input-select {
   width: 100%;
   height: 42px;
-  border-radius: 7px;
+  border-radius: 10px;
   outline: none;
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding-left: 1rem;
   color: #8f8f94;
   font-size: 14px;
 }
+.input-file {
+  font-family: arial;
+  font-size: 12px;
+}
+.input-file .btn {
+  padding: 5px 15px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+}
+.input-file input[type="file"] {
+  display: none;
+}
 
-.has-search .form-control {
-  padding-left: 2.375rem;
-}
-.has-search .form-control-feedback {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  width: 2.375rem;
-  height: 2.375rem;
-  line-height: 2.375rem;
-  text-align: center;
-  pointer-events: none;
-  color: #0070ba;
-}
 .btn-outline-custom-t1 {
   background-color: transparent !important;
   border: 2px solid #3b3e66 !important;
@@ -243,9 +280,8 @@ input[type="reset"] {
 
 /* formateo de cajas */
 .border-box {
-  border: 3px solid #f1f1f3;
-  border-bottom-left-radius: 7.5px;
-  border-bottom-right-radius: 7.5px;
+  border: 3px solid #d9dade;
+  border-radius: 8px;
 }
 .title-cont {
   background-color: #f1f1f3;
@@ -278,29 +314,7 @@ input[type="reset"] {
     width: 45%;
   }
 }
-/* Padding fix */
-@media screen and (max-width: 1200px) {
-  #main-div {
-    margin-top: 4.5rem;
-    margin-left: 0;
-  }
-}
 
-@media screen and (max-width: 900.98px) {
-  #main-div {
-    margin-left: 0;
-  }
-  #body-row {
-    padding-top: 1rem;
-  }
-  .collapsed-wallet-details > div {
-    flex-shrink: 0;
-    min-width: 8rem;
-  }
-  .margins-fix-wallet-details {
-    margin-left: 3rem;
-  }
-}
 /* Scroll styles */
 
 /* width */

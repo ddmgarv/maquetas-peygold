@@ -1,18 +1,12 @@
+.reload-resume-container-3 {
+  padding-bottom: 3.25rem !important;
+}
 .reload-resume-container-3 .reload-user-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .reload-resume-container-3 .user-letter-circle {
-  width: 50px;
-  height: 50px;
-  background-image: linear-gradient(to right, #39b0a6, #3860ab);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 20px;
   margin-right: calc(100% - 98%);
 }
 .reload-resume-container-3 .user-info-cont span:first-child {
@@ -20,4 +14,44 @@
 }
 .reload-resume-container-3 .user-info-cont span:last-child {
   color: #8f8f94;
+}
+.reload-inputs-container-3 {
+  display: flex;
+  justify-content: space-between;
+}
+.reload-inputs-container-3 > div {
+  width: 100%;
+  margin-top: 1rem;
+}
+.reload-inputs-container-3 > div:first-child {
+  margin-right: calc(100% - 97.5%);
+}
+.reload-inputs-container-3 > div:last-child {
+  margin-left: calc(100% - 97.5%);
+}
+
+.reload-input-selects-container-3 {
+  display: flex;
+  justify-content: space-between;
+}
+.reload-input-selects-container-3 select:first-child {
+  margin-right: calc(100% - 98.5%);
+}
+.reload-input-selects-container-3 select:last-child {
+  margin-left: calc(100% - 98.5%);
+}
+@media screen and (max-width: 576.98px) {
+  .reload-inputs-container-3 {
+    flex-direction: column;
+  }
+  .reload-inputs-container-3 > div:first-child {
+    margin-right: 0;
+  }
+  .reload-inputs-container-3 > div:last-child {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  .reload-resume-container-3 .reload-user-container {
+    flex-direction: column;
+  }
 }

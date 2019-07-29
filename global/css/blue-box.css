@@ -2,8 +2,8 @@
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to bottom, #1a5f85, #373f6b);
-  border-bottom-left-radius: 17.5px;
-  border-bottom-right-radius: 17.5px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
   padding: 1.25rem 2rem 1.75rem 2rem;
   position: relative;
   top: -1rem;
@@ -22,4 +22,13 @@
 .border-bottom-title {
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
   padding-bottom: 1rem;
+}
+@media screen and (max-width: 1200px) {
+  .blue-box-wrapper {
+    position: relative;
+    top: -1.5rem;
+  }
+  .blue-box-wrapper {
+    padding: 1.25rem 1rem 0.2rem 0.1rem;
+  }
 }
