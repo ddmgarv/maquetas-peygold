@@ -4,11 +4,55 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-image: url("../../global/assets/background-registro.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   color: #fff;
+  text-align: left;
+  padding: 0 3rem !important;
 }
+/* Regist left side steps */
+
+.regist-left-p1 {
+  background-image: url("../../global/assets/background-registro.jpg");
+}
+.regist-left-p1 .regist-left-title::before {
+  content: "¿Por qué deberías crear una cuenta?";
+}
+.regist-left-p1 .regist-left-text1::before {
+  content: "¡Somos el mejor sistema de pago electrónico del pais!";
+}
+.regist-left-p1 .regist-left-text2::before {
+  content: "Tus procesos están a salvo con nosotros, ¡no espere más!";
+}
+
+.regist-left-p2 {
+  background-image: url("../../global/assets/background-registro.jpg");
+}
+.regist-left-p2 .regist-left-title::before {
+  content: "Beneficios al registrarte con nosotros";
+}
+.regist-left-p2 .regist-left-text1::before {
+  content: "!Mantenete siempre conectado ahora es más fácil gracias a nuestro sistema multifuncional Descubrí todo lo que tenemos para ofrecerte!";
+}
+.regist-left-p2 .regist-left-text2::before {
+  content: "";
+}
+
+.regist-left-p3 {
+  background-image: url("../../global/assets/background-registro.jpg");
+}
+.regist-left-p3 .regist-left-title::before {
+  content: "Beneficios al registrarte con nosotros";
+}
+.regist-left-p3 .regist-left-text1::before {
+  content: "!Mantenete siempre conectado ahora es más fácil gracias a nuestro sistema multifuncional Descubrí todo lo que tenemos para ofrecerte!";
+}
+.regist-left-p3 .regist-left-text2::before {
+  content: "";
+}
+
+/* Regist left side steps */
+
 .register-acc-left h4 {
   font-weight: bold;
   font-size: 17px;
@@ -26,11 +70,43 @@
   width: 20%;
   margin-top: 12px;
 }
+
+/* Regist right steps */
+.regist-right-p1 .regist-right-text::before {
+  content: "Rellene los siguientes campos de registro y estará listo para comenzar.";
+}
+.regist-right-p2 .regist-right-text::before {
+  content: 'Complete los siguientes campos y seleccione la opción "siguiente" para finalizar el registro';
+}
+.regist-right-p3 .regist-right-text::before {
+  content: "Para finalizar indíquenos su dirección de correo electrónico y fije una contraseña";
+}
+.regist-right-inputs-p1,
+.regist-right-inputs-p2,
+.regist-right-inputs-p3 {
+  display: none;
+}
+.regist-right-p1 .regist-right-inputs-p1,
+.regist-right-p2 .regist-right-inputs-p2,
+.regist-right-p3 .regist-right-inputs-p3 {
+  display: initial;
+}
+/* Regist right steps */
+
 .register-acc-right {
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 15px;
+}
+.regist-right-text {
+}
+.register-acc-container .btn-custom-status .fa-chevron-right,
+.register-acc-container .btn-custom-status .fa-chevron-left {
+  font-size: 9px;
+}
+.register-acc-container .btn-custom-status {
+  height: 40px;
 }
 .register-acc-right label {
   font-size: 13px;
@@ -66,9 +142,6 @@
   color: #8f8f94;
   text-align: center;
 }
-.register-acc-right input[type="submit"] {
-  width: 100%;
-}
 
 @media screen and (max-width: 576.98px) {
   .register-acc-container {
@@ -77,5 +150,8 @@
   .regist-user-ops .regist-active-span span {
     padding-bottom: 1rem;
     border-bottom: 3px solid #64b8ff;
+  }
+  .register-acc-left {
+    padding: 0 1rem !important;
   }
 }

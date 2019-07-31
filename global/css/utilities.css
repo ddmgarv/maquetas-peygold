@@ -75,8 +75,9 @@ input[type="reset"] {
 }
 .input-text {
   width: 100%;
-  height: 42px;
-  border-radius: 10px;
+  height: 45px;
+  /* border-radius: 10px; */
+  border-radius: 30px;
   outline: none;
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding-left: 1rem;
@@ -113,8 +114,9 @@ input[type="reset"] {
 }
 .input-select {
   width: 100%;
-  height: 42px;
-  border-radius: 10px;
+  height: 45px;
+  /* border-radius: 10px; */
+  border-radius: 30px;
   outline: none;
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding-left: 1rem;
@@ -128,7 +130,8 @@ input[type="reset"] {
 .input-file .btn {
   padding: 5px 15px;
   border: 2px solid #fff;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-radius: 30px;
   color: #fff;
   background: transparent;
   cursor: pointer;
@@ -138,67 +141,77 @@ input[type="reset"] {
 }
 
 .btn-custom-status {
-  border: 2px solid #009bdb;
-  background-color: #009bdb;
-  border-radius: 7px;
-  color: #fff;
-  padding: 0.5rem 1.8rem;
+  border: 2px solid #009bdb !important;
+  background-color: #009bdb !important;
+  border-radius: 30px !important;
+  color: #fff !important;
+  padding: 0.5rem 1.8rem !important;
   font-size: 13px;
-  font-weight: bold;
-  transition: all 0.5s;
+  transition: all 0.5s !important;
 }
 .btn-custom-status:hover {
-  background-color: #0073a5;
+  background-color: #0073a5 !important;
+  border: 2px solid transparent !important;
 }
 .btn-outline-status {
-  background-color: transparent;
-  border: 2px solid #009bdb;
-  border-radius: 7px;
-  color: #fff;
-  padding: 0.5rem 1.8rem;
+  background-color: transparent !important;
+  border: 2px solid #009bdb !important;
+  border-radius: 30px !important;
+  color: #fff !important;
+  padding: 0.5rem 1.8rem !important;
   font-size: 13px;
-  font-weight: bold;
-  transition: all 0.5s;
-  outline: none;
+  transition: all 0.5s !important;
+  outline: none !important;
 }
 .btn-outline-status:hover {
-  color: #fff;
-  background-color: #009bdb;
+  color: #fff !important;
+  background-color: #009bdb !important;
 }
 .btn-outline-red {
-  background-color: transparent;
-  border: 2px solid #ff4f4e;
-  border-radius: 7px;
-  color: #ff4f4e;
-  padding: 0.5rem 1.8rem;
+  background-color: transparent !important;
+  border: 2px solid #ff4f4e !important;
+  border-radius: 30px !important;
+  color: #ff4f4e !important;
+  padding: 0.5rem 1.8rem !important;
   font-size: 13px;
-  font-weight: bold;
-  transition: all 0.5s;
-  outline: none;
+  transition: all 0.5s !important;
+  outline: none !important;
 }
 .btn-outline-red:hover {
-  color: #fff;
-  background-color: #ff4f4e;
+  color: #fff !important;
+  background-color: #ff4f4e !important;
 }
 
 .btn-outline-custom-t1 {
-  background-color: transparent;
-  border: 2px solid #3b3e66;
-  border-radius: 7px;
-  color: #3b3e66;
-  padding: 0.5rem 1.8rem;
+  background-color: transparent !important;
+  border: 2px solid #3b3e66 !important;
+  border-radius: 30px !important;
+  color: #3b3e66 !important;
+  padding: 0.5rem 1.8rem !important;
   font-size: 13px;
-  font-weight: bold;
-  transition: all 0.5s;
-  outline: none;
+  transition: all 0.5s !important;
+  outline: none !important;
 }
 .btn-outline-custom-t1:hover {
-  border: none;
-  background-color: #3b3e66;
-  transition: all 0.5s;
-  color: #fff;
+  border: none !important;
+  background-color: #3b3e66 !important;
+  transition: all 0.5s !important;
+  color: #fff !important;
 }
-
+.btn-custom-success {
+  border: 2px solid #15ff8b !important;
+  background-color: #15ff8b !important;
+  letter-spacing: 1px;
+  border-radius: 30px !important;
+  color: #fff !important;
+  padding: 0.5rem 1.8rem !important;
+  font-size: 13px;
+  transition: all 0.5s !important;
+}
+.btn-custom-success:hover {
+  background-color: #10c76c !important;
+  border: 2px solid transparent !important;
+}
 /* Final formateo inputs */
 
 /* Formateo de texto */
@@ -206,7 +219,7 @@ input[type="reset"] {
   text-decoration: none;
 }
 .text-opaque {
-  color: #8f8f94 !important;
+  color: #a5b5e4;
 }
 .text-blue {
   color: rgba(100, 184, 255, 0.8);

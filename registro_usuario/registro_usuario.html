@@ -24,17 +24,16 @@
 
   <body>
     <div class="row" id="body-row">
-      <div class="col-lg-4 register-acc-left">
+      <div class="col-lg-4 register-acc-left regist-left-p1">
         <div>
-          <h4>¿Por qué deberías crear una cuenta?</h4>
-          <span>¡Somos el mejor sistema de pago electrónico del pais!</span
-          ><br />
-          <span>Tus procesos están a salvo con nosotros, ¡no espere más!</span>
-          <br />
+          <h4 class="regist-left-title"></h4>
+          <span class="regist-left-text1"></span><br />
+          <span class="regist-left-text2"></span>
           <div class="mini-border-regist"></div>
           <img src="../global/assets/isologotipo.svg" class="pb-5" alt="" />
         </div>
       </div>
+
       <div class="col-lg-8 register-acc-right">
         <div class="register-acc-container">
           <div class="regist-user-ops">
@@ -47,67 +46,140 @@
               <span class="text-opaque">Iniciar <span>Sesión</span> </span>
             </a>
           </div>
-          <div class="regist-user-title">
-            <h3>Crear una cuenta</h3>
-            <span class="text-opaque"
-              >Rellene los siguientes campos de registro y estará listo para
-              comenzar.</span
-            >
+          <div class="regist-right-p3">
+            <div class="regist-user-title">
+              <h3>Crear una cuenta</h3>
+              <span class="regist-right-text"></span>
+            </div>
+            <form action="">
+              <div class="regist-right-inputs-p1">
+                <div class="form-group">
+                  <label for="email">Tipo de cuenta</label>
+                  <select name="" class="input-select" id=""></select>
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Nombre</label>
+                  <input
+                    type="text"
+                    class="input-text"
+                    placeholder="Ingrese su nombre"
+                    id="pwd"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Razón Social</label>
+                  <input
+                    type="text"
+                    class="input-text"
+                    placeholder="Razón social"
+                    id="pwd"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Cuit</label>
+                  <input
+                    type="text"
+                    class="input-text"
+                    placeholder="Ingrese su cuit"
+                    id="pwd"
+                  />
+                </div>
+                <div class="text-center mt-4">
+                  <button class="btn-custom-status">
+                    Siguiente <i class="fas fa-chevron-right ml-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="regist-right-inputs-p2">
+                <div class="form-group">
+                  <label for="email">I.V.A</label>
+                  <select name="" class="input-select" id=""></select>
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Actividad</label>
+                  <select name="" class="input-select" id=""></select>
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Sub Actividad</label>
+                  <select name="" class="input-select" id=""></select>
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Teléfono</label>
+                  <input
+                    type="number"
+                    class="input-text"
+                    placeholder="Ingrese su teléfono"
+                    id="pwd"
+                  />
+                  <div class="text-center mt-4">
+                    <button class="btn-custom-status mr-3">
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="btn-custom-status">
+                      Siguiente <i class="fas fa-chevron-right ml-1"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="regist-right-inputs-p3">
+                <div class="form-group">
+                  <label for="email">Correo</label>
+                  <input
+                    type="email"
+                    class="input-text"
+                    placeholder="ejemplo@gmail.com"
+                    id="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Confirmar correo</label>
+                  <input
+                    type="password"
+                    class="input-text"
+                    placeholder="Ingrese su contraseña"
+                    id="pwd"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Contraseña</label>
+                  <input
+                    type="password"
+                    class="input-text"
+                    placeholder="Ingrese su contraseña"
+                    id="pwd"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Confirmar contraseña</label>
+                  <input
+                    type="password"
+                    class="input-text"
+                    placeholder="Confirmar su contraseña"
+                    id="pwd"
+                  />
+                </div>
+                <div class="terms-conditions">
+                  <p>
+                    Al hacer click en crear cuenta a continuación, <br />
+                    Acepta nuestros
+                    <a href="#" class="no-underline">Términos de servicio</a>
+                    y
+                    <a href="#" class="no-underline">
+                      declaración de privacidad</a
+                    >
+                  </p>
+                </div>
+                <div class="text-center mt-4">
+                  <button class="btn-custom-status mr-3">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <input type="submit" value="Crear cuenta" class="btn-custom-status" />
+                </div>
+              </div>
+            </form>
           </div>
-          <form action="">
-            <div class="form-group">
-              <label for="email">Correo:</label>
-              <input
-                type="email"
-                class="input-text"
-                placeholder="ejemplo@gmail.com"
-                id="email"
-              />
-            </div>
-            <div class="form-group">
-              <label for="pwd">Contraseña:</label>
-              <input
-                type="password"
-                class="input-text"
-                placeholder="Ingrese su contraseña"
-                id="pwd"
-              />
-            </div>
-            <div class="form-group">
-              <label for="pwd">Nombre:</label>
-              <input
-                type="password"
-                class="input-text"
-                placeholder="Ingrese su nombre"
-                id="pwd"
-              />
-            </div>
-            <div class="form-group">
-              <label for="pwd">Apellido</label>
-              <input
-                type="password"
-                class="input-text"
-                placeholder="Ingrese su apellido"
-                id="pwd"
-              />
-            </div>
-            <div class="terms-conditions">
-              <p>
-                Al hacer click en crear cuenta a continuación, <br />
-                Acepta nuestros
-                <a href="#" class="no-underline">Términos de servicio</a>
-                y
-                <a href="#" class="no-underline"> declaración de privacidad</a>
-              </p>
-            </div>
-            <div class="text-center">
-              <input
-                type="submit"
-                value="Crear cuenta"
-                class="btn-custom-status"
-              />
-            </div>
-          </form>
+
+          </div>
         </div>
       </div>
     </div>
