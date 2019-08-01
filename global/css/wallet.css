@@ -5,40 +5,70 @@
   width: 100%;
 }
 .wallet-item {
-  width: 30%;
-  height: 135px;
+  width: 27.5%;
+  height: 150px;
   margin: 1rem 0.25rem;
-  border-radius: 15px;
-  background-color: #fff;
+  padding: 0.3rem 1.2rem 0.9rem 1rem;
+  border-radius: 19px;
+  color: #fff;
+  -webkit-box-shadow: 0px 7px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 5px -1px rgba(0, 0, 0, 0.75);
+  transition: all 0.35s;
+}
+.wallet-item:hover {
+  width: 28%;
+  height: 155px;
+  -webkit-box-shadow: -10px 10px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 10px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -10px 10px 5px -1px rgba(0, 0, 0, 0.75);
+  transition: all 0.35s;
 }
 #pg-wallet {
-  padding-bottom: 5px;
-  background: linear-gradient(to right, #f7cb6a, #fca780) left bottom #fff
-    no-repeat;
-  background-size: 100% 5px;
+  background-image: url("../../global/assets/background-pg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #pesos-wallet {
-  padding-bottom: 5px;
-  background: linear-gradient(to right, #39d6a6, #3860ab) left bottom #fff
-    no-repeat;
-  background-size: 100% 5px;
+  background-image: url("../../global/assets/background-pesos.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #pgc-wallet {
-  padding-bottom: 5px;
-  background: linear-gradient(to right, #f9774f, #9d4857) left bottom #fff
-    no-repeat;
-  background-size: 100% 5px;
+  background-image: url("../../global/assets/background-pgc.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .wallet-first-line,
-.wallet-second-line {
+.wallet-second-line,
+.wallet-third-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.5rem 1.5rem 0 1.5rem;
-  height: 25%;
+  width: 100%;
+  margin-top: 0.75rem;
 }
-
-.wallet-first-line > div a span {
+.wallet-third-line {
+  margin-top: -1rem;
+}
+.wallet-first-line span {
+  font-family: "Play", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 2px;
+  position: relative;
+  bottom: 6px;
+  font-size: 18px;
+}
+.wallet-first-line .small-letters {
+  position: absolute;
+  font-size: 12px;
+  top: 20px;
+  right: 10px;
+}
+.wallet-second-line > div a span {
   display: none;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
@@ -47,7 +77,7 @@
   margin-top: 5px;
   color: #fff;
 }
-.wallet-first-line > div a:hover span {
+.wallet-second-line > div a:hover span {
   display: block;
 }
 .wallet-name {
@@ -57,31 +87,27 @@
   width: 2.4rem;
   height: 2.4rem;
 }
-.wallet-symbol-cont {
-  border-radius: 50px;
-  font-size: 19px;
-  font-weight: bold;
-  padding: 0.12rem 0.8rem;
-  height: 100%;
-  margin-right: 5px;
-  letter-spacing: 1px;
-}
-#pg-symbol {
-  color: #fca780;
-  border: 1px solid #fca780;
-}
-#pesos-symbol {
-  color: #3860ab;
-  border: 1px solid #3860ab;
-}
-#pgc-symbol {
-  color: #9d4857;
-  border: 1px solid #9d4857;
-}
 .wallet-amount-cont {
+  font-family: "Play", sans-serif;
+
   font-size: 21px;
-  font-weight: 600;
+  align-self: flex-end;
 }
+.wallet-amount-cont span {
+  font-weight: lighter;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  top: 5px;
+}
+.wallet-symbol-cont {
+  font-family: "Play", sans-serif;
+  font-style: italic;
+  letter-spacing: 3px;
+  font-size: 21px;
+  align-self: flex-end;
+}
+
 @media screen and (max-width: 900px) {
   .wallets-cont {
     flex-direction: column;

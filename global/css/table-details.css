@@ -1,10 +1,14 @@
 .table-cont {
   height: 280px;
-  border: 3px solid #f1f1f3;
+  width: 100%;
+}
+
+.table-cont * {
+  color: #fff !important;
+  font-weight: normal !important;
 }
 .table-recent-transfers {
   font-size: 14px;
-  font-weight: bold;
   height: 200px;
 }
 .table-recent-transfers .table-img-cell {
@@ -15,9 +19,11 @@
   height: 2.25rem;
   border-radius: 50%;
 }
-.table-recent-transfers span {
-  color: rgba(0, 0, 0, 0.65);
-  font-weight: lighter !important;
+.table-cont tr {
+  border-bottom: 1px solid #4d5174;
+}
+.table-recent-transfers .hour {
+  color: #8388a5 !important;
 }
 .table-recent-transfers .progress {
   height: 8px;

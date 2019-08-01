@@ -1,0 +1,30 @@
+.regist-success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../../global/assets/background-y-personas.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.regist-success-container > div {
+  margin-top: 1rem;
+  position: relative;
+  bottom: 9rem;
+}
+.regist-success-container h1 {
+  font-size: 21px;
+  font-weight: bold;
+}
+.regist-success-container p {
+  color: #b3b4b6;
+}
+.regist-success-container .btn-custom-status {
+  background-image: url("../../global/assets/logo peygold.svg");
+  background-size: 5.5rem 5.5rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 9rem;
+  height: 2.25rem;
+}

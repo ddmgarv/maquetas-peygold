@@ -17,6 +17,9 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../global/css/nav-bar.css" />
     <link rel="stylesheet" type="text/css" href="../global/css/utilities.css" />
@@ -370,14 +373,19 @@
       <div class="col" id="main-div">
 
         <div class="row">
-          <div class="col-xl-10 blue-box-wrapper">
-            <h4>Resumen</h4>
-            <p>Categoría de billeteras</p>
+          <div class="col-lg-11 blue-box-wrapper">
+            <h4><img src="../global/assets/" alt=""> Resumen</h4>
+            <p>Categoría de billeterasm, seleccione su billetera para enviar o solicitar pagos</p>
             <!-- Div billetera peygold -->
             <div class="wallets-cont">
               <div class="wallet-item" id="pg-wallet">
                 <div class="wallet-first-line">
-                  <span class="wallet-name">PEYGOLD</span>
+                  <img src="../global/assets/chip.svg" alt="">
+                  <span>PEYGOLD</span>
+                </div>
+                <div class="wallet-second-line">                    
+                  <img src="../global/assets/puntos.svg" alt="">
+                  <img src="../global/assets/puntos.svg" class="mr-3" alt="">
                   <div>
                     <a href="#">
                       <img src="../global/assets/enviar.svg" class="wallet-imgs mr-2" alt="">
@@ -389,18 +397,24 @@
                     </a>
                   </div>
                 </div>
-                <div class="wallet-second-line">
-                  <div class="wallet-symbol-cont" id="pg-symbol">
-                    P$G
-                  </div>
+                <div class="wallet-third-line">
                   <div class="wallet-amount-cont">
+                    <span>Balances</span> <br>
                     45.000,18
+                  </div>
+                  <div class="wallet-symbol-cont">
+                    P$G
                   </div>
                 </div>
               </div>
               <div class="wallet-item" id="pesos-wallet">
                 <div class="wallet-first-line">
-                  <span class="wallet-name">PESOS</span>
+                  <img src="../global/assets/chip.svg" alt="">
+                  <span>PEYGOLD <br> <span class="small-letters">Pesos</span></span>
+                </div>
+                <div class="wallet-second-line">
+                  <img src="../global/assets/puntos.svg" alt="">
+                  <img src="../global/assets/puntos.svg" class="mr-3" alt="">
                   <div>
                     <a href="#">
                       <img src="../global/assets/enviar.svg" class="wallet-imgs mr-2" alt="">
@@ -412,18 +426,24 @@
                     </a>
                   </div>
                 </div>
-                <div class="wallet-second-line">
-                  <div class="wallet-symbol-cont" id="pesos-symbol">
-                    $
-                  </div>
+                <div class="wallet-third-line">
                   <div class="wallet-amount-cont">
-                    500.523,05
+                    <span>Balances</span> <br>
+                    45.000,18
+                  </div>
+                  <div class="wallet-symbol-cont">
+                    P$G
                   </div>
                 </div>
               </div>
               <div class="wallet-item" id="pgc-wallet">
                 <div class="wallet-first-line">
-                  <span class="wallet-name">PEYGOLD<br/>CREDITOS</span>
+                  <img src="../global/assets/chip.svg" alt="">
+                  <span>PEYGOLD <br> <span class="small-letters">Créditos</span></span>
+                </div>
+                <div class="wallet-second-line">
+                  <img src="../global/assets/puntos.svg" alt="">
+                  <img src="../global/assets/puntos.svg" class="mr-3" alt="">
                   <div>
                     <a href="#">
                       <img src="../global/assets/enviar.svg" class="wallet-imgs mr-2" alt="">
@@ -435,32 +455,23 @@
                     </a>
                   </div>
                 </div>
-                <div class="wallet-second-line">
-                  <div class="wallet-symbol-cont" id="pgc-symbol">
-                    P$GC
-                  </div>
+                <div class="wallet-third-line">
                   <div class="wallet-amount-cont">
-                    90.823,71
+                    <span>Balances</span> <br>
+                    45.000,18
+                  </div>
+                  <div class="wallet-symbol-cont">
+                    P$G
                   </div>
                 </div>
               </div>
             </div>
             <!-- Final div billetera peygold -->
-          </div>
-        </div>
-        <!-- Final row de la billetera e iconos -->
+            <br />
 
-
-        <!-- Inicio Div de los movimientos recientes -->
-        <div class="row"> <!-- Row div -->
-          <div class="col-xl-10 mx-auto title-cont">
-            <h1>Movimientos Recientes</h1>
-          </div>
-        </div> <!-- Row div -->
-        <div class="row">
-          <!-- Row div -->
-          <div class="col-xl-10 table-responsive table-cont mx-auto">
-              <table class="table table-recent-transfers">
+            <h4>Movimientos Recientes</h4>
+            <div class="table-responsive table-cont">
+              <table class="table table-borderless table-recent-transfers">
                 <thead>
                   <tr>
                     <th></th>
@@ -474,58 +485,7 @@
                 <tbody>
                   <tr>
                     <td class="table-img-cell"><img src="../global/assets/user1.png" alt=""></td>
-                    <td class="table-date-cell">10/07/2019<br /><span>19:54:21</span></td>
-                    <td class="table-action-cell">Enviar</td>
-                    <td class="table-mail-cell">gustavoconfortsur@gmail.com</td>
-                    <td class="table-amount-cell">P$G 2750</td>
-                    <td class="table-status-cell"> 
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-received"></div>
-                      </div>
-                      <div class="progress-text-received">
-                        <span>Enviado</span>
-                        <span>-</span>
-                        <span>Recibido</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-img-cell"><img src="../global/assets/user1.png" alt=""></td>
-                    <td class="table-date-cell">10/07/2019<br /><span>19:54:21</span></td>
-                    <td class="table-action-cell">Enviar</td>
-                    <td class="table-mail-cell">gustavoconfortsur@gmail.com</td>
-                    <td class="table-amount-cell">$ 900</td>
-                    <td class="table-status-cell">
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-send"></div>
-                      </div>
-                      <div class="progress-text-send">
-                        <span>Enviado</span>
-                        <span>-</span>
-                        <span>Recibido</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-img-cell"><img src="../global/assets/user1.png" alt=""></td>
-                    <td class="table-date-cell">10/07/2019<br /><span>19:54:21</span></td>
-                    <td class="table-action-cell">Enviar</td>
-                    <td class="table-mail-cell">gustavoconfortsur@gmail.com</td>
-                    <td class="table-amount-cell">$ 900</td>
-                    <td class="table-status-cell">
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-send"></div>
-                      </div>
-                      <div class="progress-text-send">
-                        <span>Enviado</span>
-                        <span>-</span>
-                        <span>Recibido</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-img-cell"><img src="../global/assets/user1.png" alt=""></td>
-                    <td class="table-date-cell">10/07/2019<br /><span>19:54:21</span></td>
+                    <td class="table-date-cell">10/07/2019<br /><span class="hour">19:54:21</span></td>
                     <td class="table-action-cell">Enviar</td>
                     <td class="table-mail-cell">gustavoconfortsur@gmail.com</td>
                     <td class="table-amount-cell">P$G 2750</td>
@@ -542,7 +502,7 @@
                   </tr>
                   <tr>
                     <td class="table-img-cell"><img src="../global/assets/user1.png" alt=""></td>
-                    <td class="table-date-cell">10/07/2019<br /><span>19:54:21</span></td>
+                    <td class="table-date-cell">10/07/2019<br /><span class="hour">19:54:21</span></td>
                     <td class="table-action-cell">Enviar</td>
                     <td class="table-mail-cell">gustavoconfortsur@gmail.com</td>
                     <td class="table-amount-cell">$ 900</td>
@@ -559,7 +519,7 @@
                   </tr>
                   <tr>
                     <td class="table-img-cell"><img src="../global/assets/user1.png" alt=""></td>
-                    <td class="table-date-cell">10/07/2019<br /><span>19:54:21</span></td>
+                    <td class="table-date-cell">10/07/2019<br /><span class="hour">19:54:21</span></td>
                     <td class="table-action-cell">Enviar</td>
                     <td class="table-mail-cell">gustavoconfortsur@gmail.com</td>
                     <td class="table-amount-cell">P$G 2750</td>
@@ -576,7 +536,75 @@
                   </tr>
                   <tr>
                     <td class="table-img-cell"><img src="../global/assets/user1.png" alt=""></td>
-                    <td class="table-date-cell">10/07/2019<br /><span>19:54:21</span></td>
+                    <td class="table-date-cell">10/07/2019<br /><span class="hour">19:54:21</span></td>
+                    <td class="table-action-cell">Enviar</td>
+                    <td class="table-mail-cell">gustavoconfortsur@gmail.com</td>
+                    <td class="table-amount-cell">$ 900</td>
+                    <td class="table-status-cell">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-send"></div>
+                      </div>
+                      <div class="progress-text-send">
+                        <span>Enviado</span>
+                        <span>-</span>
+                        <span>Recibido</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-img-cell"><img src="../global/assets/user1.png" alt=""></td>
+                    <td class="table-date-cell">10/07/2019<br /><span class="hour">19:54:21</span></td>
+                    <td class="table-action-cell">Enviar</td>
+                    <td class="table-mail-cell">gustavoconfortsur@gmail.com</td>
+                    <td class="table-amount-cell">P$G 2750</td>
+                    <td class="table-status-cell">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-received"></div>
+                      </div>
+                      <div class="progress-text-received">
+                        <span>Enviado</span>
+                        <span>-</span>
+                        <span>Recibido</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-img-cell"><img src="../global/assets/user1.png" alt=""></td>
+                    <td class="table-date-cell">10/07/2019<br /><span class="hour">19:54:21</span></td>
+                    <td class="table-action-cell">Enviar</td>
+                    <td class="table-mail-cell">gustavoconfortsur@gmail.com</td>
+                    <td class="table-amount-cell">$ 900</td>
+                    <td class="table-status-cell">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-send"></div>
+                      </div>
+                      <div class="progress-text-send">
+                        <span>Enviado</span>
+                        <span>-</span>
+                        <span>Recibido</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-img-cell"><img src="../global/assets/user1.png" alt=""></td>
+                    <td class="table-date-cell">10/07/2019<br /><span class="hour">19:54:21</span></td>
+                    <td class="table-action-cell">Enviar</td>
+                    <td class="table-mail-cell">gustavoconfortsur@gmail.com</td>
+                    <td class="table-amount-cell">P$G 2750</td>
+                    <td class="table-status-cell">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-received"></div>
+                      </div>
+                      <div class="progress-text-received">
+                        <span>Enviado</span>
+                        <span>-</span>
+                        <span>Recibido</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-img-cell"><img src="../global/assets/user1.png" alt=""></td>
+                    <td class="table-date-cell">10/07/2019<br /><span class="hour">19:54:21</span></td>
                     <td class="table-action-cell">Enviar</td>
                     <td class="table-mail-cell">gustavoconfortsur@gmail.com</td>
                     <td class="table-amount-cell">$ 900</td>
@@ -593,9 +621,9 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
           </div>
-
-        </div> <!-- Row div -->
+        </div>
 
         
       </div><!-- Main col div end -->

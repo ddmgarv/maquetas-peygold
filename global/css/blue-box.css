@@ -4,7 +4,7 @@
   background-image: linear-gradient(to bottom, #1a5f85, #373f6b);
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
-  padding: 1.25rem 2rem 1.75rem 2rem;
+  padding: 1.25rem 3rem 1.75rem 3rem;
   position: relative;
   top: -1rem;
   z-index: 1;
@@ -12,12 +12,11 @@
 .blue-box-wrapper > h4 {
   color: #fff;
   font-size: 17px;
-  margin-left: 0.55rem;
+  margin-left: 0.7rem;
 }
 .blue-box-wrapper > p {
   color: rgba(255, 255, 255, 0.5);
-  margin-left: 0.55rem;
-  padding-top: 0.3rem;
+  margin-left: 0.7rem;
 }
 .border-bottom-title {
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);

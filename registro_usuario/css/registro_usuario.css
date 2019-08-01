@@ -71,8 +71,33 @@
   margin-top: 12px;
 }
 
+.regist-user-ops {
+  display: flex;
+  justify-content: space-between;
+}
+.regist-user-ops a {
+  color: #acacae;
+  font-weight: bold;
+}
+.regist-user-ops a span {
+  padding-bottom: 1rem;
+}
+.regist-user-ops a:hover {
+  color: #64b8ff;
+}
+.regist-user-ops a:hover span {
+  border-bottom: 3px solid #64b8ff;
+}
+.login-active-span {
+  color: #64b8ff !important;
+}
+.login-active-span span {
+  border-bottom: 3px solid #64b8ff;
+}
+
 /* Regist right steps */
-.regist-right-p1 .regist-right-text::before {
+
+/* .regist-right-p1 .regist-right-text::before {
   content: "Rellene los siguientes campos de registro y estará listo para comenzar.";
 }
 .regist-right-p2 .regist-right-text::before {
@@ -80,7 +105,7 @@
 }
 .regist-right-p3 .regist-right-text::before {
   content: "Para finalizar indíquenos su dirección de correo electrónico y fije una contraseña";
-}
+} */
 .regist-right-inputs-p1,
 .regist-right-inputs-p2,
 .regist-right-inputs-p3 {
@@ -98,23 +123,25 @@
   justify-content: center;
   align-items: center;
   line-height: 15px;
+  height: 100vh;
 }
-.regist-right-text {
+.register-acc-container {
+  width: calc(100% - 58%);
 }
 .register-acc-container .btn-custom-status .fa-chevron-right,
-.register-acc-container .btn-custom-status .fa-chevron-left {
+.register-acc-container .btn-custom-status .fa-chevron-left,
+.register-acc-container .btn-custom-success .fa-chevron-left {
   font-size: 9px;
 }
 .register-acc-container .btn-custom-status {
   height: 40px;
 }
+
 .register-acc-right label {
   font-size: 13px;
   color: #8f8f94 !important;
 }
-.register-acc-container {
-  width: calc(100% - 58%);
-}
+
 .regist-user-ops {
   display: flex;
   justify-content: space-between;
@@ -144,6 +171,9 @@
 }
 
 @media screen and (max-width: 576.98px) {
+  .register-acc-right {
+    margin-top: -1.5rem;
+  }
   .register-acc-container {
     width: 90%;
   }
