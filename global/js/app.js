@@ -13,6 +13,13 @@ $(function() {
     $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
   });
+  $("#quit-sm-btn").click(function() {
+    $("#sidebar-container").toggleClass("sidebar-collapse");
+    $("#sidebar-wrapper").toggleClass("sidebar-collapse");
+    $("#top-navbar").toggleClass("top-navbar-extended");
+    $(".title").toggleClass("d-none");
+    $("#user-text").toggleClass("user-collapse");
+  });
   $("#demo1").click(function() {
     $("#body-row").toggleClass("pad-body");
   });

@@ -11,6 +11,9 @@
   font-size: 14px;
   height: 200px;
 }
+.table-recent-transfers thead {
+  background-color: #282c4f;
+}
 .table-recent-transfers .table-img-cell {
   width: 2.5rem;
 }

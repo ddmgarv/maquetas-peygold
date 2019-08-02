@@ -14,9 +14,13 @@
   font-size: 17px;
   margin-left: 0.7rem;
 }
+.blue-box-wrapper > h4 > img {
+  width: 22px;
+  height: 22px;
+}
 .blue-box-wrapper > p {
   color: rgba(255, 255, 255, 0.5);
-  margin-left: 0.7rem;
+  margin-left: 2.35rem;
 }
 .border-bottom-title {
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);

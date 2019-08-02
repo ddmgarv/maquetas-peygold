@@ -108,12 +108,18 @@
 } */
 .regist-right-inputs-p1,
 .regist-right-inputs-p2,
-.regist-right-inputs-p3 {
+.regist-right-inputs-p3,
+.regist-right-inputs-p4,
+.regist-right-inputs-p5,
+.regist-right-inputs-p6 {
   display: none;
 }
 .regist-right-p1 .regist-right-inputs-p1,
 .regist-right-p2 .regist-right-inputs-p2,
-.regist-right-p3 .regist-right-inputs-p3 {
+.regist-right-p3 .regist-right-inputs-p3,
+.regist-right-p4 .regist-right-inputs-p4,
+.regist-right-p5 .regist-right-inputs-p5,
+.regist-right-p6 .regist-right-inputs-p6 {
   display: initial;
 }
 /* Regist right steps */
