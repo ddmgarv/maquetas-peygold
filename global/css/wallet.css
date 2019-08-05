@@ -63,10 +63,15 @@
   font-size: 18px;
 }
 .wallet-first-line .small-letters {
+  font-family: "Montserrat", sans-serif;
   position: absolute;
-  font-size: 12px;
-  top: 20px;
-  right: 10px;
+  font-size: 8px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  top: 23px;
+  right: 6px;
+  font-style: normal !important;
+  text-transform: uppercase;
 }
 .wallet-second-line > div a span {
   display: none;
@@ -89,23 +94,23 @@
 }
 .wallet-amount-cont {
   font-family: "Play", sans-serif;
-
   font-size: 21px;
   align-self: flex-end;
 }
 .wallet-amount-cont span {
-  font-weight: lighter;
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
   position: relative;
+  font-weight: 400;
   top: 5px;
 }
 .wallet-symbol-cont {
   font-family: "Play", sans-serif;
   font-style: italic;
   letter-spacing: 3px;
-  font-size: 21px;
+  font-size: 18px;
   align-self: flex-end;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 900px) {

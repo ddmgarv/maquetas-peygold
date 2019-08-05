@@ -1,20 +1,7 @@
 .reload-resume-container-3 {
   padding-bottom: 3.25rem !important;
 }
-.reload-resume-container-3 .reload-user-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.reload-resume-container-3 .user-letter-circle {
-  margin-right: calc(100% - 98%);
-}
-.reload-resume-container-3 .user-info-cont span:first-child {
-  color: #fff;
-}
-.reload-resume-container-3 .user-info-cont span:last-child {
-  color: #8f8f94;
-}
+
 .reload-inputs-container-3 {
   display: flex;
   justify-content: space-between;
@@ -50,8 +37,5 @@
   .reload-inputs-container-3 > div:last-child {
     margin-left: 0;
     margin-top: 0.5rem;
-  }
-  .reload-resume-container-3 .reload-user-container {
-    flex-direction: column;
   }
 }

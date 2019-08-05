@@ -42,15 +42,53 @@
   background-image: url("../../global/assets/background-registro.jpg");
 }
 .regist-left-p3 .regist-left-title::before {
-  content: "Beneficios al registrarte con nosotros";
+  content: "¡Uníte a nuestra comunidad!";
 }
 .regist-left-p3 .regist-left-text1::before {
-  content: "!Mantenete siempre conectado ahora es más fácil gracias a nuestro sistema multifuncional Descubrí todo lo que tenemos para ofrecerte!";
+  content: "¡Ya somos más de 5000 usuarios registrados en nuestra plataforma Peygold! Sumáte con nosotros y disfrutá de la experiencia y el servicio que ofrecemos!";
 }
 .regist-left-p3 .regist-left-text2::before {
   content: "";
 }
 
+.regist-left-p4 {
+  background-image: url("../../global/assets/background-registro4.jpg");
+}
+.regist-left-p4 .regist-left-title::before {
+  content: "!Activá las notificaciones y mantenéte al día!";
+}
+.regist-left-p4 .regist-left-text1::before {
+  content: "!Mantenete siempre al día conectado ahora es más fácil gracias a nuestro sistema multifuncional! Descubrí todo lo que tenemos para ofrecerte!";
+}
+.regist-left-p4 .regist-left-text2::before {
+  content: "";
+}
+
+.regist-left-p5 {
+  background-image: url("../../global/assets/background-registro5.jpg");
+}
+.regist-left-p5 .regist-left-title::before {
+  content: "Beneficios al registrarte con nosotros";
+}
+.regist-left-p5 .regist-left-text1::before {
+  content: "!Mantenete siempre conectado ahora es más fácil gracias a nuestro sistema multifuncional Descubrí todo lo que tenemos para ofrecerte!";
+}
+.regist-left-p5 .regist-left-text2::before {
+  content: "";
+}
+
+.regist-left-p6 {
+  background-image: url("../../global/assets/background-registro6.jpg");
+}
+.regist-left-p6 .regist-left-title::before {
+  content: "¡Hacé la diferencia y probá la experiencia!";
+}
+.regist-left-p6 .regist-left-text1::before {
+  content: "¡Te brindamos el servicio de mejor alcance y rendimiento del país! Donde podrás disfrutar de nuestro servicio en cualquier momento! ¡estas a sólo un click";
+}
+.regist-left-p6 .regist-left-text2::before {
+  content: "";
+}
 /* Regist left side steps */
 
 .register-acc-left h4 {

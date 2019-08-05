@@ -106,11 +106,24 @@ input[type="reset"] {
   width: 100%;
   padding-left: 2rem;
   font-size: 14px;
+  background-color: transparent;
 }
 .input-custom-text input::placeholder {
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+}
+.input-custom-number {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #5b5a5f;
+  font-weight: 800;
+  font-size: 18px;
+}
+.input-custom-number::placeholder {
+  color: #5b5a5f;
+  font-weight: 800;
+  font-size: 18px;
 }
 .input-select {
   width: 100%;
@@ -360,7 +373,25 @@ input[type="reset"] {
   -moz-box-shadow: 0px 0px 15px 3px rgba(156, 156, 156, 1);
   box-shadow: 0px 0px 15px 3px rgba(156, 156, 156, 1);
 }
-
+.selected-user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selected-user-container .selected-user-letter-circle {
+  margin-right: calc(100% - 98%);
+  border-radius: 30px;
+  padding: 0.65rem 1.35rem;
+  background-image: linear-gradient(to right, #00ada5, #0066ae);
+  color: #fff;
+  font-size: 26px;
+}
+.selected-user-container .selected-user-info-cont span:first-child {
+  color: #fff;
+}
+.selected-user-container .selected-user-info-cont span:last-child {
+  color: #8f8f94;
+}
 /* formateo de cajas */
 
 /*Formateo para el Div de movimientos recientes en todas las pantallas*/
@@ -375,6 +406,12 @@ input[type="reset"] {
 }
 
 /* Scroll styles */
+@media screen and (max-width: 576.98px) {
+  .selected-user-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 /* width */
 ::-webkit-scrollbar {

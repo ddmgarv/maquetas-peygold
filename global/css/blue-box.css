@@ -17,6 +17,8 @@
 .blue-box-wrapper > h4 > img {
   width: 22px;
   height: 22px;
+  position: relative;
+  right: 8px;
 }
 .blue-box-wrapper > p {
   color: rgba(255, 255, 255, 0.5);
@@ -32,6 +34,6 @@
     top: -1.5rem;
   }
   .blue-box-wrapper {
-    padding: 1.25rem 1rem 0.2rem 0.1rem;
+    padding: 1.25rem 0;
   }
 }
