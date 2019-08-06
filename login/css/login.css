@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: center;
 }
-.login-input-container .link-forgottent-pass {
+.login-input-container .link-forgotten-pass {
   font-size: 13px;
   color: #15eeb89b;
 }
@@ -57,29 +57,12 @@
   justify-content: space-between;
 }
 .login-register-links a {
-  color: #a5b5e4;
-  font-weight: bold;
-}
-.login-register-links a span {
-  padding-bottom: 1rem;
-}
-.login-register-links a:hover {
-  color: #15eeb7;
-}
-.login-register-links a:hover span {
-  border-bottom: 3px solid #15eeb7;
-}
-.login-active-span {
-  color: #15eeb7;
-}
-.login-active-span span {
-  border-bottom: 3px solid #15eeb7;
+  font-weight: 600;
 }
 .login-pg-img {
-  width: 55%;
+  width: 250px;
   height: 150px;
   margin-bottom: -2rem;
-  margin-left: calc(100% - 78%);
 }
 .login-input-container .btn-outline-status {
   width: 100%;
@@ -101,7 +84,7 @@
   color: rgb(153, 195, 231);
   font-size: 14px;
 }
-.login-input-container .btn-custom-success {
+.login-cont .btn-custom-pp {
   margin-top: 1rem;
   width: 100%;
   height: 45px;
@@ -112,18 +95,15 @@
   }
 }
 @media screen and (max-width: 998.98px) {
-  .login-pg-img {
-    width: 50%;
-    margin-left: calc(100% - 72.5%);
-  }
   .login-input-container > div {
     width: calc(100% - 50%);
   }
 }
 @media screen and (max-width: 650.98px) {
   .login-pg-img {
-    width: 60%;
-    margin-left: calc(100% - 78%);
+    width: 175px;
+    height: 100px;
+    margin-bottom: -1rem;
   }
   .login-input-container > div {
     width: 90%;

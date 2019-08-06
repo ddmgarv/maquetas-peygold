@@ -109,30 +109,6 @@
   margin-top: 12px;
 }
 
-.regist-user-ops {
-  display: flex;
-  justify-content: space-between;
-}
-.regist-user-ops a {
-  color: #acacae;
-  font-weight: bold;
-}
-.regist-user-ops a span {
-  padding-bottom: 1rem;
-}
-.regist-user-ops a:hover {
-  color: #64b8ff;
-}
-.regist-user-ops a:hover span {
-  border-bottom: 3px solid #64b8ff;
-}
-.login-active-span {
-  color: #64b8ff !important;
-}
-.login-active-span span {
-  border-bottom: 3px solid #64b8ff;
-}
-
 /* Regist right steps */
 
 /* .regist-right-p1 .regist-right-text::before {
@@ -172,32 +148,27 @@
 .register-acc-container {
   width: calc(100% - 58%);
 }
+.register-acc-container .btn-custom-status {
+  font-weight: 600;
+}
 .register-acc-container .btn-custom-status .fa-chevron-right,
 .register-acc-container .btn-custom-status .fa-chevron-left,
 .register-acc-container .btn-custom-success .fa-chevron-left {
   font-size: 9px;
 }
-.register-acc-container .btn-custom-status {
+.regist-user-ops {
+  display: flex;
+  justify-content: space-between;
+}
+.regist-user-ops button {
+  font-weight: 600;
   height: 40px;
 }
-
 .register-acc-right label {
   font-size: 13px;
   color: #8f8f94 !important;
 }
 
-.regist-user-ops {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
-}
-.regist-active-span {
-  color: #64b8ff;
-}
-.regist-user-ops .regist-active-span span {
-  padding-bottom: 1rem;
-  border-bottom: 3px solid #64b8ff;
-}
 .regist-user-title {
   margin: 3.5rem 0 2.5rem 0;
 }
@@ -220,10 +191,6 @@
   }
   .register-acc-container {
     width: 90%;
-  }
-  .regist-user-ops .regist-active-span span {
-    padding-bottom: 1rem;
-    border-bottom: 3px solid #64b8ff;
   }
   .register-acc-left {
     padding: 0 1rem !important;

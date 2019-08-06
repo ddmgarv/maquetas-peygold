@@ -10,8 +10,10 @@ body {
   margin-right: 0;
 }
 #main-div {
-  margin-top: 4.2rem;
   margin-bottom: 1.5rem;
+}
+#main-div > .row {
+  margin-top: 4.2rem;
 }
 /* Global CSS */
 
@@ -83,6 +85,12 @@ input[type="reset"] {
   padding-left: 1rem;
   font-size: 14px;
 }
+.input-error {
+  border: 2px solid #c7303f !important;
+}
+.input-success {
+  border: 2px solid #3cd15e !important;
+}
 .input-text::placeholder {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.3);
@@ -135,7 +143,15 @@ input[type="reset"] {
   padding-left: 1rem;
   color: #8f8f94;
   font-size: 14px;
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
 }
+select::-ms-expand {
+  display: none;
+}
+
 .input-file {
   font-family: arial;
   font-size: 12px;
@@ -153,33 +169,6 @@ input[type="reset"] {
   display: none;
 }
 
-.btn-custom-status {
-  border: 2px solid #009bdb !important;
-  background-color: #009bdb !important;
-  border-radius: 30px !important;
-  color: #fff !important;
-  padding: 0.5rem 1.8rem !important;
-  font-size: 13px;
-  transition: all 0.5s !important;
-}
-.btn-custom-status:hover {
-  background-color: #0073a5 !important;
-  border: 2px solid transparent !important;
-}
-.btn-outline-status {
-  background-color: transparent !important;
-  border: 2px solid #009bdb !important;
-  border-radius: 30px !important;
-  color: #fff !important;
-  padding: 0.5rem 1.8rem !important;
-  font-size: 13px;
-  transition: all 0.5s !important;
-  outline: none !important;
-}
-.btn-outline-status:hover {
-  color: #fff !important;
-  background-color: #009bdb !important;
-}
 .btn-outline-red {
   background-color: transparent !important;
   border: 2px solid #ff4f4e !important;
@@ -212,9 +201,8 @@ input[type="reset"] {
   color: #fff !important;
 }
 .btn-custom-success {
-  border: 2px solid #15ff8b !important;
-  background-color: #15ff8b !important;
-  letter-spacing: 1px;
+  border: 2px solid #3cd15e !important;
+  background-color: #3cd15e !important;
   border-radius: 30px !important;
   color: #fff !important;
   padding: 0.5rem 1.8rem !important;
@@ -222,8 +210,54 @@ input[type="reset"] {
   transition: all 0.5s !important;
 }
 .btn-custom-success:hover {
-  background-color: #10c76c !important;
+  background-color: #32a74d !important;
   border: 2px solid transparent !important;
+}
+
+.btn-custom-status {
+  border: 2px solid #009bdb !important;
+  background-color: #009bdb !important;
+  border-radius: 30px !important;
+  color: #fff !important;
+  padding: 0.5rem 1.8rem !important;
+  font-size: 13px;
+  transition: all 0.5s !important;
+}
+.btn-custom-status:hover {
+  background-color: #0089c3 !important;
+  border: 2px solid transparent !important;
+}
+.btn-outline-status {
+  background-color: transparent !important;
+  border: 2px solid #009bdb !important;
+  border-radius: 30px !important;
+  color: #009bdb !important;
+  padding: 0.5rem 1.8rem !important;
+  font-size: 13px;
+  transition: all 0.5s !important;
+  outline: none !important;
+}
+.btn-custom-pp {
+  border: 2px solid #fff !important;
+  background-color: #fff !important;
+  border-radius: 30px !important;
+  color: #000 !important;
+  padding: 0.5rem 1.8rem !important;
+  font-size: 13px;
+  transition: all 0.5s !important;
+}
+.btn-custom-pp:hover {
+  background-color: #e7e7e7 !important;
+  border: 2px solid transparent !important;
+}
+.btn-outline-pp {
+  border: 2px solid #fff !important;
+  background-color: transparent !important;
+  border-radius: 30px !important;
+  color: #fff !important;
+  padding: 0.5rem 1.8rem !important;
+  font-size: 13px;
+  transition: all 0.5s !important;
 }
 /* Final formateo inputs */
 
@@ -355,18 +389,8 @@ input[type="reset"] {
   border: 3px solid #d9dade;
   border-radius: 8px;
 }
-.title-cont {
-  background-color: #f1f1f3;
-  border-top-left-radius: 7.5px;
-  border-top-right-radius: 7.5px;
-  padding: 0 1.5rem;
-  padding-top: 0.65rem;
-}
 .ml-fix {
   margin-left: 4rem;
-}
-.title-cont h1 {
-  font-size: 17px;
 }
 .box-shadow {
   -webkit-box-shadow: 0px 0px 15px 3px rgba(156, 156, 156, 1);
@@ -399,11 +423,6 @@ input[type="reset"] {
   transform: rotate(90deg);
 }
 /*Formateo para el Div de movimientos recientes en todas las pantallas*/
-@media screen and (min-width: 1520.98px) {
-  .blue-line::before {
-    width: 45%;
-  }
-}
 
 /* Scroll styles */
 @media screen and (max-width: 576.98px) {
