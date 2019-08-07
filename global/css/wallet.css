@@ -54,13 +54,13 @@
   margin-top: -1rem;
 }
 .wallet-first-line span {
-  font-family: "Play", sans-serif;
+  font-family: "Klavika", sans-serif;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 2px;
   position: relative;
   bottom: 6px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .wallet-first-line .small-letters {
   font-family: "Montserrat", sans-serif;

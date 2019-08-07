@@ -98,6 +98,9 @@
   .login-input-container > div {
     width: calc(100% - 50%);
   }
+  .social-media-ops-container {
+    display: none;
+  }
 }
 @media screen and (max-width: 650.98px) {
   .login-pg-img {
@@ -108,10 +111,10 @@
   .login-input-container > div {
     width: 90%;
   }
-  .social-media-ops-container > div > div > h2 {
+  /* .social-media-ops-container > div > div > h2 {
     font-size: 25px;
   }
   .social-media-ops-container {
     padding: 0.5rem 1.5rem !important;
-  }
+  } */
 }

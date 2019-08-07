@@ -69,57 +69,36 @@
   font-size: 13px;
   font-weight: 500;
 }
-.links-cont {
+.user-options-container .links-cont {
   height: 100%;
   padding: 1.5rem 0.75rem 1.5rem 0.5rem;
   background-color: #fff;
   border-bottom-right-radius: 18px;
 }
-.links-cont .link-ist {
+.user-options-container .links-cont .link-ist {
   list-style-type: none;
   padding-left: 1rem;
   font-size: 14px;
   font-weight: 600;
 }
-.links-cont .link-ist li {
+.user-options-container .links-cont .link-ist li {
   margin-top: 0.37rem;
 }
-.links-cont .link-ist li a {
+.user-options-container .links-cont .link-ist li a {
   color: #5b5a5f;
 }
-.links-cont .link-ist li a:hover {
+.user-options-container .links-cont .link-ist li a:hover {
   color: #64b8ff;
   text-decoration: none;
 }
-.links-cont .link-ist li .active {
+.user-options-container .links-cont .link-ist li .active {
   color: #64b8ff;
 }
-.user-info-container {
-  border-radius: 18px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  background-color: #2a3744;
-  height: 100%;
-  padding: 1rem 3rem 0 3rem;
-}
-.user-info-container .title-cont {
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-}
-.user-info-container .title-cont h5 {
-  font-size: 16px;
-}
-.user-info-container .user-inputs-container {
-  overflow-y: auto;
-  height: 500px;
-  margin-top: 1.25rem;
-}
-.user-inputs-container label {
-  color: #b3b4b6;
-  font-size: 14px;
-  font-weight: 600;
-}
-@media screen and (min-width: 998px) {
+
+@media screen and (max-width: 998px) {
+  .user-options-container .user-img-cont,
+  .links-cont,
+  .user-info-container {
+    border-radius: 0px !important;
+  }
 }

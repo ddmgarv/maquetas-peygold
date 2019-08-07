@@ -32,13 +32,13 @@
   content: "Beneficios al registrarte con nosotros";
 }
 .regist-left-p2 .regist-left-text1::before {
-  content: "!Mantenete siempre conectado ahora es más fácil gracias a nuestro sistema multifuncional Descubrí todo lo que tenemos para ofrecerte!";
+  content: "¡Mantenete siempre conectado ahora es más fácil gracias a nuestro sistema multifuncional Descubrí todo lo que tenemos para ofrecerte!";
 }
 .regist-left-p2 .regist-left-text2::before {
   content: "";
 }
 
-.regist-left-p3 {
+/* .regist-left-p3 {
   background-image: url("../../global/assets/background-registro.jpg");
 }
 .regist-left-p3 .regist-left-title::before {
@@ -49,9 +49,9 @@
 }
 .regist-left-p3 .regist-left-text2::before {
   content: "";
-}
+} */
 
-.regist-left-p4 {
+/* .regist-left-p4 {
   background-image: url("../../global/assets/background-registro4.jpg");
 }
 .regist-left-p4 .regist-left-title::before {
@@ -61,10 +61,10 @@
   content: "!Mantenete siempre al día conectado ahora es más fácil gracias a nuestro sistema multifuncional! Descubrí todo lo que tenemos para ofrecerte!";
 }
 .regist-left-p4 .regist-left-text2::before {
-  content: "";
-}
+  content: ""; */
+/* } */
 
-.regist-left-p5 {
+/* .regist-left-p5 {
   background-image: url("../../global/assets/background-registro5.jpg");
 }
 .regist-left-p5 .regist-left-title::before {
@@ -75,8 +75,8 @@
 }
 .regist-left-p5 .regist-left-text2::before {
   content: "";
-}
-
+} */
+/* 
 .regist-left-p6 {
   background-image: url("../../global/assets/background-registro6.jpg");
 }
@@ -88,7 +88,7 @@
 }
 .regist-left-p6 .regist-left-text2::before {
   content: "";
-}
+} */
 /* Regist left side steps */
 
 .register-acc-left h4 {
@@ -121,19 +121,11 @@
   content: "Para finalizar indíquenos su dirección de correo electrónico y fije una contraseña";
 } */
 .regist-right-inputs-p1,
-.regist-right-inputs-p2,
-.regist-right-inputs-p3,
-.regist-right-inputs-p4,
-.regist-right-inputs-p5,
-.regist-right-inputs-p6 {
+.regist-right-inputs-p2 {
   display: none;
 }
 .regist-right-p1 .regist-right-inputs-p1,
-.regist-right-p2 .regist-right-inputs-p2,
-.regist-right-p3 .regist-right-inputs-p3,
-.regist-right-p4 .regist-right-inputs-p4,
-.regist-right-p5 .regist-right-inputs-p5,
-.regist-right-p6 .regist-right-inputs-p6 {
+.regist-right-p2 .regist-right-inputs-p2 {
   display: initial;
 }
 /* Regist right steps */
@@ -151,7 +143,6 @@
 .register-acc-container .btn-custom-status {
   font-weight: 600;
 }
-.register-acc-container .btn-custom-status .fa-chevron-right,
 .register-acc-container .btn-custom-status .fa-chevron-left,
 .register-acc-container .btn-custom-success .fa-chevron-left {
   font-size: 9px;
@@ -160,6 +151,11 @@
   display: flex;
   justify-content: space-between;
 }
+.register-acc-right .inputs-container {
+  height: 300px !important;
+  overflow-y: auto;
+}
+
 .regist-user-ops button {
   font-weight: 600;
   height: 40px;
@@ -185,14 +181,16 @@
   text-align: center;
 }
 
+@media screen and (max-width: 996.98px) {
+  .register-acc-left {
+    display: none;
+  }
+}
 @media screen and (max-width: 576.98px) {
   .register-acc-right {
     margin-top: -1.5rem;
   }
   .register-acc-container {
     width: 90%;
-  }
-  .register-acc-left {
-    padding: 0 1rem !important;
   }
 }

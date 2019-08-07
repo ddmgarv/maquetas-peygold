@@ -1,0 +1,58 @@
+.user-info-container {
+  border-radius: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #2a3744;
+  height: 100%;
+  padding: 1rem 3rem 0 3rem;
+}
+.user-info-container .title-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.user-info-container .title-cont h5 {
+  font-size: 16px;
+}
+.user-info-container .title-cont img {
+  width: 25px;
+  height: 25px;
+  transform: rotate(90deg);
+  position: relative;
+  left: 0.9rem;
+}
+.user-info-container .title-cont button span {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  padding: 1rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: #b3b4b6;
+  background-color: #2a3744;
+  border: 1px solid #2d557e;
+  border-radius: 8px;
+}
+.user-info-container .title-cont button:hover span {
+  display: initial;
+}
+.user-info-container .user-inputs-container {
+  overflow-y: auto;
+  height: 500px;
+  margin-top: 1.25rem;
+}
+.user-info-container .user-inputs-container label span {
+  color: #ca5c7b;
+}
+.user-inputs-container label {
+  color: #b3b4b6;
+  font-size: 14px;
+  font-weight: 600;
+}
+@media screen and (max-width: 998px) {
+  .user-info-container {
+    border-radius: 0px !important;
+  }
+}
