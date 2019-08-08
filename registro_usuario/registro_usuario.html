@@ -111,8 +111,15 @@
                 <div class="pr-4 inputs-container">
                   <div class="form-group">
                     <label>Nacionalidad</label>
-                    <input type="text" name="" id="" class="input-text" />
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="input-text"
+                      placeholder="País de procedencia"
+                    />
                   </div>
+                  <label>Documento de identidad:</label>
                   <div class="form-group d-flex">
                     <select name="" class="input-select" id="">
                       <option value="">
@@ -123,10 +130,28 @@
                       type="number"
                       name=""
                       id=""
-                      class="input-text"
+                      class="input-text ml-4"
                       placeholder="Número de DNI"
                     />
                   </div>
+                  <label>Dirección de residencia:</label>
+                  <div class="form-group d-flex">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="input-text"
+                      placeholder="Dirección"
+                    />
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="input-text ml-4"
+                      placeholder="Piso/Casa N°"
+                    />
+                  </div>
+                  <label>Código postal y ciudad:</label>
                   <div class="form-group d-flex">
                     <input
                       type="number"
@@ -139,7 +164,7 @@
                       type="text"
                       name=""
                       id=""
-                      class="input-text"
+                      class="input-text ml-4"
                       placeholder="Ciudad"
                     />
                   </div>
@@ -159,12 +184,37 @@
                       placeholder="Ingrese su teléfono"
                     />
                   </div>
+                  <div class="form-group">
+                    <label class="d-flex align-items-center">
+                      Institución a beneficiar
+                      <div class="helper-container">
+                        <i class="far fa-question-circle"></i>
+                        <div class="floating-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Maxime molestias iure eaque exercitationem, in
+                          quo unde hic maiores alias quas laudantium, animi fuga
+                          cupiditate dicta ratione voluptatibus, incidunt
+                          voluptatum molestiae. Lorem ipsum, dolor sit amet
+                          consectetur adipisicing elit. Voluptatibus repudiandae
+                          veritatis suscipit voluptatum qui, sequi architecto
+                          nesciunt provident id ipsa maiores blanditiis at quis
+                          voluptates? Nisi temporibus quae alias? In!
+                        </div>
+                      </div>
+                    </label>
+                    <input
+                      type="number"
+                      class="input-text"
+                      placeholder="Ingrese su teléfono"
+                    />
+                  </div>
                 </div>
+
                 <div class="text-center mt-4">
                   <button class="btn-custom-status mr-3">
                     <i class="fas fa-chevron-left"></i>
                   </button>
-                  <button class="btn-custom-status">
+                  <button class="btn-custom-disabled">
                     Siguiente
                   </button>
                 </div>

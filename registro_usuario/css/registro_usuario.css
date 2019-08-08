@@ -100,8 +100,9 @@
   color: rgba(255, 255, 255, 0.9);
 }
 .register-acc-left img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  margin-top: -1.25rem;
 }
 .mini-border-regist {
   border-top: 2px solid rgba(255, 255, 255, 0.65);
@@ -152,10 +153,9 @@
   justify-content: space-between;
 }
 .register-acc-right .inputs-container {
-  height: 300px !important;
-  overflow-y: auto;
+  height: 330px;
+  overflow-y: scroll;
 }
-
 .regist-user-ops button {
   font-weight: 600;
   height: 40px;
@@ -164,7 +164,6 @@
   font-size: 13px;
   color: #8f8f94 !important;
 }
-
 .regist-user-title {
   margin: 3.5rem 0 2.5rem 0;
 }
@@ -180,7 +179,33 @@
   color: #8f8f94;
   text-align: center;
 }
-
+.helper-container {
+  position: relative;
+}
+.helper-container i {
+  font-size: 15px;
+  color: #001a5a;
+  position: relative;
+  top: 2px;
+  left: 3px;
+}
+.helper-container .floating-text {
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 15px;
+  width: 200px;
+  height: 150px;
+  overflow-y: scroll;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+.helper-container:hover .floating-text {
+  display: initial;
+}
 @media screen and (max-width: 996.98px) {
   .register-acc-left {
     display: none;

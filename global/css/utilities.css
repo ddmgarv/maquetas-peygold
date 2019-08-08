@@ -83,6 +83,7 @@ input[type="reset"] {
   outline: none;
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 14px;
 }
 .input-error {
@@ -113,6 +114,7 @@ input[type="reset"] {
   border-bottom: 1px solid #8f8f94;
   width: 100%;
   padding-left: 2rem;
+  padding-right: 1rem;
   font-size: 14px;
   background-color: transparent;
 }
@@ -213,7 +215,16 @@ select::-ms-expand {
   background-color: #2e9b48 !important;
   border: 2px solid transparent !important;
 }
-
+.btn-custom-disabled {
+  border: 2px solid transparent !important;
+  background-image: linear-gradient(to right, #edeef0, #ded9dd) !important;
+  border-radius: 30px !important;
+  color: #000 !important;
+  padding: 0.5rem 1.8rem !important;
+  font-size: 13px;
+  transition: all 0.5s !important;
+  cursor: not-allowed !important;
+}
 .btn-custom-status {
   border: 2px solid #009bdb !important;
   background-color: #009bdb !important;

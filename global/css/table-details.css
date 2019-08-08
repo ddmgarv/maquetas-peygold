@@ -12,7 +12,7 @@
   height: 200px;
 }
 .table-recent-transfers thead {
-  background-color: #282c4f;
+  background-color: transparent;
 }
 .table-recent-transfers .table-img-cell {
   width: 2.5rem;

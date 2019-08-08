@@ -1,7 +1,9 @@
 .blue-box-wrapper {
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to bottom, #1a5f85, #373f6b);
+  background-image: url("../assets/contenedor-billeteras.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
   padding: 1.25rem 3rem 1.75rem 3rem;
@@ -28,12 +30,21 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
   padding-bottom: 1rem;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 996px) {
   .blue-box-wrapper {
     position: relative;
     top: -1.5rem;
   }
   .blue-box-wrapper {
     padding: 1.25rem 0;
+  }
+}
+@media screen and (max-width: 576.98px) {
+  .blue-box-wrapper > p {
+    font-size: 14px;
+  }
+  .blue-box-wrapper {
+    background-image: linear-gradient(to bottom, #1a5f85, #373f6b);
+    padding: 1.25rem;
   }
 }
