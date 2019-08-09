@@ -27,6 +27,10 @@
 }
 .reload-options-container > div span:first-child {
   font-weight: bold;
+  font-size: 15px;
+}
+.reload-options-container > div span:last-child {
+  font-size: 14px;
 }
 .reload-options-container > .disabled {
   background-color: #adb9c9 !important;
@@ -61,5 +65,8 @@
   .reload-options-container > div > div {
     margin-right: 0;
     margin-left: 1rem;
+  }
+  .reload-options-container > div span:last-child {
+    font-size: 12px;
   }
 }

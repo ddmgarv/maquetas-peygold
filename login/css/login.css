@@ -50,14 +50,19 @@
   font-size: 13px;
 }
 .login-input-container > div {
-  width: calc(100% - 60%);
+  width: 45%;
 }
 .login-register-links {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  bottom: 1px;
 }
 .login-register-links a {
   font-weight: 600;
+}
+.login-register-links button {
+  height: 40px;
 }
 .login-pg-img {
   width: 250px;
