@@ -25,11 +25,11 @@
     padding: 1rem 4rem 2rem 4rem;
   }
 }
-@media screen and (max-width: 1170.98px) {
+/* @media screen and (max-width: 1170.98px) {
   .white-fluid-box {
     padding: 1rem 1.5rem 2rem 1.5rem;
   }
-}
+} */
 @media screen and (max-width: 1170.98px) {
   .white-fluid-box-title {
     padding: 0 0.1rem;

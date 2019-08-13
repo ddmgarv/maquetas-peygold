@@ -42,7 +42,10 @@
 }
 .login-input-container .link-forgotten-pass {
   font-size: 13px;
-  color: #15eeb89b;
+  color: #fff;
+}
+.login-input-container .link-forgotten-pass:hover {
+  color: #15eeb7;
 }
 .login-input-container .fs-13,
 .login-input-container p {
@@ -99,7 +102,7 @@
     width: calc(100% - 50%);
   }
 }
-@media screen and (max-width: 998.98px) {
+@media screen and (max-width: 992px) {
   .login-input-container > div {
     width: calc(100% - 50%);
   }
@@ -116,10 +119,7 @@
   .login-input-container > div {
     width: 90%;
   }
-  /* .social-media-ops-container > div > div > h2 {
-    font-size: 25px;
+  .login-register-links {
+    bottom: 42px;
   }
-  .social-media-ops-container {
-    padding: 0.5rem 1.5rem !important;
-  } */
 }

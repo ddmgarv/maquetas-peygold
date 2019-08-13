@@ -418,15 +418,23 @@
         <div class="bg-custom-user-info"></div>
         <div class="row">
           <div class="col-lg-3 user-options-container">
-            <div class="user-img-cont">
-              <div>
+            <div class="user-img-container">
+              <div class="user-img-content">
                 <img src="../global/assets/user2.png" alt="" class="user-img">
+                <div class="image-upload">
+                  <label for="file-input">
+                    <img src="../global/assets/icon-cambiar-foto.svg" alt="">
+                  </label>
+                  <input id="file-input" type="file" />
+                </div>
               </div>
               <h5 class="user-name">Rosa Rojas</h5>
               <span class="user-email">gustavoconfortsur@gmail.com</span>
             </div>
             <div class="user-progress-cont">
-              <div class="user-conf-text"><img src="" alt="">Conf. de la cuenta</div>
+              <div class="user-conf-text">
+                <img src="../global/assets/icon-conf-cuenta.svg" accept="image/*" alt=""> Conf. de la cuenta
+              </div>
               <div class="mt-2">
                 <div class="pie-wrapper set-size progress-75 style-2">
                   <span class="label">75<span class="smaller">%</span></span>
@@ -461,36 +469,38 @@
               </button>
             </div>
             <div class="user-inputs-container">
-              <div class="form-group">
-                <label>Nombre<span>*</span></label>
-                <input type="text" class="input-text" placeholder="Ingrese su nombre" />
-              </div>
-              <div class="form-group">
-                <label>Apellido<span>*</span></label>
-                <input type="text" class="input-text" placeholder="Ingrese su nombre" />
-              </div>
-              <div class="form-group">
-                <label>Documento<span>*</span></label>
-                <input type="text" class="input-text" placeholder="Ingrese su nombre" />
-              </div>
-              <div class="form-group">
-                <label>Institución a la que se adherio<span>*</span></label>
-                <input type="text" class="input-text" placeholder="Ingrese su nombre" />
-              </div>
-              <div class="form-group">
-                <label>Teléfono<span>*</span></label>
-                <input type="number" class="input-text" placeholder="Ingrese su número telefónico" />
-              </div>
-              <div class="form-group">
-                <label>Correo Electrónico<span>*</span></label>
-                <input type="email" class="input-text" placeholder="Ingrese su número telefónico" />
-              </div>
-              <div class="custom-control custom-checkbox ml-2">
-                <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                <label class="custom-control-label" for="customCheck">Activar notificaciones al correo</label>
-              </div>
-              <div class="mt-3 mb-4">
-                <button class="btn-custom-success">Guardar Datos</button>
+              <div class="pr-4">
+                <div class="form-group">
+                  <label>Nombre<span>*</span></label>
+                  <input type="text" class="input-text" placeholder="Ingrese su nombre" />
+                </div>
+                <div class="form-group">
+                  <label>Apellido<span>*</span></label>
+                  <input type="text" class="input-text" placeholder="Ingrese su nombre" />
+                </div>
+                <div class="form-group">
+                  <label>Documento<span>*</span></label>
+                  <input type="text" class="input-text" placeholder="Ingrese su nombre" />
+                </div>
+                <div class="form-group">
+                  <label>Institución a la que se adherio<span>*</span></label>
+                  <input type="text" class="input-text" placeholder="Ingrese su nombre" />
+                </div>
+                <div class="form-group">
+                  <label>Teléfono<span>*</span></label>
+                  <input type="number" class="input-text" placeholder="Ingrese su número telefónico" />
+                </div>
+                <div class="form-group">
+                  <label>Correo Electrónico<span>*</span></label>
+                  <input type="email" class="input-text" placeholder="Ingrese su número telefónico" />
+                </div>
+                <div class="custom-control custom-checkbox ml-2">
+                  <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                  <label class="custom-control-label" for="customCheck">Activar notificaciones al correo</label>
+                </div>
+                <div class="mt-3 mb-4">
+                  <button class="btn-custom-success">Guardar Datos</button>
+                </div>
               </div>
             </div>
           </div>

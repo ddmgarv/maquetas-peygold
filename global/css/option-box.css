@@ -50,9 +50,15 @@
 .reload-options-container > .disabled .reload-option-chevron {
   visibility: hidden;
 }
-@media screen and (max-width: 900.98px) {
+@media screen and (max-width: 1060.98px) {
   .reload-options-container > div > div {
-    margin-right: 1.25rem;
+    margin-right: 0.51rem;
+  }
+  .reload-options-container > div span:first-child {
+    font-size: 13px;
+  }
+  .reload-options-container > div span:last-child {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 650.98px) {
@@ -65,8 +71,5 @@
   .reload-options-container > div > div {
     margin-right: 0;
     margin-left: 1rem;
-  }
-  .reload-options-container > div span:last-child {
-    font-size: 12px;
   }
 }

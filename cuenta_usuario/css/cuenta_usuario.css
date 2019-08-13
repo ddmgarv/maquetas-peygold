@@ -1,19 +1,20 @@
 .bg-custom-user-info {
   width: 100%;
-  height: 100vh;
+  height: 117vh;
   position: absolute;
-  top: 0;
+  top: -5rem;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 0;
   background-color: #1e2a35;
+  background-size: cover;
 }
 .user-options-container {
   height: 100%;
   padding: 0 !important;
 }
-.user-options-container .user-img-cont {
+.user-options-container .user-img-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,10 +36,33 @@
   color: #a5b5e4;
 }
 .user-options-container .user-img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 2px solid #fff;
+}
+.user-options-container .user-img-content {
+  position: relative;
+}
+.user-options-container .image-upload {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 85px;
+  bottom: 0;
+}
+.user-options-container .image-upload > input {
+  display: none;
+}
+.user-options-container .image-upload img {
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  position: relative;
+  left: 8px;
+  top: 8px;
 }
 .user-options-container .user-progress-cont {
   display: flex;
@@ -50,6 +74,7 @@
   background-color: #fff;
 }
 .user-options-container .user-progress-cont .user-conf-text {
+  margin-left: -3rem;
   font-size: 14px;
   font-weight: 800;
   color: #5b5a5f;
@@ -60,6 +85,7 @@
   line-height: 15px;
   position: relative;
   top: 15px;
+  right: 8px;
 }
 .user-options-container .user-progress-cont .text > h6 {
   font-size: 14px;
@@ -96,7 +122,7 @@
 }
 
 @media screen and (max-width: 998px) {
-  .user-options-container .user-img-cont,
+  .user-options-container .user-img-container,
   .links-cont,
   .user-info-container {
     border-radius: 0px !important;

@@ -1,15 +1,15 @@
 .wallets-cont {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 .wallet-item {
-  width: 27.5%;
-  height: 150px;
-  margin: 1rem 0.25rem;
+  width: 29%;
+  height: 145px;
+  margin: 1rem 0;
   padding: 0.3rem 1.2rem 0.9rem 1rem;
-  border-radius: 19px;
+  border-radius: 15px;
   color: #fff;
   -webkit-box-shadow: 0px 7px 5px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 7px 5px -1px rgba(0, 0, 0, 0.75);
@@ -17,7 +17,7 @@
   transition: all 0.35s;
 }
 .wallet-item:hover {
-  width: 28%;
+  width: 30%;
   height: 155px;
   -webkit-box-shadow: -5px 5px 5px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 5px 5px -1px rgba(0, 0, 0, 0.75);
@@ -28,18 +28,18 @@
   background-image: url("../../global/assets/background-pg.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-right: 5%;
 }
 #pesos-wallet {
   background-image: url("../../global/assets/background-pesos.svg");
-  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 #pgc-wallet {
   background-image: url("../../global/assets/background-pgc.svg");
-  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: 5%;
 }
 .wallet-first-line,
 .wallet-second-line,
@@ -53,14 +53,19 @@
 .wallet-third-line {
   margin-top: -1rem;
 }
-.wallet-first-line span {
-  font-family: "Klavika", sans-serif;
+@font-face {
+  font-family: "Klavika";
+  src: url(../fonts/KlavikaMedium-Italic.otf) format("truetype");
+  font-weight: 500;
   font-style: italic;
-  font-weight: 600;
+}
+
+.wallet-first-line span {
+  font-family: "Klavika";
   letter-spacing: 2px;
   position: relative;
   bottom: 6px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .wallet-first-line .small-letters {
   font-family: "Montserrat", sans-serif;
@@ -72,6 +77,10 @@
   right: 6px;
   font-style: normal !important;
   text-transform: uppercase;
+}
+.wallet-second-line > img {
+  width: 40px;
+  height: 8px;
 }
 .wallet-second-line > div a span {
   display: none;
@@ -105,19 +114,104 @@
   top: 5px;
 }
 .wallet-symbol-cont {
-  font-family: "Play", sans-serif;
-  font-style: italic;
+  font-family: "Klavika";
   letter-spacing: 3px;
-  font-size: 18px;
+  font-size: 20px;
   align-self: flex-end;
-  font-weight: 700;
 }
-
-@media screen and (max-width: 900px) {
-  .wallets-cont {
-    flex-direction: column;
+@media screen and (min-width: 1599px) {
+  .wallet-item {
+    width: 24%;
+  }
+  .wallet-item:hover {
+    width: 26%;
   }
   .wallet-item {
-    width: 90%;
+    height: 170px;
+  }
+  .wallet-item:hover {
+    height: 180px;
+  }
+  .wallet-imgs {
+    width: 3rem;
+    height: 3rem;
+  }
+  .wallet-second-line > img {
+    width: 45px;
+    height: 6px;
+  }
+  #pg-wallet {
+    margin-right: 5%;
+  }
+  #pgc-wallet {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 1175px) {
+  .wallet-imgs {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .wallet-second-line > img {
+    width: 25px;
+    height: 3px;
+  }
+  .wallet-item {
+    height: 140px;
+  }
+  .wallet-item:hover {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wallet-item {
+    width: 32%;
+  }
+  .wallet-item:hover {
+    width: 34%;
+  }
+  .wallet-amount-cont {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 650.98px) {
+  .wallets-cont {
+    flex-wrap: wrap;
+  }
+  .wallet-item {
+    width: 40%;
+  }
+  .wallet-item:hover {
+    width: 40%;
+    height: 140px;
+  }
+  .wallet-second-line > div a:hover span {
+    display: none;
+  }
+  #pg-wallet {
+    margin-right: 0;
+  }
+  #pgc-wallet {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .wallets-cont {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .wallet-item {
+    width: 80%;
+  }
+  .wallet-item:hover {
+    width: 80%;
+  }
+  .wallet-imgs {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  .wallet-second-line > img {
+    width: 30px;
+    height: 5px;
   }
 }

@@ -239,16 +239,29 @@
   transition: background-color 0.5s;
   background-color: #00cedf;
 }
+@media screen and (max-width: 1150.98px) {
+  .register-acc-container {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 996.98px) {
   .register-acc-left {
     display: none;
   }
 }
-@media screen and (max-width: 576.98px) {
+@media screen and (max-width: 650.98px) {
   .register-acc-right {
     margin-top: -1.5rem;
   }
   .register-acc-container {
     width: 90%;
+  }
+  .register-acc-container .regist-user-ops {
+    position: relative;
+    top: 25px;
+  }
+  .bg-gradient-login .regist-user-ops {
+    position: relative;
+    top: -28px;
   }
 }

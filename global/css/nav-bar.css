@@ -406,7 +406,42 @@ ul.sublist-pay {
 /* Final css para sidebar colapsada */
 
 /* Para telefonos en modo portrait (portrait phones, less than 576px)*/
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 865px) and (max-width: 955px) {
+  .top-navbar-collapse {
+    left: 11rem;
+    width: calc(100% - 11rem) !important;
+  }
+  .top-navbar-extended {
+    left: 3.2rem;
+    width: calc(100% - 3.2rem) !important;
+  }
+  .sidebar-extended {
+    width: 11rem;
+  }
+  .sidebar-extended li,
+  .sidebar-extended li span {
+    font-size: 13px;
+  }
+  .sidebar-extended li,
+  .sidebar-extended .sidebar-sublist li {
+    margin-left: -20px;
+  }
+  .sidebar-collapse li,
+  .sidebar-collapse .sidebar-sublist li {
+    margin-left: 0;
+  }
+  .sidebar-collapse {
+    width: 3.2rem;
+  }
+  .sidebar-extended #user-img-sidebar {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+    margin-left: 25px !important;
+  }
+}
+@media screen and (max-width: 865px) {
   .sidebar-collapse .nav-item:hover .nav-link > span {
     display: none;
   }

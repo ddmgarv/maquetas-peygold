@@ -79,14 +79,14 @@ input[type="reset"] {
   /* border-radius: 10px; */
   border-radius: 30px;
   outline: none;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.4);
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 14px;
+  font-weight: 500;
 }
 .input-text::placeholder {
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.4);
   font-weight: bold;
 }
 .input-error {
@@ -115,9 +115,9 @@ input[type="reset"] {
   padding-right: 1rem;
   font-size: 14px;
   background-color: transparent;
+  font-weight: 500;
 }
 .input-custom-text input::placeholder {
-  font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
 }
 .input-custom-number {
@@ -138,7 +138,7 @@ input[type="reset"] {
   height: 40px;
   border-radius: 30px;
   outline: none;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.4);
   padding-left: 1rem;
   color: #8f8f94;
   font-size: 14px;
@@ -146,6 +146,7 @@ input[type="reset"] {
   -moz-appearance: none;
   /* for Chrome */
   -webkit-appearance: none;
+  font-weight: 500;
 }
 select::-ms-expand {
   display: none;

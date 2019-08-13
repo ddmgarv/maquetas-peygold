@@ -40,7 +40,7 @@
 }
 .user-info-container .user-inputs-container {
   overflow-y: auto;
-  height: 500px;
+  height: 525px;
   margin-top: 1.25rem;
 }
 .user-info-container .user-inputs-container label span {
