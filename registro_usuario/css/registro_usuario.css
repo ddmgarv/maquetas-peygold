@@ -2,13 +2,41 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-size: 100% 100%;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   text-align: left;
   padding: 0 3rem !important;
+}
+.register-acc-left .back-btn-mobile {
+  display: none;
+}
+.register-acc-left .regist-left-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+.register-acc-left .regist-left-text1 {
+  color: #fff;
+}
+.register-acc-left .regist-left-text1 span {
+  font-weight: 800;
+}
+.register-acc-left span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.register-acc-left img {
+  width: 150px;
+  height: 150px;
+  margin-top: -1.25rem;
+}
+.register-acc-left .mini-border-regist {
+  border-top: 2px solid rgba(255, 255, 255, 0.65);
+  width: 20%;
+  margin-top: 12px;
 }
 /* Regist left side steps */
 
@@ -89,26 +117,11 @@
 .regist-left-p6 .regist-left-text2::before {
   content: "";
 } */
-/* Regist left side steps */
+.regist-left-p7 {
+  background-image: url("../../global/assets/background-registro4.jpg");
+}
 
-.register-acc-left h4 {
-  font-weight: bold;
-  font-size: 17px;
-}
-.register-acc-left span {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.9);
-}
-.register-acc-left img {
-  width: 150px;
-  height: 150px;
-  margin-top: -1.25rem;
-}
-.mini-border-regist {
-  border-top: 2px solid rgba(255, 255, 255, 0.65);
-  width: 20%;
-  margin-top: 12px;
-}
+/* Regist left side steps */
 
 /* Regist right steps */
 
@@ -157,7 +170,19 @@
 }
 .bg-gradient-login .regist-user-ops {
   position: relative;
-  top: -40px;
+  top: 2px;
+}
+.regist-user-type-acc-title {
+  text-align: center;
+  color: #fff;
+}
+.regist-user-type-acc-title span:first-child {
+  font-size: 20px;
+  font-weight: 500;
+}
+.regist-user-type-acc-title span:last-child {
+  font-size: 15px;
+  color: #a5b5e4;
 }
 .register-acc-right .inputs-container {
   height: 320px;
@@ -175,8 +200,12 @@
   margin: 3.5rem 0 2.5rem 0;
 }
 .regist-user-title h3 {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 21px;
+  font-weight: 500;
+}
+.regist-user-title h4 {
+  font-size: 23px;
+  font-weight: 500;
 }
 .regist-user-title span {
   font-size: 16px;
@@ -239,20 +268,69 @@
   transition: background-color 0.5s;
   background-color: #00cedf;
 }
+
+.register-acc-container .btn-containers-acc-type {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.register-acc-container .btn-containers-acc-type button {
+  background-color: #32a74d;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  border-radius: 30px;
+  transition: background-color 0.5s;
+  border: 1px solid #298b40;
+  height: 47px;
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
+}
+.register-acc-container .btn-containers-acc-type button:hover {
+  transition: background-color 0.5s;
+  background-color: #298b40;
+}
+.list-points-acc-type {
+}
+.login-pg-img {
+  width: 250px;
+  height: 150px;
+  margin-bottom: -2rem;
+}
 @media screen and (max-width: 1150.98px) {
   .register-acc-container {
     width: 50%;
   }
 }
-@media screen and (max-width: 996.98px) {
+@media screen and (max-width: 992px) {
   .register-acc-left {
+    height: 40vh;
+  }
+  .register-acc-right {
+    height: 70vh;
+  }
+  .register-acc-left .regist-left-text1,
+  .register-acc-left .mini-border-regist,
+  .register-acc-left img {
     display: none;
+  }
+  .register-acc-left .regist-left-title {
+    text-align: center;
+    font-size: 18px;
+  }
+  .register-acc-left .back-btn-mobile {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
   }
 }
 @media screen and (max-width: 650.98px) {
-  .register-acc-right {
-    margin-top: -1.5rem;
-  }
   .register-acc-container {
     width: 90%;
   }
@@ -263,5 +341,10 @@
   .bg-gradient-login .regist-user-ops {
     position: relative;
     top: -28px;
+  }
+  .login-pg-img {
+    width: 175px;
+    height: 100px;
+    margin-bottom: -1rem;
   }
 }

@@ -32,13 +32,16 @@
   font-weight: 600;
 }
 .user-options-container .user-email {
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 500;
   color: #a5b5e4;
+  word-break: break-all;
 }
 .user-options-container .user-img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+
   border: 2px solid #fff;
 }
 .user-options-container .user-img-content {
@@ -67,14 +70,13 @@
 .user-options-container .user-progress-cont {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 1.25rem 0.5rem 0.5rem 0.5rem;
   border-bottom: 1px solid #a5b5e4;
   background-color: #fff;
 }
 .user-options-container .user-progress-cont .user-conf-text {
-  margin-left: -3rem;
+  text-align: left;
+  padding-left: 10%;
   font-size: 14px;
   font-weight: 800;
   color: #5b5a5f;
@@ -83,9 +85,9 @@
   text-align: left;
   color: #5b5a5f;
   line-height: 15px;
-  position: relative;
-  top: 15px;
-  right: 8px;
+  padding-left: 10%;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 .user-options-container .user-progress-cont .text > h6 {
   font-size: 14px;
@@ -103,12 +105,12 @@
 }
 .user-options-container .links-cont .link-ist {
   list-style-type: none;
-  padding-left: 1rem;
+  padding-left: 10%;
   font-size: 14px;
   font-weight: 600;
 }
 .user-options-container .links-cont .link-ist li {
-  margin-top: 0.37rem;
+  margin-top: 1rem;
 }
 .user-options-container .links-cont .link-ist li a {
   color: #5b5a5f;
@@ -121,10 +123,16 @@
   color: #64b8ff;
 }
 
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 992px) {
   .user-options-container .user-img-container,
-  .links-cont,
-  .user-info-container {
+  .links-cont {
     border-radius: 0px !important;
+  }
+}
+@media screen and (max-width: 650.98px) {
+  .user-options-container .user-progress-cont .user-conf-text,
+  .user-options-container .user-progress-cont .text,
+  .user-options-container .links-cont .link-ist {
+    padding-left: 0.5rem;
   }
 }

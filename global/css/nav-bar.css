@@ -200,6 +200,7 @@ ul.list-group {
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-subtitles:hover {
   background-color: #35385c;
 }
@@ -372,10 +373,10 @@ ul.sublist-pay {
 .sidebar-collapse #sub-content-request {
   padding-top: 4.5rem;
 }
-.sidebar-collapse #sub-content-pay {
+.sidebar-collapse #sub-content-pay,
+.sidebar-collapse #sub-content-qr {
   padding-top: 7rem;
 }
-
 .sidebar-collapse .nav-subtitles .sub-content-collapse div:first-child {
   background-color: #35385c;
   width: 100%;
