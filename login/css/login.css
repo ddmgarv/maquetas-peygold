@@ -43,6 +43,7 @@
 .login-input-container .link-forgotten-pass {
   font-size: 13px;
   color: #fff;
+  font-weight: 500;
 }
 .login-input-container .link-forgotten-pass:hover {
   color: #15eeb7;
@@ -75,31 +76,91 @@
 .login-input-container .btn-outline-status {
   width: 100%;
   margin-top: 1rem;
-  letter-spacing: 1px;
+  font-weight: 500;
 }
-.input-text-login {
+.login-input-container .input-text-login {
   width: 100%;
-  height: 45px;
+  height: 40px;
   border: none;
   background-color: rgba(54, 159, 230, 0.75);
   padding-left: 1rem;
   border-radius: 30px;
-  font-size: 14px;
+  font-size: 15px;
   color: #fff;
   outline: none;
+  font-weight: 500;
 }
-.input-text-login::placeholder {
+.login-input-container .input-text-login::placeholder {
   color: rgb(153, 195, 231);
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.recover-password-inputs .input-text-login {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+  padding-left: 1rem;
+  border-radius: 30px;
+  font-size: 15px;
+  color: #000;
+  outline: none;
+  font-weight: 500;
+}
+.recover-password-inputs .input-text-login::placeholder {
+  font-size: 15px;
+  font-weight: 500;
 }
 .login-cont .btn-custom-pp {
   margin-top: 1rem;
   width: 100%;
-  height: 45px;
+  height: 40px;
+  font-weight: 500;
+}
+.recover-password-container {
+  height: 100vh;
+  background: url("../../global/assets/bg-login.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recover-password-container > div {
+  width: 32.5%;
+}
+.recover-password-container .recover-password-inputs {
+  background-image: linear-gradient(to right, #373c68, #146283);
+  border-radius: 8px;
+  padding: 2.5rem 3rem;
+}
+.recover-password-container .recover-pass-text {
+  color: #fff;
+  text-align: center;
+}
+.recover-password-container .recover-pass-text h5 {
+  font-weight: 600;
+  font-size: 21px;
+}
+.recover-password-container .recover-pass-text p {
+  font-size: 14px;
+  color: #a5b5e4;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.recover-password-container .btn-custom-success {
+  width: 100%;
+  margin-top: 1.5rem;
+  font-weight: 500;
 }
 @media screen and (max-width: 1150.98px) {
   .login-input-container > div {
     width: calc(100% - 50%);
+  }
+  .recover-password-container > div {
+    width: 45%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -108,6 +169,9 @@
   }
   .social-media-ops-container {
     display: none;
+  }
+  .recover-password-container > div {
+    width: 60%;
   }
 }
 @media screen and (max-width: 650.98px) {
@@ -121,5 +185,11 @@
   }
   .login-register-links {
     bottom: 42px;
+  }
+  .recover-password-container > div {
+    width: 100%;
+  }
+  .recover-password-container .recover-password-inputs {
+    padding: 1.25rem 1.5rem;
   }
 }

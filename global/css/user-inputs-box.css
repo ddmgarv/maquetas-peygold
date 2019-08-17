@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-between;
 }
-.user-info-container .user-inputs-container .inputs-row:nth-child(3) {
+.user-info-container .user-inputs-container div.inputs-row:nth-child(3) {
   padding-bottom: 1rem;
   border-bottom: 1px solid #236f91 !important;
 }
