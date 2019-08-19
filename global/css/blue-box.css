@@ -11,6 +11,7 @@
   position: relative;
   top: -1rem;
   z-index: 1;
+  overflow: hidden;
 }
 .blue-box-wallet-bg {
   background-image: url("../assets/contenedor-billeteras.svg") !important;

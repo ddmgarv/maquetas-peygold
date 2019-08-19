@@ -1,7 +1,7 @@
 /* Global CSS */
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f5f5fd;
+  background-color: #ebedf5;
 }
 #body-row {
   -webkit-transition: padding-top 0.5s;
@@ -93,8 +93,8 @@ input[type="checkbox"]:checked + label:before {
   left: 5px;
   border-radius: 0;
   opacity: 1;
-  border-top-color: transparent;
-  border-left-color: transparent;
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -218,37 +218,71 @@ select::-ms-expand {
 .input-file input[type="file"] {
   display: none;
 }
-
+.input-search {
+  position: relative;
+}
+.input-search label {
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.input-search input {
+  border-radius: 30px;
+  outline: none;
+  width: 100%;
+  height: 40px !important;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  color: #8f8f94;
+  font-size: 14px;
+  font-weight: 500;
+}
 .btn-outline-red {
   background-color: transparent !important;
-  border: 2px solid #ff4f4e !important;
+  border: 2px solid #ff4898 !important;
   border-radius: 30px !important;
-  color: #ff4f4e !important;
+  color: #fff !important;
   padding: 0.5rem 1.8rem !important;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 600;
   transition: all 0.5s !important;
   outline: none !important;
 }
 .btn-outline-red:hover {
   color: #fff !important;
-  background-color: #ff4f4e !important;
+  background-color: #ff4898 !important;
 }
-
-.btn-outline-custom-t1 {
+.btn-outline-green {
   background-color: transparent !important;
-  border: 2px solid #3b3e66 !important;
+  border: 2px solid #00c955 !important;
   border-radius: 30px !important;
-  color: #3b3e66 !important;
+  color: #fff !important;
   padding: 0.5rem 1.8rem !important;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 600;
   transition: all 0.5s !important;
   outline: none !important;
 }
-.btn-outline-custom-t1:hover {
-  border: none !important;
-  background-color: #3b3e66 !important;
-  transition: all 0.5s !important;
+.btn-outline-green:hover {
   color: #fff !important;
+  background-color: #00c955 !important;
+}
+.btn-outline-opaque {
+  background-color: transparent !important;
+  border: 2px solid #bdb5d4 !important;
+  border-radius: 30px !important;
+  color: #fff !important;
+  padding: 0.5rem 1.8rem !important;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.5s !important;
+  outline: none !important;
+}
+.btn-outline-opaque:hover {
+  color: #2f2f2f !important;
+  background-color: #bdb5d4 !important;
 }
 .btn-custom-success {
   border: 2px solid #32a74d !important;
