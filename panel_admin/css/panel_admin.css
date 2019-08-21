@@ -3,23 +3,21 @@
   z-index: 10;
   top: 3.2rem;
   height: 4.5rem;
-  width: 100%;
   padding: 0;
   background-image: linear-gradient(to right, #146283, #373c68);
 }
 .topbar-check-container .topbar-check {
   height: inherit;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-right: 32.5%;
-  margin-left: 3%;
-}
-.topbar-check-container .topbar-check div:nth-child(2) {
-  margin-left: 7.5%;
+  width: 83.33%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5%;
 }
 .topbar-check-container .id-number {
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
 }
 .topbar-check-container .vertical-separator {
@@ -30,21 +28,13 @@
   margin-right: 15px;
   margin-left: 15px;
 }
-.topbar-check-container .check-text {
-  font-size: 11px;
-  letter-spacing: 1px;
-  color: #0eb0ff;
-}
-.topbar-check-container .check-text span {
-  font-size: 9px !important;
-}
 
 .check-data-container {
   background-color: #fff;
   margin-top: 3.5rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 1.25rem 5% 1.75rem 5%;
+  padding: 1.75rem 5%;
 }
 .check-data-container h6 {
   margin-bottom: 1rem;
@@ -58,17 +48,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.check-data-container .check-upload-options > div:nth-child(1) {
-}
-.check-data-container .check-upload-options > div:nth-child(2) {
-  display: flex;
-}
 .check-data-container .check-img-container {
   display: flex;
   justify-content: center;
   padding: 2rem;
   overflow-x: auto;
-  min-width: 600px;
 }
 .check-data-container .check-img-container img {
   width: 100%;
@@ -79,8 +63,6 @@
   background-color: #fff;
   border-radius: 50%;
   width: 100%;
-  height: 40px;
-  bottom: 0;
 }
 .check-data-container .image-upload > input {
   display: none;
@@ -94,112 +76,54 @@
   width: 27px;
   height: 27px;
 }
-.check-data-container input[type="checkbox"] + label {
-  color: #000;
-  font-weight: 500;
-}
-.check-data-container input[type="checkbox"] + label:before {
-  border: 2px solid #0031d3;
-}
 .front-back-container {
   display: flex;
-  justify-content: center;
-  margin-bottom: 0.5rem;
+  justify-content: flex-end;
+  width: 100%;
 }
 .front-back-container button {
   color: #939197;
   transition: color 0.5s;
-  font-size: 17px;
   font-weight: 500;
 }
 .front-back-container button:nth-child(2) {
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
 .front-back-container button:hover {
   transition: color 0.5s;
   color: #0031d3;
 }
-.check-upload-inputs {
-  display: flex;
-}
-.check-upload-inputs label {
-  color: #fff;
-  font-size: 14px;
-}
-.check-upload-inputs label span {
-  color: #ff4898;
-}
-.check-upload-inputs .form-group:nth-child(1),
-.check-upload-inputs .form-group:nth-child(2) {
-  margin-right: 2%;
-}
-.check-upload-inputs .form-group:nth-child(3) {
-  margin-right: 0.25%;
-}
-.check-upload-inputs .form-group:nth-child(4) {
-  margin-left: 1.75%;
-}
-.border-separator {
-  border-top: 1px solid #7994a891;
-  width: 150%;
-  overflow: hidden;
-  position: relative;
-  right: 60px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.75rem;
-}
+
 .check-btn-container {
   display: flex;
   justify-content: center;
 }
 .check-btn-container button {
-  width: 17.5%;
+  width: 100%;
   margin: 1rem;
-}
-@media screen and (max-width: 1200px) {
-  .topbar-check-container .topbar-check {
-    margin-right: 20%;
-  }
-}
-@media screen and (max-width: 992px) {
-  .check-btn-container button {
-    width: 25%;
-  }
 }
 @media screen and (max-width: 650.98px) {
   .check-data-container h6 {
     font-size: 16px;
   }
   .topbar-check-container {
-    height: 5rem;
-  }
-  .topbar-check-container .topbar-check {
-    margin-right: 15%;
+    height: 5.5rem;
   }
   .check-upload-inputs {
     flex-direction: column;
   }
   .check-data-container .image-upload label,
   .check-data-container input[type="checkbox"] + label,
-  .check-upload-inputs label,
   .check-btn-container button,
-  .topbar-check-container .id-number {
+  .topbar-check-container .id-number,
+  .front-back-container {
     font-size: 12px !important;
   }
 
-  .check-upload-inputs .form-group:nth-child(1),
-  .check-upload-inputs .form-group:nth-child(2),
-  .check-upload-inputs .form-group:nth-child(3),
-  .check-upload-inputs .form-group:nth-child(4) {
-    margin: 0;
-    margin-top: 0.5rem;
-  }
   .check-btn-container {
     align-items: center;
-    flex-direction: column;
   }
   .check-btn-container button {
-    width: 100%;
     margin: 0.5rem;
   }
 }

@@ -7,7 +7,7 @@
   background-size: cover;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
-  padding: 1.25rem 5% 1.75rem 5%;
+  padding: 1.75rem 5%;
   position: relative;
   top: -1rem;
   z-index: 1;
@@ -20,6 +20,7 @@
   color: #fff;
   font-size: 17px;
   margin-left: 0.7rem;
+  font-weight: 700;
 }
 .blue-box-wrapper > h4 > img {
   width: 22px;

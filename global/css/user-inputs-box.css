@@ -45,7 +45,7 @@
 }
 .user-info-container .user-inputs-container .checkboxes-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #236f91 !important;
 }
@@ -56,15 +56,60 @@
 }
 .user-info-container .user-inputs-container .checkboxes-row .custom-control {
   margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.user-info-container .user-inputs-container .checkboxes-row .input-text {
+  width: 175px !important;
+  height: 35px !important;
 }
 .user-info-container
   .user-inputs-container
   .checkboxes-row
   .custom-control
   img {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
+.user-info-container
+  .user-inputs-container
+  .checkboxes-row
+  .custom-control
+  input {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.user-info-container
+  .user-inputs-container
+  .checkboxes-row
+  .custom-control
+  .erase-btn {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-left: none;
+  background-color: #fff;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  top: 4px;
+}
+.user-info-container
+  .user-inputs-container
+  .checkboxes-row
+  .custom-control
+  .erase-btn
+  i {
+  color: #ff4898;
+  position: relative;
+  right: 2px;
+}
+
 .user-info-container .title-cont button span {
   display: none;
   position: absolute;

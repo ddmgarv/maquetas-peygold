@@ -1,8 +1,11 @@
+.table-responsive {
+  margin: 0 !important;
+}
 .table-cont {
   height: 280px;
   width: 100%;
+  padding: 0 0.5rem !important;
 }
-
 .table-cont * {
   color: #fff !important;
   font-weight: normal !important;
@@ -14,16 +17,13 @@
 .table-recent-transfers thead {
   background-color: transparent;
 }
-.table-recent-transfers .table-img-cell {
-  width: 2.5rem;
-}
 .table-recent-transfers img {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
 }
 .table-cont tr {
-  border-bottom: 1px solid #4d5174;
+  border-bottom: 1px solid #7994a891;
 }
 .table-recent-transfers .hour {
   color: #8388a5 !important;
@@ -60,10 +60,13 @@
   color: #07a8ec;
 }
 .table-date-cell,
-.table-action-cell {
+.table-action-cell,
+.table-img-cell {
   min-width: 40px;
 }
-
+.table-request-id {
+  min-width: 130px;
+}
 .table-amount-cell {
   min-width: 90px;
 }
@@ -72,4 +75,63 @@
 }
 .table-status-cell {
   min-width: 125px;
+}
+.table-h-custom {
+  height: 345px !important;
+}
+.table-cont .edit-btn {
+  background-color: #2f3d64;
+  padding: 0.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  transition: all 0.5s;
+  position: relative;
+  right: 8px;
+}
+.table-cont .edit-btn i {
+  background-color: #0093d5;
+  color: #2e4973 !important;
+  padding: 0.35rem;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  font-size: 17px;
+  transition: all 0.5s;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+.table-cont .edit-btn span {
+  font-size: 13px;
+  position: absolute;
+  top: 12px;
+  left: 45px;
+}
+.table-cont .edit-btn:hover {
+  border-radius: 30px;
+  width: 100px;
+  transition: all 0.5s;
+}
+
+.table-cont .edit-btn:hover span {
+  display: initial;
+}
+.table-cont .text-rejected {
+  color: #ff4898 !important;
+  font-weight: 500 !important;
+}
+.table-cont .text-approve {
+  color: #32a74d !important;
+  font-weight: 500 !important;
+}
+.table-cont .text-pending {
+  color: #009bdb !important;
+  font-weight: 500 !important;
+}
+@media only screen and (min-width: 865px) and (max-width: 1030px) {
+  .table-cont {
+    width: 675px;
+  }
 }

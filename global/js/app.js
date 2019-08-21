@@ -3,6 +3,8 @@ $(function() {
     $("#sidebar-container").toggleClass("sidebar-collapse");
     $("#sidebar-wrapper").toggleClass("sidebar-collapse");
     $("#top-navbar").toggleClass("top-navbar-extended");
+    $("#secondary-nav").toggleClass("top-navbar-extended");
+    $("#footer").toggleClass("top-navbar-extended");
     $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
   });
@@ -10,6 +12,8 @@ $(function() {
     $("#sidebar-container").toggleClass("sidebar-collapse");
     $("#sidebar-wrapper").toggleClass("sidebar-collapse");
     $("#top-navbar").toggleClass("top-navbar-extended");
+    $("#secondary-nav").toggleClass("top-navbar-extended");
+    $("#footer").toggleClass("top-navbar-extended");
     $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
   });
@@ -17,6 +21,8 @@ $(function() {
     $("#sidebar-container").toggleClass("sidebar-collapse");
     $("#sidebar-wrapper").toggleClass("sidebar-collapse");
     $("#top-navbar").toggleClass("top-navbar-extended");
+    $("#secondary-nav").toggleClass("top-navbar-extended");
+    $("#footer").toggleClass("top-navbar-extended");
     $(".title").toggleClass("d-none");
     $("#user-text").toggleClass("user-collapse");
   });

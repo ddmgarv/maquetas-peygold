@@ -1,14 +1,13 @@
 /* Top bar css */
 #top-navbar {
-  font-family: "Montserrat", sans-serif;
   z-index: 100;
   width: calc(100% - 16rem);
   position: fixed;
   top: 0;
   background-color: #fff;
-  -webkit-box-shadow: 0px 8px 8px -6px rgba(120, 120, 120, 0.56);
-  -moz-box-shadow: 0px 8px 8px -6px rgba(120, 120, 120, 0.56);
-  box-shadow: 0px 8px 8px -6px rgba(120, 120, 120, 0.56);
+  -webkit-box-shadow: 0px 6px 8px -6px rgba(120, 120, 120, 0.56);
+  -moz-box-shadow: 0px 6px 8px -6px rgba(120, 120, 120, 0.56);
+  box-shadow: 0px 6px 8px -6px rgba(120, 120, 120, 0.56);
 }
 
 .top-navbar-collapse {
@@ -29,9 +28,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding-left: 0;
   margin-bottom: 0;
-  justify-content: space-between;
   list-style: none;
   align-items: center;
 }
@@ -406,6 +405,34 @@ ul.sublist-pay {
 }
 /* Final css para sidebar colapsada */
 
+/* CSS para footer */
+#footer {
+  z-index: 100;
+  width: calc(100% - 16rem);
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0px -6px 8px -6px rgba(120, 120, 120, 0.56);
+  -moz-box-shadow: 0px -6px 8px -6px rgba(120, 120, 120, 0.56);
+  box-shadow: 0px -6px 8px -6px rgba(120, 120, 120, 0.56);
+}
+#footer .footer-content {
+  height: 3.2rem;
+  display: flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #a5b5e4;
+}
+#footer .footer-content div:first-child {
+  margin-left: 4%;
+}
+#footer .footer-content div:last-child {
+  margin-right: 5rem;
+}
+/* Final CSS para footer */
+
 /* Para telefonos en modo portrait (portrait phones, less than 576px)*/
 @media screen and (min-width: 865px) and (max-width: 955px) {
   .top-navbar-collapse {
@@ -488,5 +515,7 @@ ul.sublist-pay {
   .logout-nav-item div:hover span {
     display: none;
   }
+  #footer {
+    display: none;
+  }
 }
-/* Final telefonos en modo portrait (portrait phones, less than 576px)*/

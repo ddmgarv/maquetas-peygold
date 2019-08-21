@@ -7,7 +7,7 @@
 <html>
 
 <head>
-  <title>Side-top bar</title>
+  <title>Cheques</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
     integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
   <link rel="stylesheet" type="text/css" href="../global/css/nav-bar.css" />
   <link rel="stylesheet" type="text/css" href="../global/css/blue-box.css" />
   <link rel="stylesheet" href="css/panel_admin.css" />
+  <link rel="stylesheet" href="../global/css/rows-wrapper.css">
 </head>
 
 <body>
@@ -415,31 +416,21 @@
     <!-- MAIN -->
     <main class="col" id="main-div">
 
-      <div class="row">
-        <div class="col-12 topbar-check-container">
-          <div class="topbar-check">
-            <div class="d-flex align-items-center">
-              <span class="id-number">ID N° 95.000.000</span>
-              <span class="vertical-separator"></span>
-              <div class="input-search">
-                <label for="">
-                  <i class="fas fa-search"></i>
-                </label>
-                <input type="search" name="" placeholder="Buscar" id="">
-              </div>
-            </div>
-            <div class="check-text">
-              ADMINISTRADOR 
-              <span>/</span>  
-              CHEQUES CARGADOS
-            </div>
+      <div class="topbar-check-container top-navbar-collapse" id="secondary-nav">
+        <div class="topbar-check">
+          <div class="d-flex align-items-center">
+            <span class="id-number">Solicitud N° 772019475</span>
+          </div>
+          <div class="check-btn-container">
+            <button class="btn-outline-opaque">Atrás</button>
+            <button class="btn-outline-green">Actualizar</button>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-lg-11 check-data-container">
-          <h6>Datos del cheque N°2</h6>
+        <div class="col-lg-10 check-data-container">
+          <h6>Cheque N°2</h6>
           <div class="check-upload-options">
             <div class="image-upload">
               <label for="file-input">
@@ -448,53 +439,30 @@
               </label>
               <input id="file-input" type="file" />
             </div>
-            <div>
-              <div class="custom-checkbox ml-2">
-                <input type="checkbox" id="box-1">
-                <label for="box-1">Dorso</label>
-              </div>
-              <div class="custom-checkbox ml-2">
-                <input type="checkbox" id="box-2">
-                <label for="box-2">Frente</label>
-              </div>
+            <div class="front-back-container">
+              <button><i class="fas fa-chevron-left"></i> Ver frente</button>
+              <button>Ver dorso <i class="fas fa-chevron-right"></i></button>
             </div>
           </div>
           <div class="check-img-container">
             <img src="../global/assets/user1.png" alt="">
           </div>
-          <div class="front-back-container">
-            <button><i class="fas fa-chevron-left"></i> Ver frente</button>
-            <button>Ver dorso <i class="fas fa-chevron-right"></i></button>
-          </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-lg-11 blue-box-wrapper">
-          <p>Complete los datos como se muestran en el cheque</p>
-          <div class="check-upload-inputs">
-            <div class="form-group">
-              <label for="">F. Emisión<span>*</span></label>
-              <input type="date" class="input-text" id="">
+        <div class="col-lg-10 rows-wrapper">
+          <div class="check-data-row data-hide">
+            <div class="title-container">
+              <div class="title-text">
+                <span class="name">Datos del cheque</span>  <br />
+                <span class="title-text-hide">Complete los datos que se muestran en el cheque</span>
+              </div>
+              <span class="arrow"><i class="fas fa-chevron-down"></i></span>
             </div>
-            <div class="form-group">
-              <label for="">F. Vencimiento<span>*</span></label>
-              <input type="date" class="input-text" id="">
+            <div class="content-container">
+
             </div>
-            <div class="form-group">
-              <label for="">N° de cheque<span>*</span></label>
-              <input type="number" class="input-text" id="">
-            </div>
-            <div class="form-group">
-              <label for="">importe $<span>*</span></label>
-              <input type="number" class="input-text" step="0.01" id="">
-            </div>
-          </div>
-          <div class="border-separator"></div>
-          <div class="check-btn-container">
-            <button class="btn-outline-opaque">Atrás</button>
-            <button class="btn-outline-red">Rechazar</button>
-            <button class="btn-outline-green">Aprobar</button>
           </div>
         </div>
       </div>
@@ -503,6 +471,18 @@
     <!-- Main Col END -->
   </div>
   <!-- body-row END -->
+
+  <!--Begin footer -->
+  <footer class="top-navbar-collapse" id="footer">
+    <!-- footer inferior -->
+    <div class="footer-content">
+      <div>© 2019 Peygold. Todos los derechos reservados.</div>
+      <div>Desarrollado por ConfortSurArgentina S.A.</div>
+    </div>
+
+    <!-- Final footer inferior -->
+  </footer>
+  <!-- footer END -->
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

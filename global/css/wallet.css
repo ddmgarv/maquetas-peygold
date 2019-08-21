@@ -53,6 +53,7 @@
 .wallet-third-line {
   margin-top: -1rem;
 }
+
 @font-face {
   font-family: "Klavika";
   src: url(../fonts/KlavikaMedium-Italic.otf) format("truetype");
@@ -106,7 +107,7 @@
   font-size: 21px;
   align-self: flex-end;
 }
-.wallet-amount-cont span {
+.wallet-amount-cont span:nth-child(1) {
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
   position: relative;
@@ -173,8 +174,11 @@
   .wallet-amount-cont {
     font-size: 18px;
   }
+  .wallet-symbol-cont {
+    font-size: 18px;
+  }
 }
-@media screen and (min-width: 400px) and (max-width: 650.98px) {
+@media screen and (min-width: 430px) and (max-width: 650.98px) {
   .wallets-cont {
     flex-wrap: wrap;
   }
@@ -195,16 +199,24 @@
     margin-left: 0;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   .wallets-cont {
     flex-direction: column;
     flex-wrap: nowrap;
   }
   .wallet-item {
     width: 80%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
   .wallet-item:hover {
     width: 80%;
+    height: 140px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    transition: none;
   }
   .wallet-imgs {
     width: 2.25rem;
@@ -213,5 +225,11 @@
   .wallet-second-line > img {
     width: 30px;
     height: 5px;
+  }
+  #pg-wallet {
+    margin-right: 0;
+  }
+  #pgc-wallet {
+    margin-left: 0;
   }
 }
